@@ -19,7 +19,7 @@ export const Workflow: React.FC = () => {
     {
       step: 'Step 03',
       title: 'Manager Reviews',
-      desc: 'HR managers see live dashboards, approve leave requests, and flag anomalies from their desk or mobile.',
+      desc: 'HR managers see live dashboards, approve Time-off requests, and flag anomalies from their desk or mobile.',
       icon: <Eye className="w-7 h-7 sm:w-8 sm:h-8 text-[#5B5FFF]" />,
     },
     {

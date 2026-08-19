@@ -77,7 +77,7 @@ const RetailHero: React.FC = () => (
           {/* p.lead */}
           <div className="w-full lg:w-[480px] max-w-[480px] pt-[2.385px]">
             <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[18px] leading-[28px] sm:leading-[30px] text-[#6B7280] max-w-[450px]">
-              Retail runs on shifts, hourly staff, and multiple locations. Workzi tracks attendance, leave, and scheduling the way stores actually operate — from the shop floor to HQ.
+              Retail runs on shifts, hourly staff, and multiple locations. Workzi tracks attendance, Time-off, and scheduling the way stores actually operate — from the shop floor to HQ.
             </p>
           </div>
 
@@ -626,7 +626,7 @@ const RetailManagerVisibilityDark: React.FC = () => (
         <ul className="flex flex-col gap-2.5 sm:gap-3 pt-1 sm:pt-2">
           {[
             "Attendance status by store, department, or region",
-            "Approve leave and shift changes without cross-checking spreadsheets per location",
+            "Approve Time-off and shift changes without cross-checking spreadsheets per location",
             "Spot attendance exceptions early, wherever they happen",
           ].map((item, idx) => (
             <li key={idx} className="flex items-center gap-3 text-[14px] sm:text-[15px] text-slate-200">
@@ -693,7 +693,7 @@ const RetailIntegrations: React.FC = () => (
           Fits Alongside the Tools Your Retail Team Already Uses
         </h2>
         <p className="font-['Inter',sans-serif] text-[16px] text-[#6B7280]">
-          Workzi manages the workforce side — attendance, shifts, leave — while your team keeps using its existing POS and store operations tools.
+          Workzi manages the workforce side — attendance, shifts, Time-off — while your team keeps using its existing POS and store operations tools.
         </p>
       </div>
 
@@ -781,11 +781,10 @@ const RetailFAQ: React.FC = () => {
                     {faq.q}
                   </span>
                   <span
-                    className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${
-                      isOpen
+                    className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${isOpen
                         ? 'bg-[#5C5CFF] text-white'
                         : 'bg-[#EEF2FF] text-[#5C5CFF] group-hover:bg-[#5C5CFF] group-hover:text-white'
-                    }`}
+                      }`}
                   >
                     {isOpen ? '−' : '+'}
                   </span>

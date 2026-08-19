@@ -8,7 +8,7 @@ import {
   X,
 } from 'lucide-react';
 
-/* ─── Hero Graphic Component for Leave Management ─── */
+/* ─── Hero Graphic Component for Time-off Management ─── */
 const LeaveManagementHeroChart: React.FC = () => {
   return (
     <div
@@ -17,7 +17,7 @@ const LeaveManagementHeroChart: React.FC = () => {
         background: 'radial-gradient(97.38% 131.25% at 8.51% 3.7%, #9AA0FF 0%, #C5E2FF 51.12%, #4F7EFF 100%)',
       }}
     >
-      {/* Left Card — Leave Balance */}
+      {/* Left Card — Time-off Balance */}
       <div
         className="absolute bg-white border border-[#E5E7EB] rounded-[20px] p-[18px] flex flex-col justify-between z-10"
         style={{
@@ -30,7 +30,7 @@ const LeaveManagementHeroChart: React.FC = () => {
       >
         <div>
           <span className="font-['Inter',sans-serif] font-bold text-[11px] leading-[13px] uppercase text-[#6B7280] block mb-2">
-            LEAVE BALANCE
+            Time-off BALANCE
           </span>
           <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[24px] leading-[30px] text-[#111827] block">
             19 Days
@@ -41,22 +41,22 @@ const LeaveManagementHeroChart: React.FC = () => {
 
           <div className="space-y-[9px]">
             <div className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-[9px] px-[12px] py-[8px] flex justify-between items-center text-[12px]">
-              <span className="font-medium text-[#6B7280]">Casual Leave</span>
+              <span className="font-medium text-[#6B7280]">Casual Time-off</span>
               <span className="font-bold text-[#111827]">6/12 left</span>
             </div>
             <div className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-[9px] px-[12px] py-[8px] flex justify-between items-center text-[12px]">
-              <span className="font-medium text-[#6B7280]">Sick Leave</span>
+              <span className="font-medium text-[#6B7280]">Sick Time-off</span>
               <span className="font-bold text-[#111827]">4/8 left</span>
             </div>
             <div className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-[9px] px-[12px] py-[8px] flex justify-between items-center text-[12px]">
-              <span className="font-medium text-[#6B7280]">Earned Leave</span>
+              <span className="font-medium text-[#6B7280]">Earned Time-off</span>
               <span className="font-bold text-[#111827]">9/15 left</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Right Card — Leave Request Mid-Approval */}
+      {/* Right Card — Time-off Request Mid-Approval */}
       <div
         className="absolute bg-white border border-[#E5E7EB] rounded-[20px] p-[18px] flex flex-col justify-between z-20"
         style={{
@@ -78,7 +78,7 @@ const LeaveManagementHeroChart: React.FC = () => {
           </div>
 
           <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[20px] leading-[26px] text-[#111827] block">
-            Casual Leave
+            Casual Time-off
           </span>
           <span className="font-['Inter',sans-serif] font-semibold text-[12.5px] leading-[15px] text-[#5C5CFF] block mt-0.5 mb-3">
             Aug 12 — Aug 14 (3 days)
@@ -127,7 +127,7 @@ const FadeUp: React.FC<{ children: React.ReactNode; delay?: number; className?: 
 );
 
 /* ─── 1. HERO SECTION ─── */
-const LeaveHero: React.FC = () => (
+const TimeOffHero: React.FC = () => (
   <div
     className="w-full pt-[68px]"
     style={{
@@ -143,7 +143,7 @@ const LeaveHero: React.FC = () => (
           <span>/</span>
           <a href="#features" className="hover:text-[#111827] transition-colors">Features</a>
           <span>/</span>
-          <span className="font-semibold text-[#111827]">Leave Management</span>
+          <span className="font-semibold text-[#111827]">Time-off Management</span>
         </div>
       </div>
     </div>
@@ -156,13 +156,13 @@ const LeaveHero: React.FC = () => (
 
           <div className="w-full max-w-[760px]">
             <h1 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[32px] sm:text-[42px] lg:text-[52px] leading-[1.15] lg:leading-[60px] tracking-[-1.04px] text-[#111827]">
-              Leave, without the chasing
+              Time-off, without the chasing
             </h1>
           </div>
 
           <div className="w-full lg:w-[577px]">
             <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[18px] leading-[28px] sm:leading-[30px] text-[#6B7280]">
-              Apply in a few taps. Get approved without a follow-up message. Workzi turns leave from a back-and-forth into a flow everyone can trust — employees, managers and HR included.
+              Apply in a few taps. Get approved without a follow-up message. Workzi turns Time-off from a back-and-forth into a flow everyone can trust — employees, managers and HR included.
             </p>
           </div>
 
@@ -193,7 +193,7 @@ const LeaveHero: React.FC = () => (
     <div className="w-full bg-white py-[36px] px-6 lg:px-[112px]">
       <div className="w-full max-w-[1216px] mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between gap-[20px] overflow-x-auto no-scrollbar">
         {[
-          'Real-time leave balance',
+          'Real-time Time-off balance',
           'Automated approval chains',
           'Team availability calendar',
           'Syncs with attendance',
@@ -243,7 +243,7 @@ const SectionHowItWorks: React.FC = () => {
             From request to record, in one flow
           </h2>
           <p className="font-['Inter',sans-serif] font-normal text-[16.5px] leading-[27px] text-[#6B7280] text-center max-w-[536px]">
-            Leave shouldn&apos;t need a spreadsheet, a Slack message, and a manager&apos;s memory. Workzi connects every step, so nothing falls through.
+            Time-off shouldn&apos;t need a spreadsheet, a Slack message, and a manager&apos;s memory. Workzi connects every step, so nothing falls through.
           </p>
         </FadeUp>
 
@@ -296,7 +296,7 @@ const SectionEmployeeExperience: React.FC = () => (
         </div>
 
         <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[32px] sm:text-[42px] lg:text-[48px] leading-[1.18] sm:leading-[54px] lg:leading-[62px] tracking-[-1.12px] text-[#000000]">
-          Applying for leave should take less time than explaining it
+          Applying for Time-off should take less time than explaining it
         </h2>
 
         <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827]">
@@ -321,7 +321,7 @@ const SectionEmployeeExperience: React.FC = () => (
         </div>
       </FadeUp>
 
-      {/* Visual: Leave Request Form + Status Timeline */}
+      {/* Visual: Time-off Request Form + Status Timeline */}
       <FadeUp className="w-full lg:w-[611px] flex justify-center shrink-0">
         <div
           className="relative w-full max-w-[611px] h-[450px] sm:h-[480px] rounded-[16px] p-6 flex items-center justify-center overflow-hidden"
@@ -331,14 +331,14 @@ const SectionEmployeeExperience: React.FC = () => (
         >
           <div className="w-full max-w-[518px] bg-white border border-[#E5E7EB] rounded-[16px] p-[24px] flex flex-col gap-[16px] shadow-xl">
             <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[18px] leading-[22px] text-[#111827]">
-              Apply for Leave
+              Apply for Time-off
             </span>
 
             <div className="space-y-3">
               <div>
-                <label className="block text-[11px] font-bold text-[#6B7280] uppercase mb-1">Leave Type</label>
+                <label className="block text-[11px] font-bold text-[#6B7280] uppercase mb-1">Time-off Type</label>
                 <div className="w-full bg-[#F8FAFC] border border-[#E5E7EB] rounded-[9px] px-3 py-2 text-[13px] font-medium text-[#111827]">
-                  Casual Leave (6 days left)
+                  Casual Time-off (6 days left)
                 </div>
               </div>
               <div>
@@ -368,8 +368,8 @@ const SectionEmployeeExperience: React.FC = () => (
   </section>
 );
 
-/* ─── 4. SECTION 3 — Leave Balance ─── */
-const SectionLeaveBalance: React.FC = () => (
+/* ─── 4. SECTION 3 — Time-off Balance ─── */
+const SectionTimeOffBalance: React.FC = () => (
   <section className="w-full py-[80px] px-6 lg:px-[100px] bg-white">
     <Container className="max-w-[1240px] mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-[50px] lg:gap-[60px]">
       {/* Visual: Balance Summary Card with Progress Bars */}
@@ -382,13 +382,13 @@ const SectionLeaveBalance: React.FC = () => (
         >
           <div className="w-full max-w-[518px] bg-white border border-[#E5E7EB] rounded-[16px] p-[24px] flex flex-col gap-[18px] shadow-xl">
             <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[18px] text-[#111827]">
-              Real-time Leave Balances
+              Real-time Time-off Balances
             </span>
 
-            {/* Casual Leave */}
+            {/* Casual Time-off */}
             <div className="space-y-1">
               <div className="flex justify-between text-[13px] font-semibold text-[#111827]">
-                <span>Casual Leave</span>
+                <span>Casual Time-off</span>
                 <span>6 / 12 Days Remaining</span>
               </div>
               <div className="w-full h-[8px] bg-slate-100 rounded-full overflow-hidden">
@@ -396,10 +396,10 @@ const SectionLeaveBalance: React.FC = () => (
               </div>
             </div>
 
-            {/* Sick Leave */}
+            {/* Sick Time-off */}
             <div className="space-y-1">
               <div className="flex justify-between text-[13px] font-semibold text-[#111827]">
-                <span>Sick Leave</span>
+                <span>Sick Time-off</span>
                 <span>4 / 8 Days Remaining</span>
               </div>
               <div className="w-full h-[8px] bg-slate-100 rounded-full overflow-hidden">
@@ -407,10 +407,10 @@ const SectionLeaveBalance: React.FC = () => (
               </div>
             </div>
 
-            {/* Earned Leave */}
+            {/* Earned Time-off */}
             <div className="space-y-1">
               <div className="flex justify-between text-[13px] font-semibold text-[#111827]">
-                <span>Earned Leave</span>
+                <span>Earned Time-off</span>
                 <span>9 / 15 Days Remaining</span>
               </div>
               <div className="w-full h-[8px] bg-slate-100 rounded-full overflow-hidden">
@@ -424,7 +424,7 @@ const SectionLeaveBalance: React.FC = () => (
       <FadeUp className="flex flex-col items-start max-w-[549px] w-full gap-[24px]">
         <div className="inline-flex items-center px-[14px] py-[5px] rounded-[50px] bg-[#F0F9F0] gap-[6px]">
           <span className="font-['Inter',sans-serif] font-semibold text-[12px] leading-[15px] text-[#3B8A3E]">
-            Leave Balance
+            Time-off Balance
           </span>
         </div>
 
@@ -433,12 +433,12 @@ const SectionLeaveBalance: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827]">
-          Every leave type, every balance, updated the moment a request is approved. No inquiries, no guesswork, no end-of-year surprises.
+          Every Time-off type, every balance, updated the moment a request is approved. No inquiries, no guesswork, no end-of-year surprises.
         </p>
 
         <div className="flex flex-col gap-[14px] pt-[13px] w-full">
           {[
-            'Real-time balance by leave type',
+            'Real-time balance by Time-off type',
             'Automatic accrual based on policy',
             'Full history of used, pending and available days',
           ].map((item, idx) => (
@@ -508,8 +508,8 @@ const SectionApprovalWorkflow: React.FC = () => (
               <span>Sarah Anderson</span>
             </div>
             <div className="flex justify-between items-center py-[6px] border-b border-slate-100 text-[13px] font-['Inter',sans-serif] font-semibold text-[#111827]">
-              <span className="text-[#6B7280]">Leave Type</span>
-              <span>Casual Leave</span>
+              <span className="text-[#6B7280]">Time-off Type</span>
+              <span>Casual Time-off</span>
             </div>
             <div className="flex justify-between items-center py-[6px] border-b border-slate-100 text-[13px] font-['Inter',sans-serif] font-semibold text-[#111827]">
               <span className="text-[#6B7280]">Dates</span>
@@ -538,10 +538,10 @@ const SectionApprovalWorkflow: React.FC = () => (
 /* ─── 6. SECTION 5 — Records & History Table ─── */
 const SectionRecordsHistory: React.FC = () => {
   const rows = [
-    { name: 'Sarah Anderson', type: 'Casual Leave', dates: 'Aug 12 — Aug 14', days: '3 Days', status: 'Approved', bg: 'bg-[#EAFBF3]', text: 'text-[#15803D]' },
-    { name: 'Michael Kim', type: 'Sick Leave', dates: 'Aug 02 — Aug 03', days: '2 Days', status: 'Approved', bg: 'bg-[#EAFBF3]', text: 'text-[#15803D]' },
-    { name: 'Priya Rao', type: 'Earned Leave', dates: 'Aug 18 — Aug 22', days: '5 Days', status: 'Pending', bg: 'bg-[#FEF3E2]', text: 'text-[#B45309]' },
-    { name: 'David Torres', type: 'Casual Leave', dates: 'Jul 24 — Jul 24', days: '1 Day', status: 'Declined', bg: 'bg-[#FEE2E2]', text: 'text-[#DC2626]' },
+    { name: 'Sarah Anderson', type: 'Casual Time-off', dates: 'Aug 12 — Aug 14', days: '3 Days', status: 'Approved', bg: 'bg-[#EAFBF3]', text: 'text-[#15803D]' },
+    { name: 'Michael Kim', type: 'Sick Time-off', dates: 'Aug 02 — Aug 03', days: '2 Days', status: 'Approved', bg: 'bg-[#EAFBF3]', text: 'text-[#15803D]' },
+    { name: 'Priya Rao', type: 'Earned Time-off', dates: 'Aug 18 — Aug 22', days: '5 Days', status: 'Pending', bg: 'bg-[#FEF3E2]', text: 'text-[#B45309]' },
+    { name: 'David Torres', type: 'Casual Time-off', dates: 'Jul 24 — Jul 24', days: '1 Day', status: 'Declined', bg: 'bg-[#FEE2E2]', text: 'text-[#DC2626]' },
   ];
 
   return (
@@ -549,16 +549,16 @@ const SectionRecordsHistory: React.FC = () => {
       <Container className="max-w-[1280px] mx-auto flex flex-col items-center gap-[52px]">
         <FadeUp className="flex flex-col items-center text-center max-w-[620px] mx-auto gap-[13px]">
           <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[32px] sm:text-[40px] leading-[46px] tracking-[-0.8px] text-[#111827] text-center max-w-[566px]">
-            Every leave request, easy to find
+            Every Time-off request, easy to find
           </h2>
           <p className="font-['Inter',sans-serif] font-normal text-[16.5px] leading-[27px] text-[#6B7280] text-center max-w-[522px]">
-            Filter by employee, leave type, status or date range — and get exactly the record you&apos;re after, without scrolling through a year of requests.
+            Filter by employee, Time-off type, status or date range — and get exactly the record you&apos;re after, without scrolling through a year of requests.
           </p>
         </FadeUp>
 
         <FadeUp className="w-full max-w-[1216px] bg-white border border-[#E5E7EB] rounded-[16px] overflow-hidden shadow-xs">
           <div className="w-full bg-[#F8FAFC] border-b border-[#E5E7EB] px-[18px] py-[16px] flex items-center gap-[10px]">
-            {['All Statuses', 'Casual Leave', 'Sick Leave', 'Earned Leave'].map((chip, idx) => (
+            {['All Statuses', 'Casual Time-off', 'Sick Time-off', 'Earned Time-off'].map((chip, idx) => (
               <span
                 key={idx}
                 className="bg-white border border-[#E5E7EB] text-[#6B7280] font-['Inter',sans-serif] font-semibold text-[12px] leading-[15px] px-[14px] py-[6px] rounded-full cursor-pointer hover:bg-slate-50 transition-colors"
@@ -573,7 +573,7 @@ const SectionRecordsHistory: React.FC = () => {
               <thead>
                 <tr className="bg-[#F8FAFC] text-[10.5px] font-['Inter',sans-serif] font-bold uppercase tracking-wider text-[#6B7280] h-[37px]">
                   <th className="pl-[18px] py-2">EMPLOYEE</th>
-                  <th className="py-2">LEAVE TYPE</th>
+                  <th className="py-2">Time-off TYPE</th>
                   <th className="py-2">DATES</th>
                   <th className="py-2">DURATION</th>
                   <th className="pr-[18px] py-2">STATUS</th>
@@ -622,16 +622,16 @@ const SectionManagerView: React.FC = () => (
               <div className="p-3 bg-[#F8FAFC] border border-[#E5E7EB] rounded-[10px] flex justify-between items-center">
                 <div>
                   <span className="font-bold text-[#111827] block">Sarah Anderson</span>
-                  <span className="text-[#6B7280]">Casual Leave</span>
+                  <span className="text-[#6B7280]">Casual Time-off</span>
                 </div>
                 <span className="bg-[#EEEEFF] text-[#5C5CFF] font-bold px-2.5 py-1 rounded-full text-[11px]">
-                  On Leave Today
+                  On Time-off Today
                 </span>
               </div>
               <div className="p-3 bg-[#F8FAFC] border border-[#E5E7EB] rounded-[10px] flex justify-between items-center">
                 <div>
                   <span className="font-bold text-[#111827] block">Michael Kim</span>
-                  <span className="text-[#6B7280]">Upcoming Sick Leave</span>
+                  <span className="text-[#6B7280]">Upcoming Sick Time-off</span>
                 </div>
                 <span className="bg-[#FEF3E2] text-[#B45309] font-bold px-2.5 py-1 rounded-full text-[11px]">
                   Aug 15
@@ -668,9 +668,9 @@ const SectionManagerView: React.FC = () => (
 
         <div className="flex flex-col gap-[14px] pt-[13px] w-full">
           {[
-            'Team leave calendar, always current',
+            'Team Time-off calendar, always current',
             'Pending approvals surfaced automatically',
-            'Spot overlapping leave before it becomes a staffing gap',
+            'Spot overlapping Time-off before it becomes a staffing gap',
           ].map((item, idx) => (
             <div key={idx} className="flex items-center gap-[12px]">
               <div className="w-[22px] h-[22px] rounded-[6px] bg-[#10B981]/12 flex items-center justify-center shrink-0">
@@ -690,10 +690,10 @@ const SectionManagerView: React.FC = () => (
 /* ─── 8. SECTION 7 — Calendar Integration ─── */
 const SectionCalendarIntegration: React.FC = () => {
   const steps = [
-    { num: '01', title: 'Leave requested', desc: 'Employee submits request.' },
+    { num: '01', title: 'Time-off requested', desc: 'Employee submits request.' },
     { num: '02', title: 'Manager approves', desc: 'Approved in one click.' },
     { num: '03', title: 'Calendar updates', desc: 'Attendance calendar syncs.' },
-    { num: '04', title: 'Reflected everywhere', desc: 'Tag shows On Leave.' },
+    { num: '04', title: 'Reflected everywhere', desc: 'Tag shows On Time-off.' },
   ];
 
   return (
@@ -701,10 +701,10 @@ const SectionCalendarIntegration: React.FC = () => {
       <Container className="max-w-[1280px] mx-auto flex flex-col items-center gap-[24px]">
         <FadeUp className="flex flex-col items-center text-center max-w-[620px] mx-auto gap-[13.11px]">
           <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[36px] sm:text-[48px] lg:text-[55px] leading-[62px] tracking-[-1px] text-[#111827] text-center max-w-[620px]">
-            Leave and attendance, finally in sync
+            Time-off and attendance, finally in sync
           </h2>
           <p className="font-['Inter',sans-serif] font-normal text-[16.5px] leading-[27px] text-[#6B7280] text-center max-w-[514px]">
-            Approved leave shouldn&apos;t live in a separate system waiting to be cross-checked. The moment it&apos;s approved, it shows up on the attendance calendar — no manual updates required.
+            Approved Time-off shouldn&apos;t live in a separate system waiting to be cross-checked. The moment it&apos;s approved, it shows up on the attendance calendar — no manual updates required.
           </p>
         </FadeUp>
 
@@ -759,14 +759,14 @@ const SectionHolidayCalendar: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827]">
-          Organization-wide holidays, visible to everyone, factored into leave and attendance automatically — so nobody applies for leave on a day that&apos;s already off.
+          Organization-wide holidays, visible to everyone, factored into Time-off and attendance automatically — so nobody applies for Time-off on a day that&apos;s already off.
         </p>
 
         <div className="flex flex-col gap-[14px] pt-[13px] w-full">
           {[
             'Org-wide holiday list, always visible',
             'Region or location-specific holidays supported',
-            'Automatically excluded from leave balance calculations',
+            'Automatically excluded from Time-off balance calculations',
           ].map((item, idx) => (
             <div key={idx} className="flex items-center gap-[12px]">
               <div className="w-[22px] h-[22px] rounded-[6px] bg-[#10B981]/12 flex items-center justify-center shrink-0">
@@ -829,9 +829,8 @@ const SectionHROverview: React.FC = () => (
           {['Overview', 'Policies', 'Requests', 'Calendar Settings'].map((tab, idx) => (
             <span
               key={idx}
-              className={`font-['Inter',sans-serif] font-semibold text-[13px] px-[16px] py-[8px] rounded-full cursor-pointer transition-colors ${
-                idx === 0 ? 'bg-[#5C5CFF] text-white' : 'bg-white border border-[#E5E7EB] text-[#6B7280]'
-              }`}
+              className={`font-['Inter',sans-serif] font-semibold text-[13px] px-[16px] py-[8px] rounded-full cursor-pointer transition-colors ${idx === 0 ? 'bg-[#5C5CFF] text-white' : 'bg-white border border-[#E5E7EB] text-[#6B7280]'
+                }`}
             >
               {tab}
             </span>
@@ -840,8 +839,8 @@ const SectionHROverview: React.FC = () => (
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 bg-[#F8FAFC] border border-[#E5E7EB] rounded-[12px]">
-            <h4 className="font-bold text-[#111827] text-[14px] mb-1">Leave Types & Accruals</h4>
-            <p className="text-[#6B7280] text-[13px]">Configure leave types, monthly accrual rates, and carry-over limits.</p>
+            <h4 className="font-bold text-[#111827] text-[14px] mb-1">Time-off Types & Accruals</h4>
+            <p className="text-[#6B7280] text-[13px]">Configure Time-off types, monthly accrual rates, and carry-over limits.</p>
           </div>
           <div className="p-4 bg-[#F8FAFC] border border-[#E5E7EB] rounded-[12px]">
             <h4 className="font-bold text-[#111827] text-[14px] mb-1">Approval Chains</h4>
@@ -859,25 +858,25 @@ const SectionRoleExperience: React.FC = () => {
     {
       title: 'Employee',
       bullets: [
-        'Apply for leave',
-        'View leave balance',
+        'Apply for Time-off',
+        'View Time-off balance',
         'Cancel a pending request',
-        'View leave history',
+        'View Time-off history',
       ],
     },
     {
       title: 'Manager',
       bullets: [
-        'View team leave calendar',
+        'View team Time-off calendar',
         'Approve or decline requests',
-        'Spot overlapping leave',
+        'Spot overlapping Time-off',
         'Understand team availability',
       ],
     },
     {
       title: 'HR / Admin',
       bullets: [
-        'Configure leave types & policies',
+        'Configure Time-off types & policies',
         'Set accrual rules',
         'Manage approval chains',
         'Maintain holiday calendar',
@@ -919,29 +918,29 @@ const SectionRoleExperience: React.FC = () => {
 };
 
 /* ─── 12. FAQ SECTION ─── */
-const LeaveFAQ: React.FC = () => {
+const TimeOffFAQ: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqs = [
     {
-      question: 'Does leave balance update automatically after approval?',
+      question: 'Does Time-off balance update automatically after approval?',
       answer: 'Yes. The moment a request is approved, the balance updates — no manual recalculation needed.',
     },
     {
-      question: 'Can employees cancel a leave request after applying?',
+      question: 'Can employees cancel a Time-off request after applying?',
       answer: 'Yes, as long as it\'s still pending approval. Once approved, cancellation follows the same review flow as the original request.',
     },
     {
-      question: 'Does approved leave show up in attendance automatically?',
-      answer: 'Yes. Leave and attendance are connected, so approved days reflect on the attendance calendar without any manual update.',
+      question: 'Does approved Time-off show up in attendance automatically?',
+      answer: 'Yes. Time-off and attendance are connected, so approved days reflect on the attendance calendar without any manual update.',
     },
     {
-      question: 'Can different departments have different leave policies?',
-      answer: 'Yes. HR can configure leave types, accrual rules and approval chains at the department or role level.',
+      question: 'Can different departments have different Time-off policies?',
+      answer: 'Yes. HR can configure Time-off types, accrual rules and approval chains at the department or role level.',
     },
     {
-      question: 'Are organization holidays factored into leave calculations?',
-      answer: 'Yes. The holiday calendar is excluded automatically, so employees aren\'t charged leave for days the organization is already closed.',
+      question: 'Are organization holidays factored into Time-off calculations?',
+      answer: 'Yes. The holiday calendar is excluded automatically, so employees aren\'t charged Time-off for days the organization is already closed.',
     },
   ];
 
@@ -953,7 +952,7 @@ const LeaveFAQ: React.FC = () => {
             Frequently Asked Questions
           </h2>
           <p className="font-['Inter',sans-serif] font-normal text-[17px] leading-[28px] text-[#6B7280] text-center max-w-[530px]">
-            Everything you need to know about Workzi leave management.
+            Everything you need to know about Workzi Time-off management.
           </p>
         </FadeUp>
 
@@ -971,9 +970,8 @@ const LeaveFAQ: React.FC = () => {
                       {faq.question}
                     </span>
                     <div
-                      className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${
-                        isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
-                      }`}
+                      className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
+                        }`}
                     >
                       {isOpen ? <X size={15} strokeWidth={2.5} /> : <Plus size={15} strokeWidth={2.5} />}
                     </div>
@@ -1000,7 +998,7 @@ const LeaveFAQ: React.FC = () => {
 };
 
 /* ─── 13. CLOSING CTA SECTION ─── */
-const LeaveCTA: React.FC = () => (
+const TimeOffCTA: React.FC = () => (
   <section className="w-full py-[72px] px-6 lg:px-[128px] bg-white">
     <Container className="max-w-[1216px] mx-auto">
       <div
@@ -1011,10 +1009,10 @@ const LeaveCTA: React.FC = () => (
         }}
       >
         <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[32px] sm:text-[42px] lg:text-[48px] leading-[1.2] lg:leading-[64px] tracking-[-1.12px] text-white max-w-[634px] text-center">
-          Make leave simple, from the first request
+          Make Time-off simple, from the first request
         </h2>
         <p className="font-['Inter',sans-serif] font-normal text-[16px] leading-[26px] text-white/85 max-w-[511px] text-center">
-          Give employees a faster way to apply, and give your organization a leave process that actually holds up.
+          Give employees a faster way to apply, and give your organization a Time-off process that actually holds up.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-[12px] pt-[22.7px] w-full max-w-[880px]">
           <a
@@ -1035,14 +1033,14 @@ const LeaveCTA: React.FC = () => (
   </section>
 );
 
-/* ─── MAIN LEAVE MANAGEMENT PAGE COMPONENT ─── */
+/* ─── MAIN Time-off MANAGEMENT PAGE COMPONENT ─── */
 export const LeaveManagementPage: React.FC = () => {
   return (
     <div className="w-full bg-white min-h-screen">
-      <LeaveHero />
+      <TimeOffHero />
       <SectionHowItWorks />
       <SectionEmployeeExperience />
-      <SectionLeaveBalance />
+      <SectionTimeOffBalance />
       <SectionApprovalWorkflow />
       <SectionRecordsHistory />
       <SectionManagerView />
@@ -1050,8 +1048,8 @@ export const LeaveManagementPage: React.FC = () => {
       <SectionHolidayCalendar />
       <SectionHROverview />
       <SectionRoleExperience />
-      <LeaveFAQ />
-      <LeaveCTA />
+      <TimeOffFAQ />
+      <TimeOffCTA />
     </div>
   );
 };

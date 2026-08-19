@@ -29,7 +29,7 @@ const MobileExperienceHeroChart: React.FC = () => {
     >
       {/* Real iPhone Chassis Frame */}
       <div className="w-[210px] sm:w-[225px] h-[350px] sm:h-[370px] bg-[#1C1C1E] rounded-[42px] border-[2.5px] border-[#3A3A3C] shadow-[0_22px_55px_-12px_rgba(0,0,0,0.35)] relative flex flex-col p-[6px] z-10 font-['Inter',sans-serif]">
-        
+
         {/* Physical Side Buttons */}
         {/* Left Side: Action Button + Volume Keys */}
         <div className="w-[2.5px] h-3 bg-[#48484A] absolute -left-[4.5px] top-14 rounded-l-xs" />
@@ -40,7 +40,7 @@ const MobileExperienceHeroChart: React.FC = () => {
 
         {/* Inner Display Screen */}
         <div className="bg-[#F8FAFC] border-[2px] border-black rounded-[36px] h-full flex flex-col justify-between overflow-hidden relative pt-1.5 pb-2 px-2.5 text-[#111827]">
-          
+
           {/* Dynamic Island */}
           <div className="w-[66px] h-[15px] bg-black rounded-full mx-auto absolute top-2 left-[50%] -translate-x-[50%] z-40 flex items-center justify-between px-2">
             <div className="w-[4.5px] h-[4.5px] rounded-full bg-[#10B981]" />
@@ -91,7 +91,7 @@ const MobileExperienceHeroChart: React.FC = () => {
           {/* Quick Action Grid */}
           <div className="grid grid-cols-4 gap-1 mb-1.5">
             {[
-              { label: 'Leave', icon: Calendar, color: 'bg-emerald-50 text-emerald-600' },
+              { label: 'Time-off', icon: Calendar, color: 'bg-emerald-50 text-emerald-600' },
               { label: 'Shifts', icon: Clock, color: 'bg-indigo-50 text-indigo-600' },
               { label: 'Tasks', icon: ListTodo, color: 'bg-amber-50 text-amber-600' },
               { label: 'Approve', icon: UserCheck, color: 'bg-purple-50 text-purple-600' },
@@ -180,7 +180,7 @@ const MobileHero: React.FC = () => (
 
           <div className="w-full lg:w-[577px]">
             <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[18px] leading-[28px] sm:leading-[30px] text-[#6B7280]">
-              Check in from a job site. Approve a request between meetings. Apply for leave from the couch. Workzi&apos;s mobile app carries the whole platform in your pocket — not a stripped-down version of it.
+              Check in from a job site. Approve a request between meetings. Apply for Time-off from the couch. Workzi&apos;s mobile app carries the whole platform in your pocket — not a stripped-down version of it.
             </p>
           </div>
 
@@ -376,8 +376,8 @@ const SectionAttendanceOnTheGo: React.FC = () => (
   </section>
 );
 
-/* ─── 4. SECTION 3 — Leave & Approvals on Mobile ─── */
-const SectionLeaveApprovalsMobile: React.FC = () => (
+/* ─── 4. SECTION 3 — Time-off & Approvals on Mobile ─── */
+const SectionTimeOffApprovalsMobile: React.FC = () => (
   <section className="w-full py-[80px] px-6 lg:px-[100px] bg-white">
     <Container className="max-w-[1240px] mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-[50px] lg:gap-[60px]">
       {/* Visual: Phone Approval Card */}
@@ -393,7 +393,7 @@ const SectionLeaveApprovalsMobile: React.FC = () => (
 
             <div className="bg-[#F8FAFC] border-[1.5px] border-black rounded-[34px] h-full p-3 flex flex-col justify-between relative text-left">
               <div className="w-14 h-3 bg-black rounded-full mx-auto mb-1" />
-              
+
               <div>
                 <span className="font-bold text-[#5C5CFF] uppercase text-[8.5px] tracking-wider block mb-1">APPROVAL REQUEST</span>
                 <div className="flex items-center gap-1.5 mb-2">
@@ -408,7 +408,7 @@ const SectionLeaveApprovalsMobile: React.FC = () => (
 
                 <div className="p-2 bg-white border rounded-[10px] text-[9.5px] space-y-1 mb-2">
                   <div className="flex justify-between text-[#6B7280]">
-                    <span>Type:</span> <span className="font-bold text-[#111827]">Casual Leave</span>
+                    <span>Type:</span> <span className="font-bold text-[#111827]">Casual Time-off</span>
                   </div>
                   <div className="flex justify-between text-[#6B7280]">
                     <span>Dates:</span> <span className="font-bold text-[#111827]">Aug 12 - Aug 14</span>
@@ -446,12 +446,12 @@ const SectionLeaveApprovalsMobile: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827]">
-          Apply for leave between errands. Approve a team member&apos;s request while waiting for a meeting to start. Mobile means the request doesn&apos;t sit in a queue until someone opens a laptop.
+          Apply for Time-off between errands. Approve a team member&apos;s request while waiting for a meeting to start. Mobile means the request doesn&apos;t sit in a queue until someone opens a laptop.
         </p>
 
         <div className="flex flex-col gap-[14px] pt-[13px] w-full">
           {[
-            'Apply for leave and track status from the app',
+            'Apply for Time-off and track status from the app',
             'Managers approve or decline requests with full context, on the go',
             'Push notification the moment a decision is needed',
           ].map((item, idx) => (
@@ -530,8 +530,8 @@ const SectionPushNotifications: React.FC = () => (
                   <span className="flex items-center gap-1"><Bell size={9} /> WORKZI</span>
                   <span>Now</span>
                 </div>
-                <span className="font-bold block text-white">Leave Request Approved ✓</span>
-                <span className="text-slate-300 text-[8.5px]">Your Casual leave for Aug 12 is approved.</span>
+                <span className="font-bold block text-white">Time-off Request Approved ✓</span>
+                <span className="text-slate-300 text-[8.5px]">Your Casual Time-off for Aug 12 is approved.</span>
               </div>
 
               <div className="p-2 bg-white/10 backdrop-blur-md border border-white/15 rounded-[12px] text-[9.5px]">
@@ -566,7 +566,7 @@ const SectionOfflineSync: React.FC = () => (
           <div className="w-[210px] h-[300px] bg-[#1C1C1E] border-[2.5px] border-[#3A3A3C] rounded-[38px] p-[5px] shadow-2xl flex flex-col justify-between overflow-hidden font-['Inter',sans-serif] relative">
             <div className="bg-[#F8FAFC] border-[1.5px] border-black rounded-[32px] h-full p-3 flex flex-col justify-between text-center relative">
               <div className="w-14 h-3 bg-black rounded-full mx-auto mb-1" />
-              
+
               <div className="my-auto space-y-1.5">
                 <div className="w-10 h-10 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center mx-auto">
                   <WifiOff size={18} />
@@ -636,7 +636,7 @@ const SectionHROverview: React.FC = () => (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 bg-[#F8FAFC] border border-[#E5E7EB] rounded-[12px]">
             <h4 className="font-bold text-[#111827] text-[14px] mb-1">Mobile Manager Actions</h4>
-            <p className="text-[#6B7280] text-[13px]">Approve leave, corrections and task-related requests on the move.</p>
+            <p className="text-[#6B7280] text-[13px]">Approve Time-off, corrections and task-related requests on the move.</p>
           </div>
           <div className="p-4 bg-[#F8FAFC] border border-[#E5E7EB] rounded-[12px]">
             <h4 className="font-bold text-[#111827] text-[14px] mb-1">Team Availability Overview</h4>
@@ -655,7 +655,7 @@ const SectionRoleExperience: React.FC = () => {
       title: 'Employee',
       bullets: [
         'Check in / check out on the go',
-        'Apply for leave, view balance',
+        'Apply for Time-off, view balance',
         'Update task status',
         'Get push notifications',
       ],
@@ -731,7 +731,7 @@ const MobileFAQ: React.FC = () => {
     },
     {
       question: 'Will I miss anything by using the app instead of the desktop version?',
-      answer: 'No. Core actions across attendance, leave, tasks and approvals are available on mobile — it\'s the same platform, not a limited version.',
+      answer: 'No. Core actions across attendance, Time-off, tasks and approvals are available on mobile — it\'s the same platform, not a limited version.',
     },
     {
       question: 'Can I control which notifications I get?',
@@ -765,9 +765,8 @@ const MobileFAQ: React.FC = () => {
                       {faq.question}
                     </span>
                     <div
-                      className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${
-                        isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
-                      }`}
+                      className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
+                        }`}
                     >
                       {isOpen ? <X size={15} strokeWidth={2.5} /> : <Plus size={15} strokeWidth={2.5} />}
                     </div>
@@ -825,10 +824,10 @@ const MobileCTA: React.FC = () => (
             className="bg-transparent hover:bg-white/10 border border-white/40 text-white font-['DM_Sans',sans-serif] font-bold text-[15px] leading-[24px] px-[28px] py-[12px] rounded-[100px] transition-all cursor-pointer flex items-center justify-center gap-2.5 h-[52px]"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-white shrink-0">
-              <path d="M3.5 2.5C3.18 2.82 3 3.32 3 3.95V20.05C3 20.68 3.18 21.18 3.5 21.5L3.6 21.6L12.5 12.7V11.3L3.6 2.4L3.5 2.5Z" fill="white"/>
-              <path d="M15.4 15.6L12.5 12.7V11.3L15.4 8.4L15.5 8.5L19 10.5C20 11.1 20 12.1 19 12.7L15.5 14.7L15.4 15.6Z" fill="white" opacity="0.95"/>
-              <path d="M15.5 14.7L12.5 11.7L3.5 20.7C3.9 21.1 4.5 21.2 5.2 20.8L15.5 14.7Z" fill="white" opacity="0.8"/>
-              <path d="M15.5 8.5L5.2 2.4C4.5 2 3.9 2.1 3.5 2.5L12.5 11.5L15.5 8.5Z" fill="white" opacity="0.85"/>
+              <path d="M3.5 2.5C3.18 2.82 3 3.32 3 3.95V20.05C3 20.68 3.18 21.18 3.5 21.5L3.6 21.6L12.5 12.7V11.3L3.6 2.4L3.5 2.5Z" fill="white" />
+              <path d="M15.4 15.6L12.5 12.7V11.3L15.4 8.4L15.5 8.5L19 10.5C20 11.1 20 12.1 19 12.7L15.5 14.7L15.4 15.6Z" fill="white" opacity="0.95" />
+              <path d="M15.5 14.7L12.5 11.7L3.5 20.7C3.9 21.1 4.5 21.2 5.2 20.8L15.5 14.7Z" fill="white" opacity="0.8" />
+              <path d="M15.5 8.5L5.2 2.4C4.5 2 3.9 2.1 3.5 2.5L12.5 11.5L15.5 8.5Z" fill="white" opacity="0.85" />
             </svg>
             <span>Google Play</span>
           </a>
@@ -845,7 +844,7 @@ export const MobileExperiencePage: React.FC = () => {
       <MobileHero />
       <SectionHowItWorks />
       <SectionAttendanceOnTheGo />
-      <SectionLeaveApprovalsMobile />
+      <SectionTimeOffApprovalsMobile />
       <SectionPushNotifications />
       <SectionOfflineSync />
       <SectionHROverview />

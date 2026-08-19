@@ -20,7 +20,7 @@ export const HowItWorks: React.FC = () => {
     {
       step: 'STEP 03',
       title: 'Manager Reviews',
-      desc: 'Managers view live dashboards, approve leave, and catch attendance issues before they become problems.',
+      desc: 'Managers view live dashboards, approve Time-off, and catch attendance issues before they become problems.',
       icon: <Eye className="w-7 h-7 text-[#5B5FFF]" />,
     },
     {

@@ -17,7 +17,7 @@ export const CTA: React.FC = () => {
       {/* Content Overlay */}
       <Container className="relative z-20 max-w-[600px] flex flex-col items-center gap-[13.2px] px-4">
         {/* Title */}
-        <h2 
+        <h2
           className="text-white text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-semibold leading-tight lg:leading-[48px] text-center max-w-[600px]"
           style={{ textShadow: '0px 4px 4px rgba(0, 0, 0, 0.04)' }}
         >
@@ -26,7 +26,7 @@ export const CTA: React.FC = () => {
 
         {/* Subtitle */}
         <p className="text-white text-[13.5px] sm:text-[14px] font-medium leading-[20px] sm:leading-[22px] max-w-[440px] text-center">
-          Manage attendance, leave, and employee operations from one platform. Setup takes minutes.
+          Manage attendance, Time-off, and employee operations from one platform. Setup takes minutes.
         </p>
 
         {/* Action Buttons */}

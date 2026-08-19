@@ -12,8 +12,8 @@ export const FeaturesFAQ: React.FC = () => {
       answer: 'Workzi uses GPS-based geo-fencing to verify that employees are within the designated office range before check-in. Once inside the geo-fence, they slide to check in and the system records their time, location, and shift data — all in real time. Managers see updates immediately on the HR dashboard.',
     },
     {
-      question: 'Can employees apply for leave from mobile?',
-      answer: 'Yes! The mobile app allows team members to view balances, submit multi-type leave requests, attach necessary details, and receive real-time notifications on approval statuses.',
+      question: 'Can employees apply for Time-off from mobile?',
+      answer: 'Yes! The mobile app allows team members to view balances, submit multi-type Time-off requests, attach necessary details, and receive real-time notifications on approval statuses.',
     },
     {
       question: 'Does the platform support approval workflows?',
@@ -65,11 +65,10 @@ export const FeaturesFAQ: React.FC = () => {
                     {faq.question}
                   </span>
                   <div
-                    className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${
-                      isOpen
+                    className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${isOpen
                         ? 'bg-[#5B5FFF] text-white'
                         : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
-                    }`}
+                      }`}
                   >
                     {isOpen ? <X size={15} strokeWidth={2.5} /> : <Plus size={15} strokeWidth={2.5} />}
                   </div>

@@ -664,7 +664,7 @@ const SectionMonthlySummary: React.FC = () => {
   const stats = [
     { num: '19', label: 'Present Days' },
     { num: '2', label: 'Absent Days' },
-    { num: '3', label: 'Leave' },
+    { num: '3', label: 'Time-off' },
     { num: '2', label: 'WFH' },
     { num: '168h', label: 'Total Hours' },
   ];
@@ -1105,13 +1105,13 @@ const SectionScheduleIntegration: React.FC = () => (
   </section>
 );
 
-/* ─── 13. SECTION: Leave and attendance stay connected (Figma Exact Specs) ─── */
-const SectionLeaveAttendance: React.FC = () => {
+/* ─── 13. SECTION: Time-off and attendance stay connected (Figma Exact Specs) ─── */
+const SectionTimeOffAttendance: React.FC = () => {
   const steps = [
     {
       num: '01',
-      title: 'Leave Request',
-      desc: 'Employee submits a leave request.',
+      title: 'Time-off Request',
+      desc: 'Employee submits a Time-off request.',
     },
     {
       num: '02',
@@ -1125,7 +1125,7 @@ const SectionLeaveAttendance: React.FC = () => {
     },
     {
       num: '04',
-      title: 'On Leave',
+      title: 'On Time-off',
       desc: 'Reflected clearly across records.',
     },
   ];
@@ -1136,10 +1136,10 @@ const SectionLeaveAttendance: React.FC = () => {
         {/* Header */}
         <FadeUp className="flex flex-col items-center text-center max-w-[620px] mx-auto gap-[13.11px]">
           <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[36px] sm:text-[48px] lg:text-[55px] leading-[62px] tracking-[-1px] text-[#111827] text-center max-w-[620px]">
-            Leave and attendance stay connected
+            Time-off and attendance stay connected
           </h2>
           <p className="font-['Inter',sans-serif] font-normal text-[16.5px] leading-[27px] text-[#6B7280] text-center max-w-[514px]">
-            Approved leave appears naturally within attendance context — no disconnected HR records.
+            Approved Time-off appears naturally within attendance context — no disconnected HR records.
           </p>
         </FadeUp>
 
@@ -1184,10 +1184,10 @@ const SectionLeaveAttendance: React.FC = () => {
         {/* Link */}
         <FadeUp className="pt-2 text-center">
           <a
-            href="#simplify-leave"
+            href="#simplify-Time-off"
             className="font-['Inter',sans-serif] font-bold text-[15px] leading-[18px] text-[#5C5CFF] hover:underline inline-flex items-center gap-1"
           >
-            Explore Leave Management →
+            Explore Time-off Management →
           </a>
         </FadeUp>
       </Container>
@@ -1364,11 +1364,10 @@ const SectionAttendanceRules: React.FC = () => {
                   e.stopPropagation();
                   toggleSetting(idx);
                 }}
-                className={`w-[44px] h-[24px] rounded-full p-[2px] transition-all duration-300 ease-in-out flex items-center cursor-pointer shadow-inner ${
-                  item.enabled
+                className={`w-[44px] h-[24px] rounded-full p-[2px] transition-all duration-300 ease-in-out flex items-center cursor-pointer shadow-inner ${item.enabled
                     ? 'bg-[#5C5CFF] justify-end hover:bg-[#4F46E5]'
                     : 'bg-[#E5E7EB] justify-start hover:bg-[#D1D5DB]'
-                }`}
+                  }`}
               >
                 <motion.div
                   layout
@@ -1513,9 +1512,9 @@ const SectionProductDiscovery: React.FC = () => {
   const products = [
     {
       icon: '🏖',
-      title: 'Leave Management',
+      title: 'Time-off Management',
       desc: 'Balances, policies, requests, and approvals in one place.',
-      href: '#simplify-leave',
+      href: '#simplify-Time-off',
     },
     {
       icon: '🗓',
@@ -1651,9 +1650,8 @@ const AttendanceFAQ: React.FC = () => {
                       {faq.question}
                     </span>
                     <div
-                      className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${
-                        isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
-                      }`}
+                      className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
+                        }`}
                     >
                       {isOpen ? <X size={15} strokeWidth={2.5} /> : <Plus size={15} strokeWidth={2.5} />}
                     </div>
@@ -1731,7 +1729,7 @@ export const AttendanceManagementPage: React.FC = () => {
       <SectionWFHWorkflow />
       <SectionCalendarContext />
       <SectionScheduleIntegration />
-      <SectionLeaveAttendance />
+      <SectionTimeOffAttendance />
       <SectionHROverview />
       <SectionAttendanceRules />
       <SectionRoleExperience />

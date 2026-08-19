@@ -198,7 +198,7 @@ const SectionHowItWorks: React.FC = () => {
     {
       num: '03',
       title: 'Data syncs automatically',
-      desc: 'Attendance, leave and employee data flow both ways, on schedule.',
+      desc: 'Attendance, Time-off and employee data flow both ways, on schedule.',
     },
     {
       num: '04',
@@ -253,13 +253,13 @@ const SectionCategories: React.FC = () => {
     {
       icon: Database,
       title: 'Payroll & Finance',
-      desc: 'Sync attendance and leave data straight into payroll runs to eliminate manual CSV uploads.',
+      desc: 'Sync attendance and Time-off data straight into payroll runs to eliminate manual CSV uploads.',
       badge: 'Automated Sync',
     },
     {
       icon: MessageSquare,
       title: 'Communication',
-      desc: 'Slack, Microsoft Teams, Google Workspace for direct leave approvals and instant notifications.',
+      desc: 'Slack, Microsoft Teams, Google Workspace for direct Time-off approvals and instant notifications.',
       badge: 'Interactive Chat',
     },
     {
@@ -277,7 +277,7 @@ const SectionCategories: React.FC = () => {
     {
       icon: Calendar,
       title: 'Calendar Sync',
-      desc: 'Reflect leave, shifts, and WFH days in Google Calendar & Outlook calendars people already use.',
+      desc: 'Reflect Time-off, shifts, and WFH days in Google Calendar & Outlook calendars people already use.',
       badge: 'Live Status',
     },
     {
@@ -347,12 +347,12 @@ const SectionInChatApprovals: React.FC = () => (
               Approve a request without leaving the app you're already in
             </h2>
             <p className="font-['Inter',sans-serif] text-[16px] text-[#6B7280] leading-[28px] mb-6">
-              A leave request shouldn't require opening Workzi just to say yes. When Workzi is connected to Slack or Teams, approvals, corrections and requests show up right in the conversation — with enough context to act on the spot.
+              A Time-off request shouldn't require opening Workzi just to say yes. When Workzi is connected to Slack or Teams, approvals, corrections and requests show up right in the conversation — with enough context to act on the spot.
             </p>
             <ul className="space-y-3">
               {[
                 'Approve or decline directly from Slack or Microsoft Teams',
-                'Rich previews with leave balance & overlap warnings',
+                'Rich previews with Time-off balance & overlap warnings',
                 'Actions taken in chat reflect instantly back in Workzi',
               ].map((pt, i) => (
                 <li key={i} className="flex items-center gap-3 font-['Inter',sans-serif] text-sm text-[#111827] font-semibold">
@@ -386,7 +386,7 @@ const SectionInChatApprovals: React.FC = () => (
                     </div>
                     <div>
                       <h4 className="text-sm font-bold text-white">Alex Johnson</h4>
-                      <p className="text-xs text-slate-400">Requested Annual Leave</p>
+                      <p className="text-xs text-slate-400">Requested Annual Time-off</p>
                     </div>
                   </div>
                   <span className="px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 text-[11px] font-bold">
@@ -449,7 +449,7 @@ const SectionPayrollSync: React.FC = () => (
               <div className="space-y-3 mb-4">
                 {[
                   { title: 'Finalized Attendance Logs', count: '1,420 Records Verified', status: 'Passed' },
-                  { title: 'Leave & Overtime Calculations', count: '98.5 hrs OT calculated', status: 'Passed' },
+                  { title: 'Time-off & Overtime Calculations', count: '98.5 hrs OT calculated', status: 'Passed' },
                   { title: 'Discrepancy Sanity Check', count: '0 Anomalies Found', status: 'Passed' },
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center justify-between p-3 rounded-[12px] bg-slate-50 border border-slate-100 text-xs">
@@ -482,11 +482,11 @@ const SectionPayrollSync: React.FC = () => (
               Attendance data that reaches payroll without a spreadsheet in between
             </h2>
             <p className="font-['Inter',sans-serif] text-[16px] text-[#6B7280] leading-[28px] mb-6">
-              Manually exporting attendance for payroll is where errors creep in. Workzi syncs finalized attendance and leave data directly into your payroll system, on the schedule you set.
+              Manually exporting attendance for payroll is where errors creep in. Workzi syncs finalized attendance and Time-off data directly into your payroll system, on the schedule you set.
             </p>
             <ul className="space-y-3">
               {[
-                'Automatic sync of attendance and leave into payroll runs',
+                'Automatic sync of attendance and Time-off into payroll runs',
                 'Configurable sync schedule (daily, weekly, per pay cycle)',
                 'Discrepancy flagging before data reaches payroll',
               ].map((pt, i) => (
@@ -541,8 +541,8 @@ const SectionWorkflowTriggers: React.FC = () => (
                 <span className="text-[10px] font-extrabold uppercase text-[#5C5CFF] tracking-wider block mb-1">
                   TRIGGER EVENT
                 </span>
-                <h5 className="font-bold text-white text-sm mb-1">Leave Request Approved</h5>
-                <p className="text-xs text-slate-400">When manager approves annual leave in Workzi</p>
+                <h5 className="font-bold text-white text-sm mb-1">Time-off Request Approved</h5>
+                <p className="text-xs text-slate-400">When manager approves annual Time-off in Workzi</p>
               </div>
 
               <div className="shrink-0 w-10 h-10 rounded-full bg-[#5C5CFF] text-white flex items-center justify-center font-bold text-sm shadow-lg">
@@ -570,7 +570,7 @@ const SectionEverydayProductivity: React.FC = () => {
     {
       icon: Calendar,
       title: 'Calendar Sync',
-      desc: 'Leave and shifts reflected in personal Google & Outlook calendars.',
+      desc: 'Time-off and shifts reflected in personal Google & Outlook calendars.',
     },
     {
       icon: Fingerprint,
@@ -676,7 +676,7 @@ const SectionCustomAPI: React.FC = () => (
               </div>
 
               <pre className="text-slate-300 leading-relaxed overflow-x-auto">
-{`{
+                {`{
   "event": "attendance.clock_in",
   "timestamp": "2026-08-05T09:00:00Z",
   "employee_id": "EMP-9402",
@@ -751,7 +751,7 @@ const SectionRoleAccess: React.FC = () => {
       admin: true,
     },
     {
-      cap: 'See shifts and leave on synced calendars',
+      cap: 'See shifts and Time-off on synced calendars',
       emp: true,
       mgr: true,
       admin: true,
@@ -889,12 +889,12 @@ const SectionFAQ: React.FC = () => {
       a: 'Yes. Data shared with connected tools is encrypted and scoped to only what each integration needs — IT/Admin controls exactly what\'s shared, with every connection logged.',
     },
     {
-      q: 'Can I approve leave or attendance requests from Slack or Teams?',
+      q: 'Can I approve Time-off or attendance requests from Slack or Teams?',
       a: 'Yes. Once connected, requests appear as interactive messages you can approve or decline without opening Workzi directly.',
     },
     {
       q: 'Does Workzi sync with payroll automatically?',
-      a: 'Yes. Attendance and leave data syncs into your payroll system on a schedule you configure, with discrepancies flagged before the sync completes.',
+      a: 'Yes. Attendance and Time-off data syncs into your payroll system on a schedule you configure, with discrepancies flagged before the sync completes.',
     },
     {
       q: 'Can biometric devices we already use connect to Workzi?',
@@ -934,9 +934,8 @@ const SectionFAQ: React.FC = () => {
                       {faq.q}
                     </span>
                     <div
-                      className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${
-                        isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
-                      }`}
+                      className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
+                        }`}
                     >
                       {isOpen ? <X size={15} strokeWidth={2.5} /> : <Plus size={15} strokeWidth={2.5} />}
                     </div>

@@ -77,7 +77,7 @@ const TechnologyHero: React.FC = () => (
           {/* p.lead */}
           <div className="w-full lg:w-[480px] max-w-[480px] pt-[2.385px]">
             <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[18px] leading-[28px] sm:leading-[30px] text-[#6B7280] max-w-[450px]">
-              Tech companies grow fast, hire remotely, and rarely fit a single office model. Workzi handles attendance, leave, and onboarding for distributed teams — without adding process overhead as you scale.
+              Tech companies grow fast, hire remotely, and rarely fit a single office model. Workzi handles attendance, Time-off, and onboarding for distributed teams — without adding process overhead as you scale.
             </p>
           </div>
 
@@ -138,7 +138,7 @@ const TechnologyProblemValue: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[16.5px] leading-[25px] sm:leading-[27px] text-[#6B7280] text-center max-w-[610px]">
-          Tech companies scale headcount quickly, often across time zones and remote hires. Attendance and leave tools built for a single office don't hold up. Workzi is cloud-native and built to grow with you.
+          Tech companies scale headcount quickly, often across time zones and remote hires. Attendance and Time-off tools built for a single office don't hold up. Workzi is cloud-native and built to grow with you.
         </p>
       </div>
 
@@ -496,30 +496,30 @@ const TechnologyKnowledgeSections: React.FC = () => {
         </div>
       </section>
 
-      {/* Reason 4: Async Leave Approvals */}
+      {/* Reason 4: Async Time-off Approvals */}
       <section className="w-full py-[60px] px-6 lg:px-[100px]">
         <div className="w-full max-w-[1240px] mx-auto flex flex-col lg:flex-row-reverse items-center justify-between gap-[50px]">
           <div className="flex flex-col items-start p-0 gap-6 mx-auto max-w-[589px] w-full h-auto justify-center self-center">
             <div className="flex flex-col items-start p-0 gap-5 w-full max-w-[549px] self-stretch">
               <span className="inline-flex flex-row items-center px-[14px] py-[5px] gap-[6px] bg-[#F0F9F0] text-[#3B8A3E] font-['Inter',sans-serif] font-semibold text-[12px] rounded-[50px]">
-                Leave Management
+                Time-off Management
               </span>
 
               <div className="flex flex-col items-start p-0 gap-5 w-full max-w-[549px] self-stretch">
                 <div className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
                   <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[36px] sm:text-[42px] lg:text-[48px] leading-[1.25] lg:leading-[62px] tracking-[-1.12px] text-[#000000] flex items-center w-full max-w-[549px] self-stretch">
-                    Leave and Approvals That Don't Slow Down Distributed Teams
+                    Time-off and Approvals That Don't Slow Down Distributed Teams
                   </h2>
                   <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827] flex items-center w-full max-w-[549px] self-stretch">
-                    Leave requests and approvals move async, without needing everyone in the same time zone or office.
+                    Time-off requests and approvals move async, without needing everyone in the same time zone or office.
                   </p>
                 </div>
 
                 <a
-                  href="#leave-management"
+                  href="#Time-off-management"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>See Leave Management</span>
+                  <span>See Time-off Management</span>
                   <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
                 </a>
               </div>
@@ -527,9 +527,9 @@ const TechnologyKnowledgeSections: React.FC = () => {
 
             <ul className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
               {[
-                "Asynchronous leave approvals for distributed global teams",
+                "Asynchronous Time-off approvals for distributed global teams",
                 "No need for real-time overlap between manager and engineer",
-                "Automatic leave balance calculations and time-zone handling",
+                "Automatic Time-off balance calculations and time-zone handling",
               ].map((text, idx) => (
                 <li key={idx} className="flex flex-row items-center p-0 gap-[12px] w-full">
                   <span className="w-[22px] h-[22px] rounded-[6px] bg-[rgba(16,185,129,0.12)] text-[#10B981] flex flex-row items-center justify-center text-[12px] font-bold shrink-0 border border-[#10B981]/20">
@@ -620,12 +620,12 @@ const TechnologyManagerVisibilityDark: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] text-[15px] sm:text-[16px] leading-[24px] sm:leading-[26px] text-slate-300">
-          Know who's working, who's on leave, and who's newly onboarded — even when your team is spread across locations and time zones.
+          Know who's working, who's on Time-off, and who's newly onboarded — even when your team is spread across locations and time zones.
         </p>
 
         <ul className="flex flex-col gap-2.5 sm:gap-3 pt-1 sm:pt-2">
           {[
-            "Attendance and leave status visible regardless of location",
+            "Attendance and Time-off status visible regardless of location",
             "Approve requests without needing real-time overlap",
             "Track onboarding task completion for new hires",
           ].map((item, idx) => (
@@ -693,7 +693,7 @@ const TechnologyIntegrations: React.FC = () => (
           Fits Alongside the Tools Your Tech Team Already Uses
         </h2>
         <p className="font-['Inter',sans-serif] text-[16px] text-[#6B7280]">
-          Workzi manages the workforce side — attendance, leave, onboarding — while your team keeps its existing dev, communication, and productivity stack.
+          Workzi manages the workforce side — attendance, Time-off, onboarding — while your team keeps its existing dev, communication, and productivity stack.
         </p>
       </div>
 
@@ -740,7 +740,7 @@ const TechnologyFAQ: React.FC = () => {
       a: 'Yes. Workzi is built as a cloud-based platform intended to support organizations from small teams to enterprise scale.',
     },
     {
-      q: 'Can leave approvals work across different time zones?',
+      q: 'Can Time-off approvals work across different time zones?',
       a: 'Yes, approvals are asynchronous and don\'t require the approver and requester to be online at the same time.',
     },
   ];
@@ -777,11 +777,10 @@ const TechnologyFAQ: React.FC = () => {
                     {faq.q}
                   </span>
                   <span
-                    className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${
-                      isOpen
+                    className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${isOpen
                         ? 'bg-[#5C5CFF] text-white'
                         : 'bg-[#EEF2FF] text-[#5C5CFF] group-hover:bg-[#5C5CFF] group-hover:text-white'
-                    }`}
+                      }`}
                   >
                     {isOpen ? '−' : '+'}
                   </span>
@@ -821,7 +820,7 @@ const TechnologyRoleCTABanner: React.FC = () => (
 
         {/* Subtitle */}
         <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[18px] sm:text-[22px] leading-[32px] tracking-[-0.64px] text-[#CACDFF] max-w-[650px] mx-auto">
-          Attendance, leave, and onboarding built for distributed, fast-scaling tech teams.
+          Attendance, Time-off, and onboarding built for distributed, fast-scaling tech teams.
         </h3>
 
         {/* Buttons */}

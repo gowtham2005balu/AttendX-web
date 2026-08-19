@@ -69,7 +69,7 @@ const CustomerServiceHero: React.FC = () => (
           {/* p.lead */}
           <div className="w-full lg:w-[480px] max-w-[480px] pt-[2.385px]">
             <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[18px] leading-[28px] sm:leading-[30px] text-[#6B7280] max-w-[450px]">
-              Support teams run on coverage, not fixed hours. Workzi handles shift scheduling, attendance, and leave so queues stay covered and managers aren't chasing rosters manually.
+              Support teams run on coverage, not fixed hours. Workzi handles shift scheduling, attendance, and Time-off so queues stay covered and managers aren't chasing rosters manually.
             </p>
           </div>
 
@@ -103,7 +103,7 @@ const CustomerServiceHero: React.FC = () => (
         {[
           'Shift scheduling',
           'Real-time attendance tracking',
-          'Leave without coverage gaps',
+          'Time-off without coverage gaps',
           'Manager visibility',
         ].map((item, idx) => (
           <div key={idx} className="flex items-center gap-[8px] shrink-0">
@@ -130,7 +130,7 @@ const CustomerServiceProblemValue: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[16.5px] leading-[25px] sm:leading-[27px] text-[#6B7280] text-center max-w-[610px]">
-          When a support agent is late, absent, or on leave, it isn't just an HR record — it's a gap in customer coverage. Workzi keeps shift rosters, attendance, and leave visible together so gaps get caught before they become a problem.
+          When a support agent is late, absent, or on Time-off, it isn't just an HR record — it's a gap in customer coverage. Workzi keeps shift rosters, attendance, and Time-off visible together so gaps get caught before they become a problem.
         </p>
       </div>
 
@@ -166,7 +166,7 @@ const CustomerServiceProblemValue: React.FC = () => (
             </div>
             <div className="flex items-center justify-between py-2">
               <span className="font-['Inter',sans-serif] font-semibold text-[12.5px] leading-[15px] text-[#111827]">
-                On Leave
+                On Time-off
               </span>
               <span className="bg-[#FEF3E2] text-[#B45309] font-bold text-[11px] leading-[13px] px-[10px] py-[3px] rounded-full">
                 2 Agents
@@ -179,7 +179,7 @@ const CustomerServiceProblemValue: React.FC = () => (
         <div className="bg-white border border-[#E5E7EB] rounded-[24px] p-[32px] flex flex-col justify-between gap-[11.4px] w-full">
           <div>
             <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[20px] leading-[23px] tracking-[-0.4px] text-[#111827] mb-3">
-              Faster leave approvals
+              Faster Time-off approvals
             </h3>
             <p className="font-['Inter',sans-serif] font-normal text-[14.5px] leading-[24px] text-[#6B7280] mb-6">
               Decisions made with real coverage context, not guesswork or scattered emails.
@@ -262,7 +262,7 @@ const CustomerServiceCapabilitiesGrid: React.FC = () => {
   const capabilities = [
     { icon: '🗓', label: 'Shift Management' },
     { icon: '⏱', label: 'Time Tracking' },
-    { icon: '🏖', label: 'Leave Management' },
+    { icon: '🏖', label: 'Time-off Management' },
     { icon: '👥', label: 'Support Directory' },
     { icon: '✔️', label: 'Task & Ticket Load' },
     { icon: '🧾', label: 'Shift Approvals' },
@@ -283,7 +283,7 @@ const CustomerServiceCapabilitiesGrid: React.FC = () => {
           </h2>
 
           <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[16.5px] leading-[25px] sm:leading-[27px] text-[#464A53] text-center max-w-[606px]">
-            Why support teams use Workzi — explore how shift scheduling, attendance, and leave management keep support coverage consistent.
+            Why support teams use Workzi — explore how shift scheduling, attendance, and Time-off management keep support coverage consistent.
           </p>
         </div>
 
@@ -479,30 +479,30 @@ const CustomerServiceKnowledgeSections: React.FC = () => {
         </div>
       </section>
 
-      {/* Reason 3: Leave Management */}
+      {/* Reason 3: Time-off Management */}
       <section className="w-full py-[60px] px-6 lg:px-[100px]">
         <div className="w-full max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-[50px]">
           <div className="flex flex-col items-start p-0 gap-6 mx-auto max-w-[589px] w-full h-auto justify-center self-center">
             <div className="flex flex-col items-start p-0 gap-5 w-full max-w-[549px] self-stretch">
               <span className="inline-flex flex-row items-center px-[14px] py-[5px] gap-[6px] bg-[#F0F9F0] text-[#3B8A3E] font-['Inter',sans-serif] font-semibold text-[12px] leading-[15px] rounded-[50px]">
-                Leave Management
+                Time-off Management
               </span>
 
               <div className="flex flex-col items-start p-0 gap-5 w-full max-w-[549px] self-stretch">
                 <div className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
                   <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[36px] sm:text-[42px] lg:text-[48px] leading-[1.25] lg:leading-[62px] tracking-[-1.12px] text-[#000000] flex items-center w-full max-w-[549px] self-stretch">
-                    Leave Approvals That Account for Coverage
+                    Time-off Approvals That Account for Coverage
                   </h2>
                   <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827] flex items-center w-full max-w-[549px] self-stretch">
-                    Leave and WFH requests route to managers with visibility into who else is scheduled — so approvals don't accidentally leave a shift uncovered.
+                    Time-off and WFH requests route to managers with visibility into who else is scheduled — so approvals don't accidentally Time-off a shift uncovered.
                   </p>
                 </div>
 
                 <a
-                  href="#leave-management"
+                  href="#Time-off-management"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>See Leave Management</span>
+                  <span>See Time-off Management</span>
                   <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
                 </a>
               </div>
@@ -510,9 +510,9 @@ const CustomerServiceKnowledgeSections: React.FC = () => {
 
             <ul className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
               {[
-                'Approve leave with live shift roster visibility',
+                'Approve Time-off with live shift roster visibility',
                 'Prevent accidental coverage gaps during peak queue hours',
-                'Standardize WFH and leave rules across support teams',
+                'Standardize WFH and Time-off rules across support teams',
               ].map((text, idx) => (
                 <li key={idx} className="flex flex-row items-center p-0 gap-[12px] w-full">
                   <span className="w-[22px] h-[22px] rounded-[6px] bg-[rgba(16,185,129,0.12)] text-[#10B981] flex flex-row items-center justify-center text-[12px] font-bold shrink-0 border border-[#10B981]/20">
@@ -535,7 +535,7 @@ const CustomerServiceKnowledgeSections: React.FC = () => {
               <div className="flex flex-col gap-2.5 sm:gap-3">
                 <div className="flex items-center justify-between gap-2 p-2.5 sm:p-3 bg-[#F8FAFC] rounded-[10px] border border-[#E5E7EB]">
                   <div className="min-w-0">
-                    <div className="font-['Inter',sans-serif] font-semibold text-[12.5px] sm:text-[13px] text-[#111827] truncate">Annual Leave (2 Days)</div>
+                    <div className="font-['Inter',sans-serif] font-semibold text-[12.5px] sm:text-[13px] text-[#111827] truncate">Annual Time-off (2 Days)</div>
                     <div className="font-['Inter',sans-serif] text-[10.5px] sm:text-[11px] text-[#6B7280] truncate">Alex Johnson • Escalations</div>
                   </div>
                   <span className="bg-[#EAFBF3] text-[#15803D] font-bold text-[10.5px] sm:text-[11px] px-2.5 py-1 rounded-full shrink-0">Approved</span>
@@ -543,7 +543,7 @@ const CustomerServiceKnowledgeSections: React.FC = () => {
 
                 <div className="flex items-center justify-between gap-2 p-2.5 sm:p-3 bg-[#F8FAFC] rounded-[10px] border border-[#E5E7EB]">
                   <div className="min-w-0">
-                    <div className="font-['Inter',sans-serif] font-semibold text-[12.5px] sm:text-[13px] text-[#111827] truncate">Sick Leave (1 Day)</div>
+                    <div className="font-['Inter',sans-serif] font-semibold text-[12.5px] sm:text-[13px] text-[#111827] truncate">Sick Time-off (1 Day)</div>
                     <div className="font-['Inter',sans-serif] text-[10.5px] sm:text-[11px] text-[#6B7280] truncate">Marcus Vance • Tier 1 Voice</div>
                   </div>
                   <span className="bg-[#FEF3E2] text-[#B45309] font-bold text-[10.5px] sm:text-[11px] px-2.5 py-1 rounded-full shrink-0">Pending</span>
@@ -686,7 +686,7 @@ const CustomerServiceManagerVisibilityDark: React.FC = () => (
             See Coverage Gaps Before They Become Customer Complaints
           </h2>
           <p className="font-['Inter',sans-serif] font-medium text-[16px] leading-[26px] text-slate-300">
-            One dashboard for who's scheduled, who's checked in, who's late, and who's on leave — so managers can react before a queue backs up.
+            One dashboard for who's scheduled, who's checked in, who's late, and who's on Time-off — so managers can react before a queue backs up.
           </p>
         </div>
 
@@ -701,7 +701,7 @@ const CustomerServiceManagerVisibilityDark: React.FC = () => (
         <ul className="flex flex-col gap-[14px] pt-[13px]">
           {[
             'Real-time view of shift attendance and exceptions',
-            'Approve leave and shift changes without leaving the dashboard',
+            'Approve Time-off and shift changes without leaving the dashboard',
             'Spot patterns — repeated lateness, frequent swaps — early',
           ].map((text, idx) => (
             <li key={idx} className="flex items-center gap-[12px]">
@@ -761,7 +761,7 @@ const CustomerServiceIntegrationsSection: React.FC = () => {
             Fits Alongside the Tools Your Support Team Already Uses
           </h2>
           <p className="font-['Inter',sans-serif] font-normal text-[16px] leading-[26px] text-[#6B7280]">
-            Workzi handles the workforce side — shifts, attendance, leave — while your team keeps using its existing ticketing and communication tools.
+            Workzi handles the workforce side — shifts, attendance, Time-off — while your team keeps using its existing ticketing and communication tools.
           </p>
         </div>
 
@@ -808,8 +808,8 @@ const CustomerServiceFAQSection: React.FC = () => {
       a: 'Yes. Managers get a live view of attendance status, so coverage gaps are visible as they happen.',
     },
     {
-      q: 'Can managers see shift coverage before approving leave?',
-      a: 'Yes. Managers get visibility into scheduled shift coverage alongside pending leave and WFH requests to prevent uncovered shifts.',
+      q: 'Can managers see shift coverage before approving Time-off?',
+      a: 'Yes. Managers get visibility into scheduled shift coverage alongside pending Time-off and WFH requests to prevent uncovered shifts.',
     },
     {
       q: 'Does Workzi support attendance tracking for remote or work-from-home support agents?',
@@ -817,7 +817,7 @@ const CustomerServiceFAQSection: React.FC = () => {
     },
     {
       q: 'Is Workzi a replacement for our ticketing or helpdesk software?',
-      a: 'No. Workzi manages the workforce side — attendance, leave, shifts — not customer tickets. It\'s meant to work alongside your existing support tools, not replace them.',
+      a: 'No. Workzi manages the workforce side — attendance, Time-off, shifts — not customer tickets. It\'s meant to work alongside your existing support tools, not replace them.',
     },
   ];
 
@@ -854,8 +854,8 @@ const CustomerServiceFAQSection: React.FC = () => {
                   </span>
                   <span
                     className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${isOpen
-                        ? 'bg-[#5C5CFF] text-white'
-                        : 'bg-[#EEF2FF] text-[#5C5CFF] group-hover:bg-[#5C5CFF] group-hover:text-white'
+                      ? 'bg-[#5C5CFF] text-white'
+                      : 'bg-[#EEF2FF] text-[#5C5CFF] group-hover:bg-[#5C5CFF] group-hover:text-white'
                       }`}
                   >
                     {isOpen ? '−' : '+'}
@@ -891,7 +891,7 @@ const CustomerServiceRoleCTABanner: React.FC = () => {
 
           {/* Subtitle */}
           <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[18px] sm:text-[22px] leading-[32px] tracking-[-0.64px] text-[#CACDFF] max-w-[650px] mx-auto">
-            Shift scheduling, attendance, and leave management built for teams that run on coverage, not a fixed clock.
+            Shift scheduling, attendance, and Time-off management built for teams that run on coverage, not a fixed clock.
           </h3>
 
           {/* Buttons */}

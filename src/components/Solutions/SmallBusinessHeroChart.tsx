@@ -20,7 +20,7 @@ export const SmallBusinessHeroChart: React.FC = () => {
               Small Business Operations
             </h4>
             <p className="font-['Inter',sans-serif] text-[11px] sm:text-[11.5px] text-slate-500 font-medium truncate sm:whitespace-normal">
-              Zero spreadsheets, app attendance & instant leave
+              Zero spreadsheets, app attendance & instant Time-off
             </p>
           </div>
         </div>
@@ -100,7 +100,7 @@ export const SmallBusinessHeroChart: React.FC = () => {
             {/* Tool 1 */}
             <div className="flex items-center justify-between p-2 rounded-xl bg-indigo-50/70 border border-indigo-100 gap-2">
               <div className="min-w-0">
-                <div className="text-[11.5px] font-bold text-indigo-950 truncate">WhatsApp Leave Threads</div>
+                <div className="text-[11.5px] font-bold text-indigo-950 truncate">WhatsApp Time-off Threads</div>
                 <div className="text-[10px] text-indigo-600 font-medium truncate">Replaced with App Requests</div>
               </div>
               <span className="bg-[#5C5CFF] text-white text-[10px] font-bold px-2 py-0.5 rounded-full shrink-0">Replaced</span>
@@ -159,7 +159,7 @@ export const SmallBusinessHeroChart: React.FC = () => {
                 </div>
                 <div className="min-w-0">
                   <div className="font-bold text-slate-900 truncate">Marcus Vance</div>
-                  <div className="text-[9.5px] text-slate-400 truncate">Ops • Leave Approved</div>
+                  <div className="text-[9.5px] text-slate-400 truncate">Ops • Time-off Approved</div>
                 </div>
               </div>
               <span className="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded shrink-0">Approved ✓</span>

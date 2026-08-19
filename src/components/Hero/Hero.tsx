@@ -35,7 +35,7 @@ export const Hero: React.FC = () => {
 
           {/* Subtitle from Figma */}
           <p className="text-white text-sm md:text-[15px] max-w-[543px] text-center font-medium leading-[22px] sm:leading-[24px]">
-            Track attendance, manage leave, and stay on top of your team — all from one platform built for the way people actually work.
+            Track attendance, manage Time-off, and stay on top of your team — all from one platform built for the way people actually work.
           </p>
 
           {/* Book Demo Button from Figma */}

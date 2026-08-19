@@ -80,7 +80,7 @@ const HealthcareHero: React.FC = () => (
           {/* p.lead */}
           <div className="w-full lg:w-[480px] max-w-[480px] pt-[2.385px]">
             <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[18px] leading-[28px] sm:leading-[30px] text-[#6B7280] max-w-[450px]">
-              Hospitals and care facilities run on round-the-clock shift coverage across multiple locations. Workzi tracks attendance, leave, and shifts the way healthcare teams actually operate.
+              Hospitals and care facilities run on round-the-clock shift coverage across multiple locations. Workzi tracks attendance, Time-off, and shifts the way healthcare teams actually operate.
             </p>
           </div>
 
@@ -189,7 +189,7 @@ const HealthcareProblemValue: React.FC = () => (
         <div className="bg-white border border-[#E5E7EB] rounded-[24px] p-[32px] flex flex-col justify-between gap-[11.4px] w-full">
           <div>
             <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[20px] leading-[23px] tracking-[-0.4px] text-[#111827] mb-3">
-              Faster leave approvals
+              Faster Time-off approvals
             </h3>
             <p className="font-['Inter',sans-serif] font-normal text-[14.5px] leading-[24px] text-[#6B7280] mb-6">
               Decisions made with real coverage visibility, not guesswork.
@@ -272,7 +272,7 @@ const HealthcareCategoryGrid: React.FC = () => {
   const categories = [
     { title: 'Attendance Management', href: '#attendance-management' },
     { title: 'Shift Management', href: '#shift-management' },
-    { title: 'Leave Management', href: '#leave-management' },
+    { title: 'Time-off Management', href: '#Time-off-management' },
     { title: 'Employee Directory', href: '#employee-directory' },
     { title: 'Approval Workflows', href: '#approval-workflows' },
     { title: 'Department Management', href: '#department-management' },
@@ -448,25 +448,25 @@ const HealthcareShiftManagement: React.FC = () => (
   </section>
 );
 
-/* ─── 6. LEAVE MANAGEMENT SECTION ─── */
-const HealthcareLeaveManagement: React.FC = () => (
+/* ─── 6. TIME OFF MANAGEMENT SECTION ─── */
+const HealthcareTimeOffManagement: React.FC = () => (
   <section className="w-full py-[80px] px-6 lg:px-[100px] bg-white">
     <div className="w-full max-w-[1240px] mx-auto flex flex-col lg:flex-row-reverse items-center justify-between gap-[50px]">
       <div className="flex flex-col items-start max-w-[549px] w-full gap-[24px]">
         <span className="inline-flex items-center px-[14px] py-[5px] bg-[#F0F9F0] text-[#3B8A3E] font-['Inter',sans-serif] font-semibold text-[12px] rounded-full">
-          LEAVE MANAGEMENT
+          Time-off MANAGEMENT
         </span>
         <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[36px] sm:text-[42px] leading-[1.25] text-[#111827]">
-          Leave Requests That Account for Real Coverage Needs
+          Time-off Requests That Account for Real Coverage Needs
         </h2>
         <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#6B7280]">
-          Apply for leave, track balances, and approve requests with visibility into who else is covering a shift or department.
+          Apply for Time-off, track balances, and approve requests with visibility into who else is covering a shift or department.
         </p>
         <ul className="flex flex-col gap-3">
           {[
-            "Employees apply for leave and track balance from the app",
+            "Employees apply for Time-off and track balance from the app",
             "Managers approve with coverage context visible",
-            "Leave policies stay standardized across departments and facilities",
+            "Time-off policies stay standardized across departments and facilities",
           ].map((text, idx) => (
             <li key={idx} className="flex items-center gap-3">
               <span className="w-5 h-5 rounded-full bg-[#10B981]/10 text-[#10B981] flex items-center justify-center font-bold text-xs">
@@ -477,10 +477,10 @@ const HealthcareLeaveManagement: React.FC = () => (
           ))}
         </ul>
         <a
-          href="#leave-management"
+          href="#Time-off-management"
           className="inline-flex items-center gap-2 bg-[#1A1A1A] hover:bg-[#333333] text-white font-semibold text-[14px] px-6 py-3 rounded-full transition-all hover:scale-105"
         >
-          <span>Explore Leave Management</span>
+          <span>Explore Time-off Management</span>
           <span>→</span>
         </a>
       </div>
@@ -489,7 +489,7 @@ const HealthcareLeaveManagement: React.FC = () => (
       <div className="w-full max-w-[611px] h-[380px] rounded-[20px] bg-gradient-to-br from-[#F8FAFC] to-[#ECFDF5] border border-[#E5E7EB] p-6 flex items-center justify-center">
         <div className="w-full bg-white rounded-2xl border border-[#E5E7EB] p-6 flex flex-col gap-3 shadow-sm">
           <div className="flex items-center justify-between pb-3 border-b border-gray-100">
-            <span className="font-bold text-[13px] text-[#111827]">Coverage-Aware Leave Stream</span>
+            <span className="font-bold text-[13px] text-[#111827]">Coverage-Aware Time-off Stream</span>
             <span className="bg-[#EAFBF3] text-[#15803D] font-bold text-[11px] px-2.5 py-0.5 rounded-full">Verified</span>
           </div>
           <div className="flex items-center justify-between p-3 bg-[#F8FAFC] rounded-xl border border-gray-200/60">
@@ -559,10 +559,10 @@ const HealthcareEmployeeDirectory: React.FC = () => (
 /* ─── 8. ONE CONNECTED SYSTEM (FLOW LINE) ─── */
 const HealthcareConnectedSystemFlow: React.FC = () => {
   const steps = [
-    'Staff member requests leave',
+    'Staff member requests Time-off',
     'Manager reviews shift coverage',
     'Manager approves',
-    'Leave balance updates',
+    'Time-off balance updates',
     'Shift roster updates',
     'HR sees it in real time',
   ];
@@ -600,7 +600,7 @@ const HealthcareConnectedSystemFlow: React.FC = () => {
 const HealthcareEverydayWorkflows: React.FC = () => {
   const workflows = [
     { title: 'Attendance exceptions', desc: 'Late arrivals and missed check-ins get flagged automatically, with manager review in one screen.' },
-    { title: 'Leave approvals', desc: 'Requests route to the right department manager, with coverage visible.' },
+    { title: 'Time-off approvals', desc: 'Requests route to the right department manager, with coverage visible.' },
     { title: 'Shift assignments', desc: 'Configure and reassign shifts without spreadsheets.' },
     { title: 'Attendance regularization', desc: 'Correct a missed check-in or check-out in a couple of taps.' },
     { title: 'Onboarding for new & contract staff', desc: 'Assign onboarding tasks and track completion, useful for frequent contract or travel staff turnover.' },
@@ -640,10 +640,10 @@ const HealthcareEmployeeSelfService: React.FC = () => (
           Give Staff Answers and Actions Without Adding to the Front Desk's Workload
         </h2>
         <p className="font-['Inter',sans-serif] text-[16px] text-[#6B7280]">
-          Employees manage everyday needs — checking their schedule, requesting leave, viewing announcements — directly from the app.
+          Employees manage everyday needs — checking their schedule, requesting Time-off, viewing announcements — directly from the app.
         </p>
         <div className="flex flex-wrap gap-2 pt-2">
-          {['View shifts', 'Request leave', 'Check announcements', 'Request correction', 'Upcoming holidays'].map((tag, idx) => (
+          {['View shifts', 'Request Time-off', 'Check announcements', 'Request correction', 'Upcoming holidays'].map((tag, idx) => (
             <span key={idx} className="bg-white border border-[#E5E7EB] text-[#111827] font-semibold text-[13px] px-3.5 py-1.5 rounded-full">
               {tag}
             </span>
@@ -660,7 +660,7 @@ const HealthcareEmployeeSelfService: React.FC = () => (
         <div className="flex justify-around bg-slate-100 p-2 rounded-xl text-[12px] font-bold text-[#6B7280]">
           <span className="text-[#5C5CFF]">Home</span>
           <span>Attendance</span>
-          <span>Leave</span>
+          <span>Time-off</span>
           <span>Profile</span>
         </div>
         <div className="bg-[#F8FAFC] p-3 rounded-xl border border-gray-200 text-[12.5px] flex flex-col gap-1.5">
@@ -682,7 +682,7 @@ const HealthcareReportsSection: React.FC = () => (
           Attendance and Coverage Reports Without a Separate Tool
         </h2>
         <p className="font-['Inter',sans-serif] text-[16px] text-[#6B7280]">
-          Filter and export reports across attendance, leave, shifts, and departments.
+          Filter and export reports across attendance, Time-off, shifts, and departments.
         </p>
       </div>
 
@@ -706,7 +706,7 @@ const HealthcareIntegrations: React.FC = () => (
           Fits Alongside the Systems Your Facility Already Uses
         </h2>
         <p className="font-['Inter',sans-serif] text-[16px] text-[#6B7280]">
-          Workzi manages workforce operations — attendance, shifts, leave — while your team keeps using its existing clinical and administrative systems.
+          Workzi manages workforce operations — attendance, shifts, Time-off — while your team keeps using its existing clinical and administrative systems.
         </p>
       </div>
 
@@ -749,7 +749,7 @@ const HealthcareCrossSell: React.FC = () => (
             <span className="bg-indigo-100 text-indigo-800 font-bold text-[11px] px-2.5 py-1 rounded-full uppercase tracking-wider">FOR MANAGERS</span>
             <h3 className="font-bold text-[20px] text-[#111827] pt-2">Manager Solutions</h3>
             <p className="font-['Inter',sans-serif] text-[14px] text-[#6B7280] pt-1">
-              Track attendance, leave, tasks, and approvals for your department from one workspace.
+              Track attendance, Time-off, tasks, and approvals for your department from one workspace.
             </p>
           </div>
           <a href="#hr-manager" className="text-[#5C5CFF] font-bold text-[14px] hover:underline">Explore Manager Solutions →</a>
@@ -784,16 +784,16 @@ const HealthcareFAQ: React.FC = () => {
       a: 'Yes. Workzi allows managers to set up custom multi-shift rosters across 24/7 rotations for hospital and clinical departments.',
     },
     {
-      q: 'Is Workzi HIPAA-compliant or configured to handle sensitive health-related leave data?',
-      a: 'Workzi incorporates role-based permission controls and secure access parameters to help facilities maintain strict privacy standards for employee leave records.',
+      q: 'Is Workzi HIPAA-compliant or configured to handle sensitive health-related Time-off data?',
+      a: 'Workzi incorporates role-based permission controls and secure access parameters to help facilities maintain strict privacy standards for employee Time-off records.',
     },
     {
       q: 'Can Workzi manage attendance for contract or travel staff, not just full-time employees?',
       a: 'Yes. The employee directory supports full-time, part-time, and contract employees in one unified platform.',
     },
     {
-      q: 'Can managers see shift coverage before approving leave?',
-      a: 'Yes. Leave requests display active department shift rosters, ensuring managers approve requests with full coverage visibility.',
+      q: 'Can managers see shift coverage before approving Time-off?',
+      a: 'Yes. Time-off requests display active department shift rosters, ensuring managers approve requests with full coverage visibility.',
     },
   ];
 
@@ -829,11 +829,10 @@ const HealthcareFAQ: React.FC = () => {
                     {faq.q}
                   </span>
                   <span
-                    className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${
-                      isOpen
+                    className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${isOpen
                         ? 'bg-[#5C5CFF] text-white'
                         : 'bg-[#EEF2FF] text-[#5C5CFF] group-hover:bg-[#5C5CFF] group-hover:text-white'
-                    }`}
+                      }`}
                   >
                     {isOpen ? '−' : '+'}
                   </span>
@@ -905,7 +904,7 @@ export const HealthcarePage: React.FC = () => {
       <HealthcareCategoryGrid />
       <HealthcareWorkforceVisibilityDark />
       <HealthcareShiftManagement />
-      <HealthcareLeaveManagement />
+      <HealthcareTimeOffManagement />
       <HealthcareEmployeeDirectory />
       <HealthcareConnectedSystemFlow />
       <HealthcareEverydayWorkflows />

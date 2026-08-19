@@ -12,12 +12,12 @@ export const Leave: React.FC = () => {
         <div className="order-2 lg:order-1 flex flex-col items-start w-full max-w-[580px] mx-auto lg:mx-0 lg:pt-[14px]">
           {/* Section tag */}
           <span className="bg-[#F0F9F0] text-[#3B8A3E] px-[14px] py-[5px] rounded-[50px] text-[12px] font-semibold leading-[15px] mb-4 inline-flex items-center gap-[6px]">
-            Leave Management
+            Time-off Management
           </span>
 
           {/* Heading */}
           <h2 className="text-[#000000] font-semibold text-[26px] sm:text-[36px] md:text-[42px] lg:text-[55.9px] leading-tight lg:leading-[62px] tracking-[-1.12px] mb-[18px]">
-            Leave requests, sorted in a click.
+            Time-off requests, sorted in a click.
           </h2>
 
           {/* Subtitle */}
@@ -28,8 +28,8 @@ export const Leave: React.FC = () => {
           {/* Checklist 2 Columns */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-[14px] gap-y-[14px] w-full pt-[13px] mb-[24px]">
             {[
-              'Multiple leave types', 'Approval workflow',
-              'Leave balance tracking', 'Status updates'
+              'Multiple Time-off types', 'Approval workflow',
+              'Time-off balance tracking', 'Status updates'
             ].map((text, idx) => (
               <div key={idx} className="flex items-center gap-[12px] min-h-[22px]">
                 <div className="w-[22px] h-[22px] rounded-[6px] bg-[rgba(16,185,129,0.12)] flex items-center justify-center text-[#10B981] shrink-0">
@@ -53,7 +53,7 @@ export const Leave: React.FC = () => {
         <div className="order-1 lg:order-2 relative flex justify-center items-center w-full max-w-[611px] mx-auto lg:mx-0">
           <img
             src="/hero-images/div.zwc-left-wrap (1).png"
-            alt="Leave Requests Made Simple Mockup"
+            alt="Time-off Requests Made Simple Mockup"
             className="w-full max-w-[611px] h-auto object-contain select-none pointer-events-none drop-shadow-xl rounded-[16px]"
           />
         </div>

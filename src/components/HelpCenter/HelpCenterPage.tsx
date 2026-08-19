@@ -101,7 +101,7 @@ const HelpHero: React.FC = () => (
         </div>
 
         <p className="text-[11px] text-slate-400 font-bold tracking-wide">
-          Popular: <a href="#" className="text-[#818CF8] hover:underline ml-1">Attendance setup</a> &middot; <a href="#" className="text-[#818CF8] hover:underline ml-1">Leave policies</a> &middot; <a href="#" className="text-[#818CF8] hover:underline ml-1">API access</a> &middot; <a href="#" className="text-[#818CF8] hover:underline ml-1">Mobile app</a>
+          Popular: <a href="#" className="text-[#818CF8] hover:underline ml-1">Attendance setup</a> &middot; <a href="#" className="text-[#818CF8] hover:underline ml-1">Time-off policies</a> &middot; <a href="#" className="text-[#818CF8] hover:underline ml-1">API access</a> &middot; <a href="#" className="text-[#818CF8] hover:underline ml-1">Mobile app</a>
         </p>
       </FadeUp>
     </Container>
@@ -116,7 +116,7 @@ const NeedHelpWith: React.FC = () => {
     { icon: <Search className="w-5 h-5 text-indigo-500" />, title: 'Find My Account', desc: 'Locate your active account, reset password, or update login credentials.', bg: 'bg-indigo-50' },
     { icon: <CreditCard className="w-5 h-5 text-amber-500" />, title: 'Billing Issues', desc: 'Resolve payment problems, invoices, or subscription changes.', bg: 'bg-amber-50' },
     { icon: <CheckCircle2 className="w-5 h-5 text-emerald-500" />, title: 'Attendance Setup', desc: 'Configure geo-fenced check-ins, shifts, and location settings.', bg: 'bg-emerald-50' },
-    { icon: <Calendar className="w-5 h-5 text-rose-500" />, title: 'Leave Management', desc: 'Set up leave types, approval workflows, and balance tracking.', bg: 'bg-rose-50' },
+    { icon: <Calendar className="w-5 h-5 text-rose-500" />, title: 'Time-off Management', desc: 'Set up Time-off types, approval workflows, and balance tracking.', bg: 'bg-rose-50' },
     { icon: <UserPlus className="w-5 h-5 text-indigo-500" />, title: 'Employee Onboarding', desc: 'Add employees individually or via bulk CSV import with roles and departments.', bg: 'bg-indigo-50' },
     { icon: <BarChart3 className="w-5 h-5 text-emerald-500" />, title: 'Reports & Analytics', desc: 'Generate workforce reports, export data, and schedule automated summaries.', bg: 'bg-emerald-50' },
     { icon: <Activity className="w-5 h-5 text-purple-500" />, title: 'API Integration', desc: 'Connect Workzi with payroll, ERP, or third-party tools via REST API.', bg: 'bg-purple-50' },
@@ -161,7 +161,7 @@ const NeedHelpWith: React.FC = () => {
 const BrowseCategory: React.FC = () => {
   const categories = [
     { title: 'Attendance', desc: 'Check-ins, geo-fencing, shifts, overtime', count: 24, icon: <Clock className="w-4 h-4" />, bg: 'bg-indigo-50 text-indigo-500' },
-    { title: 'Leave Management', desc: 'Leave types, approvals, balances, policies', count: 18, icon: <LayoutList className="w-4 h-4" />, bg: 'bg-emerald-50 text-emerald-500' },
+    { title: 'Time-off Management', desc: 'Time-off types, approvals, balances, policies', count: 18, icon: <LayoutList className="w-4 h-4" />, bg: 'bg-emerald-50 text-emerald-500' },
     { title: 'Employee Onboarding', desc: 'Adding employees, bulk import, profiles', count: 12, icon: <User className="w-4 h-4" />, bg: 'bg-amber-50 text-amber-500' },
     { title: 'Analytics & Reports', desc: 'Dashboards, exports, scheduled reports', count: 15, icon: <BarChart2 className="w-4 h-4" />, bg: 'bg-indigo-50 text-indigo-500' },
     { title: 'Payroll Integration', desc: 'ADP, Gusto, QuickBooks sync setup', count: 9, icon: <CreditCard className="w-4 h-4" />, bg: 'bg-rose-50 text-rose-500' },
@@ -267,7 +267,7 @@ const PopularArticles: React.FC = () => {
                   Complete guide to setting up Workzi for your organization
                 </h3>
                 <p className="font-['Inter',sans-serif] font-normal text-[13px] leading-[20px] text-white/65 mb-[20px]">
-                  Everything you need to get your team onboarded, attendance tracking live, and leave workflows configured in under an hour.
+                  Everything you need to get your team onboarded, attendance tracking live, and Time-off workflows configured in under an hour.
                 </p>
 
                 {/* Border line & meta stats */}
@@ -348,7 +348,7 @@ const PopularArticles: React.FC = () => {
             </a>
           </FadeUp>
 
-          {/* Row 2 Col 2: LEAVE Card */}
+          {/* Row 2 Col 2: Time-off Card */}
           <FadeUp delay={0.25}>
             <a
               href="#help-article"
@@ -357,11 +357,11 @@ const PopularArticles: React.FC = () => {
               <div>
                 <div className="mb-[12px]">
                   <span className="inline-block bg-[rgba(91,95,255,0.1)] text-[#5B5FFF] font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[10px] leading-[16px] px-[10px] py-[4px] rounded-[100px] uppercase tracking-[0.7px]">
-                    LEAVE
+                    Time-off
                   </span>
                 </div>
                 <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[16px] leading-[22px] text-[#111827] mb-[12px] group-hover:text-[#5B5FFF] transition-colors">
-                  Configuring leave approval workflows for your team
+                  Configuring Time-off approval workflows for your team
                 </h4>
                 <p className="font-['Inter',sans-serif] font-normal text-[13px] leading-[20px] text-[#6B7280] mb-[16px]">
                   Set up single or multi-level approval chains, automatic notifications, and escalation rules. HR teams save hours every week.
@@ -512,7 +512,7 @@ const SupportQuestions: React.FC = () => {
   const categories = [
     { name: 'All Questions', icon: <Menu size={16} />, count: 24 },
     { name: 'Attendance', icon: <Clock size={16} />, count: 8 },
-    { name: 'Leave', icon: <Calendar size={16} />, count: 5 },
+    { name: 'Time-off', icon: <Calendar size={16} />, count: 5 },
     { name: 'Billing', icon: <CreditCard size={16} />, count: 4 },
     { name: 'API', icon: <Activity size={16} />, count: 4 },
     { name: 'Security', icon: <Shield size={16} />, count: 3 }

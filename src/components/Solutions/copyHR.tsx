@@ -72,7 +72,7 @@ const CopyHRHero: React.FC = () => (
           {/* p.lead */}
           <div className="w-full lg:w-[480px] max-w-[480px] pt-[2.385px]">
             <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[18px] leading-[28px] sm:leading-[30px] text-[#6B7280] max-w-[425px]">
-              Bring attendance, leave, employee records, shifts, approvals, tasks, and workforce communication together in one connected HR workspace.
+              Bring attendance, Time-off, employee records, shifts, approvals, tasks, and workforce communication together in one connected HR workspace.
             </p>
           </div>
 
@@ -162,8 +162,8 @@ const CopyHRFeaturesOverview: React.FC = () => {
     },
     {
       icon: <Calendar className="w-6 h-6 text-indigo-600" />,
-      title: 'Leave & PTO Management',
-      desc: 'Automated accrual calculation, multi-level approval workflows, and leave calendar visualization.',
+      title: 'Time-off & PTO Management',
+      desc: 'Automated accrual calculation, multi-level approval workflows, and Time-off calendar visualization.',
     },
     {
       icon: <FileText className="w-6 h-6 text-amber-600" />,
@@ -256,7 +256,7 @@ const CopyHRProblemValue: React.FC = () => (
 
         {/* p */}
         <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[16.5px] leading-[25px] sm:leading-[27px] text-[#6B7280] text-center max-w-[564px]">
-          Stop switching between spreadsheets, attendance tools, leave trackers, employee records, and scattered conversations. Give HR one connected system for everyday workforce operations.
+          Stop switching between spreadsheets, attendance tools, Time-off trackers, employee records, and scattered conversations. Give HR one connected system for everyday workforce operations.
         </p>
       </div>
 
@@ -269,7 +269,7 @@ const CopyHRProblemValue: React.FC = () => (
               Know what's happening across your workforce
             </h3>
             <p className="font-['Inter',sans-serif] font-normal text-[14.5px] leading-[24px] text-[#6B7280] mb-6">
-              See who's working, absent, on leave, late, or scheduled — without collecting updates manually.
+              See who's working, absent, on Time-off, late, or scheduled — without collecting updates manually.
             </p>
           </div>
 
@@ -293,7 +293,7 @@ const CopyHRProblemValue: React.FC = () => (
             </div>
             <div className="flex items-center justify-between py-2">
               <span className="font-['Inter',sans-serif] font-semibold text-[12.5px] leading-[15px] text-[#111827]">
-                On Leave
+                On Time-off
               </span>
               <span className="bg-[#FEF3E2] text-[#B45309] font-bold text-[11px] leading-[13px] px-[10px] py-[3px] rounded-full">
                 4
@@ -349,7 +349,7 @@ const CopyHRProblemValue: React.FC = () => (
               Move requests forward faster
             </h3>
             <p className="font-['Inter',sans-serif] font-normal text-[14.5px] leading-[24px] text-[#6B7280] mb-6">
-              Route leave, attendance corrections, and other workforce requests through clear approval workflows.
+              Route Time-off, attendance corrections, and other workforce requests through clear approval workflows.
             </p>
           </div>
 
@@ -357,7 +357,7 @@ const CopyHRProblemValue: React.FC = () => (
           <div className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-[14px] p-[16px] pt-[26.6px] flex flex-col gap-2">
             <div className="flex items-center justify-between py-2 border-b border-gray-100/60">
               <span className="font-['Inter',sans-serif] font-semibold text-[12.5px] leading-[15px] text-[#111827]">
-                James Turner — Leave
+                James Turner — Time-off
               </span>
               <span className="bg-[#FEF3E2] text-[#B45309] font-bold text-[11px] leading-[13px] px-[10px] py-[3px] rounded-full">
                 Pending
@@ -390,7 +390,7 @@ const CopyHRProblemValue: React.FC = () => (
 const CopyHRCapabilitiesGrid: React.FC = () => {
   const capabilities = [
     { icon: '✅', label: 'Attendance Management' },
-    { icon: '🏖', label: 'Leave Management' },
+    { icon: '🏖', label: 'Time-off Management' },
     { icon: '👥', label: 'Employee Directory' },
     { icon: '🗓', label: 'Shift Management' },
     { icon: '⏱', label: 'Time Tracking' },
@@ -464,7 +464,7 @@ const CopyHRKnowledgeSections: React.FC = () => {
                     Know what's happening across your workforce — right now
                   </h2>
                   <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827] flex items-center w-full max-w-[549px] self-stretch">
-                    Give HR a clear view of attendance, availability, working hours, leave, and workforce exceptions without chasing managers for updates.
+                    Give HR a clear view of attendance, availability, working hours, Time-off, and workforce exceptions without chasing managers for updates.
                   </p>
                 </div>
 
@@ -761,7 +761,7 @@ const CopyHRKnowledgeSections: React.FC = () => {
                   </div>
                   <span className="text-[#111827] font-medium hidden sm:block truncate">Marketing</span>
                   <div className="shrink-0 flex justify-center sm:justify-start">
-                    <span className="bg-[#FFEDD5] text-[#C2410C] font-bold text-[10px] sm:text-[11px] px-2 sm:px-2.5 py-0.5 rounded-full inline-block shrink-0 whitespace-nowrap">On Leave</span>
+                    <span className="bg-[#FFEDD5] text-[#C2410C] font-bold text-[10px] sm:text-[11px] px-2 sm:px-2.5 py-0.5 rounded-full inline-block shrink-0 whitespace-nowrap">On Time-off</span>
                   </div>
                   <span className="text-right text-[#111827] font-medium shrink-0 text-[11px] sm:text-[12.5px]">10–6</span>
                 </div>
@@ -807,7 +807,7 @@ const CopyHRTasksCommunication: React.FC = () => {
                 <span className="bg-[#FEF3E2] text-[#B45309] font-bold text-[10.5px] px-[9px] py-[3px] rounded-full">In Progress</span>
               </div>
               <div className="flex items-center justify-between py-1">
-                <span className="font-['Inter',sans-serif] font-medium text-[13px] text-[#111827]">Approve pending leaves</span>
+                <span className="font-['Inter',sans-serif] font-medium text-[13px] text-[#111827]">Approve pending Time-offs</span>
                 <span className="bg-[#FDEEEE] text-[#B91C1C] font-bold text-[10.5px] px-[9px] py-[3px] rounded-full">Overdue</span>
               </div>
               <div className="flex items-center justify-between py-1">
@@ -864,9 +864,9 @@ const CopyHRTasksCommunication: React.FC = () => {
 /* ─── HR CONNECTED WORKFLOWS ─── */
 const CopyHRConnectedWorkflows: React.FC = () => {
   const steps = [
-    { text: 'Employee requests leave' },
+    { text: 'Employee requests Time-off' },
     { text: 'Manager receives approval' },
-    { text: 'Leave balance updates' },
+    { text: 'Time-off balance updates' },
     { text: 'Team availability updates' },
     { text: 'Calendar updates' },
     { text: 'HR gets real-time visibility' },
@@ -953,13 +953,13 @@ const CopyHRInteractiveShowcase: React.FC = () => {
       ],
     },
     {
-      id: 'leave-approvals',
-      title: 'Leave approvals',
-      desc: 'Employees submit requests with leave type, reason, and duration. Managers review and approve with 1 click.',
+      id: 'Time-off-approvals',
+      title: 'Time-off approvals',
+      desc: 'Employees submit requests with Time-off type, reason, and duration. Managers review and approve with 1 click.',
       rows: [
-        { text: 'Alex Johnson — Annual Leave (3 days)', pillText: 'Pending Approval', pillBg: 'bg-[#EFF6FF]', pillColor: 'text-[#1D4ED8]', pillBgHex: '#EFF6FF', pillColorHex: '#1D4ED8' },
-        { text: 'Maria Garcia — Sick Leave (1 day)', pillText: 'Approved', pillBg: 'bg-[#EAFBF3]', pillColor: 'text-[#15803D]', pillBgHex: '#EAFBF3', pillColorHex: '#15803D' },
-        { text: 'James Smith — Casual Leave (2 days)', pillText: 'Approved', pillBg: 'bg-[#EAFBF3]', pillColor: 'text-[#15803D]', pillBgHex: '#EAFBF3', pillColorHex: '#15803D' },
+        { text: 'Alex Johnson — Annual Time-off (3 days)', pillText: 'Pending Approval', pillBg: 'bg-[#EFF6FF]', pillColor: 'text-[#1D4ED8]', pillBgHex: '#EFF6FF', pillColorHex: '#1D4ED8' },
+        { text: 'Maria Garcia — Sick Time-off (1 day)', pillText: 'Approved', pillBg: 'bg-[#EAFBF3]', pillColor: 'text-[#15803D]', pillBgHex: '#EAFBF3', pillColorHex: '#15803D' },
+        { text: 'James Smith — Casual Time-off (2 days)', pillText: 'Approved', pillBg: 'bg-[#EAFBF3]', pillColor: 'text-[#15803D]', pillBgHex: '#EAFBF3', pillColorHex: '#15803D' },
       ],
     },
     {
@@ -1030,16 +1030,14 @@ const CopyHRInteractiveShowcase: React.FC = () => {
                 <div
                   key={item.id}
                   onClick={() => setActiveTab(idx)}
-                  className={`cursor-pointer w-full text-left rounded-xl transition-all duration-200 ${
-                    isActive
+                  className={`cursor-pointer w-full text-left rounded-xl transition-all duration-200 ${isActive
                       ? 'p-3.5 sm:p-4 bg-indigo-50/60 border border-indigo-100/80 shadow-xs'
                       : 'p-3 sm:py-3.5 sm:px-3 hover:bg-slate-50 border border-transparent'
-                  }`}
+                    }`}
                 >
                   <h4
-                    className={`font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[15px] sm:text-[16px] leading-[20px] tracking-[-0.32px] flex items-center transition-colors ${
-                      isActive ? 'text-[#5C5CFF]' : 'text-[#111827]'
-                    }`}
+                    className={`font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[15px] sm:text-[16px] leading-[20px] tracking-[-0.32px] flex items-center transition-colors ${isActive ? 'text-[#5C5CFF]' : 'text-[#111827]'
+                      }`}
                   >
                     {item.title}
                   </h4>
@@ -1060,9 +1058,8 @@ const CopyHRInteractiveShowcase: React.FC = () => {
               {currentWf.rows.map((row, idx) => (
                 <div
                   key={idx}
-                  className={`flex flex-row justify-between items-center py-2 sm:py-2.5 w-full box-border gap-2 ${
-                    idx < currentWf.rows.length - 1 ? 'border-b border-[#F3F4F6]' : ''
-                  }`}
+                  className={`flex flex-row justify-between items-center py-2 sm:py-2.5 w-full box-border gap-2 ${idx < currentWf.rows.length - 1 ? 'border-b border-[#F3F4F6]' : ''
+                    }`}
                 >
                   {/* span – row label */}
                   <span className="font-['Inter',sans-serif] font-semibold text-[12px] sm:text-[12.5px] leading-[16px] text-[#111827] truncate pr-2 min-w-0">
@@ -1101,8 +1098,8 @@ const CopyHREmployeeSelfServiceDark: React.FC = () => {
       rows: ['On Duty · 08:52 AM', 'Request correction'],
     },
     {
-      head: 'LEAVE',
-      rows: ['Balance: 18 days', 'Request leave'],
+      head: 'Time-off',
+      rows: ['Balance: 18 days', 'Request Time-off'],
     },
     {
       head: 'PROFILE / CALENDAR',
@@ -1160,11 +1157,11 @@ const CopyHRAIAssistant: React.FC = () => {
         <div className="w-full lg:w-[576px] bg-white border border-[#E5E7EB] rounded-[24px] p-7 lg:p-9 flex flex-col gap-3">
           {/* Prompt 1 */}
           <div className="inline-flex items-center px-4 py-3 bg-[#EEEEFF] text-[#4A4AE0] font-[#Plus_Jakarta_Sans',sans-serif] font-semibold text-[13.5px] rounded-[14px] self-start max-w-max">
-            "Who's on leave today?"
+            "Who's on Time-off today?"
           </div>
           {/* Response 1 */}
           <div className="w-full bg-[#F8FAFC] border border-[#E5E7EB] rounded-[14px] px-4 py-3 font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[13.5px] text-[#111827]">
-            3 employees are on leave today: James Turner, Priya Rao, and Alan Cruz.
+            3 employees are on Time-off today: James Turner, Priya Rao, and Alan Cruz.
           </div>
 
           {/* Prompt 2 */}
@@ -1188,7 +1185,7 @@ const CopyHRAIAssistant: React.FC = () => {
 
           <ul className="flex flex-col gap-[11px] pt-2 w-full">
             {[
-              '"Which leave requests are waiting for approval?"',
+              '"Which Time-off requests are waiting for approval?"',
               '"Show today\'s team availability."',
               '"Summarize overdue team tasks."',
             ].map((text, idx) => (
@@ -1223,7 +1220,7 @@ const CopyHRReportsAnalytics: React.FC = () => {
             Turn everyday workforce data into useful insight
           </h3>
           <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[16px] leading-[26px] text-[#6B7280]">
-            Filter and export reports across attendance, leave, employees, departments, shifts, and tasks — without a separate BI tool.
+            Filter and export reports across attendance, Time-off, employees, departments, shifts, and tasks — without a separate BI tool.
           </p>
         </div>
 
@@ -1241,7 +1238,7 @@ const CopyHRReportsAnalytics: React.FC = () => {
 
             {/* Report Categories Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-1">
-              {['Attendance', 'Working Hours', 'Leave', 'Employee', 'Department', 'Shift', 'Task Completion'].map((cat, idx) => (
+              {['Attendance', 'Working Hours', 'Time-off', 'Employee', 'Department', 'Shift', 'Task Completion'].map((cat, idx) => (
                 <div key={idx} className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-[10px] p-3 text-center font-['Inter',sans-serif] font-semibold text-[12.5px] text-[#111827] flex items-center justify-center min-h-[49px]">
                   {cat}
                 </div>
@@ -1303,7 +1300,7 @@ const CopyHRRelatedSolutions: React.FC = () => {
   const cards = [
     {
       title: 'Give managers a clearer view of their teams',
-      desc: 'Track attendance, leave, tasks, availability, and approvals from one workspace.',
+      desc: 'Track attendance, Time-off, tasks, availability, and approvals from one workspace.',
       linkText: 'Explore Manager Solutions →',
       href: '#workforce-solutions',
     },
@@ -1426,8 +1423,8 @@ const CopyHRFAQSection: React.FC = () => {
                   </span>
                   <span
                     className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${isOpen
-                        ? 'bg-[#5C5CFF] text-white'
-                        : 'bg-[#EEF2FF] text-[#5C5CFF] group-hover:bg-[#5C5CFF] group-hover:text-white'
+                      ? 'bg-[#5C5CFF] text-white'
+                      : 'bg-[#EEF2FF] text-[#5C5CFF] group-hover:bg-[#5C5CFF] group-hover:text-white'
                       }`}
                   >
                     {isOpen ? '−' : '+'}

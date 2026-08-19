@@ -417,9 +417,9 @@ const CampusPortalOverview: React.FC = () => {
     {
       initials: 'PR',
       name: 'Priya Raman',
-      detail: 'Faculty Leave',
+      detail: 'Faculty Time-off',
       time: 'â€”',
-      status: 'On Leave',
+      status: 'On Time-off',
       avatarBg: 'bg-emerald-500',
     },
     {
@@ -447,7 +447,7 @@ const CampusPortalOverview: React.FC = () => {
             {status}
           </span>
         );
-      case 'On Leave':
+      case 'On Time-off':
         return (
           <span className="px-2 py-0.5 rounded-full font-bold text-[9px] bg-[#F1F5F9] text-[#64748B]">
             {status}
@@ -656,7 +656,7 @@ const MobileExperience: React.FC = () => {
               <div className="flex flex-col gap-2.5">
                 {[
                   { label: "Attendance", val: "Mark Now" },
-                  { label: "Leave", val: "1 pending" },
+                  { label: "Time-off", val: "1 pending" },
                   { label: "Timetable", val: "5 classes" },
                   { label: "Students", val: "142" },
                   { label: "Reports", val: "Weekly" },
@@ -678,7 +678,7 @@ const MobileExperience: React.FC = () => {
             </div>
 
             <h3 className="text-sm font-black text-slate-800 mt-5 mb-1.5">Faculty App</h3>
-            <p className="text-xs text-slate-400 font-bold text-center max-w-[240px]">Mark attendance, manage leave and view class rosters.</p>
+            <p className="text-xs text-slate-400 font-bold text-center max-w-[240px]">Mark attendance, manage Time-off and view class rosters.</p>
           </FadeUp>
 
           {/* Admin App */}
@@ -1048,12 +1048,12 @@ const SolutionsPage: React.FC = () => (
       id="sol-faculty"
       pill="Faculty Operations"
       title="Faculty Operations, Simplified"
-      description="Track faculty check-ins, working hours and department-wise attendance, and route leave requests and substitutions without the back-and-forth."
+      description="Track faculty check-ins, working hours and department-wise attendance, and route Time-off requests and substitutions without the back-and-forth."
       bullets={[
         'Faculty Check-in',
         'Department Attendance',
         'Working Hours',
-        'Leave Requests',
+        'Time-off Requests',
         'Batch-wise Attendance',
         'Late Tracking',
       ]}

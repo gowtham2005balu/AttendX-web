@@ -43,11 +43,11 @@ const JobDetailsPage: React.FC = () => {
               <span className="bg-slate-100 text-slate-600 px-3 py-1.5 rounded-full border border-slate-200">₹28–40L/yr</span>
               <span className="bg-blue-50 text-[#5B5FEF] px-3 py-1.5 rounded-full border border-blue-100">Posted 2d ago</span>
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-[56px] font-semibold text-[#0F172A] tracking-tight leading-tight mb-8">
               Senior Backend Engineer — Platform Infrastructure
             </h1>
-            
+
             <div className="flex flex-wrap items-center gap-4">
               <a href="#apply-page" className="bg-[#5B5FEF] hover:bg-[#4F46E5] text-white text-[15px] font-bold px-8 py-3.5 rounded-full transition-all shadow-md flex items-center gap-2">
                 Apply for this role <ArrowRight size={16} />
@@ -66,14 +66,14 @@ const JobDetailsPage: React.FC = () => {
       {/* ─── MAIN CONTENT ─── */}
       <Container className="max-w-6xl mx-auto pt-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
-          
+
           {/* Left Column (Content) */}
           <div className="lg:col-span-8 space-y-12 text-[15px] text-slate-600 leading-relaxed font-medium">
-            
+
             <FadeUp delay={0.2}>
               <h2 className="text-[22px] font-semibold text-slate-900 mb-4">About Workzi</h2>
               <p className="mb-4">
-                Workzi is building the operating system for the modern workforce. Our platform seamlessly manages attendance, leave, payroll integration, and people operations for over 10,000 companies. By automating the complex, administrative burdens of HR, we're giving teams their time back to focus on their people.
+                Workzi is building the operating system for the modern workforce. Our platform seamlessly manages attendance, Time-off, payroll integration, and people operations for over 10,000 companies. By automating the complex, administrative burdens of HR, we're giving teams their time back to focus on their people.
               </p>
               <p>
                 Backed by top-tier VCs, our team is growing rapidly. We believe that great software can genuinely improve how people experience work — and that thoughtful design and intelligent automation can transform organizations globally.
@@ -88,7 +88,7 @@ const JobDetailsPage: React.FC = () => {
               <p>
                 This is a high-impact role. You will work closely with the engineering lead, product team, and other engineers to architect and deploy resilient, high-performance services that are foundational to the quality of the Workzi experience for users globally.
               </p>
-              
+
               {/* Key Metrics Grid */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
                 <div className="bg-slate-50 border border-slate-100 rounded-2xl p-6 text-center">
@@ -138,7 +138,7 @@ const JobDetailsPage: React.FC = () => {
                 <li>Experience working with B2B SaaS applications handling complex permissions and tenancy.</li>
                 <li>Familiarity with Infrastructure as Code (Terraform) and Kubernetes.</li>
               </ul>
-              
+
               {/* Alert Box */}
               <div className="bg-[#FEF3C7] border border-[#FDE68A] rounded-2xl p-5 flex gap-4">
                 <div className="text-[#D97706] shrink-0 mt-0.5">
@@ -219,11 +219,11 @@ const JobDetailsPage: React.FC = () => {
             </FadeUp>
 
           </div>
-          
+
           {/* Right Column (Sidebar) */}
           <div className="lg:col-span-4">
             <FadeUp delay={0.4} className="sticky top-24">
-              
+
               {/* Apply Box */}
               <div className="bg-white border border-slate-200 rounded-[28px] overflow-hidden shadow-sm mb-6">
                 {/* Blue Header Banner */}
@@ -262,7 +262,7 @@ const JobDetailsPage: React.FC = () => {
               {/* Hiring Process */}
               <div className="bg-[#F8FAFC]/65 border border-slate-200 rounded-[28px] p-6 shadow-xs">
                 <h3 className="text-[11px] font-extrabold uppercase tracking-wider text-slate-400 mb-6">Hiring Timeline</h3>
-                
+
                 <div className="divide-y divide-slate-100 space-y-4">
                   {[
                     { number: 1, name: "Application", sub: "Open now", active: true },
@@ -304,7 +304,7 @@ const JobDetailsPage: React.FC = () => {
           <FadeUp>
             <h2 className="text-2xl font-semibold text-slate-900 mb-2">Related Opportunities</h2>
             <p className="text-[14px] text-slate-500 mb-8">Other roles you might be interested in.</p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { title: "AI Research Engineer — Workforce Prediction Models", dept: "AI & Analytics", loc: "Remote" },

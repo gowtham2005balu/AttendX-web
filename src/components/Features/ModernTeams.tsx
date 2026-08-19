@@ -11,7 +11,7 @@ export const ModernTeams: React.FC = () => {
     },
     {
       title: 'Mobile First',
-      desc: 'Manage attendance and leave directly from mobile.',
+      desc: 'Manage attendance and Time-off directly from mobile.',
       icon: <Smartphone className="w-[24px] h-[24px] sm:w-[26px] sm:h-[26px] text-[#5B5FFF]" />,
     },
     {

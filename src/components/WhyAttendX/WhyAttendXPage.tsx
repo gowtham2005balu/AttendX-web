@@ -26,7 +26,7 @@ export const WhyAttendXPage: React.FC = () => {
       <section className="relative pt-14 pb-12 lg:pb-20 overflow-hidden bg-[conic-gradient(from_0.09deg_at_50%_54.26%,#EEEEFF_-88.5deg,#FFFFFF_0.55deg,#FFFFFF_0.58deg,#EEEEFF_82.63deg,#FFFFFF_123.7deg,#FFFFFF_232.58deg,#EEEEFF_271.5deg,#FFFFFF_360.55deg)]">
         <Container className="max-w-[1280px] px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center min-h-[520px]">
-            
+
             {/* Left Content Column */}
             <div className="lg:col-span-6 flex flex-col items-start max-w-[578px]">
 
@@ -38,7 +38,7 @@ export const WhyAttendXPage: React.FC = () => {
 
               {/* p.desc Description */}
               <p className="font-['Inter'] font-normal text-[17px] sm:text-[19px] leading-[27px] sm:leading-[29px] text-[#6B7280] max-w-[480px] mb-8">
-                Workzi brings attendance, leave, tasks, approvals and everyday HR operations into one connected platform — so your people spend less time on admin and more time on work that matters.
+                Workzi brings attendance, Time-off, tasks, approvals and everyday HR operations into one connected platform — so your people spend less time on admin and more time on work that matters.
               </p>
 
               {/* div.hero-ctas */}
@@ -103,7 +103,7 @@ export const WhyAttendXPage: React.FC = () => {
                 <div className="font-['Inter'] font-bold text-[12px] leading-[19px] tracking-[0.48px] uppercase text-[#6B7280] pb-2 border-b border-slate-100">
                   ATTENDANCE — TODAY
                 </div>
-                
+
                 <div className="flex items-center justify-between py-2 border-b border-slate-50">
                   <span className="font-['Inter'] font-semibold text-[13px] leading-[20px] text-[#111827]">
                     On Time
@@ -141,7 +141,7 @@ export const WhyAttendXPage: React.FC = () => {
 
                 <div className="space-y-2">
                   <div className="bg-white/15 backdrop-blur-sm rounded-[10px] p-3 text-[12.5px] font-['Inter'] font-semibold leading-[19px]">
-                    "3 pending approvals — 2 leave, 1 correction."
+                    "3 pending approvals — 2 Time-off, 1 correction."
                   </div>
                   <div className="bg-white/15 backdrop-blur-sm rounded-[10px] p-2.5 text-[12.5px] font-['Inter'] font-semibold leading-[19px]">
                     "Meera hasn't checked in yet."
@@ -209,20 +209,18 @@ export const WhyAttendXPage: React.FC = () => {
                 <div key={idx} className="flex flex-col items-center text-center px-2">
                   {/* Dot / Icon Circle */}
                   <div
-                    className={`w-[52px] h-[52px] rounded-full flex items-center justify-center mb-3 transition-transform hover:scale-105 duration-200 ${
-                      stage.isWorkzi
+                    className={`w-[52px] h-[52px] rounded-full flex items-center justify-center mb-3 transition-transform hover:scale-105 duration-200 ${stage.isWorkzi
                         ? 'bg-[#5C5CFF] border-2 border-[#5C5CFF] text-white font-extrabold text-[20px]'
                         : 'bg-white border-2 border-[#E5E7EB] text-[20px]'
-                    }`}
+                      }`}
                   >
                     {stage.emoji}
                   </div>
 
                   {/* Title */}
                   <h4
-                    className={`font-['Plus_Jakarta_Sans'] text-[15px] leading-[23px] tracking-[-0.3px] mb-1 ${
-                      stage.isWorkzi ? 'font-bold text-[#5C5CFF]' : 'font-semibold text-[#111827]'
-                    }`}
+                    className={`font-['Plus_Jakarta_Sans'] text-[15px] leading-[23px] tracking-[-0.3px] mb-1 ${stage.isWorkzi ? 'font-bold text-[#5C5CFF]' : 'font-semibold text-[#111827]'
+                      }`}
                   >
                     {stage.title}
                   </h4>
@@ -262,8 +260,8 @@ export const WhyAttendXPage: React.FC = () => {
               <ul className="space-y-4 font-['Inter'] text-[15.5px] leading-[24px] text-[#111827]">
                 {[
                   'Manual attendance tracking',
-                  'Delayed leave approvals',
-                  'Paper-based or scattered leave requests',
+                  'Delayed Time-off approvals',
+                  'Paper-based or scattered Time-off requests',
                   'Disconnected spreadsheets and tools',
                   'Little to no visibility into team availability',
                   'Reports built by hand, after the fact',
@@ -288,8 +286,8 @@ export const WhyAttendXPage: React.FC = () => {
                 {[
                   'Real-time attendance tracking',
                   'Automated approval workflows',
-                  'One-tap leave requests and balances',
-                  'Unified platform for attendance, leave & tasks',
+                  'One-tap Time-off requests and balances',
+                  'Unified platform for attendance, Time-off & tasks',
                   'Live dashboards for every role',
                   'Reports that build themselves',
                 ].map((item, idx) => (
@@ -349,7 +347,7 @@ export const WhyAttendXPage: React.FC = () => {
         <Container className="max-w-[950px] px-4 text-center">
           <div className="flex flex-col items-center justify-center gap-1.5 sm:gap-2.5 font-['Plus_Jakarta_Sans'] text-[24px] sm:text-[34px] lg:text-[38px] leading-[1.3] sm:leading-[50px] lg:leading-[56px]">
             <div className="font-semibold text-[#6B7280]">Attendance shouldn't need a register.</div>
-            <div className="font-semibold text-[#6B7280]">Leave shouldn't need a chase.</div>
+            <div className="font-semibold text-[#6B7280]">Time-off shouldn't need a chase.</div>
             <div className="font-semibold text-[#6B7280]">Approvals shouldn't sit in someone's inbox for days.</div>
             <div className="font-semibold text-[#6B7280]">Tasks shouldn't live in five different tools.</div>
             <div className="font-bold text-[#111827] pt-2">Work should just move.</div>
@@ -382,7 +380,7 @@ export const WhyAttendXPage: React.FC = () => {
                 ],
               },
               {
-                title: 'Leave Management',
+                title: 'Time-off Management',
                 rows: [
                   { label: 'Casual Balance', val: '8' },
                   { label: 'Pending', val: '2' },
@@ -406,13 +404,13 @@ export const WhyAttendXPage: React.FC = () => {
                 title: 'Organization Calendar',
                 rows: [
                   { label: 'Next Holiday', val: 'Aug 15' },
-                  { label: 'On Leave Today', val: '4' },
+                  { label: 'On Time-off Today', val: '4' },
                 ],
               },
               {
                 title: 'Workzi AI',
                 rows: [
-                  { label: '"Who\'s on leave today?"', val: '→' },
+                  { label: '"Who\'s on Time-off today?"', val: '→' },
                   { label: '"Pending approvals"', val: '→' },
                 ],
               },
@@ -535,7 +533,7 @@ export const WhyAttendXPage: React.FC = () => {
               },
               {
                 title: 'Managers',
-                desc: 'See your team\'s attendance, leave and tasks without chasing updates.',
+                desc: 'See your team\'s attendance, Time-off and tasks without chasing updates.',
               },
               {
                 title: 'Operations',
@@ -543,7 +541,7 @@ export const WhyAttendXPage: React.FC = () => {
               },
               {
                 title: 'Employees',
-                desc: 'Check in, apply leave and track approvals — all from one place.',
+                desc: 'Check in, apply Time-off and track approvals — all from one place.',
               },
             ].map((persona, idx) => (
               <div
@@ -655,8 +653,8 @@ export const WhyAttendXPage: React.FC = () => {
                   avatar: 'SK',
                   name: 'Sanjana Kapoor',
                   role: 'HR Manager, Education Group',
-                  quote: '"Our staff can finally apply for leave without stopping by the office. It sounds small — it wasn\'t."',
-                  result: 'Leave requests fully self-service',
+                  quote: '"Our staff can finally apply for Time-off without stopping by the office. It sounds small — it wasn\'t."',
+                  result: 'Time-off requests fully self-service',
                 },
                 {
                   avatar: 'TK',
@@ -709,7 +707,7 @@ export const WhyAttendXPage: React.FC = () => {
               Ready to transform the way your people work?
             </h2>
             <p className="font-['Inter'] font-normal text-[16px] sm:text-[17px] leading-[26px] text-white/85 max-w-[520px] mb-8">
-              Bring attendance, leave, tasks and everyday HR operations together — with Workzi.
+              Bring attendance, Time-off, tasks and everyday HR operations together — with Workzi.
             </p>
             <div className="flex flex-wrap justify-center items-center gap-3.5">
               <a

@@ -153,7 +153,7 @@ const TaskHero: React.FC = () => (
 
           <div className="w-full lg:w-[577px]">
             <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[18px] leading-[28px] sm:leading-[30px] text-[#6B7280]">
-              Assign it. Track it. See it through. Workzi brings task management into the same place as attendance and leave, so nobody&apos;s chasing status updates across three different apps.
+              Assign it. Track it. See it through. Workzi brings task management into the same place as attendance and Time-off, so nobody&apos;s chasing status updates across three different apps.
             </p>
           </div>
 
@@ -182,7 +182,7 @@ const TaskHero: React.FC = () => (
     <div className="w-full bg-white py-[36px] px-6 lg:px-[112px]">
       <div className="w-full max-w-[1216px] mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between gap-[20px] overflow-x-auto no-scrollbar">
         {[
-          'Unified task & leave view',
+          'Unified task & Time-off view',
           'Kanban team task boards',
           'Workload burnout tracking',
           'Threaded comments & files',
@@ -401,13 +401,13 @@ const SectionTaskCalendar: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827]">
-          Deadlines mean more on a calendar than in a list. Employees get a personal task calendar showing what&apos;s due, and when — alongside attendance and leave, not apart from it.
+          Deadlines mean more on a calendar than in a list. Employees get a personal task calendar showing what&apos;s due, and when — alongside attendance and Time-off, not apart from it.
         </p>
 
         <div className="flex flex-col gap-[14px] pt-[13px] w-full">
           {[
             'Task deadlines mapped to a personal calendar',
-            'Overlaps with leave and holidays visible upfront',
+            'Overlaps with Time-off and holidays visible upfront',
             'Switch between list and calendar view',
           ].map((item, idx) => (
             <div key={idx} className="flex items-center gap-[12px]">
@@ -642,10 +642,10 @@ const SectionCalendarIntegration: React.FC = () => (
     <Container className="max-w-[1280px] mx-auto flex flex-col items-center gap-[24px]">
       <FadeUp className="flex flex-col items-center text-center max-w-[620px] mx-auto gap-[13.11px]">
         <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[36px] sm:text-[48px] lg:text-[55px] leading-[62px] tracking-[-1px] text-[#111827] text-center max-w-[620px]">
-          Tasks, attendance and leave — one calendar, not three
+          Tasks, attendance and Time-off — one calendar, not three
         </h2>
         <p className="font-['Inter',sans-serif] font-normal text-[16.5px] leading-[27px] text-[#6B7280] text-center max-w-[514px]">
-          Deadlines don&apos;t exist in isolation. Workzi shows task due dates alongside attendance and leave, so planning a week means looking at one screen, not three.
+          Deadlines don&apos;t exist in isolation. Workzi shows task due dates alongside attendance and Time-off, so planning a week means looking at one screen, not three.
         </p>
       </FadeUp>
 
@@ -676,9 +676,8 @@ const SectionHROverview: React.FC = () => (
           {['Overview', 'Categories', 'Reports'].map((tab, idx) => (
             <span
               key={idx}
-              className={`font-['Inter',sans-serif] font-semibold text-[13px] px-[16px] py-[8px] rounded-full cursor-pointer transition-colors ${
-                idx === 0 ? 'bg-[#5C5CFF] text-white' : 'bg-white border border-[#E5E7EB] text-[#6B7280]'
-              }`}
+              className={`font-['Inter',sans-serif] font-semibold text-[13px] px-[16px] py-[8px] rounded-full cursor-pointer transition-colors ${idx === 0 ? 'bg-[#5C5CFF] text-white' : 'bg-white border border-[#E5E7EB] text-[#6B7280]'
+                }`}
             >
               {tab}
             </span>
@@ -838,7 +837,7 @@ const TaskFAQ: React.FC = () => {
     },
     {
       question: 'Do task deadlines show up on the attendance calendar?',
-      answer: 'Yes. Tasks, leave and attendance appear together on a unified calendar, so planning doesn\'t require checking multiple screens.',
+      answer: 'Yes. Tasks, Time-off and attendance appear together on a unified calendar, so planning doesn\'t require checking multiple screens.',
     },
     {
       question: 'Can a task be recurring?',
@@ -880,9 +879,8 @@ const TaskFAQ: React.FC = () => {
                       {faq.question}
                     </span>
                     <div
-                      className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${
-                        isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
-                      }`}
+                      className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
+                        }`}
                     >
                       {isOpen ? <X size={15} strokeWidth={2.5} /> : <Plus size={15} strokeWidth={2.5} />}
                     </div>

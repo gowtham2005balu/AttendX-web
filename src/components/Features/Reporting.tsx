@@ -5,7 +5,7 @@ import { Check, ArrowRight } from 'lucide-react';
 export const Reporting: React.FC = () => {
   const features = [
     'Attendance Reports',
-    'Leave Reports',
+    'Time-off Reports',
     'Team Insights',
     'Workforce Trends',
     'Exportable Data',
@@ -55,7 +55,7 @@ export const Reporting: React.FC = () => {
                 </div>
                 <div className="bg-[#F8FAFC] border border-[#F3F4F6] p-4 rounded-[14px] flex flex-col gap-[3px] text-left">
                   <span className="font-['Plus_Jakarta_Sans',sans-serif] text-[10px] font-bold text-[#9CA3AF] uppercase tracking-[0.6px]">
-                    On Leave
+                    On Time-off
                   </span>
                   <span className="font-['Plus_Jakarta_Sans',sans-serif] text-[22px] font-extrabold text-[#111827] leading-[28px]">
                     4
@@ -142,7 +142,7 @@ export const Reporting: React.FC = () => {
                   <div className="flex items-center gap-3">
                     <span className="font-['Inter',sans-serif] text-[11px] text-[#6B7280]">—</span>
                     <span className="px-[9px] py-[3px] rounded-[6px] bg-[rgba(91,95,255,0.1)] font-['Plus_Jakarta_Sans',sans-serif] text-[10px] font-bold text-[#5B5FFF]">
-                      On Leave
+                      On Time-off
                     </span>
                   </div>
                 </div>
@@ -184,7 +184,7 @@ export const Reporting: React.FC = () => {
 
           {/* Subtitle */}
           <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827] mb-8">
-            Provide employees access to attendance history, leave records, achievements, profile management, and notifications from one place.
+            Provide employees access to attendance history, Time-off records, achievements, profile management, and notifications from one place.
           </p>
 
           {/* Checklist 2 Columns */}

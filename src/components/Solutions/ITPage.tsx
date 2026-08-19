@@ -138,7 +138,7 @@ const ITProblemValue: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[16.5px] leading-[25px] sm:leading-[27px] text-[#6B7280] text-center max-w-[610px]">
-          HR systems hold sensitive data — attendance, leave, personal records. IT needs to control exactly who can see and act on what, without manually managing permissions for every new hire, manager, or department change.
+          HR systems hold sensitive data — attendance, Time-off, personal records. IT needs to control exactly who can see and act on what, without manually managing permissions for every new hire, manager, or department change.
         </p>
       </div>
 
@@ -620,7 +620,7 @@ const ITGovernanceDark: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] text-[15px] sm:text-[16px] leading-[24px] sm:leading-[26px] text-slate-300">
-          IT shouldn't have to manually approve every access change or chase down who has permission to what. Workzi's role-based structure means access follows the org chart automatically as people join, move, or leave.
+          IT shouldn't have to manually approve every access change or chase down who has permission to what. Workzi's role-based structure means access follows the org chart automatically as people join, move, or Time-off.
         </p>
 
         <ul className="flex flex-col gap-2.5 sm:gap-3 pt-1 sm:pt-2">
@@ -782,8 +782,8 @@ const ITFAQ: React.FC = () => {
                   </span>
                   <span
                     className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${isOpen
-                        ? 'bg-[#5C5CFF] text-white'
-                        : 'bg-[#EEF2FF] text-[#5C5CFF] group-hover:bg-[#5C5CFF] group-hover:text-white'
+                      ? 'bg-[#5C5CFF] text-white'
+                      : 'bg-[#EEF2FF] text-[#5C5CFF] group-hover:bg-[#5C5CFF] group-hover:text-white'
                       }`}
                   >
                     {isOpen ? '−' : '+'}

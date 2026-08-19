@@ -229,7 +229,7 @@ const MarketingProblemValue: React.FC = () => (
               Availability built in
             </h3>
             <p className="font-['Inter',sans-serif] font-normal text-[14.5px] leading-[24px] text-[#6B7280] mb-6">
-              Know who's out on leave before assigning a critical campaign deadline.
+              Know who's out on Time-off before assigning a critical campaign deadline.
             </p>
           </div>
 
@@ -239,7 +239,7 @@ const MarketingProblemValue: React.FC = () => (
                 Team Availability
               </span>
               <span className="bg-[#EAFBF3] text-[#15803D] font-bold text-[11px] leading-[13px] px-[10px] py-[3px] rounded-full">
-                Leave Synced
+                Time-off Synced
               </span>
             </div>
             <div className="flex items-center justify-between py-2 border-b border-gray-100/60">
@@ -434,10 +434,10 @@ const MarketingKnowledgeSections: React.FC = () => {
               <div className="flex flex-col items-start p-0 gap-5 w-full max-w-[549px] self-stretch">
                 <div className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
                   <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[36px] sm:text-[42px] lg:text-[48px] leading-[1.25] lg:leading-[62px] tracking-[-1.12px] text-[#000000] flex items-center w-full max-w-[549px] self-stretch">
-                    One Calendar for Launches, Leave, and Holidays
+                    One Calendar for Launches, Time-off, and Holidays
                   </h2>
                   <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827] flex items-center w-full max-w-[549px] self-stretch">
-                    See campaign dates alongside team leave and holidays, so a launch date doesn't land on a day half the team is out.
+                    See campaign dates alongside team Time-off and holidays, so a launch date doesn't land on a day half the team is out.
                   </p>
                 </div>
 
@@ -453,7 +453,7 @@ const MarketingKnowledgeSections: React.FC = () => {
 
             <ul className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
               {[
-                "View campaign launch dates alongside scheduled team leave and holidays",
+                "View campaign launch dates alongside scheduled team Time-off and holidays",
                 "Prevent setting critical launch dates when key team members are absent",
                 "Single unified calendar for marketing deadlines and workforce availability",
               ].map((text, idx) => (
@@ -473,7 +473,7 @@ const MarketingKnowledgeSections: React.FC = () => {
             <div className="w-full max-w-[503px] bg-white rounded-[14px] border border-[#E5E7EB] p-4 sm:p-6 flex flex-col gap-3.5 sm:gap-4 z-10">
               <div className="flex items-center justify-between pb-3 border-b border-gray-100">
                 <span className="font-['Inter',sans-serif] font-bold text-[13px] text-[#111827]">Launch Calendar View</span>
-                <span className="bg-[#EAFBF3] text-[#15803D] font-bold text-[10.5px] sm:text-[11px] px-2.5 py-0.5 rounded-full shrink-0">Leave Synced</span>
+                <span className="bg-[#EAFBF3] text-[#15803D] font-bold text-[10.5px] sm:text-[11px] px-2.5 py-0.5 rounded-full shrink-0">Time-off Synced</span>
               </div>
               <div className="flex flex-col gap-2.5 sm:gap-3">
                 <div className="flex items-center justify-between gap-2 p-2.5 sm:p-3 bg-[#F8FAFC] rounded-[10px] border border-[#E5E7EB]">
@@ -486,7 +486,7 @@ const MarketingKnowledgeSections: React.FC = () => {
                 <div className="flex items-center justify-between gap-2 p-2.5 sm:p-3 bg-[#F8FAFC] rounded-[10px] border border-[#E5E7EB]">
                   <div className="min-w-0">
                     <div className="font-['Inter',sans-serif] font-semibold text-[12.5px] sm:text-[13px] text-[#111827] truncate">Team PTO Check</div>
-                    <div className="font-['Inter',sans-serif] text-[10.5px] sm:text-[11px] text-[#6B7280] truncate">David M. on leave Oct 12</div>
+                    <div className="font-['Inter',sans-serif] text-[10.5px] sm:text-[11px] text-[#6B7280] truncate">David M. on Time-off Oct 12</div>
                   </div>
                   <span className="bg-[#EFF6FF] text-[#1D4ED8] font-bold text-[10.5px] sm:text-[11px] px-2.5 py-1 rounded-full shrink-0">Factored In</span>
                 </div>
@@ -627,7 +627,7 @@ const MarketingManagerVisibilityDark: React.FC = () => (
           {[
             "Track team task load and overdue items in one view",
             "Reassign tasks without leaving the dashboard",
-            "Plan launch dates with leave and holidays already visible",
+            "Plan launch dates with Time-off and holidays already visible",
           ].map((item, idx) => (
             <li key={idx} className="flex items-center gap-3 text-[14px] sm:text-[15px] text-slate-200">
               <span className="w-5 h-5 rounded-full bg-[#5C5CFF]/20 text-[#818CF8] flex items-center justify-center font-bold text-xs shrink-0">
@@ -675,7 +675,7 @@ const MarketingManagerVisibilityDark: React.FC = () => (
         <div className="bg-slate-800/40 rounded-xl p-3.5 sm:p-4 border border-slate-700/40 flex flex-col gap-2 sm:gap-2.5">
           <div className="text-xs font-bold text-slate-300">Launch Timeline Availability Check</div>
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[11.5px] sm:text-xs bg-emerald-950/40 border border-emerald-800/40 p-2.5 rounded-lg text-emerald-200">
-            <span className="leading-snug">Product Launch Target Date — No conflicting leave</span>
+            <span className="leading-snug">Product Launch Target Date — No conflicting Time-off</span>
             <span className="bg-emerald-800/60 text-emerald-100 px-2 py-0.5 rounded text-[10px] font-bold self-start sm:self-auto shrink-0">100% Clear</span>
           </div>
         </div>
@@ -732,15 +732,15 @@ const MarketingFAQ: React.FC = () => {
       a: 'Yes, where configured — approval rules can be applied to task completion.',
     },
     {
-      q: 'Can I see team leave and holidays alongside campaign deadlines?',
-      a: 'Yes. Tasks, holidays, and leave appear together on the attendance calendar.',
+      q: 'Can I see team Time-off and holidays alongside campaign deadlines?',
+      a: 'Yes. Tasks, holidays, and Time-off appear together on the attendance calendar.',
     },
     {
       q: 'Does Workzi track campaign performance or marketing analytics?',
       a: 'No. Workzi tracks tasks, deadlines, and approvals — not campaign performance metrics. It\'s meant to work alongside your analytics tools, not replace them.',
     },
     {
-      q: 'Can managers reassign a task if someone goes on leave?',
+      q: 'Can managers reassign a task if someone goes on Time-off?',
       a: 'Yes. Tasks can be reassigned directly from the manager dashboard.',
     },
     {
@@ -781,11 +781,10 @@ const MarketingFAQ: React.FC = () => {
                     {faq.q}
                   </span>
                   <span
-                    className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${
-                      isOpen
+                    className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${isOpen
                         ? 'bg-[#5C5CFF] text-white'
                         : 'bg-[#EEF2FF] text-[#5C5CFF] group-hover:bg-[#5C5CFF] group-hover:text-white'
-                    }`}
+                      }`}
                   >
                     {isOpen ? '−' : '+'}
                   </span>

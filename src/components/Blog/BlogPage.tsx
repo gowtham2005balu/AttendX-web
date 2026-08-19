@@ -63,7 +63,7 @@ const recentStories = [
     header: 'COMPLIANCE GUIDE',
     tag: 'Compliance',
     title: 'Labour Law Compliance in 2026: What Every HR Manager Needs to Know',
-    excerpt: 'A comprehensive breakdown of the new regulations impacting attendance records, overtime calculations, and leave entitlements.',
+    excerpt: 'A comprehensive breakdown of the new regulations impacting attendance records, overtime calculations, and Time-off entitlements.',
     author: 'Rohit K.',
     initials: 'RK',
     color: 'bg-blue-600',
@@ -87,7 +87,7 @@ const recentStories = [
     header: 'PRODUCT UPDATE',
     tag: 'Product Updates',
     title: 'Workzi June 2026 Release: Smarter Approvals, New Integrations & AI Insights',
-    excerpt: 'A walkthrough of everything new in our June platform release — including our long-awaited Slack integration and AI leave prediction engine.',
+    excerpt: 'A walkthrough of everything new in our June platform release — including our long-awaited Slack integration and AI Time-off prediction engine.',
     author: 'Workzi Team',
     initials: 'AT',
     color: 'bg-slate-700',
@@ -305,7 +305,7 @@ const BlogPage: React.FC = () => {
                         14
                       </span>
                       <span className="font-['Inter',sans-serif] font-normal text-[10px] leading-[16px] text-[#6B7280]">
-                        On Leave
+                        On Time-off
                       </span>
                     </div>
                   </div>
@@ -358,11 +358,10 @@ const BlogPage: React.FC = () => {
                 <button
                   key={filter}
                   onClick={() => setActiveFilter(filter)}
-                  className={`px-4 sm:px-5 py-2 rounded-[100px] text-[13px] sm:text-[14px] leading-[18px] font-bold transition-all border whitespace-nowrap inline-flex items-center justify-center shrink-0 cursor-pointer ${
-                    activeFilter === filter
+                  className={`px-4 sm:px-5 py-2 rounded-[100px] text-[13px] sm:text-[14px] leading-[18px] font-bold transition-all border whitespace-nowrap inline-flex items-center justify-center shrink-0 cursor-pointer ${activeFilter === filter
                       ? 'bg-[#5B5FFF] border-[#5B5FFF] text-white shadow-xs font-bold'
                       : 'bg-white border-[#E5E7EB] text-[#6B7280] hover:border-slate-300 hover:text-[#111827]'
-                  }`}
+                    }`}
                 >
                   {filter}
                 </button>

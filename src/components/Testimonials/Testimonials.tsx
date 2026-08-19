@@ -17,7 +17,7 @@ export const Testimonials: React.FC = () => {
       initials: 'D',
       name: 'Daniel O.',
       role: 'Team Lead',
-      quote: "Leave approvals used to take days over email. Now it's a single tap and my team knows instantly.",
+      quote: "Time-off approvals used to take days over email. Now it's a single tap and my team knows instantly.",
       rating: '4.9',
       avatarBg: 'bg-[#F59E0B]',
     },
@@ -69,7 +69,7 @@ export const Testimonials: React.FC = () => {
                     </span>
                   </div>
                 </div>
-                
+
                 {/* Rating block */}
                 <div className="flex items-center gap-[4px]">
                   <span className="text-[#F59E0B] font-bold text-[13px] leading-[16px] tracking-tight">

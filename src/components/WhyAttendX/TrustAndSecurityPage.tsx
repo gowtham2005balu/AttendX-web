@@ -251,7 +251,7 @@ export const TrustAndSecurityPage: React.FC = () => {
               },
               {
                 icon: '🏖',
-                title: 'Leave Information',
+                title: 'Time-off Information',
                 desc: "Shared only where it's relevant to the request",
               },
               {
@@ -647,11 +647,10 @@ export const TrustAndSecurityPage: React.FC = () => {
                       {faq.q}
                     </span>
                     <span
-                      className={`w-7 h-7 rounded-[8px] flex items-center justify-center text-[14px] font-bold shrink-0 transition-all duration-300 ${
-                        isOpen
+                      className={`w-7 h-7 rounded-[8px] flex items-center justify-center text-[14px] font-bold shrink-0 transition-all duration-300 ${isOpen
                           ? 'bg-[#5B5FFF] text-white rotate-45'
                           : 'bg-[#EEEEFF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
-                      }`}
+                        }`}
                     >
                       +
                     </span>

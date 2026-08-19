@@ -198,7 +198,7 @@ const ArticlePage: React.FC = () => {
                   72%
                 </span>
                 <span className="font-['Inter',sans-serif] font-normal text-[13px] leading-[21px] text-[#6B7280]">
-                  Faster leave approvals
+                  Faster Time-off approvals
                 </span>
               </div>
               <div className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-[12px] p-[21px_20px] flex flex-col items-center justify-center text-center gap-1">
@@ -262,7 +262,7 @@ const ArticlePage: React.FC = () => {
             </figcaption>
 
             <p className="font-['Inter',sans-serif] font-normal text-[17px] leading-[31px] text-[#111827] mb-8">
-              What makes modern implementations powerful is that these models are not static. They update continuously as new data flows in, recalibrating their predictions based on emerging patterns. A sudden spike in leave requests — perhaps correlated with a regional event or a flu season — adjusts the model's short-term forecasts automatically.
+              What makes modern implementations powerful is that these models are not static. They update continuously as new data flows in, recalibrating their predictions based on emerging patterns. A sudden spike in Time-off requests — perhaps correlated with a regional event or a flu season — adjusts the model's short-term forecasts automatically.
             </p>
 
             {/* CALLOUT BOX (div.callout - Amber warning box) */}
@@ -283,7 +283,7 @@ const ArticlePage: React.FC = () => {
               Perhaps the most operationally valuable application of AI in attendance management is anomaly detection — the ability to flag unusual patterns in real time before they create downstream problems in payroll or compliance reporting.
             </p>
             <p className="font-['Inter',sans-serif] font-normal text-[17px] leading-[31px] text-[#111827] mb-6">
-              Anomalies take many forms. An employee who consistently checks in two minutes before a shift threshold might indicate time-rounding issues. A sudden cluster of sick leave requests from a single department could signal a management problem. A pattern of check-ins from an unusual location might indicate a geo-fence misconfiguration or, in rare cases, a fraudulent entry.
+              Anomalies take many forms. An employee who consistently checks in two minutes before a shift threshold might indicate time-rounding issues. A sudden cluster of sick Time-off requests from a single department could signal a management problem. A pattern of check-ins from an unusual location might indicate a geo-fence misconfiguration or, in rare cases, a fraudulent entry.
             </p>
 
             {/* Bullet List */}
@@ -313,7 +313,7 @@ const ArticlePage: React.FC = () => {
             </figcaption>
 
             <p className="font-['Inter',sans-serif] font-normal text-[17px] leading-[31px] text-[#111827] mb-8">
-              The average approval cycle for leave requests dropped from 3.2 days to under 18 hours. Payroll error rates fell from an industry average of 2.8% to 0.4%. And perhaps most significantly for frontline managers — the average time spent on attendance-related administrative tasks dropped by 68%, freeing up roughly 4 hours per manager per week.
+              The average approval cycle for Time-off requests dropped from 3.2 days to under 18 hours. Payroll error rates fell from an industry average of 2.8% to 0.4%. And perhaps most significantly for frontline managers — the average time spent on attendance-related administrative tasks dropped by 68%, freeing up roughly 4 hours per manager per week.
             </p>
 
             {/* Section 5 Heading */}

@@ -28,7 +28,7 @@ export const FAQPage: React.FC = () => {
     { name: 'Organization Setup', count: 14 },
     { name: 'Employee Management', count: 20 },
     { name: 'Attendance', count: 32 },
-    { name: 'Leave', count: 21 },
+    { name: 'Time-off', count: 21 },
     { name: 'Shift Management', count: 16 },
     { name: 'Time Tracking', count: 11 },
     { name: 'Approvals', count: 15 },
@@ -47,7 +47,7 @@ export const FAQPage: React.FC = () => {
 
   const topTags = [
     'Attendance',
-    'Leave',
+    'Time-off',
     'Organization',
     'Payroll',
     'Mobile App',
@@ -116,25 +116,25 @@ export const FAQPage: React.FC = () => {
       tags: ['Attendance', 'Security', 'Shift Management'],
     },
 
-    // Leave
+    // Time-off
     {
-      id: 'leave-1',
-      category: 'Leave',
-      question: 'How do approvals for leave work?',
-      answer: 'Leave pipelines auto-route directly to direct managers. When employees submit a request, they receive instant confirmation and managers are notified immediately via push notifications to take action.',
+      id: 'Time-off-1',
+      category: 'Time-off',
+      question: 'How do approvals for Time-off work?',
+      answer: 'Time-off pipelines auto-route directly to direct managers. When employees submit a request, they receive instant confirmation and managers are notified immediately via push notifications to take action.',
       bullets: [
         'Multi-tiered supervisor approval flows',
-        'Real-time leave balance calculations',
+        'Real-time Time-off balance calculations',
         'Automatic accrual policies',
       ],
-      tags: ['Leave', 'Approvals', 'Mobile App'],
+      tags: ['Time-off', 'Approvals', 'Mobile App'],
     },
     {
-      id: 'leave-2',
-      category: 'Leave',
-      question: 'Can employees check their paid leave balance from the mobile app?',
-      answer: 'Yes, employees can view real-time leave balances across Paid Time Off (PTO), Sick Leave, Maternity/Paternity Leave, and Casual Leave directly inside the mobile app.',
-      tags: ['Leave', 'Mobile App', 'General'],
+      id: 'Time-off-2',
+      category: 'Time-off',
+      question: 'Can employees check their paid Time-off balance from the mobile app?',
+      answer: 'Yes, employees can view real-time Time-off balances across Paid Time Off (PTO), Sick Time-off, Maternity/Paternity Time-off, and Casual Time-off directly inside the mobile app.',
+      tags: ['Time-off', 'Mobile App', 'General'],
     },
 
     // Organization Setup & Employee Management
@@ -217,7 +217,7 @@ export const FAQPage: React.FC = () => {
       id: 'gen-1',
       category: 'General',
       question: 'What is Workzi?',
-      answer: 'Workzi is an enterprise workforce intelligence platform providing smart GPS attendance, automated shift scheduling, leave approval pipelines, and payroll integration for modern operations.',
+      answer: 'Workzi is an enterprise workforce intelligence platform providing smart GPS attendance, automated shift scheduling, Time-off approval pipelines, and payroll integration for modern operations.',
       tags: ['General', 'Pricing', 'Organization'],
     },
     {
@@ -340,8 +340,8 @@ export const FAQPage: React.FC = () => {
                   }
                 }}
                 className={`px-[18px] py-[9px] h-[36px] rounded-[999px] font-['Inter',sans-serif] font-semibold text-[13.5px] leading-[16px] transition-all cursor-pointer flex items-center justify-center shrink-0 border ${activeTag === tag
-                    ? 'bg-[#5B5FFF] border-[#5B5FFF] text-white shadow-xs font-semibold'
-                    : 'bg-white border-[#E5E7EB] text-[#6B7280] hover:border-slate-300 hover:text-[#111827]'
+                  ? 'bg-[#5B5FFF] border-[#5B5FFF] text-white shadow-xs font-semibold'
+                  : 'bg-white border-[#E5E7EB] text-[#6B7280] hover:border-slate-300 hover:text-[#111827]'
                   }`}
               >
                 {tag}
@@ -369,8 +369,8 @@ export const FAQPage: React.FC = () => {
                     }
                   }}
                   className={`w-full min-h-[41px] px-[14px] py-[12px] rounded-[12px] flex items-center justify-between transition-all cursor-pointer text-left border ${isActive
-                      ? 'bg-[#EEEEFF] border-[#5B5FFF] text-[#5B5FFF]'
-                      : 'bg-transparent border-transparent text-[#6B7280] hover:bg-slate-50 hover:text-[#111827]'
+                    ? 'bg-[#EEEEFF] border-[#5B5FFF] text-[#5B5FFF]'
+                    : 'bg-transparent border-transparent text-[#6B7280] hover:bg-slate-50 hover:text-[#111827]'
                     }`}
                 >
                   <span className="font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px]">

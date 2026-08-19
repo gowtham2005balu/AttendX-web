@@ -269,7 +269,7 @@ const EducationCapabilitiesGrid: React.FC = () => {
   const capabilities = [
     { icon: '🎓', label: 'Attendance Management' },
     { icon: '🏛️', label: 'Department Management' },
-    { icon: '🏖', label: 'Leave Management' },
+    { icon: '🏖', label: 'Time-off Management' },
     { icon: '👥', label: 'Employee Directory' },
     { icon: '🧾', label: 'Approval Workflows' },
     { icon: '✔️', label: 'Task Management' },
@@ -460,30 +460,30 @@ const EducationFeatureSections: React.FC = () => {
         </div>
       </section>
 
-      {/* 6. Leave Management */}
+      {/* 6. Time-off Management */}
       <section className="w-full py-[60px] px-6 lg:px-[100px]">
         <div className="w-full max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-[50px]">
           <div className="flex flex-col items-start p-0 gap-6 mx-auto max-w-[589px] w-full h-auto justify-center self-center">
             <div className="flex flex-col items-start p-0 gap-5 w-full max-w-[549px] self-stretch">
               <span className="inline-flex flex-row items-center px-[14px] py-[5px] gap-[6px] bg-[#F0F9F0] text-[#3B8A3E] font-['Inter',sans-serif] font-semibold text-[12px] leading-[15px] rounded-[50px]">
-                Leave Management
+                Time-off Management
               </span>
 
               <div className="flex flex-col items-start p-0 gap-5 w-full max-w-[549px] self-stretch">
                 <div className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
                   <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[36px] sm:text-[42px] lg:text-[48px] leading-[1.25] lg:leading-[62px] tracking-[-1.12px] text-[#000000] flex items-center w-full max-w-[549px] self-stretch">
-                    Leave Management for Faculty and Staff
+                    Time-off Management for Faculty and Staff
                   </h2>
                   <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827] flex items-center w-full max-w-[549px] self-stretch">
-                    Faculty and staff apply for leave and track balances, with approvals routed directly to the right department head.
+                    Faculty and staff apply for Time-off and track balances, with approvals routed directly to the right department head.
                   </p>
                 </div>
 
                 <a
-                  href="#leave-management"
+                  href="#Time-off-management"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>Explore Leave Management</span>
+                  <span>Explore Time-off Management</span>
                   <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
                 </a>
               </div>
@@ -491,9 +491,9 @@ const EducationFeatureSections: React.FC = () => {
 
             <ul className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
               {[
-                'Apply for leave and view leave balances in-app',
+                'Apply for Time-off and view Time-off balances in-app',
                 'Approvals routed automatically to department heads',
-                'Keep teaching schedule coverage visible during leave',
+                'Keep teaching schedule coverage visible during Time-off',
               ].map((text, idx) => (
                 <li key={idx} className="flex flex-row items-center p-0 gap-[12px] w-full">
                   <span className="w-[22px] h-[22px] rounded-[6px] bg-[rgba(16,185,129,0.12)] text-[#10B981] flex flex-row items-center justify-center text-[12px] font-bold shrink-0 border border-[#10B981]/20">
@@ -510,14 +510,14 @@ const EducationFeatureSections: React.FC = () => {
           <div className="w-full max-w-[611px] h-auto min-h-[260px] sm:min-h-[380px] lg:h-[496px] rounded-[16px] overflow-hidden border border-slate-200/50 flex items-center justify-center p-3.5 sm:p-6 bg-[radial-gradient(97.38%_131.25%_at_8.51%_3.7%,#9AA0FF_0%,#C5E2FF_51.12%,#4F7EFF_100%)] relative">
             <div className="w-full max-w-[503px] bg-white rounded-[14px] border border-[#E5E7EB] p-4 sm:p-6 flex flex-col gap-3.5 sm:gap-4 z-10 shadow-lg">
               <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-                <span className="font-bold text-slate-800 text-[14px] sm:text-[15px]">Faculty Leave Workflow</span>
+                <span className="font-bold text-slate-800 text-[14px] sm:text-[15px]">Faculty Time-off Workflow</span>
                 <span className="text-[10.5px] sm:text-xs font-semibold bg-blue-100 text-blue-700 px-2.5 py-0.5 rounded-full shrink-0">HOD Routing</span>
               </div>
               <div className="space-y-2">
                 <div className="p-2.5 sm:p-3 bg-slate-50 border border-slate-200 rounded-xl flex justify-between items-center text-xs gap-2">
                   <div className="min-w-0">
                     <span className="font-bold text-slate-800 truncate block">Prof. Mehra</span>
-                    <p className="text-slate-500 truncate">Casual Leave &bull; 2 Days</p>
+                    <p className="text-slate-500 truncate">Casual Time-off &bull; 2 Days</p>
                   </div>
                   <span className="bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded shrink-0">Pending HOD</span>
                 </div>
@@ -646,7 +646,7 @@ const EverydayWorkflowsSection: React.FC = () => (
             desc: 'Missed or late attendance entries get flagged automatically, with faculty review in one screen.',
           },
           {
-            title: 'Leave approvals',
+            title: 'Time-off approvals',
             desc: 'Requests route directly to the assigned department head.',
           },
           {
@@ -684,7 +684,7 @@ const SelfServiceSection: React.FC = () => (
           Give Faculty and Staff Answers Without Adding to the Admin Office's Workload
         </h2>
         <p className="font-['Inter',sans-serif] text-[15px] leading-[25px] text-[#6B7280]">
-          Faculty and staff manage everyday needs — attendance, leave, announcements — directly from the mobile app.
+          Faculty and staff manage everyday needs — attendance, Time-off, announcements — directly from the mobile app.
         </p>
       </div>
 
@@ -692,10 +692,10 @@ const SelfServiceSection: React.FC = () => (
         {[
           'Home',
           'Attendance',
-          'Leave',
+          'Time-off',
           'Profile / Calendar',
           'Review class attendance',
-          'Request leave',
+          'Request Time-off',
           'Check announcements',
           'Request correction',
           'Upcoming holidays',
@@ -721,7 +721,7 @@ const ReportsSection: React.FC = () => (
           Attendance Reports Across Every Department
         </h2>
         <p className="font-['Inter',sans-serif] text-[15px] leading-[25px] text-[#6B7280]">
-          Filter and export reports across attendance, leave, and department-level data.
+          Filter and export reports across attendance, Time-off, and department-level data.
         </p>
       </div>
 
@@ -852,9 +852,8 @@ const EducationFAQSection: React.FC = () => {
                     {faq.q}
                   </span>
                   <div
-                    className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${
-                      isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
-                    }`}
+                    className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
+                      }`}
                   >
                     {isOpen ? <X size={15} strokeWidth={2.5} /> : <Plus size={15} strokeWidth={2.5} />}
                   </div>

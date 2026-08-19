@@ -70,14 +70,14 @@ const ProjectManagementHero: React.FC = () => (
           {/* h1 */}
           <div className="w-full lg:w-[578px]">
             <h1 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[32px] sm:text-[40px] lg:text-[46px] leading-[1.15] sm:leading-[52px] lg:leading-[54px] tracking-[-1.04px] text-[#111827]">
-              Task Tracking That Lives Alongside Attendance and Leave, Not Apart From It
+              Task Tracking That Lives Alongside Attendance and Time-off, Not Apart From It
             </h1>
           </div>
 
           {/* p.lead */}
           <div className="w-full lg:w-[480px] max-w-[480px] pt-[2.385px]">
             <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[18px] leading-[28px] sm:leading-[30px] text-[#6B7280] max-w-[450px]">
-              Assign tasks, set deadlines, and track completion — with visibility into who's actually available to do the work, because attendance and leave live in the same platform.
+              Assign tasks, set deadlines, and track completion — with visibility into who's actually available to do the work, because attendance and Time-off live in the same platform.
             </p>
           </div>
 
@@ -138,7 +138,7 @@ const ProjectManagementProblemValue: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[16.5px] leading-[25px] sm:leading-[27px] text-[#6B7280] text-center max-w-[610px]">
-          Most task tools have no idea someone's on leave or hasn't checked in. Workzi ties task tracking to real attendance and leave data, so deadlines and assignments reflect who's actually working.
+          Most task tools have no idea someone's on Time-off or hasn't checked in. Workzi ties task tracking to real attendance and Time-off data, so deadlines and assignments reflect who's actually working.
         </p>
       </div>
 
@@ -151,7 +151,7 @@ const ProjectManagementProblemValue: React.FC = () => (
               Tasks tied to real availability
             </h3>
             <p className="font-['Inter',sans-serif] font-normal text-[14.5px] leading-[24px] text-[#6B7280] mb-6">
-              Assignments account for leave and attendance, not just a static calendar.
+              Assignments account for Time-off and attendance, not just a static calendar.
             </p>
           </div>
 
@@ -166,7 +166,7 @@ const ProjectManagementProblemValue: React.FC = () => (
             </div>
             <div className="flex items-center justify-between py-2 border-b border-gray-100/60">
               <span className="font-['Inter',sans-serif] font-semibold text-[12.5px] leading-[15px] text-[#111827]">
-                Leave Awareness
+                Time-off Awareness
               </span>
               <span className="bg-[#EAFBF3] text-[#15803D] font-bold text-[11px] leading-[13px] px-[10px] py-[3px] rounded-full">
                 Active ✓
@@ -508,10 +508,10 @@ const ProjectManagementKnowledgeSections: React.FC = () => {
               <div className="flex flex-col items-start p-0 gap-5 w-full max-w-[549px] self-stretch">
                 <div className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
                   <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[36px] sm:text-[42px] lg:text-[48px] leading-[1.25] lg:leading-[62px] tracking-[-1.12px] text-[#000000] flex items-center w-full max-w-[549px] self-stretch">
-                    One Calendar for Tasks, Attendance, and Leave
+                    One Calendar for Tasks, Attendance, and Time-off
                   </h2>
                   <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827] flex items-center w-full max-w-[549px] self-stretch">
-                    Deadlines, holidays, and leave sit on the same calendar — so planning doesn't mean checking three different tools.
+                    Deadlines, holidays, and Time-off sit on the same calendar — so planning doesn't mean checking three different tools.
                   </p>
                 </div>
 
@@ -527,7 +527,7 @@ const ProjectManagementKnowledgeSections: React.FC = () => {
 
             <ul className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
               {[
-                "Unified calendar showing deadlines, holidays, and team leave together",
+                "Unified calendar showing deadlines, holidays, and team Time-off together",
                 "Eliminate checking three different calendars during project planning",
                 "Seamless integration between project tasks and attendance schedules",
               ].map((text, idx) => (
@@ -580,7 +580,7 @@ const ProjectManagementKnowledgeSections: React.FC = () => {
                   <div className="shrink-0 flex justify-center sm:justify-start">
                     <span className="bg-[#FEF3E2] text-[#B45309] font-bold text-[10px] sm:text-[11px] px-2 sm:px-2.5 py-0.5 rounded-full inline-block shrink-0 whitespace-nowrap">PTO Today</span>
                   </div>
-                  <span className="text-right text-[#111827] font-medium shrink-0 text-[11px] sm:text-[12.5px]">On Leave</span>
+                  <span className="text-right text-[#111827] font-medium shrink-0 text-[11px] sm:text-[12.5px]">On Time-off</span>
                 </div>
 
                 <div className="grid grid-cols-[1.2fr_auto_auto] sm:grid-cols-4 items-center py-2.5 sm:py-3 text-[11.5px] sm:text-[12.5px] gap-1.5 sm:gap-2">
@@ -620,13 +620,13 @@ const ProjectManagementManagerVisibilityDark: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] text-[15px] sm:text-[16px] leading-[24px] sm:leading-[26px] text-slate-300">
-          Know who's carrying too much, who's behind, and who's actually available — because task load and attendance/leave status live in one dashboard.
+          Know who's carrying too much, who's behind, and who's actually available — because task load and attendance/Time-off status live in one dashboard.
         </p>
 
         <ul className="flex flex-col gap-2.5 sm:gap-3 pt-1 sm:pt-2">
           {[
             "Track team progress and reassign tasks without leaving the dashboard",
-            "Review overdue tasks alongside who's out on leave",
+            "Review overdue tasks alongside who's out on Time-off",
             "Monitor team workload before it becomes a bottleneck",
           ].map((item, idx) => (
             <li key={idx} className="flex items-center gap-3 text-[14px] sm:text-[15px] text-slate-200">
@@ -824,11 +824,10 @@ const ProjectManagementFAQ: React.FC = () => {
                     {faq.q}
                   </span>
                   <span
-                    className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${
-                      isOpen
+                    className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${isOpen
                         ? 'bg-[#5C5CFF] text-white'
                         : 'bg-[#EEF2FF] text-[#5C5CFF] group-hover:bg-[#5C5CFF] group-hover:text-white'
-                    }`}
+                      }`}
                   >
                     {isOpen ? '−' : '+'}
                   </span>
@@ -863,7 +862,7 @@ const ProjectManagementRoleCTABanner: React.FC = () => (
       <div className="w-full max-w-[848px] mx-auto flex flex-col items-center gap-[15px] relative z-10">
         {/* h2 title */}
         <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[34px] sm:text-[42px] lg:text-[46px] leading-[46px] sm:leading-[54px] lg:leading-[58px] tracking-[-1.12px] text-white max-w-[650px] mx-auto">
-          Track Tasks Where You Already Track Attendance and Leave
+          Track Tasks Where You Already Track Attendance and Time-off
         </h2>
 
         {/* Subtitle */}

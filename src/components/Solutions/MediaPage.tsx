@@ -496,7 +496,7 @@ const MediaKnowledgeSections: React.FC = () => {
         </div>
       </section>
 
-      {/* Reason 4: One Calendar for Deadlines, Leave, and Holidays */}
+      {/* Reason 4: One Calendar for Deadlines, Time-off, and Holidays */}
       <section className="w-full py-[60px] px-6 lg:px-[100px]">
         <div className="w-full max-w-[1240px] mx-auto flex flex-col lg:flex-row-reverse items-center justify-between gap-[50px]">
           <div className="flex flex-col items-start p-0 gap-6 mx-auto max-w-[589px] w-full h-auto justify-center self-center">
@@ -508,10 +508,10 @@ const MediaKnowledgeSections: React.FC = () => {
               <div className="flex flex-col items-start p-0 gap-5 w-full max-w-[549px] self-stretch">
                 <div className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
                   <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[36px] sm:text-[42px] lg:text-[48px] leading-[1.25] lg:leading-[62px] tracking-[-1.12px] text-[#000000] flex items-center w-full max-w-[549px] self-stretch">
-                    One Calendar for Deadlines, Leave, and Holidays
+                    One Calendar for Deadlines, Time-off, and Holidays
                   </h2>
                   <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827] flex items-center w-full max-w-[549px] self-stretch">
-                    See production deadlines alongside team leave and holidays, so a launch or air date doesn't land on a day the team is short-staffed.
+                    See production deadlines alongside team Time-off and holidays, so a launch or air date doesn't land on a day the team is short-staffed.
                   </p>
                 </div>
 
@@ -527,7 +527,7 @@ const MediaKnowledgeSections: React.FC = () => {
 
             <ul className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
               {[
-                "Combine production deadlines, team leave, and holidays in one master calendar",
+                "Combine production deadlines, team Time-off, and holidays in one master calendar",
                 "Prevent scheduling launches on short-staffed dates",
                 "Ensure complete coverage for time-critical media releases",
               ].map((text, idx) => (
@@ -620,14 +620,14 @@ const MediaManagerVisibilityDark: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] text-[15px] sm:text-[16px] leading-[24px] sm:leading-[26px] text-slate-300">
-          Know who's full-time, who's contract, who's available, and who's on leave — all in one dashboard, before assigning the next deadline.
+          Know who's full-time, who's contract, who's available, and who's on Time-off — all in one dashboard, before assigning the next deadline.
         </p>
 
         <ul className="flex flex-col gap-2.5 sm:gap-3 pt-1 sm:pt-2">
           {[
             "Track task load and overdue items across full-time and contract staff",
             "Reassign tasks without leaving the dashboard",
-            "Plan production dates with leave and holidays already visible",
+            "Plan production dates with Time-off and holidays already visible",
           ].map((item, idx) => (
             <li key={idx} className="flex items-center gap-3 text-[14px] sm:text-[15px] text-slate-200">
               <span className="w-5 h-5 rounded-full bg-[#5C5CFF]/20 text-[#818CF8] flex items-center justify-center font-bold text-xs shrink-0">
@@ -673,9 +673,9 @@ const MediaManagerVisibilityDark: React.FC = () => (
         </div>
 
         <div className="bg-slate-800/40 rounded-xl p-3.5 sm:p-4 border border-slate-700/40 flex flex-col gap-2 sm:gap-2.5">
-          <div className="text-xs font-bold text-slate-300">Mixed Roster & Leave Visibility</div>
+          <div className="text-xs font-bold text-slate-300">Mixed Roster & Time-off Visibility</div>
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[11.5px] sm:text-xs bg-emerald-950/40 border border-emerald-800/40 p-2.5 rounded-lg text-emerald-200">
-            <span className="leading-snug">Editorial leave synced — Zero production conflicts</span>
+            <span className="leading-snug">Editorial Time-off synced — Zero production conflicts</span>
             <span className="bg-emerald-800/60 text-emerald-100 px-2 py-0.5 rounded text-[10px] font-bold self-start sm:self-auto shrink-0">Verified ✓</span>
           </div>
         </div>
@@ -736,8 +736,8 @@ const MediaFAQ: React.FC = () => {
       a: 'Yes, where configured — approval rules can be applied to task completion.',
     },
     {
-      q: 'Can I see production deadlines alongside team leave and holidays?',
-      a: 'Yes. Tasks, holidays, and leave appear together on the attendance calendar.',
+      q: 'Can I see production deadlines alongside team Time-off and holidays?',
+      a: 'Yes. Tasks, holidays, and Time-off appear together on the attendance calendar.',
     },
     {
       q: 'Does Workzi integrate with content management or production tools?',
@@ -781,11 +781,10 @@ const MediaFAQ: React.FC = () => {
                     {faq.q}
                   </span>
                   <span
-                    className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${
-                      isOpen
+                    className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${isOpen
                         ? 'bg-[#5C5CFF] text-white'
                         : 'bg-[#EEF2FF] text-[#5C5CFF] group-hover:bg-[#5C5CFF] group-hover:text-white'
-                    }`}
+                      }`}
                   >
                     {isOpen ? '−' : '+'}
                   </span>

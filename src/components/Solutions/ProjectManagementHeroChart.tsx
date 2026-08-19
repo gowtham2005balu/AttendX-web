@@ -79,7 +79,7 @@ export const ProjectManagementHeroChart: React.FC = () => {
           </div>
           <div className="flex items-baseline justify-between pt-0.5 gap-1">
             <span className="text-[18px] sm:text-[20px] font-black text-slate-900">18 / 20</span>
-            <span className="text-[10px] font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded shrink-0">2 On Leave</span>
+            <span className="text-[10px] font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded shrink-0">2 On Time-off</span>
           </div>
         </motion.div>
       </div>
@@ -133,7 +133,7 @@ export const ProjectManagementHeroChart: React.FC = () => {
               <CheckCircle2 size={13} className="text-emerald-500" />
               Assignee Status
             </span>
-            <span className="text-[10px] font-semibold text-emerald-600 shrink-0">Leave Linked</span>
+            <span className="text-[10px] font-semibold text-emerald-600 shrink-0">Time-off Linked</span>
           </div>
 
           <div className="flex flex-col gap-2 pt-1.5">
@@ -162,7 +162,7 @@ export const ProjectManagementHeroChart: React.FC = () => {
                   <div className="text-[9.5px] text-slate-400 truncate">Developer • PTO Today</div>
                 </div>
               </div>
-              <span className="text-[10px] font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded shrink-0">On Leave</span>
+              <span className="text-[10px] font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded shrink-0">On Time-off</span>
             </div>
 
             {/* Assignee 3 */}

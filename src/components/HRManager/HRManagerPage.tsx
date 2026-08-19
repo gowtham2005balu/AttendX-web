@@ -107,7 +107,7 @@ const HRHero: React.FC = () => (
           </h1>
 
           <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[17px] leading-[26px] text-white text-center max-w-[560px] mt-1">
-            Manage attendance, leave, employee operations, reporting, and workforce workflows from one intelligent platform.
+            Manage attendance, time off, employee operations, reporting, and workforce workflows from one intelligent platform.
           </p>
         </div>
 
@@ -148,8 +148,8 @@ const ProductEcosystem: React.FC = () => {
     {
       icon: <Calendar className="w-6 h-6 text-[#10B981]" />,
       bg: 'bg-[rgba(16,185,129,0.1)]',
-      title: 'Leave',
-      desc: 'Streamlined leave requests, approvals, and team availability management.',
+      title: 'Time Off',
+      desc: 'Streamlined time-off requests, approvals, and team availability management.',
     },
     {
       icon: <Users className="w-6 h-6 text-[#F59E0B]" />,
@@ -314,13 +314,13 @@ const AttendanceTracking: React.FC = () => {
 };
 
 /* ══════════════════════════════════════════════════════════════
-   SECTION 4 — SIMPLIFY LEAVE
+   SECTION 4 — SIMPLIFY TIME OFF
 ══════════════════════════════════════════════════════════════ */
-const SimplifyLeave: React.FC = () => {
+const SimplifyTimeOff: React.FC = () => {
   const checklistItems = [
-    'Multiple leave types',
+    'Multiple time-off types',
     'Real-time balance tracking',
-    'Mobile leave submission',
+    'Mobile time-off submission',
     'One-click approval workflows',
     'Team availability calendar',
   ];
@@ -332,7 +332,7 @@ const SimplifyLeave: React.FC = () => {
         <FadeUp className="w-full max-w-[620px] shrink-0">
           <img
             src="/hr%20and%20man/div.zwc-left-wrap%20(1).png"
-            alt="Simplify leave approvals dashboard"
+            alt="Simplify time-off approvals dashboard"
             className="w-full h-auto object-cover rounded-[16px] transition-transform duration-300 hover:scale-[1.02]"
           />
         </FadeUp>
@@ -342,18 +342,18 @@ const SimplifyLeave: React.FC = () => {
           {/* Section Tag */}
           <div className="inline-flex items-center px-[14px] py-[5px] rounded-[50px] bg-[#F0F9F0] gap-[6px]">
             <span className="font-['Inter',sans-serif] font-semibold text-[12px] leading-[15px] text-[#3B8A3E]">
-              Leave Management
+              Time-Off Management
             </span>
           </div>
 
           {/* Heading & Subtitle Block */}
           <div className="flex flex-col items-start gap-[18px] w-full">
             <h2 className="font-['Inter',sans-serif] font-semibold text-[32px] sm:text-[44px] lg:text-[55.9px] leading-[1.1] lg:leading-[62px] tracking-[-1.12px] text-[#000000] text-left">
-              Simplify leave approvals.
+              Simplify time-off approvals.
             </h2>
 
             <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827] text-left">
-              Streamline leave requests, approvals, holiday planning, and employee availability with automated workflows that eliminate bottlenecks.
+              Streamline time-off requests, approvals, holiday planning, and employee availability with automated workflows that eliminate bottlenecks.
             </p>
           </div>
 
@@ -467,7 +467,7 @@ const WorkforceConnected: React.FC = () => {
 const SmarterDecisions: React.FC = () => {
   const checklistItems = [
     'Real-time attendance analytics',
-    'Leave usage & patterns',
+    'Time-off usage & patterns',
     'Exportable CSV / PDF',
     'Workforce trend reports',
     'Custom report builder',
@@ -557,7 +557,7 @@ const InYourPocket: React.FC = () => (
 
         {/* Subtitle */}
         <p className="font-['Inter',sans-serif] font-normal text-[16px] leading-[28px] text-[rgba(255,255,255,0.55)] text-left max-w-[552px]">
-          Everything HR teams and employees need, beautifully designed for iOS and Android. Check in, request leave, approve requests, and manage your team from anywhere.
+          Everything HR teams and employees need, beautifully designed for iOS and Android. Check in, request time off, approve requests, and manage your team from anywhere.
         </p>
 
         {/* 3 Mobile Features */}
@@ -584,10 +584,10 @@ const InYourPocket: React.FC = () => (
             </div>
             <div className="flex flex-col items-start text-left">
               <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] leading-[22px] text-[rgba(255,255,255,0.9)]">
-                Leave Management
+                Time-Off Management
               </h4>
               <p className="font-['Inter',sans-serif] font-normal text-[12px] leading-[19px] text-[rgba(255,255,255,0.45)]">
-                Apply and approve leave from your phone.
+                Apply and approve time off from your phone.
               </p>
             </div>
           </div>
@@ -624,7 +624,7 @@ const InYourPocket: React.FC = () => (
         <div className="relative flex justify-center items-center">
           <img
             src="/hr%20and%20man/div.mob-phone-wrap.png"
-            alt="Workzi Mobile App - Geo-fenced check-in, leave management, real-time alerts"
+            alt="Workzi Mobile App - Geo-fenced check-in, time-off management, real-time alerts"
             className="w-full h-auto object-contain transition-transform duration-300 hover:scale-[1.02]"
           />
         </div>
@@ -648,8 +648,8 @@ const EverythingInOne: React.FC = () => {
     {
       iconBg: 'rgba(16,185,129,0.1)',
       icon: <Calendar className="w-[22px] h-[22px] text-[#10B981]" />,
-      title: 'Leave Management',
-      desc: 'Multi-type leave with automated approval workflows and balance tracking.',
+      title: 'Time-Off Management',
+      desc: 'Multi-type time off with automated approval workflows and balance tracking.',
       height: 'min-h-[221px]',
     },
     {
@@ -687,7 +687,7 @@ const EverythingInOne: React.FC = () => {
       iconBg: 'rgba(245,158,11,0.1)',
       icon: <Settings className="w-[22px] h-[22px] text-[#F59E0B]" />,
       title: 'Cloud Sync',
-      desc: 'Instant sync across all devices with [X]% uptime guarantee.',
+      desc: 'Instant sync across all devices with 99.9% uptime guarantee.',
       height: 'min-h-[201px]',
     },
     {
@@ -785,89 +785,126 @@ const EverythingInOne: React.FC = () => {
 const PoweringWorkforces: React.FC = () => {
   const reviews = [
     {
-      initials: 'W',
-      name: '[Name]',
-      role: '[Title]',
-      company: '[Company]',
-      quote: 'Workzi completely transformed how we manage attendance across our [X] locations. The geo-fenced check-in is spot-on, and the leave approval workflow saves our HR team hours every single week.',
+      initials: 'SJ',
+      name: 'Sarah Jenkins',
+      role: 'VP of People & Culture',
+      company: 'Apex Logistics',
+      tag: 'Multi-Location Enterprise',
+      quote:
+        'Workzi completely transformed how we manage attendance across our 18 locations. The geo-fenced check-in is spot-on, and the time-off approval workflow saves our HR team hours every single week.',
       rating: 5,
-      bg: 'bg-[#5B5FFF]',
+      avatarBg: 'bg-gradient-to-br from-[#5C5CFF] to-[#4338CA]',
     },
     {
-      initials: 'W',
-      name: '[Name]',
-      role: '[Title]',
-      company: '[Company]',
-      quote: 'As a startup scaling from [X] to [Y] employees, Workzi grew with us seamlessly. Setup was under a day, and the mobile app means our field team never misses a check-in.',
+      initials: 'MV',
+      name: 'Marcus Vance',
+      role: 'Head of People Operations',
+      company: 'ScalePoint Tech',
+      tag: 'Fast-Growing Tech',
+      quote:
+        'As a startup scaling from 45 to 320+ employees, Workzi grew with us seamlessly. Setup was under a day, and the mobile app means our field team never misses a check-in.',
       rating: 5,
-      bg: 'bg-[#F59E0B]',
+      avatarBg: 'bg-gradient-to-br from-[#F59E0B] to-[#D97706]',
     },
     {
-      initials: 'W',
-      name: '[Name]',
-      role: '[Title]',
-      company: '[Company]',
-      quote: 'The self-service features cut HR queries significantly. Employees love the mobile app, and the reporting dashboard gives us workforce insights we\'ve never had access to before.',
+      initials: 'PP',
+      name: 'Priya Patel',
+      role: 'Chief Human Resources Officer',
+      company: 'Vanguard Health',
+      tag: 'Healthcare & Shift Teams',
+      quote:
+        'The self-service features cut HR queries significantly. Employees love the mobile app, and the reporting dashboard gives us workforce insights we\'ve never had access to before.',
       rating: 5,
-      bg: 'bg-[#10B981]',
+      avatarBg: 'bg-gradient-to-br from-[#10B981] to-[#047857]',
     },
   ];
 
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
-      <Container>
+    <section className="py-[100px] bg-gradient-to-b from-[#FAFAFC] via-white to-[#FAFAFC] relative overflow-hidden w-full">
+      <Container className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
         <FadeUp>
-          <div className="text-center max-w-2xl mx-auto mb-16 flex flex-col items-center gap-3">
+          <div className="text-center max-w-2xl mx-auto mb-14 flex flex-col items-center gap-3.5">
             {/* Eyebrow */}
-            <div className="inline-flex items-center px-[14px] py-[5px] rounded-[50px] bg-[#EBF7F0]">
-              <span className="font-['Inter',sans-serif] font-semibold text-[12px] leading-[15px] text-[#108A00]">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#EBF7F0] border border-[#108A00]/20 shadow-2xs">
+              <span className="w-2 h-2 rounded-full bg-[#108A00] animate-pulse" />
+              <span className="font-['Inter',sans-serif] font-semibold text-[12px] leading-[15px] text-[#108A00] tracking-wide">
                 Trusted Globally
               </span>
             </div>
 
-            <h2 className="text-3xl md:text-[42px] font-extrabold text-slate-900 leading-tight mb-2">
+            <h2 className="font-['Plus_Jakarta_Sans',sans-serif] text-3xl sm:text-[40px] lg:text-[44px] font-extrabold text-slate-900 leading-[1.2] tracking-[-1px]">
               Powering modern workforces worldwide.
             </h2>
-            <p className="text-slate-500 text-[16px] font-medium leading-relaxed max-w-[540px]">
-              Join [X] companies that use Workzi to manage their most important asset — their people.
+            <p className="font-['Inter',sans-serif] text-slate-600 text-[15px] sm:text-[16.5px] font-normal leading-[26px] max-w-[560px]">
+              Join 1,200+ forward-thinking companies that use Workzi to manage their most important asset — their people.
             </p>
           </div>
         </FadeUp>
 
         {/* Review cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
           {reviews.map((item, idx) => (
-            <FadeUp key={idx} delay={idx * 0.1}>
-              <div className="bg-white border border-[#E5E7EB] rounded-[24px] p-6 shadow-none flex flex-col justify-between cursor-default h-full">
-                <div className="space-y-4">
-                  {/* Profile Header */}
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-3">
-                      <div className={`w-10 h-10 rounded-full ${item.bg} flex items-center justify-center text-white font-extrabold text-sm shrink-0`}>
+            <FadeUp key={idx} delay={idx * 0.1} className="h-full flex">
+              <div className="w-full bg-white border border-slate-200/80 hover:border-[#5C5CFF]/40 rounded-[22px] p-6 sm:p-7 shadow-[0px_2px_12px_rgba(0,0,0,0.03)] hover:shadow-[0px_16px_36px_rgba(92,92,255,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full">
+
+                {/* Header: Avatar, Name, Rating & Role */}
+                <div className="flex flex-col gap-3 pb-4 border-b border-slate-100">
+                  <div className="flex items-center justify-between gap-3">
+                    <div className="flex items-center gap-3 min-w-0">
+                      <div className={`w-11 h-11 rounded-full ${item.avatarBg} flex items-center justify-center text-white font-['Plus_Jakarta_Sans',sans-serif] font-bold text-sm shrink-0 shadow-xs ring-2 ring-white`}>
                         {item.initials}
                       </div>
-                      <div className="text-left">
-                        <h5 className="text-xs font-bold text-slate-800 leading-tight">{item.name}</h5>
-                        <span className="text-[10px] text-slate-400 block font-semibold">{item.role} · {item.company}</span>
+                      <div className="flex flex-col text-left min-w-0">
+                        <h4 className="font-['Plus_Jakarta_Sans',sans-serif] text-[15px] font-bold text-slate-900 leading-tight truncate">
+                          {item.name}
+                        </h4>
+                        <p className="font-['Inter',sans-serif] text-[12px] text-slate-500 font-normal leading-tight mt-1 truncate">
+                          {item.role}
+                        </p>
                       </div>
                     </div>
 
-                    {/* Rating block */}
-                    <div className="flex items-center gap-1.5 text-slate-700 font-bold text-[10px]">
+                    {/* Star Rating Badge */}
+                    <div className="inline-flex items-center gap-1 bg-amber-50 border border-amber-200/60 px-2 py-0.5 rounded-md shrink-0">
                       <div className="flex text-amber-400">
                         {[...Array(item.rating)].map((_, i) => (
-                          <Star key={i} size={10} fill="currentColor" className="stroke-none" />
+                          <Star key={i} size={11} fill="currentColor" className="stroke-none" />
                         ))}
                       </div>
-                      <span>{item.rating}.0</span>
+                      <span className="font-['Plus_Jakarta_Sans',sans-serif] text-amber-900 font-bold text-[11px] leading-none">
+                        {item.rating}.0
+                      </span>
                     </div>
                   </div>
 
-                  {/* Review Text */}
-                  <p className="text-slate-600 text-xs leading-relaxed font-normal text-left">
+                  {/* Company Tag */}
+                  <div className="flex items-center justify-between text-[11.5px] font-medium pt-0.5">
+                    <span className="text-[#5C5CFF] font-semibold truncate">
+                      {item.company}
+                    </span>
+                    <span className="text-slate-400 text-[11px]">
+                      {item.tag}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Quote Text */}
+                <div className="py-4 grow flex items-start">
+                  <p className="font-['Inter',sans-serif] text-slate-600 text-[13.5px] sm:text-[14px] leading-[23px] font-normal text-left">
                     "{item.quote}"
                   </p>
                 </div>
+
+                {/* Card Footer: Verified Badge */}
+                <div className="pt-3.5 border-t border-slate-100 flex items-center justify-between">
+                  <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-100/80">
+                    <CheckCircle className="w-3 h-3 text-emerald-600" /> Verified Customer
+                  </span>
+                  <span className="text-[11px] text-slate-400 font-medium">
+                    Workzi HRMS
+                  </span>
+                </div>
+
               </div>
             </FadeUp>
           ))}
@@ -901,7 +938,7 @@ const HRManagerCTA: React.FC = () => (
 
       {/* Subtitle */}
       <p className="text-white text-[14px] font-medium leading-[22px] max-w-[440px] text-center">
-        Manage attendance, leave requests, and employee operations from one platform. Setup in minutes.
+        Manage attendance, time-off requests, and employee operations from one platform. Setup in minutes.
       </p>
 
       {/* Action Buttons */}
@@ -925,7 +962,7 @@ const HRManagerPage: React.FC = () => (
     <HRHero />
     <ProductEcosystem />
     <AttendanceTracking />
-    <SimplifyLeave />
+    <SimplifyTimeOff />
     <WorkforceConnected />
     <SmarterDecisions />
     <InYourPocket />

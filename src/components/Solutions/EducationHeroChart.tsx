@@ -167,10 +167,10 @@ export const EducationHeroChart: React.FC = () => {
                 </div>
                 <div className="flex flex-col min-w-0">
                   <span className="text-[11px] font-bold text-slate-800 truncate">Prof. Mehra</span>
-                  <span className="text-[9.5px] text-slate-500 truncate">Leave &bull; HOD Approved</span>
+                  <span className="text-[9.5px] text-slate-500 truncate">Time-off &bull; HOD Approved</span>
                 </div>
               </div>
-              <span className="text-[9px] font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded shrink-0">Leave</span>
+              <span className="text-[9px] font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded shrink-0">Time-off</span>
             </div>
           </div>
         </div>

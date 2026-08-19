@@ -22,7 +22,7 @@ export const HRSection: React.FC = () => {
 
           {/* Subtitle */}
           <p className="text-[#6B7280] text-[15px] sm:text-[16px] md:text-[18px] font-normal leading-[24px] sm:leading-[31px] mb-[24px]">
-            Monitor attendance, approve leave, manage employees, and access workforce analytics — all in real time, all from one dashboard.
+            Monitor attendance, approve Time-off, manage employees, and access workforce analytics — all in real time, all from one dashboard.
           </p>
 
           {/* 2x2 Mini Cards Grid */}
@@ -34,8 +34,8 @@ export const HRSection: React.FC = () => {
                 icon: <Clock className="w-[22px] h-[22px] text-[#5B5FFF]" />
               },
               {
-                title: 'Leave Approvals',
-                desc: 'Approve or reject leave requests in one click.',
+                title: 'Time-off Approvals',
+                desc: 'Approve or reject Time-off requests in one click.',
                 icon: <CheckCircle className="w-[22px] h-[22px] text-[#5B5FFF]" />
               },
               {
@@ -91,7 +91,7 @@ export const HRSection: React.FC = () => {
                 {[
                   { title: 'TOTAL EMPLOYEES', value: '142', sub: '+3 this month', subColor: 'text-[#10B981]' },
                   { title: 'PRESENT TODAY', value: '138', sub: '96.4% rate', subColor: 'text-[#10B981]' },
-                  { title: 'ON LEAVE', value: '4', sub: '2 pending', subColor: 'text-[#EF4444]' },
+                  { title: 'ON Time-off', value: '4', sub: '2 pending', subColor: 'text-[#EF4444]' },
                 ].map((stat, idx) => (
                   <div key={idx} className="bg-[#F8FAFC] border border-[#F3F4F6] p-[10px] sm:p-[16px] rounded-[14px] flex flex-col justify-between">
                     <span className="font-['Plus_Jakarta_Sans',sans-serif] text-[9px] sm:text-[11px] font-semibold text-[#9CA3AF] tracking-[0.4px] sm:tracking-[0.66px] uppercase block mb-1 truncate">
@@ -122,7 +122,7 @@ export const HRSection: React.FC = () => {
                 {[
                   { name: 'Sarah Anderson', initials: 'SA', time: '09:01 AM', status: 'Present', avatarBg: 'bg-[#EEEEFF] text-[#5B5FFF]', badgeColor: 'bg-[rgba(16,185,129,0.1)] text-[#10B981]' },
                   { name: 'Michael Kim', initials: 'MK', time: '09:47 AM', status: 'Late', avatarBg: 'bg-[rgba(245,158,11,0.1)] text-[#F59E0B]', badgeColor: 'bg-[rgba(239,68,68,0.1)] text-[#EF4444]' },
-                  { name: 'Priya Rao', initials: 'PR', time: '—', status: 'On Leave', avatarBg: 'bg-[rgba(16,185,129,0.1)] text-[#10B981]', badgeColor: 'bg-[rgba(245,158,11,0.1)] text-[#F59E0B]' },
+                  { name: 'Priya Rao', initials: 'PR', time: '—', status: 'On Time-off', avatarBg: 'bg-[rgba(16,185,129,0.1)] text-[#10B981]', badgeColor: 'bg-[rgba(245,158,11,0.1)] text-[#F59E0B]' },
                   { name: 'James Turner', initials: 'JT', time: '08:52 AM', status: 'Present', avatarBg: 'bg-[rgba(91,95,255,0.1)] text-[#5B5FFF]', badgeColor: 'bg-[rgba(16,185,129,0.1)] text-[#10B981]' },
                   { name: 'Laura Martinez', initials: 'LM', time: '08:30 AM', status: 'Present', avatarBg: 'bg-[rgba(239,68,68,0.1)] text-[#EF4444]', badgeColor: 'bg-[rgba(16,185,129,0.1)] text-[#10B981]' },
                 ].map((row, idx) => (

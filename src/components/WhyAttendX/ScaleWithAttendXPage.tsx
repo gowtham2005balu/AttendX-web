@@ -67,11 +67,10 @@ export const ScaleWithAttendXPage: React.FC = () => {
               ].map((node, idx, arr) => (
                 <React.Fragment key={idx}>
                   <div
-                    className={`flex items-center justify-center font-['Plus_Jakarta_Sans'] font-bold transition-all duration-300 hover:scale-105 cursor-pointer ${
-                      node.highlight
+                    className={`flex items-center justify-center font-['Plus_Jakarta_Sans'] font-bold transition-all duration-300 hover:scale-105 cursor-pointer ${node.highlight
                         ? 'h-[76px] px-9 rounded-full bg-[#5C5CFF] border border-[#5C5CFF] text-white text-[19px] leading-[30px] shadow-[0px_16px_40px_rgba(92,92,255,0.2)] hover:shadow-[0px_20px_50px_rgba(92,92,255,0.3)]'
                         : 'h-[52px] px-6 rounded-full bg-white border border-[#E5E7EB] text-[#5C5CFF] text-[14px] sm:text-[15px] leading-[24px] shadow-[0px_10px_26px_rgba(17,24,39,0.06)] hover:shadow-[0px_14px_32px_rgba(124,58,237,0.12)] hover:border-[#C7D2FE]'
-                    }`}
+                      }`}
                   >
                     {node.label}
                   </div>
@@ -254,7 +253,7 @@ export const ScaleWithAttendXPage: React.FC = () => {
               { label: 'Managers', highlight: false },
               { label: 'Locations', highlight: false },
               { label: 'Attendance', highlight: false },
-              { label: 'Leave', highlight: false },
+              { label: 'Time-off', highlight: false },
               { label: 'Tasks', highlight: false },
               { label: 'Approvals', highlight: false },
               { label: 'Reports', highlight: false },
@@ -262,11 +261,10 @@ export const ScaleWithAttendXPage: React.FC = () => {
             ].map((node, idx, arr) => (
               <React.Fragment key={idx}>
                 <div
-                  className={`w-full h-[57px] rounded-[14px] px-8 flex items-center justify-center font-['Plus_Jakarta_Sans'] font-bold text-[14.5px] leading-[23px] text-center transition-all duration-300 hover:scale-103 cursor-pointer ${
-                    node.highlight
+                  className={`w-full h-[57px] rounded-[14px] px-8 flex items-center justify-center font-['Plus_Jakarta_Sans'] font-bold text-[14.5px] leading-[23px] text-center transition-all duration-300 hover:scale-103 cursor-pointer ${node.highlight
                       ? 'bg-[#5C5CFF] border border-[#5C5CFF] text-white shadow-md hover:shadow-lg'
                       : 'bg-white border border-[#E5E7EB] text-[#5C5CFF] hover:border-[#A5B4FC] hover:shadow-xs'
-                  }`}
+                    }`}
                 >
                   {node.label}
                 </div>
@@ -445,11 +443,10 @@ export const ScaleWithAttendXPage: React.FC = () => {
             ].map((node, idx, arr) => (
               <React.Fragment key={idx}>
                 <div
-                  className={`w-full h-[57px] rounded-[14px] px-8 flex items-center justify-center font-['Plus_Jakarta_Sans'] font-bold text-[14.5px] leading-[23px] text-center transition-all duration-300 hover:scale-102 cursor-pointer ${
-                    node.highlight
+                  className={`w-full h-[57px] rounded-[14px] px-8 flex items-center justify-center font-['Plus_Jakarta_Sans'] font-bold text-[14.5px] leading-[23px] text-center transition-all duration-300 hover:scale-102 cursor-pointer ${node.highlight
                       ? 'bg-[#5C5CFF] border border-[#5C5CFF] text-white shadow-md hover:shadow-lg'
                       : 'bg-white border border-[#E5E7EB] text-[#5C5CFF] hover:border-[#A5B4FC] hover:shadow-xs'
-                  }`}
+                    }`}
                 >
                   {node.label}
                 </div>
@@ -677,11 +674,10 @@ export const ScaleWithAttendXPage: React.FC = () => {
                       {faq.q}
                     </span>
                     <span
-                      className={`w-7 h-7 rounded-[8px] flex items-center justify-center text-[14px] font-bold shrink-0 transition-all duration-300 ${
-                        isOpen
+                      className={`w-7 h-7 rounded-[8px] flex items-center justify-center text-[14px] font-bold shrink-0 transition-all duration-300 ${isOpen
                           ? 'bg-[#5B5FFF] text-white rotate-45'
                           : 'bg-[#EEEEFF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
-                      }`}
+                        }`}
                     >
                       +
                     </span>

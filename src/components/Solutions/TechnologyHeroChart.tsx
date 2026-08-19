@@ -20,7 +20,7 @@ export const TechnologyHeroChart: React.FC = () => {
               Distributed Tech Operations
             </h4>
             <p className="font-['Inter',sans-serif] text-[11px] sm:text-[11.5px] text-slate-500 font-medium truncate sm:whitespace-normal">
-              Global headcount, async leave & fast onboarding
+              Global headcount, async Time-off & fast onboarding
             </p>
           </div>
         </div>

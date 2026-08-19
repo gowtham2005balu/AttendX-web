@@ -14,8 +14,8 @@ export const Blog: React.FC = () => {
       href: '#blog-article',
     },
     {
-      title: 'Easy Leave Management',
-      desc: 'Simplify leave requests, approvals, and balance tracking with workflows built for modern HR teams.',
+      title: 'Easy Time-off Management',
+      desc: 'Simplify Time-off requests, approvals, and balance tracking with workflows built for modern HR teams.',
       imageUrl: '/hero-images/ba02c5435498a3429483b45dd9578499296f094d.png',
       bgColor: 'bg-[#EFF6FF]',
       borderColor: 'border-blue-100',

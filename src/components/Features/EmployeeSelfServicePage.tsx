@@ -557,7 +557,7 @@ const SectionPolicyHandbook: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827]">
-          Leave rules, code of conduct, reimbursement policy — employees shouldn&apos;t have to ask around to find the current version. It&apos;s in the portal, always up to date.
+          Time-off rules, code of conduct, reimbursement policy — employees shouldn&apos;t have to ask around to find the current version. It&apos;s in the portal, always up to date.
         </p>
 
         <div className="flex flex-col gap-[14px] pt-[13px] w-full">
@@ -593,7 +593,7 @@ const SectionPolicyHandbook: React.FC = () => (
 
             <div className="space-y-2 font-['Inter',sans-serif] text-[12.5px]">
               <div className="p-3 bg-[#F8FAFC] border border-[#E5E7EB] rounded-[10px] flex justify-between items-center">
-                <span className="font-bold text-[#111827]">Leave & Attendance Policy 2026</span>
+                <span className="font-bold text-[#111827]">Time-off & Attendance Policy 2026</span>
                 <span className="text-[11px] text-[#6B7280]">Updated Jan 2026</span>
               </div>
               <div className="p-3 bg-[#F8FAFC] border border-[#E5E7EB] rounded-[10px] flex justify-between items-center">
@@ -648,9 +648,8 @@ const SectionHROverview: React.FC = () => (
           {['Requests', 'Documents', 'Policies'].map((tab, idx) => (
             <span
               key={idx}
-              className={`font-['Inter',sans-serif] font-semibold text-[13px] px-[16px] py-[8px] rounded-full cursor-pointer transition-colors ${
-                idx === 0 ? 'bg-[#5C5CFF] text-white' : 'bg-white border border-[#E5E7EB] text-[#6B7280]'
-              }`}
+              className={`font-['Inter',sans-serif] font-semibold text-[13px] px-[16px] py-[8px] rounded-full cursor-pointer transition-colors ${idx === 0 ? 'bg-[#5C5CFF] text-white' : 'bg-white border border-[#E5E7EB] text-[#6B7280]'
+                }`}
             >
               {tab}
             </span>
@@ -790,9 +789,8 @@ const ESSFAQ: React.FC = () => {
                       {faq.question}
                     </span>
                     <div
-                      className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${
-                        isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
-                      }`}
+                      className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
+                        }`}
                     >
                       {isOpen ? <X size={15} strokeWidth={2.5} /> : <Plus size={15} strokeWidth={2.5} />}
                     </div>

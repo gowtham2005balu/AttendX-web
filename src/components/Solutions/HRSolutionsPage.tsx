@@ -59,14 +59,14 @@ const HRSolutionsHero: React.FC = () => (
           {/* h1 */}
           <div className="w-full lg:w-[578px]">
             <h1 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[32px] sm:text-[40px] lg:text-[46px] leading-[1.15] sm:leading-[52px] lg:leading-[54px] tracking-[-1.04px] text-[#111827]">
-              HRMS Software Built for HR Teams Managing Attendance, Leave & the Whole Workforce
+              HRMS Software Built for HR Teams Managing Attendance, Time Off & the Whole Workforce
             </h1>
           </div>
 
           {/* p.lead */}
           <div className="w-full lg:w-[480px] max-w-[480px] pt-[2.385px]">
             <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[18px] leading-[28px] sm:leading-[30px] text-[#6B7280] max-w-[450px]">
-              One cloud-based HR platform for attendance tracking, leave management, approvals, and employee records — so HR spends less time on admin and more time with people.
+              One cloud-based HR platform for attendance tracking, time-off management, approvals, and employee records — so HR spends less time on admin and more time with people.
             </p>
           </div>
 
@@ -193,7 +193,7 @@ const HRProblemValue: React.FC = () => (
 
         {/* p */}
         <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[16.5px] leading-[25px] sm:leading-[27px] text-[#6B7280] text-center max-w-[564px]">
-          Stop stitching together spreadsheets, a separate leave tracker, a standalone attendance app, and a WhatsApp group for approvals. Workzi's HR management software brings it all into one system.
+          Stop stitching together spreadsheets, a separate time-off tracker, a standalone attendance app, and a WhatsApp group for approvals. Workzi's HR management software brings it all into one system.
         </p>
       </div>
 
@@ -206,7 +206,7 @@ const HRProblemValue: React.FC = () => (
               One HRMS, not five tools
             </h3>
             <p className="font-['Inter',sans-serif] font-normal text-[14.5px] leading-[24px] text-[#6B7280] mb-6">
-              Attendance, leave, and tasks stop living in different apps.
+              Attendance, time off, and tasks stop living in different apps.
             </p>
           </div>
 
@@ -230,7 +230,7 @@ const HRProblemValue: React.FC = () => (
             </div>
             <div className="flex items-center justify-between py-2">
               <span className="font-['Inter',sans-serif] font-semibold text-[12.5px] leading-[15px] text-[#111827]">
-                On Leave
+                On Time Off
               </span>
               <span className="bg-[#FEF3E2] text-[#B45309] font-bold text-[11px] leading-[13px] px-[10px] py-[3px] rounded-full">
                 4
@@ -243,7 +243,7 @@ const HRProblemValue: React.FC = () => (
         <div className="bg-white border border-[#E5E7EB] rounded-[24px] p-[32px] flex flex-col justify-between gap-[11.4px] w-full">
           <div>
             <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[20px] leading-[23px] tracking-[-0.4px] text-[#111827] mb-3">
-              Faster leave approvals
+              Faster time-off approvals
             </h3>
             <p className="font-['Inter',sans-serif] font-normal text-[14.5px] leading-[24px] text-[#6B7280] mb-6">
               Requests move smoothly without an endless email thread.
@@ -294,7 +294,7 @@ const HRProblemValue: React.FC = () => (
           <div className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-[14px] p-[16px] pt-[26.6px] flex flex-col gap-2">
             <div className="flex items-center justify-between py-2 border-b border-gray-100/60">
               <span className="font-['Inter',sans-serif] font-semibold text-[12.5px] leading-[15px] text-[#111827]">
-                James Turner — Leave
+                James Turner — Time Off
               </span>
               <span className="bg-[#FEF3E2] text-[#B45309] font-bold text-[11px] leading-[13px] px-[10px] py-[3px] rounded-full">
                 Pending
@@ -327,7 +327,7 @@ const HRProblemValue: React.FC = () => (
 const HRCapabilitiesGrid: React.FC = () => {
   const capabilities = [
     { icon: '✅', label: 'Attendance Management' },
-    { icon: '🏖', label: 'Leave Management' },
+    { icon: '🏖', label: 'Time-Off Management' },
     { icon: '👥', label: 'Employee Directory' },
     { icon: '🗓', label: 'Shift Management' },
     { icon: '⏱', label: 'Time Tracking' },
@@ -401,7 +401,7 @@ const HRKnowledgeSections: React.FC = () => {
                     Real-Time Attendance Tracking Across Your Entire Workforce
                   </h2>
                   <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827] flex items-center w-full max-w-[549px] self-stretch">
-                    Get a live view of who's working, who's late, and who's on leave — without pinging managers for updates every morning.
+                    Get a live view of who's working, who's late, and who's on time off — without pinging managers for updates every morning.
                   </p>
                 </div>
 
@@ -578,7 +578,7 @@ const HRKnowledgeSections: React.FC = () => {
         </div>
       </section>
 
-      {/* 6. Section 3: Leave Management */}
+      {/* 6. Section 3: Time-Off Management */}
       <section className="w-full py-[60px] px-6 lg:px-[100px]">
         <div className="w-full max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-[50px]">
           {/* div.knowledge-text */}
@@ -587,7 +587,7 @@ const HRKnowledgeSections: React.FC = () => {
             <div className="flex flex-col items-start p-0 gap-5 w-full max-w-[549px] self-stretch">
               {/* span.section-tag */}
               <span className="inline-flex flex-row items-center px-[14px] py-[5px] gap-[6px] bg-[#F0F9F0] text-[#3B8A3E] font-['Inter',sans-serif] font-semibold text-[12px] leading-[15px] rounded-[50px]">
-                Leave Management
+                Time-Off Management
               </span>
 
               {/* Frame 1984078965 */}
@@ -595,19 +595,19 @@ const HRKnowledgeSections: React.FC = () => {
                 {/* Frame 1984078964 */}
                 <div className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
                   <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[36px] sm:text-[42px] lg:text-[48px] leading-[1.25] lg:leading-[62px] tracking-[-1.12px] text-[#000000] flex items-center w-full max-w-[549px] self-stretch">
-                    Leave Management Software Employees and Managers Actually Want to Use
+                    Time-Off Management Software Employees and Managers Actually Want to Use
                   </h2>
                   <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827] flex items-center w-full max-w-[549px] self-stretch">
-                    Apply, approve, reject, or cancel leave in a few taps. Real-time leave balances mean fewer "how many days do I have left?" messages to HR.
+                    Apply, approve, reject, or cancel time off in a few taps. Real-time time-off balances mean fewer "how many days do I have left?" messages to HR.
                   </p>
                 </div>
 
                 {/* button.knowledge-btn */}
                 <a
-                  href="#leave-management"
+                  href="#time-off-management"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>Explore Leave Management</span>
+                  <span>Explore Time-Off Management</span>
                   <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
                 </a>
               </div>
@@ -616,9 +616,9 @@ const HRKnowledgeSections: React.FC = () => {
             {/* ul.feature-list */}
             <ul className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
               {[
-                'Apply for leave and track balance from the employee app',
+                'Apply for time off and track balance from the employee app',
                 'Manager approvals move in one screen, not an email chain',
-                'Leave policies stay standardized across departments',
+                'Time-off policies stay standardized across departments',
               ].map((text, idx) => (
                 <li key={idx} className="flex flex-row items-center p-0 gap-[12px] w-full">
                   <span className="w-[22px] h-[22px] rounded-[6px] bg-[rgba(16,185,129,0.12)] text-[#10B981] flex flex-row items-center justify-center text-[12px] font-bold shrink-0 border border-[#10B981]/20">
@@ -636,20 +636,20 @@ const HRKnowledgeSections: React.FC = () => {
           <div className="w-full max-w-[611px] h-auto min-h-[260px] sm:min-h-[380px] lg:h-[496px] rounded-[16px] overflow-hidden border border-slate-200/50 flex items-center justify-center p-3.5 sm:p-6 bg-[radial-gradient(97.14%_126.61%_at_0%_-8.9%,#4F7EFF_0%,#C5E2FF_51.12%,#9AA0FF_100%)] relative">
             <div className="w-full max-w-[503px] bg-white rounded-[14px] border border-[#E5E7EB] p-4 sm:p-6 flex flex-col gap-3.5 sm:gap-4 z-10">
               <div className="flex items-center justify-between pb-3 border-b border-gray-100">
-                <span className="font-['Inter',sans-serif] font-bold text-[13px] text-[#111827]">Leave Request Overview</span>
+                <span className="font-['Inter',sans-serif] font-bold text-[13px] text-[#111827]">Time-Off Request Overview</span>
                 <span className="bg-[#EFF6FF] text-[#1D4ED8] font-bold text-[10.5px] sm:text-[11px] px-2.5 py-0.5 rounded-full shrink-0">Real-time</span>
               </div>
               <div className="flex flex-col gap-2.5 sm:gap-3">
                 <div className="flex items-center justify-between gap-2 p-2.5 sm:p-3 bg-[#F8FAFC] rounded-[10px] border border-[#E5E7EB]">
                   <div className="min-w-0">
-                    <div className="font-['Inter',sans-serif] font-semibold text-[12.5px] sm:text-[13px] text-[#111827] truncate">Annual Leave (3 Days)</div>
+                    <div className="font-['Inter',sans-serif] font-semibold text-[12.5px] sm:text-[13px] text-[#111827] truncate">Paid Time Off (3 Days)</div>
                     <div className="font-['Inter',sans-serif] text-[10.5px] sm:text-[11px] text-[#6B7280] truncate">Alex Johnson • Engineering</div>
                   </div>
                   <span className="bg-[#FEF3E2] text-[#B45309] font-bold text-[10.5px] sm:text-[11px] px-2.5 py-1 rounded-full shrink-0">Pending</span>
                 </div>
                 <div className="flex items-center justify-between gap-2 p-2.5 sm:p-3 bg-[#F8FAFC] rounded-[10px] border border-[#E5E7EB]">
                   <div className="min-w-0">
-                    <div className="font-['Inter',sans-serif] font-semibold text-[12.5px] sm:text-[13px] text-[#111827] truncate">Sick Leave (1 Day)</div>
+                    <div className="font-['Inter',sans-serif] font-semibold text-[12.5px] sm:text-[13px] text-[#111827] truncate">Sick Time Off (1 Day)</div>
                     <div className="font-['Inter',sans-serif] text-[10.5px] sm:text-[11px] text-[#6B7280] truncate">Maria Garcia • Design</div>
                   </div>
                   <span className="bg-[#EAFBF3] text-[#15803D] font-bold text-[10.5px] sm:text-[11px] px-2.5 py-1 rounded-full shrink-0">Approved</span>
@@ -779,7 +779,7 @@ const HRKnowledgeSections: React.FC = () => {
                   </div>
                   <span className="text-[#111827] font-medium hidden sm:block truncate">Marketing</span>
                   <div className="shrink-0 flex justify-center sm:justify-start">
-                    <span className="bg-[#FFEDD5] text-[#C2410C] font-bold text-[10px] sm:text-[11px] px-2 sm:px-2.5 py-0.5 rounded-full inline-block shrink-0 whitespace-nowrap">On Leave</span>
+                    <span className="bg-[#FFEDD5] text-[#C2410C] font-bold text-[10px] sm:text-[11px] px-2 sm:px-2.5 py-0.5 rounded-full inline-block shrink-0 whitespace-nowrap">On Time Off</span>
                   </div>
                   <span className="text-right text-[#111827] font-medium shrink-0 text-[11px] sm:text-[12.5px]">10–6</span>
                 </div>
@@ -825,7 +825,7 @@ const HRTasksCommunication: React.FC = () => {
                 <span className="bg-[#FEF3E2] text-[#B45309] font-bold text-[10.5px] px-[9px] py-[3px] rounded-full">In Progress</span>
               </div>
               <div className="flex items-center justify-between py-1">
-                <span className="font-['Inter',sans-serif] font-medium text-[13px] text-[#111827]">Approve pending leaves</span>
+                <span className="font-['Inter',sans-serif] font-medium text-[13px] text-[#111827]">Approve pending time off</span>
                 <span className="bg-[#FDEEEE] text-[#B91C1C] font-bold text-[10.5px] px-[9px] py-[3px] rounded-full">Overdue</span>
               </div>
               <div className="flex items-center justify-between py-1">
@@ -863,7 +863,7 @@ const HRTasksCommunication: React.FC = () => {
           {[
             'Assign and track tasks with due dates and status',
             'Share company-wide announcements without a separate tool',
-            'See holidays, leave, and deadlines on one calendar',
+            'See holidays, time off, and deadlines on one calendar',
           ].map((bullet, idx) => (
             <div key={idx} className="flex items-center gap-[9px]">
               <Check className="w-[18px] h-[18px] text-[#10B981] shrink-0" strokeWidth={3} />
@@ -881,9 +881,9 @@ const HRTasksCommunication: React.FC = () => {
 /* ─── 9. HR CONNECTED WORKFLOWS ─── */
 const HRConnectedWorkflows: React.FC = () => {
   const steps = [
-    { text: 'Employee requests leave' },
+    { text: 'Employee requests time off' },
     { text: 'Manager approves' },
-    { text: 'Leave balance updates' },
+    { text: 'Time-off balance updates' },
     { text: 'Team availability updates' },
     { text: 'Calendar updates' },
     { text: 'HR sees it in real time' },
@@ -970,13 +970,13 @@ const HRInteractiveShowcase: React.FC = () => {
       ],
     },
     {
-      id: 'leave-approvals',
-      title: 'Leave approvals',
+      id: 'time-off-approvals',
+      title: 'Time-off approvals',
       desc: 'Requests route to the right manager automatically, with status visible to both sides.',
       rows: [
-        { text: 'Alex Johnson — Annual Leave (3 days)', pillText: 'Pending Approval', pillBg: 'bg-[#EFF6FF]', pillColor: 'text-[#1D4ED8]', pillBgHex: '#EFF6FF', pillColorHex: '#1D4ED8' },
-        { text: 'Maria Garcia — Sick Leave (1 day)', pillText: 'Approved', pillBg: 'bg-[#EAFBF3]', pillColor: 'text-[#15803D]', pillBgHex: '#EAFBF3', pillColorHex: '#15803D' },
-        { text: 'James Smith — Casual Leave (2 days)', pillText: 'Approved', pillBg: 'bg-[#EAFBF3]', pillColor: 'text-[#15803D]', pillBgHex: '#EAFBF3', pillColorHex: '#15803D' },
+        { text: 'Alex Johnson — Paid Time Off (3 days)', pillText: 'Pending Approval', pillBg: 'bg-[#EFF6FF]', pillColor: 'text-[#1D4ED8]', pillBgHex: '#EFF6FF', pillColorHex: '#1D4ED8' },
+        { text: 'Maria Garcia — Sick Time Off (1 day)', pillText: 'Approved', pillBg: 'bg-[#EAFBF3]', pillColor: 'text-[#15803D]', pillBgHex: '#EAFBF3', pillColorHex: '#15803D' },
+        { text: 'James Smith — Personal Time Off (2 days)', pillText: 'Approved', pillBg: 'bg-[#EAFBF3]', pillColor: 'text-[#15803D]', pillBgHex: '#EAFBF3', pillColorHex: '#15803D' },
       ],
     },
     {
@@ -1118,8 +1118,8 @@ const HREmployeeSelfServiceDark: React.FC = () => {
       rows: ['On Duty · 08:52 AM', 'Request correction'],
     },
     {
-      head: 'LEAVE',
-      rows: ['Balance: 18 days', 'Request leave'],
+      head: 'TIME OFF',
+      rows: ['Balance: 18 days', 'Request time off'],
     },
     {
       head: 'PROFILE / CALENDAR',
@@ -1177,11 +1177,11 @@ const HRAIAssistant: React.FC = () => {
         <div className="w-full lg:w-[576px] bg-white border border-[#E5E7EB] rounded-[24px] p-7 lg:p-9 flex flex-col gap-3">
           {/* Prompt 1 */}
           <div className="inline-flex items-center px-4 py-3 bg-[#EEEEFF] text-[#4A4AE0] font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[13.5px] rounded-[14px] self-start max-w-max">
-            "Who's on leave today?"
+            "Who's on time off today?"
           </div>
           {/* Response 1 */}
           <div className="w-full bg-[#F8FAFC] border border-[#E5E7EB] rounded-[14px] px-4 py-3 font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[13.5px] text-[#111827]">
-            3 employees are on leave today: James Turner, Priya Rao, and Alan Cruz.
+            3 employees are on time off today: James Turner, Priya Rao, and Alan Cruz.
           </div>
 
           {/* Prompt 2 */}
@@ -1205,7 +1205,7 @@ const HRAIAssistant: React.FC = () => {
 
           <ul className="flex flex-col gap-[11px] pt-2 w-full">
             {[
-              '"Who\'s on leave today?"',
+              '"Who\'s on time off today?"',
               '"Show this week\'s attendance exceptions"',
               '"Summarize overdue tasks by team"',
             ].map((text, idx) => (
@@ -1240,7 +1240,7 @@ const HRReportsAnalytics: React.FC = () => {
             Workforce Reports and Analytics Without a Separate BI Tool
           </h3>
           <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[16px] leading-[26px] text-[#6B7280]">
-            Filter and export reports across attendance, leave, employees, departments, shifts, and tasks.
+            Filter and export reports across attendance, time off, employees, departments, shifts, and tasks.
           </p>
         </div>
 
@@ -1258,7 +1258,7 @@ const HRReportsAnalytics: React.FC = () => {
 
             {/* Report Categories Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-1">
-              {['Attendance', 'Working Hours', 'Leave', 'Employee', 'Department', 'Shift', 'Task Completion'].map((cat, idx) => (
+              {['Attendance', 'Working Hours', 'Time Off', 'Employee', 'Department', 'Shift', 'Task Completion'].map((cat, idx) => (
                 <div key={idx} className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-[10px] p-3 text-center font-['Inter',sans-serif] font-semibold text-[12.5px] text-[#111827] flex items-center justify-center min-h-[49px]">
                   {cat}
                 </div>
@@ -1320,7 +1320,7 @@ const HRRelatedSolutions: React.FC = () => {
   const cards = [
     {
       title: 'For Managers',
-      desc: 'Track attendance, leave, tasks, and approvals for your team from one workspace.',
+      desc: 'Track attendance, time off, tasks, and approvals for your team from one workspace.',
       linkText: 'Explore Manager Solutions →',
       href: '#manager-solutions',
     },
@@ -1383,16 +1383,16 @@ const HRFAQSection: React.FC = () => {
       a: 'Yes. Workzi supports GPS geofenced mobile check-in, rotating QR codes, facial recognition, and web punching, alongside optional biometric integration.',
     },
     {
-      q: 'Can employees apply for leave from their phone?',
-      a: 'Yes, employees can apply for leave, check balances, and track approval status directly from the mobile app.',
+      q: 'Can employees apply for time off from their phone?',
+      a: 'Yes, employees can apply for time off, check balances, and track approval status directly from the mobile app.',
     },
     {
-      q: 'Can managers approve leave and attendance corrections from the app?',
+      q: 'Can managers approve time-off requests and attendance corrections from the app?',
       a: 'Yes, approvals route directly to the relevant manager and can be actioned from mobile or web.',
     },
     {
       q: 'Does Workzi integrate with payroll or ERP systems?',
-      a: 'Yes, Workzi exports consolidated attendance and leave data cleanly for seamless payroll and ERP synchronization.',
+      a: 'Yes, Workzi exports consolidated attendance and time-off data cleanly for seamless payroll and ERP synchronization.',
     },
     {
       q: 'Is Workzi suitable for small businesses or only enterprises?',
@@ -1472,7 +1472,7 @@ const HRRoleCTABanner: React.FC = () => {
 
           {/* Subtitle */}
           <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[18px] sm:text-[22px] leading-[32px] tracking-[-0.64px] text-[#CACDFF] max-w-[650px] mx-auto">
-            Bring attendance, leave, and workforce operations together in one HRMS.
+            Bring attendance, time off, and workforce operations together in one HRMS.
           </h3>
 
           {/* Buttons */}

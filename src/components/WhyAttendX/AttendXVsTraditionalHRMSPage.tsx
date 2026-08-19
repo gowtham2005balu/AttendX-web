@@ -28,7 +28,7 @@ export const AttendXVsTraditionalHRMSPage: React.FC = () => {
         <Container className="max-w-[1280px] px-4 sm:px-6 lg:px-8">
           {/* Hero Row Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-            
+
             {/* Left Column: Hero Text & CTAs */}
             <div className="lg:col-span-6 flex flex-col items-center text-center max-w-[640px] mx-auto lg:mx-0">
               {/* H1 Title */}
@@ -64,7 +64,7 @@ export const AttendXVsTraditionalHRMSPage: React.FC = () => {
             <div className="lg:col-span-6 flex justify-center w-full">
               <div className="w-full max-w-[540px] bg-gradient-to-br from-[#9AA0FF] via-[#C5E2FF] to-[#4F7EFF] rounded-[24px] p-6 sm:p-8 flex items-center justify-center shadow-sm hover:shadow-md transition-all duration-200">
                 <div className="w-full max-w-[420px] flex flex-col items-center gap-3">
-                  
+
                   {/* Node 1: Traditional HRMS */}
                   <div className="w-full bg-white border border-[#E5E7EB] rounded-full py-4.5 px-8 flex items-center justify-center font-['Plus_Jakarta_Sans'] font-bold text-[18px] leading-[29px] text-[#6B7280] text-center shadow-xs transition-transform hover:scale-102">
                     Traditional HRMS
@@ -132,7 +132,7 @@ export const AttendXVsTraditionalHRMSPage: React.FC = () => {
               {
                 num: '02',
                 title: 'Digital → Connected',
-                desc: 'Cloud HRMS brought HR online, but attendance, leave, tasks and approvals often stayed siloed in separate modules',
+                desc: 'Cloud HRMS brought HR online, but attendance, Time-off, tasks and approvals often stayed siloed in separate modules',
               },
               {
                 num: '03',
@@ -201,16 +201,15 @@ export const AttendXVsTraditionalHRMSPage: React.FC = () => {
               {
                 year: 'Today',
                 title: 'Connected Workforce Platform',
-                desc: 'Workzi brings attendance, leave, tasks, approvals and people together — in one continuous experience',
+                desc: 'Workzi brings attendance, Time-off, tasks, approvals and people together — in one continuous experience',
                 active: true,
               },
             ].map((era, idx) => (
               <div key={idx} className="py-8 sm:py-9 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-10 transition-all duration-200">
                 <div className="w-[140px] shrink-0">
                   <span
-                    className={`font-['Plus_Jakarta_Sans'] font-semibold text-[20px] sm:text-[22px] leading-[35px] ${
-                      era.active ? 'text-[#5C5CFF]' : 'text-[#6B7280]'
-                    }`}
+                    className={`font-['Plus_Jakarta_Sans'] font-semibold text-[20px] sm:text-[22px] leading-[35px] ${era.active ? 'text-[#5C5CFF]' : 'text-[#6B7280]'
+                      }`}
                   >
                     {era.year}
                   </span>
@@ -218,9 +217,8 @@ export const AttendXVsTraditionalHRMSPage: React.FC = () => {
 
                 <div className="flex flex-col items-start gap-1.5 flex-1">
                   <h4
-                    className={`font-['Plus_Jakarta_Sans'] font-semibold text-[22px] sm:text-[24px] leading-[38px] tracking-[-0.24px] ${
-                      era.active ? 'text-[#5C5CFF]' : 'text-[#111827]'
-                    }`}
+                    className={`font-['Plus_Jakarta_Sans'] font-semibold text-[22px] sm:text-[24px] leading-[38px] tracking-[-0.24px] ${era.active ? 'text-[#5C5CFF]' : 'text-[#111827]'
+                      }`}
                   >
                     {era.title}
                   </h4>
@@ -321,8 +319,8 @@ export const AttendXVsTraditionalHRMSPage: React.FC = () => {
               },
               {
                 icon: '💬',
-                before: 'Leave requests sent on WhatsApp, emails & verbal notes',
-                after: 'One-tap mobile leave requests with automatic balance updates',
+                before: 'Time-off requests sent on WhatsApp, emails & verbal notes',
+                after: 'One-tap mobile Time-off requests with automatic balance updates',
               },
               {
                 icon: '📊',
@@ -341,7 +339,7 @@ export const AttendXVsTraditionalHRMSPage: React.FC = () => {
               },
               {
                 icon: '🔍',
-                before: 'No clear view of who is working, remote or on leave today',
+                before: 'No clear view of who is working, remote or on Time-off today',
                 after: 'Live daily organization status at a glance',
               },
             ].map((card, idx) => (
@@ -391,7 +389,7 @@ export const AttendXVsTraditionalHRMSPage: React.FC = () => {
             {[
               {
                 title: 'Higher Employee Adoption',
-                desc: 'An intuitive app employees actually enjoy using means less chasing for attendance and leave requests.',
+                desc: 'An intuitive app employees actually enjoy using means less chasing for attendance and Time-off requests.',
               },
               {
                 title: 'Faster Operational Speed',
@@ -524,11 +522,10 @@ export const AttendXVsTraditionalHRMSPage: React.FC = () => {
             ].map((node, idx, arr) => (
               <React.Fragment key={idx}>
                 <div
-                  className={`h-[74px] rounded-full px-7 sm:px-8 flex items-center justify-center font-['Plus_Jakarta_Sans'] font-extrabold text-[18px] sm:text-[20px] leading-[32px] transition-transform hover:scale-105 ${
-                    node.highlight
+                  className={`h-[74px] rounded-full px-7 sm:px-8 flex items-center justify-center font-['Plus_Jakarta_Sans'] font-extrabold text-[18px] sm:text-[20px] leading-[32px] transition-transform hover:scale-105 ${node.highlight
                       ? 'bg-[#5C5CFF] border border-[#5C5CFF] text-white shadow-md'
                       : 'bg-[#F8FAFC] border border-[#E5E7EB] text-[#111827]'
-                  }`}
+                    }`}
                 >
                   {node.label}
                 </div>
@@ -659,11 +656,10 @@ export const AttendXVsTraditionalHRMSPage: React.FC = () => {
             ].map((node, idx, arr) => (
               <React.Fragment key={idx}>
                 <div
-                  className={`h-[61px] rounded-[14px] px-6 sm:px-7 flex items-center justify-center font-['Plus_Jakarta_Sans'] font-semibold text-[14.5px] leading-[23px] text-center transition-transform hover:scale-103 ${
-                    node.highlight
+                  className={`h-[61px] rounded-[14px] px-6 sm:px-7 flex items-center justify-center font-['Plus_Jakarta_Sans'] font-semibold text-[14.5px] leading-[23px] text-center transition-transform hover:scale-103 ${node.highlight
                       ? 'bg-[#5C5CFF] border border-[#5C5CFF] text-white shadow-md'
                       : 'bg-white border border-[#E5E7EB] text-[#111827]'
-                  }`}
+                    }`}
                 >
                   {node.label}
                 </div>
@@ -694,11 +690,11 @@ export const AttendXVsTraditionalHRMSPage: React.FC = () => {
             {[
               {
                 q: 'How is Workzi different from the HRMS we already use?',
-                a: "Most traditional HRMS platforms treat attendance, leave, tasks and approvals as separate modules. Workzi connects them into one shared experience, so information entered once is visible everywhere it's needed.",
+                a: "Most traditional HRMS platforms treat attendance, Time-off, tasks and approvals as separate modules. Workzi connects them into one shared experience, so information entered once is visible everywhere it's needed.",
               },
               {
                 q: 'Can we migrate our existing HRMS data into Workzi?',
-                a: "Yes. Employee records, attendance history and leave balances can be imported during setup, so your organization doesn't start from zero.",
+                a: "Yes. Employee records, attendance history and Time-off balances can be imported during setup, so your organization doesn't start from zero.",
               },
               {
                 q: 'Does switching mean retraining our whole HR team?',
@@ -706,7 +702,7 @@ export const AttendXVsTraditionalHRMSPage: React.FC = () => {
               },
               {
                 q: 'Will our approval chains and policies still work the same way?',
-                a: 'Yes. Existing approval hierarchies, leave policies and organizational structures can be configured to match how your organization already runs.',
+                a: 'Yes. Existing approval hierarchies, Time-off policies and organizational structures can be configured to match how your organization already runs.',
               },
               {
                 q: 'Can different departments or locations have different policies?',
@@ -714,7 +710,7 @@ export const AttendXVsTraditionalHRMSPage: React.FC = () => {
               },
               {
                 q: "What happens to reporting we've built around our current HRMS?",
-                a: "Workzi's reporting covers attendance, leave and task data out of the box, and data can be exported to fit into existing reporting workflows during the transition.",
+                a: "Workzi's reporting covers attendance, Time-off and task data out of the box, and data can be exported to fit into existing reporting workflows during the transition.",
               },
               {
                 q: 'Is Workzi built for large, multi-location organizations?',

@@ -31,7 +31,7 @@ export const Employee: React.FC = () => {
 
           {/* Subtitle */}
           <p className="text-[#111827] text-[14.5px] sm:text-[15.6px] font-medium leading-[22px] sm:leading-[24px] mb-[24px]">
-            Attendance records, leave history, notifications, and profile details — employees get self-serve access to it all, without ever needing to ask HR.
+            Attendance records, Time-off history, notifications, and profile details — employees get self-serve access to it all, without ever needing to ask HR.
           </p>
 
           {/* Checklist 2 Columns */}

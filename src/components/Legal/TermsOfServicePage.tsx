@@ -65,7 +65,7 @@ export const TermsOfServicePage: React.FC = () => {
 
   return (
     <div id="terms-of-service-page" className="w-full bg-white text-[#12131A] min-h-screen pt-[88px]">
-      
+
       {/* ── 1. LEGAL HERO SECTION ── */}
       <section className="w-full border-b border-[#E6E8F0] bg-white py-12 lg:py-16">
         <Container className="max-w-[1200px] mx-auto px-4 sm:px-8">
@@ -97,10 +97,10 @@ export const TermsOfServicePage: React.FC = () => {
       <section className="w-full py-12 lg:py-16 bg-white">
         <Container className="max-w-[1200px] mx-auto px-4 sm:px-8">
           <div className="flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-[80px]">
-            
+
             {/* LEFT COLUMN — Main Legal Content */}
             <div className="w-full lg:w-[720px] shrink-0 flex flex-col gap-10">
-              
+
               {/* 1. Acceptance of Terms */}
               <section id="acceptance" className="scroll-mt-28 flex flex-col gap-3">
                 <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[22px] sm:text-[24px] leading-[30px] tracking-[-0.26px] text-[#12131A]">
@@ -117,7 +117,7 @@ export const TermsOfServicePage: React.FC = () => {
                   2. About Workzi
                 </h2>
                 <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[16px] leading-[28px] text-[#333747]">
-                  Workzi provides attendance, leave, shift, task, and workforce management tools for organizations and their employees. References to "you" in these Terms mean the individual or organization using the Services, depending on context.
+                  Workzi provides attendance, Time-off, shift, task, and workforce management tools for organizations and their employees. References to "you" in these Terms mean the individual or organization using the Services, depending on context.
                 </p>
               </section>
 
@@ -345,11 +345,10 @@ export const TermsOfServicePage: React.FC = () => {
                         <a
                           href={`#${item.id}`}
                           onClick={(e) => scrollToSection(e, item.id)}
-                          className={`block pl-3.5 text-[14px] leading-[20px] font-['Inter',sans-serif] border-l-2 transition-all ${
-                            isActive
+                          className={`block pl-3.5 text-[14px] leading-[20px] font-['Inter',sans-serif] border-l-2 transition-all ${isActive
                               ? 'border-[#5C5CFF] text-[#5C5CFF] font-semibold'
                               : 'border-transparent text-[#667085] hover:text-[#12131A] font-medium'
-                          }`}
+                            }`}
                         >
                           {item.label}
                         </a>

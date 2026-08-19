@@ -9,7 +9,7 @@ export const FAQ: React.FC = () => {
   const [activeTag, setActiveTag] = useState('Attendance');
 
   const tags = [
-    'Attendance', 'Leave', 'Organization', 'Payroll', 'Mobile App',
+    'Attendance', 'Time-off', 'Organization', 'Payroll', 'Mobile App',
     'Pricing', 'Security', 'Reports', 'Geofencing', 'Approvals'
   ];
 
@@ -19,16 +19,16 @@ export const FAQ: React.FC = () => {
       answer: 'Workzi uses GPS-based geo-fencing to confirm employees are within the designated office range before they check in. Once verified, the check-in is time-stamped and logged automatically, and employees can view their shift overview and attendance history right in the app.',
     },
     {
-      question: 'Can employees apply for leave from mobile?',
-      answer: 'Yes. Employees can apply for leave, check balances, and track approval status directly from the Workzi mobile app, no desktop needed.',
+      question: 'Can employees apply for Time-off from mobile?',
+      answer: 'Yes. Employees can apply for Time-off, check balances, and track approval status directly from the Workzi mobile app, no desktop needed.',
     },
     {
       question: 'Does the platform support multi-level approval workflows?',
-      answer: 'Yes. Workzi supports configurable, multi-level approval chains, so leave and attendance regularization requests route to the right approver automatically.',
+      answer: 'Yes. Workzi supports configurable, multi-level approval chains, so Time-off and attendance regularization requests route to the right approver automatically.',
     },
     {
       question: 'Can managers access attendance reports and analytics?',
-      answer: 'Absolutely. Managers and HR admins get real-time dashboards and exportable reports covering attendance trends, leave patterns, and team-level insights.',
+      answer: 'Absolutely. Managers and HR admins get real-time dashboards and exportable reports covering attendance trends, Time-off patterns, and team-level insights.',
     },
     {
       question: 'Is employee data secure and private?',
@@ -74,9 +74,8 @@ export const FAQ: React.FC = () => {
                   className="w-full flex justify-between items-center py-4 sm:py-5 min-h-[44px] text-left focus:outline-none cursor-pointer group"
                   onClick={() => toggleAccordion(idx)}
                 >
-                  <span className={`font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[17px] leading-[22px] transition-colors ${
-                    isOpen ? 'text-[#5B5FFF]' : 'text-[#111827] group-hover:text-[#5B5FFF]'
-                  }`}>
+                  <span className={`font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[17px] leading-[22px] transition-colors ${isOpen ? 'text-[#5B5FFF]' : 'text-[#111827] group-hover:text-[#5B5FFF]'
+                    }`}>
                     {faq.question}
                   </span>
                   {isOpen ? (

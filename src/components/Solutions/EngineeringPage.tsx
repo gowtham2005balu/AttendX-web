@@ -79,7 +79,7 @@ const EngineeringHero: React.FC = () => (
           {/* p.lead */}
           <div className="w-full lg:w-[480px] max-w-[480px] pt-[2.385px]">
             <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[18px] leading-[28px] sm:leading-[30px] text-[#6B7280] max-w-[450px]">
-              On-call rotations, WFH days, sprint deadlines, flexible hours — Workzi handles attendance, leave, and shift management the way engineering teams really operate, not just 9-to-5 office check-ins.
+              On-call rotations, WFH days, sprint deadlines, flexible hours — Workzi handles attendance, Time-off, and shift management the way engineering teams really operate, not just 9-to-5 office check-ins.
             </p>
           </div>
 
@@ -423,30 +423,30 @@ const EngineeringKnowledgeSections: React.FC = () => {
         </div>
       </section>
 
-      {/* Reason 3: Leave Management */}
+      {/* Reason 3: Time-off Management */}
       <section className="w-full py-[60px] px-6 lg:px-[100px]">
         <div className="w-full max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-[50px]">
           <div className="flex flex-col items-start p-0 gap-6 mx-auto max-w-[589px] w-full h-auto justify-center self-center">
             <div className="flex flex-col items-start p-0 gap-5 w-full max-w-[549px] self-stretch">
               <span className="inline-flex flex-row items-center px-[14px] py-[5px] gap-[6px] bg-[#F0F9F0] text-[#3B8A3E] font-['Inter',sans-serif] font-semibold text-[12px] leading-[15px] rounded-[50px]">
-                Leave Management
+                Time-off Management
               </span>
 
               <div className="flex flex-col items-start p-0 gap-5 w-full max-w-[549px] self-stretch">
                 <div className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
                   <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[36px] sm:text-[42px] lg:text-[48px] leading-[1.25] lg:leading-[62px] tracking-[-1.12px] text-[#000000] flex items-center w-full max-w-[549px] self-stretch">
-                    Leave Requests That Don't Stall a Sprint
+                    Time-off Requests That Don't Stall a Sprint
                   </h2>
                   <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827] flex items-center w-full max-w-[549px] self-stretch">
-                    Leave approvals route to the right engineering manager immediately, with visibility into who's out during a sprint before it becomes a delivery problem.
+                    Time-off approvals route to the right engineering manager immediately, with visibility into who's out during a sprint before it becomes a delivery problem.
                   </p>
                 </div>
 
                 <a
-                  href="#leave-management"
+                  href="#Time-off-management"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>See Leave Management</span>
+                  <span>See Time-off Management</span>
                   <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
                 </a>
               </div>
@@ -454,7 +454,7 @@ const EngineeringKnowledgeSections: React.FC = () => {
 
             <ul className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
               {[
-                "Approve leave with live sprint coverage and availability context",
+                "Approve Time-off with live sprint coverage and availability context",
                 "Prevent accidental delivery bottlenecks during critical release cycles",
                 "Standardize WFH and PTO rules across engineering squads",
               ].map((text, idx) => (
@@ -512,7 +512,7 @@ const EngineeringKnowledgeSections: React.FC = () => {
                     Tasks and Deadlines Your Team Can Actually See
                   </h2>
                   <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827] flex items-center w-full max-w-[549px] self-stretch">
-                    Assign tasks with due dates, priorities, and status — so sprint commitments and attendance/leave visibility live in the same place instead of two disconnected tools.
+                    Assign tasks with due dates, priorities, and status — so sprint commitments and attendance/Time-off visibility live in the same place instead of two disconnected tools.
                   </p>
                 </div>
 
@@ -529,7 +529,7 @@ const EngineeringKnowledgeSections: React.FC = () => {
             <ul className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
               {[
                 "Assign tasks with due dates, priorities, and status",
-                "Keep sprint commitments and leave visibility in one connected workspace",
+                "Keep sprint commitments and Time-off visibility in one connected workspace",
                 "Track engineering task load alongside attendance",
               ].map((text, idx) => (
                 <li key={idx} className="flex flex-row items-center p-0 gap-[12px] w-full">
@@ -621,14 +621,14 @@ const EngineeringManagerVisibilityDark: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] text-[15px] sm:text-[16px] leading-[24px] sm:leading-[26px] text-slate-300">
-          See team availability, pending leave, and task load in one dashboard — so sprint planning doesn't start with "wait, who's out this week?"
+          See team availability, pending Time-off, and task load in one dashboard — so sprint planning doesn't start with "wait, who's out this week?"
         </p>
 
         <ul className="flex flex-col gap-2.5 sm:gap-3 pt-1 sm:pt-2">
           {[
-            "Team attendance and leave status in one view",
+            "Team attendance and Time-off status in one view",
             "Overdue and at-risk tasks flagged automatically",
-            "Approve leave, WFH, and attendance corrections from one screen",
+            "Approve Time-off, WFH, and attendance corrections from one screen",
           ].map((item, idx) => (
             <li key={idx} className="flex items-center gap-3 text-[14px] sm:text-[15px] text-slate-200">
               <span className="w-5 h-5 rounded-full bg-[#5C5CFF]/20 text-[#818CF8] flex items-center justify-center font-bold text-xs shrink-0">
@@ -694,7 +694,7 @@ const EngineeringIntegrations: React.FC = () => (
           Fits Alongside the Tools Your Engineering Team Already Uses
         </h2>
         <p className="font-['Inter',sans-serif] text-[16px] text-[#6B7280]">
-          Workzi handles workforce operations — attendance, leave, shifts — while staying out of the way of the tools engineering teams already use for code and project tracking.
+          Workzi handles workforce operations — attendance, Time-off, shifts — while staying out of the way of the tools engineering teams already use for code and project tracking.
         </p>
       </div>
 
@@ -737,16 +737,16 @@ const EngineeringFAQ: React.FC = () => {
       a: "Yes. Workzi's location-aware check-in works for office, hybrid, and remote employees, so attendance tracking isn't limited to in-office staff.",
     },
     {
-      q: 'Can engineering managers approve leave and WFH requests from mobile?',
+      q: 'Can engineering managers approve Time-off and WFH requests from mobile?',
       a: 'Yes. Approvals route to the relevant manager and can be actioned from the Workzi mobile app.',
     },
     {
       q: 'Does Workzi track sprint deadlines the same way as tasks?',
-      a: "Workzi's task management module lets you set due dates, priorities, and status per task — useful for sprint-linked deadlines alongside attendance and leave visibility.",
+      a: "Workzi's task management module lets you set due dates, priorities, and status per task — useful for sprint-linked deadlines alongside attendance and Time-off visibility.",
     },
     {
       q: 'Is there a separate view for engineering managers vs. individual contributors?',
-      a: 'Yes. Managers get team-level visibility into attendance, leave, and tasks; employees see their own dashboard.',
+      a: 'Yes. Managers get team-level visibility into attendance, Time-off, and tasks; employees see their own dashboard.',
     },
   ];
 
@@ -783,8 +783,8 @@ const EngineeringFAQ: React.FC = () => {
                   </span>
                   <span
                     className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${isOpen
-                        ? 'bg-[#5C5CFF] text-white'
-                        : 'bg-[#EEF2FF] text-[#5C5CFF] group-hover:bg-[#5C5CFF] group-hover:text-white'
+                      ? 'bg-[#5C5CFF] text-white'
+                      : 'bg-[#EEF2FF] text-[#5C5CFF] group-hover:bg-[#5C5CFF] group-hover:text-white'
                       }`}
                   >
                     {isOpen ? '−' : '+'}
@@ -825,7 +825,7 @@ const EngineeringRoleCTABanner: React.FC = () => (
 
         {/* Subtitle */}
         <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[18px] sm:text-[22px] leading-[32px] tracking-[-0.64px] text-[#CACDFF] max-w-[650px] mx-auto">
-          Attendance, leave, and task tracking built around shifts, sprints, and remote work — not fixed office hours.
+          Attendance, Time-off, and task tracking built around shifts, sprints, and remote work — not fixed office hours.
         </h3>
 
         {/* Buttons */}

@@ -69,14 +69,14 @@ const SalesHero: React.FC = () => (
           {/* h1 */}
           <div className="w-full lg:w-[578px]">
             <h1 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[32px] sm:text-[40px] lg:text-[46px] leading-[1.15] sm:leading-[52px] lg:leading-[54px] tracking-[-1.04px] text-[#111827]">
-              Attendance and Leave Tracking Built for Reps Who Aren't at a Desk
+              Attendance and Time-off Tracking Built for Reps Who Aren't at a Desk
             </h1>
           </div>
 
           {/* p.lead */}
           <div className="w-full lg:w-[480px] max-w-[480px] pt-[2.385px]">
             <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[18px] leading-[28px] sm:leading-[30px] text-[#6B7280] max-w-[450px]">
-              Sales teams work from client sites, the road, and home — not just an office. Workzi tracks attendance, leave, and tasks the way field and office sales teams actually work.
+              Sales teams work from client sites, the road, and home — not just an office. Workzi tracks attendance, Time-off, and tasks the way field and office sales teams actually work.
             </p>
           </div>
 
@@ -110,7 +110,7 @@ const SalesHero: React.FC = () => (
         {[
           'Geo-location attendance',
           'Field & office reps',
-          'Leave without missing coverage',
+          'Time-off without missing coverage',
           'Task & target tracking',
         ].map((item, idx) => (
           <div key={idx} className="flex items-center gap-[8px] shrink-0">
@@ -186,7 +186,7 @@ const SalesProblemValue: React.FC = () => (
         <div className="bg-white border border-[#E5E7EB] rounded-[24px] p-[32px] flex flex-col justify-between gap-[11.4px] w-full">
           <div>
             <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[20px] leading-[23px] tracking-[-0.4px] text-[#111827] mb-3">
-              Leave that accounts for coverage
+              Time-off that accounts for coverage
             </h3>
             <p className="font-['Inter',sans-serif] font-normal text-[14.5px] leading-[24px] text-[#6B7280] mb-6">
               Approvals with visibility into territory and team availability.
@@ -196,7 +196,7 @@ const SalesProblemValue: React.FC = () => (
           <div className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-[14px] p-[16px] pt-[26.6px] flex flex-col gap-2">
             <div className="flex items-center justify-between py-2 border-b border-gray-100/60">
               <span className="font-['Inter',sans-serif] font-semibold text-[12.5px] leading-[15px] text-[#111827]">
-                Leave Approvals
+                Time-off Approvals
               </span>
               <span className="bg-[#EAFBF3] text-[#15803D] font-bold text-[11px] leading-[13px] px-[10px] py-[3px] rounded-full">
                 Territory Safe
@@ -352,30 +352,30 @@ const SalesKnowledgeSections: React.FC = () => {
         </div>
       </section>
 
-      {/* Reason 2: Leave Management */}
+      {/* Reason 2: Time-off Management */}
       <section className="w-full py-[60px] px-6 lg:px-[100px]">
         <div className="w-full max-w-[1240px] mx-auto flex flex-col lg:flex-row-reverse items-center justify-between gap-[50px]">
           <div className="flex flex-col items-start p-0 gap-6 mx-auto max-w-[589px] w-full h-auto justify-center self-center">
             <div className="flex flex-col items-start p-0 gap-5 w-full max-w-[549px] self-stretch">
               <span className="inline-flex flex-row items-center px-[14px] py-[5px] gap-[6px] bg-[#F0F9F0] text-[#3B8A3E] font-['Inter',sans-serif] font-semibold text-[12px] leading-[15px] rounded-[50px]">
-                Leave Management
+                Time-off Management
               </span>
 
               <div className="flex flex-col items-start p-0 gap-5 w-full max-w-[549px] self-stretch">
                 <div className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
                   <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[36px] sm:text-[42px] lg:text-[48px] leading-[1.25] lg:leading-[62px] tracking-[-1.12px] text-[#000000] flex items-center w-full max-w-[549px] self-stretch">
-                    Leave Visibility That Protects Coverage
+                    Time-off Visibility That Protects Coverage
                   </h2>
                   <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827] flex items-center w-full max-w-[549px] self-stretch">
-                    Managers approve leave with visibility into who else is covering a territory or account, so a rep's time off doesn't leave a gap during a critical period.
+                    Managers approve Time-off with visibility into who else is covering a territory or account, so a rep's time off doesn't Time-off a gap during a critical period.
                   </p>
                 </div>
 
                 <a
-                  href="#leave-management"
+                  href="#Time-off-management"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>See Leave Management</span>
+                  <span>See Time-off Management</span>
                   <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
                 </a>
               </div>
@@ -383,7 +383,7 @@ const SalesKnowledgeSections: React.FC = () => {
 
             <ul className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
               {[
-                "Approve leave with real-time territory coverage visibility",
+                "Approve Time-off with real-time territory coverage visibility",
                 "Prevent account coverage gaps during critical deal closing periods",
                 "Maintain seamless sales team availability across field regions",
               ].map((text, idx) => (
@@ -408,7 +408,7 @@ const SalesKnowledgeSections: React.FC = () => {
                   <span className="font-semibold text-[#15803D]">Covered</span>
                 </div>
                 <div className="flex items-center justify-between bg-[#F8FAFC] border border-[#E5E7EB] rounded-[9px] px-3 py-2 text-[12px]">
-                  <span className="font-semibold text-[#111827]">Leave Impact</span>
+                  <span className="font-semibold text-[#111827]">Time-off Impact</span>
                   <span className="font-semibold text-[#15803D]">Zero Gaps</span>
                 </div>
                 <div className="flex items-center justify-between bg-[#F8FAFC] border border-[#E5E7EB] rounded-[9px] px-3 py-2 text-[12px]">
@@ -619,13 +619,13 @@ const SalesManagerVisibilityDark: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] text-[15px] sm:text-[16px] leading-[24px] sm:leading-[26px] text-slate-300">
-          See attendance, leave, and task load for your whole team — field and office — in one dashboard, so territory coverage doesn't get left to guesswork.
+          See attendance, Time-off, and task load for your whole team — field and office — in one dashboard, so territory coverage doesn't get left to guesswork.
         </p>
 
         <ul className="flex flex-col gap-2.5 sm:gap-3 pt-1 sm:pt-2">
           {[
             "Real-time attendance status for field and office reps",
-            "Approve leave and WFH requests with team availability visible",
+            "Approve Time-off and WFH requests with team availability visible",
             "Track follow-ups and deadlines without a separate spreadsheet",
           ].map((item, idx) => (
             <li key={idx} className="flex items-center gap-3 text-[14px] sm:text-[15px] text-slate-200">
@@ -672,9 +672,9 @@ const SalesManagerVisibilityDark: React.FC = () => (
         </div>
 
         <div className="bg-slate-800/40 rounded-xl p-3.5 sm:p-4 border border-slate-700/40 flex flex-col gap-2 sm:gap-2.5">
-          <div className="text-xs font-bold text-slate-300">Leave Approval Coverage Check</div>
+          <div className="text-xs font-bold text-slate-300">Time-off Approval Coverage Check</div>
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[11.5px] sm:text-xs bg-emerald-950/40 border border-emerald-800/40 p-2.5 rounded-lg text-emerald-200">
-            <span className="leading-snug">Marcus V. Leave Request — Backup Rep Assigned</span>
+            <span className="leading-snug">Marcus V. Time-off Request — Backup Rep Assigned</span>
             <span className="bg-emerald-800/60 text-emerald-100 px-2 py-0.5 rounded text-[10px] font-bold self-start sm:self-auto shrink-0">Approved ✓</span>
           </div>
         </div>
@@ -692,7 +692,7 @@ const SalesIntegrations: React.FC = () => (
           Fits Alongside the Tools Your Sales Team Already Uses
         </h2>
         <p className="font-['Inter',sans-serif] text-[16px] text-[#6B7280]">
-          Workzi manages the workforce side — attendance, leave, tasks — while your team keeps using its existing CRM and communication tools.
+          Workzi manages the workforce side — attendance, Time-off, tasks — while your team keeps using its existing CRM and communication tools.
         </p>
       </div>
 
@@ -731,12 +731,12 @@ const SalesFAQ: React.FC = () => {
       a: 'Yes. Location-aware check-in verifies attendance for field staff without requiring an office check-in.',
     },
     {
-      q: 'Can managers see team coverage before approving a rep\'s leave?',
-      a: 'Yes. Managers get visibility into scheduled team coverage and territory availability alongside pending leave requests.',
+      q: 'Can managers see team coverage before approving a rep\'s Time-off?',
+      a: 'Yes. Managers get visibility into scheduled team coverage and territory availability alongside pending Time-off requests.',
     },
     {
       q: 'Is Workzi a CRM or does it replace our CRM?',
-      a: 'No. Workzi manages workforce operations — attendance, leave, tasks — not customer or deal data. It\'s meant to work alongside your CRM, not replace it.',
+      a: 'No. Workzi manages workforce operations — attendance, Time-off, tasks — not customer or deal data. It\'s meant to work alongside your CRM, not replace it.',
     },
     {
       q: 'Can field reps and office-based reps be managed in the same system?',
@@ -780,11 +780,10 @@ const SalesFAQ: React.FC = () => {
                     {faq.q}
                   </span>
                   <span
-                    className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${
-                      isOpen
+                    className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${isOpen
                         ? 'bg-[#5C5CFF] text-white'
                         : 'bg-[#EEF2FF] text-[#5C5CFF] group-hover:bg-[#5C5CFF] group-hover:text-white'
-                    }`}
+                      }`}
                   >
                     {isOpen ? '−' : '+'}
                   </span>
@@ -824,7 +823,7 @@ const SalesRoleCTABanner: React.FC = () => (
 
         {/* Subtitle */}
         <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[18px] sm:text-[22px] leading-[32px] tracking-[-0.64px] text-[#CACDFF] max-w-[650px] mx-auto">
-          Geo-location attendance, leave visibility, and task tracking — built for reps in the field and at a desk.
+          Geo-location attendance, Time-off visibility, and task tracking — built for reps in the field and at a desk.
         </h3>
 
         {/* Buttons */}

@@ -23,20 +23,18 @@ const Stepper: React.FC<{ currentStep: number }> = ({ currentStep }) => {
         return (
           <div key={step} className="flex flex-col items-center gap-2 relative">
             <div
-              className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold ring-4 ring-white transition-all duration-300 ${
-                isCompleted
+              className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold ring-4 ring-white transition-all duration-300 ${isCompleted
                   ? 'bg-[#5B5FEF] text-white'
                   : isActive
-                  ? 'bg-[#5B5FEF] text-white'
-                  : 'bg-white border border-slate-200 text-slate-400'
-              }`}
+                    ? 'bg-[#5B5FEF] text-white'
+                    : 'bg-white border border-slate-200 text-slate-400'
+                }`}
             >
               {isCompleted ? <Check size={14} strokeWidth={3} /> : step}
             </div>
             <span
-              className={`text-[11px] font-bold whitespace-nowrap absolute -bottom-6 ${
-                isActive ? 'text-[#5B5FEF]' : isCompleted ? 'text-slate-600' : 'text-slate-400'
-              }`}
+              className={`text-[11px] font-bold whitespace-nowrap absolute -bottom-6 ${isActive ? 'text-[#5B5FEF]' : isCompleted ? 'text-slate-600' : 'text-slate-400'
+                }`}
             >
               {label}
             </span>
@@ -341,11 +339,10 @@ const Step2: React.FC<{ onNext: () => void; onBack: () => void }> = ({ onNext, o
                 key={opt}
                 type="button"
                 onClick={() => setOfficeLocations(opt)}
-                className={`px-6 py-2.5 rounded-xl text-sm font-bold border transition-all cursor-pointer ${
-                  officeLocations === opt
+                className={`px-6 py-2.5 rounded-xl text-sm font-bold border transition-all cursor-pointer ${officeLocations === opt
                     ? 'bg-indigo-50 border-[#5B5FEF] text-[#5B5FEF]'
                     : 'bg-white border-slate-200 text-slate-700 hover:border-slate-300'
-                }`}
+                  }`}
               >
                 {opt}
               </button>
@@ -445,7 +442,7 @@ const Step3: React.FC<{ onBack: () => void }> = ({ onBack }) => {
               setRequirements(e.target.value);
               if (error) setError('');
             }}
-            placeholder="Describe your main challenges — e.g., employees missing check-ins, manual leave tracking, lack of real-time visibility, payroll sync issues..."
+            placeholder="Describe your main challenges — e.g., employees missing check-ins, manual Time-off tracking, lack of real-time visibility, payroll sync issues..."
             className={`w-full bg-white border ${error ? 'border-red-500' : 'border-slate-200'} rounded-xl px-4 py-3 text-[14px] text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-[#5B5FEF] focus:ring-1 focus:ring-[#5B5FEF] transition-all resize-none`}
           />
           {error && <p className="text-[11px] font-semibold text-red-500 mt-1">{error}</p>}
@@ -518,7 +515,7 @@ const Step3: React.FC<{ onBack: () => void }> = ({ onBack }) => {
             type="submit"
             className="bg-emerald-500 hover:bg-emerald-600 text-white text-sm font-bold px-8 py-3.5 rounded-xl transition-all shadow-md hover:shadow-lg flex items-center gap-2 cursor-pointer"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" /></svg>
             Submit Request
           </button>
         </div>

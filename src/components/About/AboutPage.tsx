@@ -254,7 +254,7 @@ const AboutStory: React.FC = () => {
         <div className="max-w-[680px] w-full flex flex-col items-start gap-7 text-[#6B7280] font-['Inter',sans-serif] text-[16px] sm:text-[17px] leading-[29px] sm:leading-[31px]">
           <FadeUp delay={0.2}>
             <p>
-              In 2019, our founders were running operations at a fast-growing startup when they realized how much time HR teams were losing to manual attendance reconciliation, fragmented leave systems, and payroll errors. The tools available were either too rigid for modern teams or too complex to actually use.
+              In 2019, our founders were running operations at a fast-growing startup when they realized how much time HR teams were losing to manual attendance reconciliation, fragmented Time-off systems, and payroll errors. The tools available were either too rigid for modern teams or too complex to actually use.
             </p>
           </FadeUp>
 
@@ -395,7 +395,7 @@ const AboutFeaturedCustomer: React.FC = () => {
 
                 <div className="flex items-center gap-2 text-[13px] font-['Inter',sans-serif] font-semibold text-[#111827]">
                   <span className="w-2 h-2 rounded-full bg-[#10B981] shrink-0" />
-                  <span>Leave approvals automated</span>
+                  <span>Time-off approvals automated</span>
                 </div>
 
                 <div className="flex items-center gap-2 text-[13px] font-['Inter',sans-serif] font-semibold text-[#111827]">
@@ -495,8 +495,8 @@ const AboutValuesAccordion: React.FC = () => {
                       <div className="flex items-center gap-3.5">
                         <div
                           className={`w-[38px] h-[38px] rounded-[10px] flex items-center justify-center transition-all ${isOpen
-                              ? 'bg-[#EDEDFF] border border-[#5B5FFF]/20 text-[#5B5FFF]'
-                              : 'bg-white border border-[#E5E7EB] text-[#6B7280]'
+                            ? 'bg-[#EDEDFF] border border-[#5B5FFF]/20 text-[#5B5FFF]'
+                            : 'bg-white border border-[#E5E7EB] text-[#6B7280]'
                             }`}
                         >
                           {item.icon}
@@ -512,8 +512,8 @@ const AboutValuesAccordion: React.FC = () => {
                       {/* Toggle Icon */}
                       <div
                         className={`w-7 h-7 rounded-[8px] flex items-center justify-center transition-all ${isOpen
-                            ? 'bg-[#5B5FFF] text-white rotate-45'
-                            : 'bg-[#EDEDFF] text-[#5B5FFF]'
+                          ? 'bg-[#5B5FFF] text-white rotate-45'
+                          : 'bg-[#EDEDFF] text-[#5B5FFF]'
                           }`}
                       >
                         <Plus size={16} />

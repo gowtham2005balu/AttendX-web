@@ -56,7 +56,7 @@ export const PrivacyPolicyPage: React.FC = () => {
 
   return (
     <div id="privacy-policy-page" className="w-full bg-white text-[#12131A] min-h-screen pt-[88px]">
-      
+
       {/* ── 1. LEGAL HERO SECTION ── */}
       <section className="w-full border-b border-[#E6E8F0] bg-white py-12 lg:py-16">
         <Container className="max-w-[1200px] mx-auto px-4 sm:px-8">
@@ -88,10 +88,10 @@ export const PrivacyPolicyPage: React.FC = () => {
       <section className="w-full py-12 lg:py-16 bg-white">
         <Container className="max-w-[1200px] mx-auto px-4 sm:px-8">
           <div className="flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-[80px]">
-            
+
             {/* LEFT COLUMN — Main Legal Content */}
             <div className="w-full lg:w-[720px] shrink-0 flex flex-col gap-10">
-              
+
               {/* 1. Introduction */}
               <section id="introduction" className="scroll-mt-28 flex flex-col gap-3">
                 <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[22px] sm:text-[24px] leading-[30px] tracking-[-0.26px] text-[#12131A]">
@@ -124,7 +124,7 @@ export const PrivacyPolicyPage: React.FC = () => {
                     <strong className="font-semibold text-[#12131A]">Organization information</strong> — company name, size, department structure, and billing details.
                   </li>
                   <li>
-                    <strong className="font-semibold text-[#12131A]">Employee information</strong> — attendance records, leave requests, shift schedules, and approval history entered by or on behalf of your organization.
+                    <strong className="font-semibold text-[#12131A]">Employee information</strong> — attendance records, Time-off requests, shift schedules, and approval history entered by or on behalf of your organization.
                   </li>
                   <li>
                     <strong className="font-semibold text-[#12131A]">Usage information</strong> — pages visited, features used, and actions taken within the Services.
@@ -155,7 +155,7 @@ export const PrivacyPolicyPage: React.FC = () => {
                 <ul className="list-disc pl-5 flex flex-col gap-2.5 font-['Inter',sans-serif] text-[15px] sm:text-[16px] leading-[26px] text-[#333747]">
                   <li>Provide, operate, and maintain the Workzi Services.</li>
                   <li>Create and manage accounts and organizations.</li>
-                  <li>Deliver attendance, leave, shift, and workforce management functionality.</li>
+                  <li>Deliver attendance, Time-off, shift, and workforce management functionality.</li>
                   <li>Improve and personalize the product experience.</li>
                   <li>Communicate with customers about updates, features, and account activity.</li>
                   <li>Provide customer support and respond to inquiries.</li>
@@ -309,11 +309,10 @@ export const PrivacyPolicyPage: React.FC = () => {
                         <a
                           href={`#${item.id}`}
                           onClick={(e) => scrollToSection(e, item.id)}
-                          className={`block pl-3.5 text-[14px] leading-[20px] font-['Inter',sans-serif] border-l-2 transition-all ${
-                            isActive
+                          className={`block pl-3.5 text-[14px] leading-[20px] font-['Inter',sans-serif] border-l-2 transition-all ${isActive
                               ? 'border-[#5C5CFF] text-[#5C5CFF] font-semibold'
                               : 'border-transparent text-[#667085] hover:text-[#12131A] font-medium'
-                          }`}
+                            }`}
                         >
                           {item.label}
                         </a>

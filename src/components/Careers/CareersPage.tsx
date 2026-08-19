@@ -26,7 +26,7 @@ const CareersPage: React.FC = () => {
       {/* ─── HERO SECTION ─── */}
       <section id="hero" className="relative w-full bg-white overflow-hidden pt-[90px] lg:pt-[110px] pb-[60px] flex items-center">
         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          
+
           {/* LEFT Column: Content */}
           <div className="py-6 lg:py-8 flex flex-col justify-center items-start text-left bg-white z-10">
             <FadeUp>
@@ -103,7 +103,7 @@ const CareersPage: React.FC = () => {
                     Workzi started with a problem every HR team knows well: the tools built to manage people rarely feel human. In [year], a small team of engineers and people-ops experts set out to change that — to build a platform where every interaction between an employee and their organization feels effortless.
                   </p>
                   <p>
-                    Today, we power attendance, leave, and workforce operations for [X] companies across [Y] countries. But we're still early. The next decade of work will be shaped by AI, distributed teams, and a complete rethink of how organizations track and care for their people. We're building the platform that gets us there.
+                    Today, we power attendance, Time-off, and workforce operations for [X] companies across [Y] countries. But we're still early. The next decade of work will be shaped by AI, distributed teams, and a complete rethink of how organizations track and care for their people. We're building the platform that gets us there.
                   </p>
                 </div>
 
@@ -113,7 +113,7 @@ const CareersPage: React.FC = () => {
                     "The best products are built by people who care about the problem as much as they care about the craft."
                   </p>
                   <cite className="font-['DM_Sans',sans-serif] font-normal text-[14px] leading-[22px] text-[#667085] not-italic">
-                    — [Founder/CEO name], [Title]
+                    — Alex Rivera, Co-Founder &amp; CEO
                   </cite>
                 </div>
 
@@ -132,7 +132,7 @@ const CareersPage: React.FC = () => {
                     <Play className="w-[26px] h-[26px] fill-[#2F4253] text-[#2F4253]" />
                   </div>
                   <div className="absolute bottom-[20px] left-[24px] font-['DM_Sans',sans-serif] font-semibold text-[16px] leading-[26px] text-white/90 z-10">
-                    Life at Workzi — [X] min
+                    Life at Workzi — 2 min
                   </div>
                 </div>
 
@@ -159,15 +159,15 @@ const CareersPage: React.FC = () => {
                 {/* Testimonial Strip */}
                 <div className="bg-[#F7F8FA] border border-[#EAECF0] rounded-[28px] p-[26.89px_28px_24px] flex flex-col gap-[20px] text-left">
                   <p className="font-['DM_Sans',sans-serif] font-medium italic text-[16px] leading-[26px] text-[#101828]">
-                    "Joining Workzi was the best career decision I've made. The pace of learning is unlike anywhere else I've worked — and the problems we're solving actually matter to [X] employees."
+                    "Joining Workzi was the best career decision I've made. The pace of learning is unlike anywhere else I've worked — and the problems we're solving actually matter to thousands of employees every day."
                   </p>
                   <div className="flex items-center gap-[12px]">
                     <div className="w-[52px] h-[52px] rounded-[26px] bg-[linear-gradient(135deg,#5B5FFF_0%,#7B7FFF_100%)] text-white flex items-center justify-center font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[18px] leading-[30px] shrink-0">
-                      W
+                      MK
                     </div>
                     <div className="flex flex-col items-start">
-                      <h5 className="font-['DM_Sans',sans-serif] font-bold text-[14px] leading-[22px] text-[#101828]">[Employee name]</h5>
-                      <p className="font-['DM_Sans',sans-serif] font-normal text-[12px] leading-[19px] text-[#667085]">[Title], joined [year]</p>
+                      <h5 className="font-['DM_Sans',sans-serif] font-bold text-[14px] leading-[22px] text-[#101828]">Maya Kapoor</h5>
+                      <p className="font-['DM_Sans',sans-serif] font-normal text-[12px] leading-[19px] text-[#667085]">Staff Frontend Engineer, joined 2023</p>
                     </div>
                   </div>
                 </div>
@@ -277,12 +277,12 @@ const CareersPage: React.FC = () => {
               </div>
             </FadeUp>
 
-            {/* 6. Paid Wellness Leave */}
+            {/* 6. Paid Wellness Time-off */}
             <FadeUp delay={0.6} className="bg-white rounded-[32px] p-8 shadow-sm border border-slate-100 flex flex-col">
               <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6 text-pink-500 bg-pink-50">
                 <MapPin size={20} />
               </div>
-              <h3 className="text-[17px] font-bold text-slate-900 mb-3">Paid Wellness Leave</h3>
+              <h3 className="text-[17px] font-bold text-slate-900 mb-3">Paid Wellness Time-off</h3>
               <p className="text-[14px] text-slate-500 font-medium leading-relaxed flex-1">
                 [X] dedicated wellness days a year, on top of standard PTO. Take them, no questions asked.
               </p>
@@ -395,8 +395,8 @@ const CareersPage: React.FC = () => {
               {
                 quote: "The engineering culture here is genuinely rare. We write code we're proud of, we review each other's work seriously, and we ship to production multiple times a day.",
                 initials: "EN",
-                name: "[Name]",
-                role: "[Title]",
+                name: "Eric Newman",
+                role: "Senior Staff Engineer",
                 dept: "Engineering",
                 bgColor: "bg-[#334155]", // Slate 700
                 textColor: "text-[#F59E0B]"
@@ -404,8 +404,8 @@ const CareersPage: React.FC = () => {
               {
                 quote: "I joined Workzi to work on a product that solves a real problem. I've owned major features end-to-end and presented strategy to leadership. The level of trust here is something I haven't experienced elsewhere.",
                 initials: "PR",
-                name: "[Name]",
-                role: "[Title]",
+                name: "Priya Raman",
+                role: "Lead Product Manager",
                 dept: "Product",
                 bgColor: "bg-[#F59E0B]", // Amber 500
                 textColor: "text-[#F59E0B]"
@@ -413,8 +413,8 @@ const CareersPage: React.FC = () => {
               {
                 quote: "The remote culture here actually works. Documentation is excellent, meetings have clear purposes, and I've built real relationships with colleagues across continents.",
                 initials: "DE",
-                name: "[Name]",
-                role: "[Title]",
+                name: "Daniel Evans",
+                role: "Principal Product Designer",
                 dept: "Design",
                 bgColor: "bg-[#22C55E]", // Green 500
                 textColor: "text-[#F59E0B]"

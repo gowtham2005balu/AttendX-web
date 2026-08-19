@@ -6,7 +6,7 @@ export const EmpowerEmployees: React.FC = () => {
   const features = [
     'Profile Management',
     'Attendance Records',
-    'Leave History',
+    'Time-off History',
     'Notifications',
     'Personal Dashboard',
   ];
@@ -30,7 +30,7 @@ export const EmpowerEmployees: React.FC = () => {
 
           {/* Subtitle */}
           <p className="font-['Inter',sans-serif] font-medium text-[14px] sm:text-[15.6px] leading-[24px] text-[#111827] mb-6 sm:mb-8">
-            Provide employees access to attendance history, leave records, achievements, profile management, and notifications from one place.
+            Provide employees access to attendance history, Time-off records, achievements, profile management, and notifications from one place.
           </p>
 
           {/* Checklist 2 Columns */}

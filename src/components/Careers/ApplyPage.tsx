@@ -126,10 +126,9 @@ const ApplyPage: React.FC = () => {
   };
 
   const inputCls = (fieldError?: string) =>
-    `w-full bg-white border rounded-xl px-4 py-3 text-[14px] text-slate-900 placeholder:text-slate-400 focus:outline-none transition-all min-h-[44px] ${
-      fieldError
-        ? 'border-red-500 focus:border-red-500 focus:ring-1 focus:ring-red-500 bg-red-50/20'
-        : 'border-slate-200 focus:border-[#5B5FEF] focus:ring-1 focus:ring-[#5B5FEF]'
+    `w-full bg-white border rounded-xl px-4 py-3 text-[14px] text-slate-900 placeholder:text-slate-400 focus:outline-none transition-all min-h-[44px] ${fieldError
+      ? 'border-red-500 focus:border-red-500 focus:ring-1 focus:ring-red-500 bg-red-50/20'
+      : 'border-slate-200 focus:border-[#5B5FEF] focus:ring-1 focus:ring-[#5B5FEF]'
     }`;
 
   const labelCls = "block text-[13px] font-bold text-slate-800 mb-2";
@@ -163,7 +162,7 @@ const ApplyPage: React.FC = () => {
 
           {/* ─── LEFT SIDEBAR ─── */}
           <FadeUp delay={0.2} className="lg:col-span-4 space-y-6">
-            
+
             {/* Job Card Container */}
             <div className="rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-xs">
               {/* Green Header */}
@@ -233,7 +232,7 @@ const ApplyPage: React.FC = () => {
           {/* ─── RIGHT FORM ─── */}
           <FadeUp delay={0.3} className="lg:col-span-8">
             <form onSubmit={handleSubmit} className="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-sm space-y-8">
-              
+
               {/* Validation Error Banner */}
               {showErrorBanner && (
                 <div className="bg-red-50 border border-red-200 text-red-700 p-4 rounded-2xl flex items-center justify-between animate-in fade-in duration-200">
@@ -332,7 +331,7 @@ const ApplyPage: React.FC = () => {
                   <label className={labelCls}>Resume / CV <span className="text-[#5B5FEF]">*</span></label>
                   <div
                     onDragOver={(e) => { e.preventDefault(); setDragOver(true); }}
-                    onDragLeave={() => setDragOver(false)}
+                    onDragTime-off={() => setDragOver(false)}
                     onDrop={(e) => {
                       e.preventDefault();
                       setDragOver(false);
@@ -342,13 +341,12 @@ const ApplyPage: React.FC = () => {
                         if (errors.resume) setErrors(prev => ({ ...prev, resume: '' }));
                       }
                     }}
-                    className={`border-2 border-dashed rounded-2xl p-8 text-center transition-all cursor-pointer ${
-                      errors.resume
+                    className={`border-2 border-dashed rounded-2xl p-8 text-center transition-all cursor-pointer ${errors.resume
                         ? 'border-red-400 bg-red-50/30'
                         : dragOver
                           ? 'border-[#5B5FEF] bg-indigo-50'
                           : 'border-slate-200 bg-slate-50 hover:border-slate-300'
-                    }`}
+                      }`}
                     onClick={() => document.getElementById('resume-input')?.click()}
                   >
                     <input
@@ -548,11 +546,10 @@ const ApplyPage: React.FC = () => {
                           type="button"
                           key={opt.key}
                           onClick={() => setWorkStyle(opt.key)}
-                          className={`px-5 py-2.5 rounded-full text-[13px] font-bold border transition-all cursor-pointer ${
-                            workStyle === opt.key
+                          className={`px-5 py-2.5 rounded-full text-[13px] font-bold border transition-all cursor-pointer ${workStyle === opt.key
                               ? 'bg-[#5B5FEF] border-[#5B5FEF] text-white shadow-md'
                               : 'bg-white border-slate-200 text-slate-600 hover:border-slate-300'
-                          }`}
+                            }`}
                         >
                           {opt.label}
                         </button>
@@ -573,11 +570,10 @@ const ApplyPage: React.FC = () => {
                           type="button"
                           key={opt.key}
                           onClick={() => setHrmsExp(opt.key)}
-                          className={`px-5 py-2.5 rounded-full text-[13px] font-bold border transition-all cursor-pointer ${
-                            hrmsExp === opt.key
+                          className={`px-5 py-2.5 rounded-full text-[13px] font-bold border transition-all cursor-pointer ${hrmsExp === opt.key
                               ? 'bg-[#5B5FEF] border-[#5B5FEF] text-white shadow-md'
                               : 'bg-white border-slate-200 text-slate-600 hover:border-slate-300'
-                          }`}
+                            }`}
                         >
                           {opt.label}
                         </button>
@@ -597,11 +593,10 @@ const ApplyPage: React.FC = () => {
                         <label key={opt.key} className="flex items-center gap-3 cursor-pointer group">
                           <div
                             onClick={() => setAiUsage(opt.key)}
-                            className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all shrink-0 ${
-                              aiUsage === opt.key
+                            className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all shrink-0 ${aiUsage === opt.key
                                 ? 'border-[#5B5FEF] bg-[#5B5FEF]'
                                 : 'border-slate-300 group-hover:border-slate-400'
-                            }`}
+                              }`}
                           >
                             {aiUsage === opt.key && <div className="w-2 h-2 rounded-full bg-white" />}
                           </div>

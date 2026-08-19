@@ -334,7 +334,7 @@ const FeaturesMegaDropdown: React.FC<{ onClose: () => void }> = ({ onClose }) =>
     <div
       className="features-dropdown absolute top-full left-1/2 -translate-x-1/2 mt-2.5 bg-white border border-[#E5E7EB] rounded-[20px] z-50 animate-in fade-in slide-in-from-top-2 duration-150 flex flex-col items-center isolation-isolate"
       style={{
-        width: '960px',
+        width: '920px',
         maxWidth: '1872px',
         padding: '32px 0px 0px',
         gap: '28px',

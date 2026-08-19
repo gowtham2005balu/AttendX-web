@@ -13,9 +13,9 @@ interface SEOMeta {
 const SEO_MAP: Record<string, SEOMeta> = {
   // ── Homepage ──────────────────────────────────────────────────────────────
   home: {
-    title: 'Workzi | Attendance, Leave & Workforce Management Platform',
+    title: 'Workzi | Attendance, Time-off & Workforce Management Platform',
     description:
-      'Track attendance, manage leave, and run HR operations from one platform. Workzi gives employees, managers, and HR teams everything they need in one place. Book a demo today.',
+      'Track attendance, manage Time-off, and run HR operations from one platform. Workzi gives employees, managers, and HR teams everything they need in one place. Book a demo today.',
   },
 
   // ── About Us & Legal ──────────────────────────────────────────────────────
@@ -44,17 +44,17 @@ const SEO_MAP: Record<string, SEOMeta> = {
   features: {
     title: 'Features | AttendX',
     description:
-      'Explore all AttendX features — attendance tracking, leave management, shift scheduling, task management, and more for modern HR teams.',
+      'Explore all AttendX features — attendance tracking, Time-off management, shift scheduling, task management, and more for modern HR teams.',
   },
   'attendance-management': {
     title: 'Attendance Management Software | AttendX',
     description:
       'Track and manage employee attendance in real time with AttendX. Automated records, absence alerts, and powerful reporting in one platform.',
   },
-  'leave-management': {
-    title: 'Leave Management Software | AttendX',
+  'Time-off-management': {
+    title: 'Time-off Management Software | AttendX',
     description:
-      'Automate leave requests, approvals, and balances with AttendX Leave Management. Give employees self-service leave tracking and HR full visibility.',
+      'Automate Time-off requests, approvals, and balances with AttendX Time-off Management. Give employees self-service Time-off tracking and HR full visibility.',
   },
   'task-management': {
     title: 'Task Management Software | AttendX',
@@ -79,7 +79,7 @@ const SEO_MAP: Record<string, SEOMeta> = {
   'employee-self-service': {
     title: 'Employee Self Service Portal | AttendX',
     description:
-      'Let employees manage attendance, leave, and personal details themselves with the AttendX Employee Self Service portal. Less admin, more autonomy.',
+      'Let employees manage attendance, Time-off, and personal details themselves with the AttendX Employee Self Service portal. Less admin, more autonomy.',
   },
   'ai-assistant': {
     title: 'AI Assistant for HR Teams | AttendX',
@@ -94,7 +94,7 @@ const SEO_MAP: Record<string, SEOMeta> = {
   'mobile-experience': {
     title: 'Mobile Experience | AttendX',
     description:
-      'Manage attendance, leave, and tasks on the go with the AttendX mobile experience — built for managers and employees alike.',
+      'Manage attendance, Time-off, and tasks on the go with the AttendX mobile experience — built for managers and employees alike.',
   },
   integrations: {
     title: 'Integrations | AttendX',
@@ -111,7 +111,7 @@ const SEO_MAP: Record<string, SEOMeta> = {
   'attendx-vs-manual-hr': {
     title: 'AttendX vs Manual HR | Compare & Switch',
     description:
-      'Compare AttendX to manual HR processes. See how automated attendance, leave, and shift management save time and cut errors versus spreadsheets.',
+      'Compare AttendX to manual HR processes. See how automated attendance, Time-off, and shift management save time and cut errors versus spreadsheets.',
   },
   'attendx-vs-traditional-hrms': {
     title: 'AttendX vs Traditional HRMS | Compare & Switch',
@@ -148,12 +148,12 @@ const SEO_MAP: Record<string, SEOMeta> = {
   'education-solutions': {
     title: 'Attendance Management for Education | AttendX',
     description:
-      'AttendX helps schools and institutions track staff attendance, manage leave, and simplify HR operations built for the education sector.',
+      'AttendX helps schools and institutions track staff attendance, manage Time-off, and simplify HR operations built for the education sector.',
   },
   'hr-solutions': {
     title: 'Attendance Management for HR Teams | AttendX',
     description:
-      'AttendX gives HR teams a single platform to manage attendance, leave, shifts, and employee records — built to reduce manual HR work.',
+      'AttendX gives HR teams a single platform to manage attendance, Time-off, shifts, and employee records — built to reduce manual HR work.',
   },
   'customer-service-solutions': {
     title: 'Attendance Management for Customer Service Teams | AttendX',
@@ -183,7 +183,7 @@ const SEO_MAP: Record<string, SEOMeta> = {
   'marketing-solutions': {
     title: 'Attendance Management for Marketing Teams | AttendX',
     description:
-      'AttendX helps marketing teams manage attendance, leave, and task tracking so campaigns stay on schedule and staffing stays visible.',
+      'AttendX helps marketing teams manage attendance, Time-off, and task tracking so campaigns stay on schedule and staffing stays visible.',
   },
   'manufacturing-auto-energy-solutions': {
     title: 'Attendance Management for Manufacturing, Auto & Energy | AttendX',
@@ -213,7 +213,7 @@ const SEO_MAP: Record<string, SEOMeta> = {
   'retail-solutions': {
     title: 'Attendance Management for Retail | AttendX',
     description:
-      'AttendX helps retail businesses manage shift-based attendance, staffing, and leave across single or multiple store locations.',
+      'AttendX helps retail businesses manage shift-based attendance, staffing, and Time-off across single or multiple store locations.',
   },
   'healthcare-solutions': {
     title: 'Attendance Management for Health & Life Sciences | AttendX',
@@ -230,12 +230,12 @@ const SEO_MAP: Record<string, SEOMeta> = {
   'help-center': {
     title: 'Help Center | AttendX',
     description:
-      'Get help using AttendX — guides, setup instructions, and troubleshooting for attendance, leave, and HR management features.',
+      'Get help using AttendX — guides, setup instructions, and troubleshooting for attendance, Time-off, and HR management features.',
   },
   'help-article': {
     title: 'Help Center | AttendX',
     description:
-      'Get help using AttendX — guides, setup instructions, and troubleshooting for attendance, leave, and HR management features.',
+      'Get help using AttendX — guides, setup instructions, and troubleshooting for attendance, Time-off, and HR management features.',
   },
   'contact-support': {
     title: 'Contact Us | AttendX',
@@ -281,14 +281,14 @@ const SEO_MAP: Record<string, SEOMeta> = {
 
   // ── Other standalone pages ────────────────────────────────────────────────
   'employee-app': {
-    title: 'Employee App | Attendance, Leave & Tasks — Workzi',
+    title: 'Employee App | Attendance, Time-off & Tasks — Workzi',
     description:
-      "Check in, apply for leave, track tasks, and stay updated — all from your phone. See how Workzi's employee app makes your workday easier.",
+      "Check in, apply for Time-off, track tasks, and stay updated — all from your phone. See how Workzi's employee app makes your workday easier.",
   },
   'hr-manager': {
     title: 'HR & Manager Tools | Workforce Management Platform — Workzi',
     description:
-      'Manage attendance, leave, employees, and reporting from one platform. Workzi gives HR teams and managers everything they need to run a growing team.',
+      'Manage attendance, Time-off, employees, and reporting from one platform. Workzi gives HR teams and managers everything they need to run a growing team.',
   },
   pricing: {
     title: 'Pricing | AttendX',
@@ -298,7 +298,7 @@ const SEO_MAP: Record<string, SEOMeta> = {
   'education-2': {
     title: 'Attendance Management for Education | AttendX',
     description:
-      'AttendX helps schools and institutions track staff attendance, manage leave, and simplify HR operations built for the education sector.',
+      'AttendX helps schools and institutions track staff attendance, manage Time-off, and simplify HR operations built for the education sector.',
   },
 };
 

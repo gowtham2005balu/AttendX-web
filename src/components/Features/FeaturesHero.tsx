@@ -35,7 +35,7 @@ export const FeaturesHero: React.FC = () => {
 
           {/* Subtitle */}
           <p className="font-['Inter',sans-serif] font-medium text-[14px] sm:text-[15px] leading-[24px] text-white text-center max-w-[300px] sm:max-w-[460px] md:max-w-[543px]">
-            Track attendance, manage leave requests, monitor employee activity, and streamline HR operations from one intuitive platform.
+            Track attendance, manage Time-off requests, monitor employee activity, and streamline HR operations from one intuitive platform.
           </p>
 
           {/* Book Demo Button */}

@@ -29,11 +29,11 @@ const AIAssistantHeroChart: React.FC = () => {
 
           <div className="space-y-[8px] text-[11.5px] font-['Inter',sans-serif]">
             <div className="p-2 bg-[#F8FAFC] border border-[#E5E7EB] rounded-[8px] font-semibold text-[#111827]">
-              &quot;How many casual leaves do I have left?&quot;
+              &quot;How many casual Time-offs do I have left?&quot;
             </div>
             <div className="p-2.5 bg-[#EEEEFF] border border-indigo-100 rounded-[8px] font-medium text-[#5C5CFF]">
-              You have 6 Casual Leaves remaining for 2026.
-              <span className="block text-[10px] underline font-bold mt-1 cursor-pointer">Apply for Leave →</span>
+              You have 6 Casual Time-offs remaining for 2026.
+              <span className="block text-[10px] underline font-bold mt-1 cursor-pointer">Apply for Time-off →</span>
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@ const AIHero: React.FC = () => (
 
           <div className="w-full lg:w-[577px]">
             <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[18px] leading-[28px] sm:leading-[30px] text-[#6B7280]">
-              Ask it your leave balance. Let it flag who&apos;s about to miss a deadline. Workzi&apos;s AI assistant turns routine questions and repetitive checks into a conversation — so people spend less time looking things up.
+              Ask it your Time-off balance. Let it flag who&apos;s about to miss a deadline. Workzi&apos;s AI assistant turns routine questions and repetitive checks into a conversation — so people spend less time looking things up.
             </p>
           </div>
 
@@ -153,7 +153,7 @@ const AIHero: React.FC = () => (
         {[
           'Conversational HR Queries',
           'Attendance Anomaly Detection',
-          'Predictive Leave Forecasting',
+          'Predictive Time-off Forecasting',
           'Voice-enabled Mobile Assistant',
         ].map((item, idx) => (
           <div key={idx} className="flex items-center gap-[8px] shrink-0">
@@ -179,7 +179,7 @@ const SectionHowItWorks: React.FC = () => {
     {
       num: '02',
       title: 'Assistant checks the data',
-      desc: 'Attendance, leave, tasks — whatever\'s relevant.',
+      desc: 'Attendance, Time-off, tasks — whatever\'s relevant.',
     },
     {
       num: '03',
@@ -258,12 +258,12 @@ const SectionConversationalQueries: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827]">
-          &quot;What&apos;s my leave balance?&quot; &quot;When does my shift start tomorrow?&quot; &quot;Did my correction get approved?&quot; Employees get answers in plain language, without navigating menus to find them.
+          &quot;What&apos;s my Time-off balance?&quot; &quot;When does my shift start tomorrow?&quot; &quot;Did my correction get approved?&quot; Employees get answers in plain language, without navigating menus to find them.
         </p>
 
         <div className="flex flex-col gap-[14px] pt-[13px] w-full">
           {[
-            'Natural language questions about attendance, leave and tasks',
+            'Natural language questions about attendance, Time-off and tasks',
             'Instant answers pulled from live data, not cached summaries',
             'Available by text or voice input',
           ].map((item, idx) => (
@@ -369,8 +369,8 @@ const SectionAnomalyDetection: React.FC = () => (
   </section>
 );
 
-/* ─── 5. SECTION 4 — Predictive Leave Analytics ─── */
-const SectionPredictiveLeave: React.FC = () => (
+/* ─── 5. SECTION 4 — Predictive Time-off Analytics ─── */
+const SectionPredictiveTimeOff: React.FC = () => (
   <section className="w-full py-[80px] px-6 lg:px-[100px] bg-white">
     <Container className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-[50px] lg:gap-[60px]">
       <FadeUp className="flex flex-col items-start max-w-[549px] w-full gap-[24px]">
@@ -381,16 +381,16 @@ const SectionPredictiveLeave: React.FC = () => (
         </div>
 
         <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[32px] sm:text-[42px] lg:text-[48px] leading-[1.18] sm:leading-[54px] lg:leading-[62px] tracking-[-1.12px] text-[#000000]">
-          See the leave crunch coming, not after it hits
+          See the Time-off crunch coming, not after it hits
         </h2>
 
         <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827]">
-          Knowing three people are likely to request the same week off is a lot more useful before it happens than after. Workzi&apos;s assistant surfaces leave trends so staffing gaps don&apos;t sneak up on anyone.
+          Knowing three people are likely to request the same week off is a lot more useful before it happens than after. Workzi&apos;s assistant surfaces Time-off trends so staffing gaps don&apos;t sneak up on anyone.
         </p>
 
         <div className="flex flex-col gap-[14px] pt-[13px] w-full">
           {[
-            'Forecasted leave demand based on historical patterns',
+            'Forecasted Time-off demand based on historical patterns',
             'Early flags for potential overlap or coverage gaps',
             'Useful heading into holidays and peak seasons',
           ].map((item, idx) => (
@@ -416,7 +416,7 @@ const SectionPredictiveLeave: React.FC = () => (
         >
           <div className="w-full max-w-[518px] bg-white border border-[#E5E7EB] rounded-[16px] p-[24px] flex flex-col gap-[14px] shadow-xl font-['Inter',sans-serif]">
             <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[18px] text-[#111827]">
-              Predicted Leave Volume (Sep 2026)
+              Predicted Time-off Volume (Sep 2026)
             </span>
 
             <div className="p-3 bg-[#FEF3E2] border border-amber-100 rounded-[10px] text-[12px] font-bold text-[#B45309]">
@@ -568,9 +568,8 @@ const SectionHROverview: React.FC = () => (
           {['Access Scope', 'Escalation Rules', 'Usage Analytics'].map((tab, idx) => (
             <span
               key={idx}
-              className={`font-['Inter',sans-serif] font-semibold text-[13px] px-[16px] py-[8px] rounded-full cursor-pointer transition-colors ${
-                idx === 0 ? 'bg-[#5C5CFF] text-white' : 'bg-white border border-[#E5E7EB] text-[#6B7280]'
-              }`}
+              className={`font-['Inter',sans-serif] font-semibold text-[13px] px-[16px] py-[8px] rounded-full cursor-pointer transition-colors ${idx === 0 ? 'bg-[#5C5CFF] text-white' : 'bg-white border border-[#E5E7EB] text-[#6B7280]'
+                }`}
             >
               {tab}
             </span>
@@ -598,7 +597,7 @@ const SectionRoleExperience: React.FC = () => {
     {
       title: 'Employee',
       bullets: [
-        'Ask questions about own attendance, leave, tasks',
+        'Ask questions about own attendance, Time-off, tasks',
         'Use voice input',
         'Get task priority suggestions',
       ],
@@ -660,7 +659,7 @@ const AIFAQ: React.FC = () => {
 
   const faqs = [
     {
-      question: 'Does the AI assistant make decisions on its own, like approving leave?',
+      question: 'Does the AI assistant make decisions on its own, like approving Time-off?',
       answer: 'No. It surfaces context and suggestions — approvals and other decisions stay with the manager or HR admin responsible for them.',
     },
     {
@@ -707,9 +706,8 @@ const AIFAQ: React.FC = () => {
                       {faq.question}
                     </span>
                     <div
-                      className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${
-                        isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
-                      }`}
+                      className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
+                        }`}
                     >
                       {isOpen ? <X size={15} strokeWidth={2.5} /> : <Plus size={15} strokeWidth={2.5} />}
                     </div>
@@ -779,7 +777,7 @@ export const AIAssistantPage: React.FC = () => {
       <SectionHowItWorks />
       <SectionConversationalQueries />
       <SectionAnomalyDetection />
-      <SectionPredictiveLeave />
+      <SectionPredictiveTimeOff />
       <SectionTaskPrioritization />
       <SectionVoiceInput />
       <SectionHROverview />

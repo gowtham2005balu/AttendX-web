@@ -58,7 +58,7 @@ export const SOLUTIONS_BY_INDUSTRY: NavDropdownItem[] = [
   {
     label: 'Small Business',
     href: '#small-business-solutions',
-    description: 'Simple attendance, leave & everyday HR without complexity',
+    description: 'Simple attendance, Time-off & everyday HR without complexity',
     icon: 'building',
   },
 ];
@@ -67,7 +67,7 @@ export const SOLUTIONS_BY_DEPARTMENT: NavDropdownItem[] = [
   {
     label: 'Human Resources',
     href: '#hr-solutions',
-    description: 'Employee records, leave approvals & HR workflows',
+    description: 'Employee records, Time-off approvals & HR workflows',
     icon: 'users',
   },
   {
@@ -85,7 +85,7 @@ export const SOLUTIONS_BY_DEPARTMENT: NavDropdownItem[] = [
   {
     label: 'Sales',
     href: '#sales-solutions',
-    description: 'GPS attendance for field & office reps, territory leave ops',
+    description: 'GPS attendance for field & office reps, territory Time-off ops',
     icon: 'workforce',
   },
   {
@@ -121,9 +121,9 @@ export const FEATURES_WORKFORCE_MANAGEMENT: NavDropdownItem[] = [
     icon: 'clock',
   },
   {
-    label: 'Leave Management',
-    href: '#leave-management',
-    description: 'Apply, approve and track leave without the back-and-forth',
+    label: 'Time-off Management',
+    href: '#Time-off-management',
+    description: 'Apply, approve and track Time-off without the back-and-forth',
     icon: 'calendar',
   },
   {
@@ -144,7 +144,7 @@ export const FEATURES_PRODUCTIVITY_OPERATIONS: NavDropdownItem[] = [
   {
     label: 'Task Management',
     href: '#task-management',
-    description: 'Assign tasks, track progress and hit deadlines inside attendance & leave platform',
+    description: 'Assign tasks, track progress and hit deadlines inside attendance & Time-off platform',
     icon: 'tasks',
   },
   {
@@ -156,7 +156,7 @@ export const FEATURES_PRODUCTIVITY_OPERATIONS: NavDropdownItem[] = [
   {
     label: 'AI Assistant',
     href: '#ai-assistant',
-    description: 'Ask questions, detect attendance anomalies & get predictive leave analytics',
+    description: 'Ask questions, detect attendance anomalies & get predictive Time-off analytics',
     icon: 'ai-assistant',
   },
   {
@@ -216,7 +216,7 @@ export const WHY_ATTENDX_DROPDOWN: NavDropdownItem[] = [
   {
     label: 'For Small Business',
     href: '#for-small-business',
-    description: 'Simple, affordable attendance & leave tracking for teams from 5 to 100 staff',
+    description: 'Simple, affordable attendance & Time-off tracking for teams from 5 to 100 staff',
     icon: 'users',
   },
   {
@@ -264,12 +264,12 @@ export const FAQS: FAQItem[] = [
     answer: 'Data security is our top priority. We use AES-256 encryption for data at rest and TLS 1.3 for data in transit. Workzi is fully GDPR and SOC 2 Type II compliant.'
   },
   {
-    question: 'How do managers approve leave requests?',
+    question: 'How do managers approve Time-off requests?',
     answer: 'Managers receive instant push notifications and emails when requests are submitted. They can review overlapping calendar events and approve/reject requests with a single click directly from the dashboard or mobile app.'
   },
   {
     question: 'What types of reports can we generate?',
-    answer: 'You can generate detailed timesheets, leave balance sheets, overtime reports, shift allocation statistics, and late-arrival breakdowns. All reports can be filtered by department, team, or individual employee.'
+    answer: 'You can generate detailed timesheets, Time-off balance sheets, overtime reports, shift allocation statistics, and late-arrival breakdowns. All reports can be filtered by department, team, or individual employee.'
   }
 ];
 
@@ -295,8 +295,8 @@ export const BLOGS: BlogItem[] = [
   },
   {
     id: 2,
-    title: 'Reducing Employee Burnout with Predictive Leave Management',
-    description: 'Learn how identifying patterns in leave requests and workload distributions helps HR teams proactively prevent burnout.',
+    title: 'Reducing Employee Burnout with Predictive Time-off Management',
+    description: 'Learn how identifying patterns in Time-off requests and workload distributions helps HR teams proactively prevent burnout.',
     imageUrl: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80',
     date: 'June 15, 2026',
     readTime: '8 min read',
@@ -340,7 +340,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     rating: 5
   },
   {
-    quote: "The automated leave balance calculation and seamless approval workflows have made our HR team significantly more efficient and happier.",
+    quote: "The automated Time-off balance calculation and seamless approval workflows have made our HR team significantly more efficient and happier.",
     author: "Elena Rostova",
     role: "HR Lead",
     company: "Globex Industries",
@@ -369,7 +369,7 @@ export const HOW_IT_WORKS_STEPS: HowItWorksStep[] = [
   {
     step: '03',
     title: 'Instant Approvals',
-    description: 'Leave request notifications are pushed straight to team leads, allowing one-tap acceptances on the fly.'
+    description: 'Time-off request notifications are pushed straight to team leads, allowing one-tap acceptances on the fly.'
   },
   {
     step: '04',

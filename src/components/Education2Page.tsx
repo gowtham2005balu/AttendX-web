@@ -13,7 +13,7 @@ export const Education2Page: React.FC = () => {
       {/* 1. HERO SECTION */}
       <section className="relative pt-[148px] pb-20 sm:pb-24 bg-gradient-to-b from-[#F3F4FE] via-[#F8FAFF] to-white border-b border-slate-100">
         <Container className="max-w-[1280px] px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-          
+
           {/* Breadcrumb / Tag */}
           <div className="flex items-center gap-2 mb-6">
             <span className="font-['Inter'] font-semibold text-[13px] uppercase tracking-[0.6px] text-[#5C5CFF] bg-[#EEEEFF] px-3.5 py-1 rounded-full">
@@ -126,7 +126,7 @@ export const Education2Page: React.FC = () => {
               {
                 icon: '📱',
                 title: 'Parent & Student Visibility',
-                desc: 'Lack of instant notifications leaves guardians out of the loop.',
+                desc: 'Lack of instant notifications Time-offs guardians out of the loop.',
               },
             ].map((card, idx) => (
               <div
@@ -157,7 +157,7 @@ export const Education2Page: React.FC = () => {
                 One platform.<br /> Every classroom.
               </h3>
               <p className="font-['Inter'] font-normal text-[16.5px] sm:text-[17.5px] leading-[27px] text-[#6B7280] max-w-[516px]">
-                From daily student check-ins to faculty leave and timetable schedules — ready for modern universities, colleges and schools.
+                From daily student check-ins to faculty Time-off and timetable schedules — ready for modern universities, colleges and schools.
               </p>
             </div>
 
@@ -398,7 +398,7 @@ export const Education2Page: React.FC = () => {
               { eyebrow: 'ACTIVE LECTURES', val: '142', sub: 'Classes running currently' },
               { eyebrow: 'EXAM ELIGIBILITY', val: '98.4%', sub: 'Students meeting 75% threshold' },
               { eyebrow: 'FACULTY PRESENT', val: '99%', sub: 'Professors logged in today' },
-              { eyebrow: 'LEAVE REQUESTS', val: '4', sub: 'Pending approval by HODs' },
+              { eyebrow: 'Time-off REQUESTS', val: '4', sub: 'Pending approval by HODs' },
             ].map((card, idx) => (
               <div
                 key={idx}
@@ -514,11 +514,10 @@ export const Education2Page: React.FC = () => {
                       {faq.q}
                     </span>
                     <span
-                      className={`w-7 h-7 rounded-[8px] flex items-center justify-center text-[14px] font-bold shrink-0 transition-all duration-200 ${
-                        isOpen
+                      className={`w-7 h-7 rounded-[8px] flex items-center justify-center text-[14px] font-bold shrink-0 transition-all duration-200 ${isOpen
                           ? 'bg-[#5B5FFF] text-white rotate-45'
                           : 'bg-[#EEEEFF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
-                      }`}
+                        }`}
                     >
                       +
                     </span>

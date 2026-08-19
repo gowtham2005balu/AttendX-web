@@ -4,10 +4,10 @@ import { Check, ArrowRight } from 'lucide-react';
 
 export const SimplifyLeave: React.FC = () => {
   const features = [
-    'Multiple Leave Types',
+    'Multiple Time-off Types',
     'Status Updates',
     'Approval Workflow',
-    'Leave Balance Tracking',
+    'Time-off Balance Tracking',
     'Mobile Submission',
   ];
 
@@ -18,7 +18,7 @@ export const SimplifyLeave: React.FC = () => {
         <div className="relative flex justify-center items-center overflow-hidden rounded-[20px] sm:rounded-[28px] w-full order-2 lg:order-1">
           <img
             src="/features/div.zwc-left-wrap (2).png"
-            alt="Simplify Leave Requests Mockup"
+            alt="Simplify Time-off Requests Mockup"
             className="w-full h-auto object-cover rounded-[20px] sm:rounded-[28px]"
           />
         </div>
@@ -34,12 +34,12 @@ export const SimplifyLeave: React.FC = () => {
 
           {/* Heading */}
           <h2 className="font-['Inter',sans-serif] font-semibold text-[26px] sm:text-[38px] lg:text-[55.9px] leading-[1.15] lg:leading-[62px] tracking-[-1px] lg:tracking-[-1.12px] text-black mb-4 sm:mb-6">
-            Simplify Leave Requests And Approvals
+            Simplify Time-off Requests And Approvals
           </h2>
 
           {/* Subtitle */}
           <p className="font-['Inter',sans-serif] font-medium text-[14px] sm:text-[15.6px] leading-[24px] text-[#111827] mb-6 sm:mb-8">
-            Allow employees to request leave, track balances, and receive real-time approval updates from any device, anywhere.
+            Allow employees to request Time-off, track balances, and receive real-time approval updates from any device, anywhere.
           </p>
 
           {/* Checklist 2 Columns */}

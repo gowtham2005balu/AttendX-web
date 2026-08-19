@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
 
   const featureLinks = [
     { label: 'Attendance Management', href: '#attendance-management' },
-    { label: 'Leave Management', href: '#leave-management' },
+    { label: 'Time-off Management', href: '#Time-off-management' },
     { label: 'Shift Management', href: '#shift-management' },
     { label: 'Task Management', href: '#task-management' },
     { label: 'Employee self service', href: '#employee-self-service' },
@@ -74,18 +74,16 @@ export const Footer: React.FC = () => {
 
   const getLinkCls = (href: string) => {
     const isActive = activeHash === href;
-    return `font-['Plus_Jakarta_Sans',sans-serif] font-normal text-[13px] sm:text-[14px] leading-[20px] transition-colors duration-200 block whitespace-nowrap ${
-      isActive
+    return `font-['Plus_Jakarta_Sans',sans-serif] font-normal text-[13px] sm:text-[14px] leading-[20px] transition-colors duration-200 block whitespace-nowrap ${isActive
         ? 'text-[#5B5FFF] font-semibold'
         : 'text-[#9CA3AF] hover:text-[#5B5FFF]'
-    }`;
+      }`;
   };
 
   const getBottomLinkCls = (href: string) => {
     const isActive = activeHash === href;
-    return `font-['Plus_Jakarta_Sans',sans-serif] font-normal text-[13px] leading-[16px] transition-colors duration-200 whitespace-nowrap ${
-      isActive ? 'text-white font-semibold' : 'text-[#6B7280] hover:text-white'
-    }`;
+    return `font-['Plus_Jakarta_Sans',sans-serif] font-normal text-[13px] leading-[16px] transition-colors duration-200 whitespace-nowrap ${isActive ? 'text-white font-semibold' : 'text-[#6B7280] hover:text-white'
+      }`;
   };
 
   return (

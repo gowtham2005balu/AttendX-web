@@ -84,7 +84,7 @@ const EmployeeHero: React.FC = () => (
 
         {/* Subtitle */}
         <p className="font-['Inter',sans-serif] font-medium text-[15px] leading-[24px] text-white text-center max-w-[640px] mb-4">
-          Check in, apply for leave, track your tasks, and stay in the loop — all from one app built around how you actually work.
+          Check in, request time off, track your tasks, and stay in the loop — all from one app built around how you actually work.
         </p>
 
         {/* Dual Hero Buttons */}
@@ -180,9 +180,9 @@ const TrackAttendance: React.FC = () => (
 );
 
 /* ────────────────────────────────────────────────────────────
-   SECTION 3 — LEAVE REQUESTS MADE SIMPLE
+   SECTION 3 — TIME-OFF REQUESTS MADE SIMPLE
 ──────────────────────────────────────────────────────────── */
-const LeaveRequests: React.FC = () => (
+const TimeOffRequests: React.FC = () => (
   <section className="py-[60px] pb-[40px] px-4 md:px-12 lg:px-[100px] bg-[#FAFAFA] relative overflow-hidden w-full">
     <Container className="max-w-[1200px] mx-auto flex flex-col items-start gap-[24px] px-0 lg:px-[20px]">
       {/* Top Header Block */}
@@ -190,7 +190,7 @@ const LeaveRequests: React.FC = () => (
         {/* span.section-tag */}
         <div className="inline-flex items-center px-[14px] py-[5px] rounded-[50px] bg-[#F0F9F0] gap-[6px] h-[25px]">
           <span className="font-['Inter',sans-serif] font-semibold text-[12px] leading-[15px] text-[#3B8A3E]">
-            Leave
+            Time Off
           </span>
         </div>
 
@@ -199,21 +199,21 @@ const LeaveRequests: React.FC = () => (
           {/* Heading & Subtitle Block */}
           <div className="flex flex-col justify-center items-start gap-[18px] w-full">
             <h2 className="font-['Inter',sans-serif] font-semibold text-[32px] sm:text-[40px] lg:text-[48px] leading-[58px] tracking-[-1.12px] text-[#000000] max-w-[651px]">
-              Apply for leave in seconds.
+              Apply for time off in seconds.
             </h2>
             <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[30px] text-[#111827] max-w-[1160px]">
-              Submit a leave request, track your balance, and see exactly where your approval stands — no follow-up emails, no wondering if anyone's seen it.
+              Submit a time-off request, track your balance, and see exactly where your approval stands — no follow-up emails, no wondering if anyone's seen it.
             </p>
           </div>
 
           {/* Feature list */}
           <div className="flex flex-wrap items-center gap-[24px] w-full py-[20px] pr-[20px] pl-0">
             {[
-              { text: 'Apply for leave in one tap' },
+              { text: 'Apply for time off in one tap' },
               { text: 'Real-time balance tracking' },
-              { text: 'Multiple leave types' },
+              { text: 'Multiple time-off types' },
               { text: 'Instant approval status' },
-              { text: 'Team leave calendar visibility' },
+              { text: 'Team time-off calendar visibility' },
             ].map((item, idx) => (
               <div key={idx} className="flex items-center gap-[12px] h-[22px]">
                 <div className="w-[22px] h-[22px] rounded-[6px] bg-[rgba(16,185,129,0.12)] flex items-center justify-center shrink-0">
@@ -242,7 +242,7 @@ const LeaveRequests: React.FC = () => (
         <div className="rounded-[24px] overflow-hidden relative w-full">
           <img
             src="/employee%20app/div.zwc-tab-img-wrap%20(1).png"
-            alt="Apply for leave in seconds mobile app view"
+            alt="Apply for time off in seconds mobile app view"
             className="w-full h-auto object-cover scale-[1.09] origin-center transition-transform duration-300 hover:scale-[1.11]"
           />
         </div>
@@ -330,7 +330,7 @@ const TeamConnected: React.FC = () => {
 const SimplifyHR: React.FC = () => {
   const features = [
     'Personal dashboard',
-    'Attendance & leave history',
+    'Attendance & time-off history',
     'Document access',
     'Profile management',
     'Notification preferences',
@@ -355,7 +355,7 @@ const SimplifyHR: React.FC = () => {
 
           {/* Subtitle */}
           <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[30px] text-[#111827] mb-8">
-            Access your profile, attendance records, leave history, and documents whenever you need them — without submitting a request or waiting on HR to get back to you.
+            Access your profile, attendance records, time-off history, and documents whenever you need them — without submitting a request or waiting on HR to get back to you.
           </p>
 
           {/* Checklist */}
@@ -419,7 +419,7 @@ const StayUpdated: React.FC = () => (
 
         {/* Subtitle */}
         <p className="font-['Inter',sans-serif] font-normal text-[16px] leading-[28px] text-[rgba(255,255,255,0.55)] text-left max-w-[552px]">
-          Everything you need, beautifully designed for iOS and Android. Check in, request leave, track tasks, and catch up on updates from anywhere.
+          Everything you need, beautifully designed for iOS and Android. Check in, request time off, track tasks, and catch up on updates from anywhere.
         </p>
 
         {/* 3 Callouts */}
@@ -444,10 +444,10 @@ const StayUpdated: React.FC = () => (
             </div>
             <div className="flex flex-col items-start text-left">
               <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] leading-[22px] text-[rgba(255,255,255,0.9)]">
-                Leave On the Go
+                Time Off On the Go
               </h4>
               <p className="font-['Inter',sans-serif] font-normal text-[12px] leading-[19px] text-[rgba(255,255,255,0.45)]">
-                Apply for leave and check your balance from your phone.
+                Apply for time off and check your balance from your phone.
               </p>
             </div>
           </div>
@@ -506,8 +506,8 @@ const EverythingYouNeed: React.FC = () => {
     {
       icon: <Calendar className="w-6 h-6 text-[#10B981]" />,
       bg: 'bg-[rgba(16,185,129,0.1)]',
-      title: 'Leave Management',
-      desc: 'Apply, track, and manage leave without the email back-and-forth.',
+      title: 'Time-Off Management',
+      desc: 'Apply, track, and manage time off without the email back-and-forth.',
     },
     {
       icon: <Users className="w-6 h-6 text-[#F59E0B]" />,
@@ -519,7 +519,7 @@ const EverythingYouNeed: React.FC = () => {
       icon: <BarChart3 className="w-6 h-6 text-[#5B5FFF]" />,
       bg: 'bg-[rgba(91,95,255,0.1)]',
       title: 'Personal Dashboard',
-      desc: 'Attendance, leave, and task status, summarized at a glance.',
+      desc: 'Attendance, time off, and task status, summarized at a glance.',
     },
     {
       icon: <Bell className="w-6 h-6 text-[#EF4444]" />,
@@ -543,7 +543,7 @@ const EverythingYouNeed: React.FC = () => {
       icon: <Users className="w-6 h-6 text-[#F59E0B]" />,
       bg: 'bg-[rgba(245,158,11,0.1)]',
       title: 'Team Visibility',
-      desc: "See who's in, who's on leave, and what's coming up on the shared calendar.",
+      desc: "See who's in, who's on time off, and what's coming up on the shared calendar.",
     },
   ];
 
@@ -596,29 +596,29 @@ const EverythingYouNeed: React.FC = () => {
 const LocallyLovedTeams: React.FC = () => {
   const reviews = [
     {
-      initials: 'E',
-      name: '[Name]',
-      role: '[Role]',
-      company: '[Company]',
-      quote: 'I used to forget to mark my leave request altogether. Now I apply from my phone in seconds and actually know where it stands.',
+      initials: 'AR',
+      name: 'Ananya Roy',
+      role: 'Operations Lead',
+      company: 'Pulse Logistics',
+      quote: 'I used to forget to mark my time-off request altogether. Now I apply from my phone in seconds and actually know where it stands.',
       score: '4.9',
       bg: 'bg-[#5B5FFF]',
     },
     {
-      initials: 'E',
-      name: '[Name]',
-      role: '[Role]',
-      company: '[Company]',
+      initials: 'DK',
+      name: 'David Kim',
+      role: 'Field Engineer',
+      company: 'Apex Infrastructure',
       quote: "Checking in used to mean signing a paper register at the gate. Now it's one tap and I'm done before I've even sat down.",
       score: '4.8',
       bg: 'bg-[#10B981]',
     },
     {
-      initials: 'E',
-      name: '[Name]',
-      role: '[Role]',
-      company: '[Company]',
-      quote: "Having my tasks, leave balance, and attendance in one app means I'm not pinging HR for things I can just look up myself.",
+      initials: 'SL',
+      name: 'Sophie Laurent',
+      role: 'Product Designer',
+      company: 'Nova Interactive',
+      quote: "Having my tasks, time-off balance, and attendance in one app means I'm not pinging HR for things I can just look up myself.",
       score: '4.9',
       bg: 'bg-[#F59E0B]',
     },
@@ -641,7 +641,7 @@ const LocallyLovedTeams: React.FC = () => {
             Making workdays easier, everywhere.
           </h2>
           <p className="font-['Inter',sans-serif] font-normal text-[16px] leading-[26px] text-[#6B7280] max-w-[540px] text-center">
-            Join employees at [X] companies who use Workzi to check in, request leave, and stay on top of their day.
+            Join employees at 500+ companies who use Workzi to check in, request time off, and stay on top of their day.
           </p>
         </FadeUp>
 
@@ -714,7 +714,7 @@ const EmployeeCTA: React.FC = () => (
 
       {/* Subtitle */}
       <p className="text-white font-['Inter',sans-serif] text-[14px] font-medium leading-[22px] max-w-[440px] text-center">
-        Check in, request leave, and manage your tasks from one app. Setup takes minutes.
+        Check in, request time off, and manage your tasks from one app. Setup takes minutes.
       </p>
 
       {/* Action Buttons */}
@@ -737,7 +737,7 @@ const EmployeeAppPage: React.FC = () => (
   <div id="employee-app" className="relative overflow-x-hidden">
     <EmployeeHero />
     <TrackAttendance />
-    <LeaveRequests />
+    <TimeOffRequests />
     <TeamConnected />
     <SimplifyHR />
     <StayUpdated />

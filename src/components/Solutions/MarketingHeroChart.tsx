@@ -79,7 +79,7 @@ export const MarketingHeroChart: React.FC = () => {
           </div>
           <div className="flex items-baseline justify-between pt-0.5 gap-1">
             <span className="text-[18px] sm:text-[20px] font-black text-slate-900">12 / 14</span>
-            <span className="text-[10px] font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded shrink-0">2 On Leave</span>
+            <span className="text-[10px] font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded shrink-0">2 On Time-off</span>
           </div>
         </motion.div>
       </div>
@@ -176,7 +176,7 @@ export const MarketingHeroChart: React.FC = () => {
                   <div className="text-[9.5px] text-slate-400 truncate">Designer • PTO Today</div>
                 </div>
               </div>
-              <span className="text-[10px] font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded shrink-0">On Leave</span>
+              <span className="text-[10px] font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded shrink-0">On Time-off</span>
             </div>
           </div>
         </div>

@@ -77,7 +77,7 @@ const SmallBusinessHero: React.FC = () => (
           {/* p.lead */}
           <div className="w-full lg:w-[480px] max-w-[480px] pt-[2.385px]">
             <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[18px] leading-[28px] sm:leading-[30px] text-[#6B7280] max-w-[450px]">
-              Replace spreadsheets, WhatsApp leave requests, and scattered tools with one simple platform for attendance, leave, and everyday HR — built for small teams, not enterprise complexity.
+              Replace spreadsheets, WhatsApp Time-off requests, and scattered tools with one simple platform for attendance, Time-off, and everyday HR — built for small teams, not enterprise complexity.
             </p>
           </div>
 
@@ -134,11 +134,11 @@ const SmallBusinessProblemValue: React.FC = () => (
       <div className="flex flex-col items-center text-center gap-[13.2px] max-w-[950px] w-full">
         <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[28px] sm:text-[36px] lg:text-[40px] leading-[1.25] tracking-[-0.84px] text-[#111827] text-center max-w-[950px] w-full">
           <span className="inline-block">You Shouldn't Need a Spreadsheet, a WhatsApp Group,</span>{' '}
-          <span className="inline-block">and an Email Thread Just to Track Leave.</span>
+          <span className="inline-block">and an Email Thread Just to Track Time-off.</span>
         </h2>
 
         <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[16.5px] leading-[25px] sm:leading-[27px] text-[#6B7280] text-center max-w-[610px]">
-          Small teams often run HR on whatever's free — a shared spreadsheet, a WhatsApp group for leave requests, an inbox full of approvals. It works until it doesn't. Workzi replaces all of it with one simple system.
+          Small teams often run HR on whatever's free — a shared spreadsheet, a WhatsApp group for Time-off requests, an inbox full of approvals. It works until it doesn't. Workzi replaces all of it with one simple system.
         </p>
       </div>
 
@@ -190,14 +190,14 @@ const SmallBusinessProblemValue: React.FC = () => (
               One place instead of five
             </h3>
             <p className="font-['Inter',sans-serif] font-normal text-[14.5px] leading-[24px] text-[#6B7280] mb-6">
-              Attendance, leave, and tasks together in one app, not scattered across tools.
+              Attendance, Time-off, and tasks together in one app, not scattered across tools.
             </p>
           </div>
 
           <div className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-[14px] p-[16px] pt-[26.6px] flex flex-col gap-2">
             <div className="flex items-center justify-between py-2 border-b border-gray-100/60">
               <span className="font-['Inter',sans-serif] font-semibold text-[12.5px] leading-[15px] text-[#111827]">
-                Attendance & Leave
+                Attendance & Time-off
               </span>
               <span className="bg-[#EAFBF3] text-[#15803D] font-bold text-[11px] leading-[13px] px-[10px] py-[3px] rounded-full">
                 Unified
@@ -285,24 +285,24 @@ const SmallBusinessKnowledgeSections: React.FC = () => {
           <div className="flex flex-col items-start p-0 gap-6 mx-auto max-w-[589px] w-full h-auto justify-center self-center">
             <div className="flex flex-col items-start p-0 gap-5 w-full max-w-[549px] self-stretch">
               <span className="inline-flex flex-row items-center px-[14px] py-[5px] gap-[6px] bg-[#F0F9F0] text-[#3B8A3E] font-['Inter',sans-serif] font-semibold text-[12px] leading-[15px] rounded-[50px]">
-                Leave Management
+                Time-off Management
               </span>
 
               <div className="flex flex-col items-start p-0 gap-5 w-full max-w-[549px] self-stretch">
                 <div className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
                   <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[36px] sm:text-[42px] lg:text-[48px] leading-[1.25] lg:leading-[62px] tracking-[-1.12px] text-[#000000] flex items-center w-full max-w-[549px] self-stretch">
-                    Replace Spreadsheets and WhatsApp for Leave Requests
+                    Replace Spreadsheets and WhatsApp for Time-off Requests
                   </h2>
                   <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827] flex items-center w-full max-w-[549px] self-stretch">
-                    Employees apply for leave and check balances from the app — no more chasing approvals over WhatsApp or a shared sheet.
+                    Employees apply for Time-off and check balances from the app — no more chasing approvals over WhatsApp or a shared sheet.
                   </p>
                 </div>
 
                 <a
-                  href="#leave-management"
+                  href="#Time-off-management"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>See Leave Management</span>
+                  <span>See Time-off Management</span>
                   <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
                 </a>
               </div>
@@ -310,7 +310,7 @@ const SmallBusinessKnowledgeSections: React.FC = () => {
 
             <ul className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
               {[
-                "Instant mobile leave applications with real-time balance checks",
+                "Instant mobile Time-off applications with real-time balance checks",
                 "Eliminate manual spreadsheet logging and WhatsApp chat chasing",
                 "Give small business owners quick tap-to-approve workflows",
               ].map((text, idx) => (
@@ -329,7 +329,7 @@ const SmallBusinessKnowledgeSections: React.FC = () => {
           <div className="w-full max-w-[611px] h-auto min-h-[260px] sm:min-h-[380px] lg:h-[496px] rounded-[16px] overflow-hidden border border-slate-200/50 flex items-center justify-center p-3.5 sm:p-6 bg-[radial-gradient(97.14%_126.61%_at_0%_-8.9%,#4F7EFF_0%,#C5E2FF_51.12%,#9AA0FF_100%)] relative">
             <div className="w-full max-w-[503px] bg-white rounded-[14px] border border-[#E5E7EB] p-4 sm:p-6 flex flex-col gap-3.5 sm:gap-4 z-10">
               <div className="flex items-center justify-between pb-3 border-b border-gray-100">
-                <span className="font-['Inter',sans-serif] font-bold text-[13px] text-[#111827]">App Leave Request</span>
+                <span className="font-['Inter',sans-serif] font-bold text-[13px] text-[#111827]">App Time-off Request</span>
                 <span className="bg-[#EFF6FF] text-[#1D4ED8] font-bold text-[10.5px] sm:text-[11px] px-2.5 py-0.5 rounded-full shrink-0">Instant Sync</span>
               </div>
               <div className="flex flex-col gap-2.5 sm:gap-3">
@@ -342,7 +342,7 @@ const SmallBusinessKnowledgeSections: React.FC = () => {
                 </div>
                 <div className="flex items-center justify-between gap-2 p-2.5 sm:p-3 bg-[#F8FAFC] rounded-[10px] border border-[#E5E7EB]">
                   <div className="min-w-0">
-                    <div className="font-['Inter',sans-serif] font-semibold text-[12.5px] sm:text-[13px] text-[#111827] truncate">Casual Leave — Marcus V.</div>
+                    <div className="font-['Inter',sans-serif] font-semibold text-[12.5px] sm:text-[13px] text-[#111827] truncate">Casual Time-off — Marcus V.</div>
                     <div className="font-['Inter',sans-serif] text-[10.5px] sm:text-[11px] text-[#6B7280] truncate">Applied from Mobile App • 1 Day</div>
                   </div>
                   <span className="bg-[#EAFBF3] text-[#15803D] font-bold text-[10.5px] sm:text-[11px] px-2.5 py-1 rounded-full shrink-0">Approved ✓</span>
@@ -527,7 +527,7 @@ const SmallBusinessKnowledgeSections: React.FC = () => {
 
             <ul className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
               {[
-                "Start with core attendance & leave features for small teams",
+                "Start with core attendance & Time-off features for small teams",
                 "Unlock advanced shift scheduling and task management as you grow",
                 "Never suffer painful software migrations down the road",
               ].map((text, idx) => (
@@ -620,13 +620,13 @@ const SmallBusinessManagerVisibilityDark: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] text-[15px] sm:text-[16px] leading-[24px] sm:leading-[26px] text-slate-300">
-          See attendance, leave, and pending approvals in one dashboard — so managing people doesn't mean a separate task list on top of running the business.
+          See attendance, Time-off, and pending approvals in one dashboard — so managing people doesn't mean a separate task list on top of running the business.
         </p>
 
         <ul className="flex flex-col gap-2.5 sm:gap-3 pt-1 sm:pt-2">
           {[
-            "Approve leave and attendance corrections in a few taps",
-            "See who's in, who's out, and who's on leave at a glance",
+            "Approve Time-off and attendance corrections in a few taps",
+            "See who's in, who's out, and who's on Time-off at a glance",
             "Keep employee records organized without a dedicated HR hire",
           ].map((item, idx) => (
             <li key={idx} className="flex items-center gap-3 text-[14px] sm:text-[15px] text-slate-200">
@@ -675,7 +675,7 @@ const SmallBusinessManagerVisibilityDark: React.FC = () => (
         <div className="bg-slate-800/40 rounded-xl p-3.5 sm:p-4 border border-slate-700/40 flex flex-col gap-2 sm:gap-2.5">
           <div className="text-xs font-bold text-slate-300">Instant Tap-to-Approve Log</div>
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[11.5px] sm:text-xs bg-emerald-950/40 border border-emerald-800/40 p-2.5 rounded-lg text-emerald-200">
-            <span className="leading-snug">Sarah J. Leave Request — Approved in 1 tap</span>
+            <span className="leading-snug">Sarah J. Time-off Request — Approved in 1 tap</span>
             <span className="bg-emerald-800/60 text-emerald-100 px-2 py-0.5 rounded text-[10px] font-bold self-start sm:self-auto shrink-0">Approved ✓</span>
           </div>
         </div>
@@ -712,7 +712,7 @@ const SmallBusinessPricingFraming: React.FC = () => (
             </span>
             <h3 className="font-bold text-[20px] text-[#111827] group-hover:text-[#5C5CFF] transition-colors pt-2">Full Feature Access</h3>
             <p className="font-['Inter',sans-serif] text-[14px] text-[#6B7280] pt-1">
-              Test attendance, leave, and app check-in with your team risk-free.
+              Test attendance, Time-off, and app check-in with your team risk-free.
             </p>
           </div>
           <div className="font-extrabold text-[24px] text-[#111827] group-hover:text-[#5C5CFF] transition-colors">14–30 Days Free</div>
@@ -786,7 +786,7 @@ const SmallBusinessFAQ: React.FC = () => {
       a: 'Workzi offers a free trial period (typically 14 to 30 days) allowing you to test full workforce management features before selecting a plan.',
     },
     {
-      q: 'Does Workzi replace spreadsheets and WhatsApp for tracking attendance and leave?',
+      q: 'Does Workzi replace spreadsheets and WhatsApp for tracking attendance and Time-off?',
       a: 'Yes — that\'s exactly the gap Workzi is built to close for small teams currently relying on manual tools.',
     },
   ];
@@ -823,11 +823,10 @@ const SmallBusinessFAQ: React.FC = () => {
                     {faq.q}
                   </span>
                   <span
-                    className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${
-                      isOpen
+                    className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${isOpen
                         ? 'bg-[#5C5CFF] text-white'
                         : 'bg-[#EEF2FF] text-[#5C5CFF] group-hover:bg-[#5C5CFF] group-hover:text-white'
-                    }`}
+                      }`}
                   >
                     {isOpen ? '−' : '+'}
                   </span>
@@ -862,12 +861,12 @@ const SmallBusinessRoleCTABanner: React.FC = () => (
       <div className="w-full max-w-[848px] mx-auto flex flex-col items-center gap-[15px] relative z-10">
         {/* h2 title */}
         <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[34px] sm:text-[42px] lg:text-[46px] leading-[46px] sm:leading-[54px] lg:leading-[58px] tracking-[-1.12px] text-white max-w-[650px] mx-auto">
-          Run Attendance and Leave Like a Bigger Company, Without the Complexity
+          Run Attendance and Time-off Like a Bigger Company, Without the Complexity
         </h2>
 
         {/* Subtitle */}
         <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[18px] sm:text-[22px] leading-[32px] tracking-[-0.64px] text-[#CACDFF] max-w-[650px] mx-auto">
-          One simple platform for small teams — attendance, leave, and everyday HR, without enterprise overhead.
+          One simple platform for small teams — attendance, Time-off, and everyday HR, without enterprise overhead.
         </h3>
 
         {/* Buttons */}

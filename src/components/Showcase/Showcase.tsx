@@ -27,7 +27,7 @@ export const Showcase: React.FC = () => {
 
           {/* p.section-subtitle */}
           <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[18px] leading-[24px] sm:leading-[31px] text-[rgba(255,255,255,0.6)] text-center max-w-[580px]">
-            Available on iOS and Android. Give your workforce the freedom to manage attendance, leave, and profile details from anywhere.
+            Available on iOS and Android. Give your workforce the freedom to manage attendance, Time-off, and profile details from anywhere.
           </p>
         </div>
 
@@ -35,7 +35,7 @@ export const Showcase: React.FC = () => {
         <div className="w-full pt-[20px] sm:pt-[40px] flex justify-center items-end overflow-hidden max-w-full">
           <img
             src="/hero-phone/div.exp-phones.png"
-            alt="Employee App Screens - Dashboard, Attendance, Leave, Profile"
+            alt="Employee App Screens - Dashboard, Attendance, Time-off, Profile"
             className="w-full max-w-[1380px] lg:scale-105 h-auto object-contain select-none pointer-events-none drop-shadow-2xl transition-transform duration-300"
           />
         </div>

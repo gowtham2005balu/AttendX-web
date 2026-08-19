@@ -35,7 +35,7 @@ export const ForSmallBusinessPage: React.FC = () => {
 
             {/* Description */}
             <p className="font-['Inter'] font-normal text-[16px] sm:text-[18px] leading-[28px] text-[#6B7280] max-w-[600px] mb-8">
-              Workzi helps small and growing teams manage attendance, leave, tasks and approvals — without needing a dedicated HR department to run it.
+              Workzi helps small and growing teams manage attendance, Time-off, tasks and approvals — without needing a dedicated HR department to run it.
             </p>
 
             {/* CTAs */}
@@ -115,7 +115,7 @@ export const ForSmallBusinessPage: React.FC = () => {
               {
                 icon: '🧩',
                 title: 'Scattered Tools',
-                desc: 'Attendance in one app, leave on WhatsApp, tasks in someone\'s notebook.',
+                desc: 'Attendance in one app, Time-off on WhatsApp, tasks in someone\'s notebook.',
               },
               {
                 icon: '💰',
@@ -154,7 +154,7 @@ export const ForSmallBusinessPage: React.FC = () => {
                 One platform.<br /> Everything you need.
               </h3>
               <p className="font-['Inter'] font-normal text-[16.5px] sm:text-[17.5px] leading-[27px] text-[#6B7280] max-w-[516px]">
-                No modules to bolt on later, no features locked behind a bigger plan you don't need yet — attendance, leave, tasks and approvals, ready from day one.
+                No modules to bolt on later, no features locked behind a bigger plan you don't need yet — attendance, Time-off, tasks and approvals, ready from day one.
               </p>
             </div>
 
@@ -395,7 +395,7 @@ export const ForSmallBusinessPage: React.FC = () => {
               { num: '2', label: 'Invite Team' },
               { num: '3', label: 'Assign Shift' },
               { num: '4', label: 'Daily Check-in' },
-              { num: '5', label: 'Leave Request' },
+              { num: '5', label: 'Time-off Request' },
               { num: '6', label: 'Manager Approval' },
             ].map((node, idx, arr) => (
               <React.Fragment key={idx}>
@@ -460,7 +460,7 @@ export const ForSmallBusinessPage: React.FC = () => {
                 sub: 'Active workforce members',
               },
               {
-                eyebrow: 'UPCOMING LEAVE',
+                eyebrow: 'UPCOMING Time-off',
                 val: '2',
                 sub: 'Employees scheduled off',
               },
@@ -505,7 +505,7 @@ export const ForSmallBusinessPage: React.FC = () => {
               {
                 icon: '📱',
                 title: 'Self-Service App',
-                desc: 'Employees punch in, request leave and check shifts from mobile.',
+                desc: 'Employees punch in, request Time-off and check shifts from mobile.',
               },
               {
                 icon: '⚙',
@@ -520,7 +520,7 @@ export const ForSmallBusinessPage: React.FC = () => {
               {
                 icon: '🔗',
                 title: 'All-in-One Platform',
-                desc: 'Attendance, leave, tasks and approvals in one place.',
+                desc: 'Attendance, Time-off, tasks and approvals in one place.',
               },
               {
                 icon: '📐',
@@ -573,11 +573,11 @@ export const ForSmallBusinessPage: React.FC = () => {
               },
               {
                 q: 'Can employees mark attendance directly from their smartphones?',
-                a: 'Yes. Employees use the Workzi self-service mobile app to check in, request leave, view shifts and manage daily tasks directly from their phone.',
+                a: 'Yes. Employees use the Workzi self-service mobile app to check in, request Time-off, view shifts and manage daily tasks directly from their phone.',
               },
               {
-                q: 'How does leave request and manager approval work?',
-                a: 'Employees submit leave requests in the app. Managers receive instant notifications and can approve or decline with a single tap.',
+                q: 'How does Time-off request and manager approval work?',
+                a: 'Employees submit Time-off requests in the app. Managers receive instant notifications and can approve or decline with a single tap.',
               },
               {
                 q: 'What happens as our business grows beyond 20 or 50 employees?',
@@ -599,11 +599,10 @@ export const ForSmallBusinessPage: React.FC = () => {
                       {faq.q}
                     </span>
                     <span
-                      className={`w-7 h-7 rounded-[8px] flex items-center justify-center text-[14px] font-bold shrink-0 transition-all duration-200 ${
-                        isOpen
+                      className={`w-7 h-7 rounded-[8px] flex items-center justify-center text-[14px] font-bold shrink-0 transition-all duration-200 ${isOpen
                           ? 'bg-[#5B5FFF] text-white rotate-45'
                           : 'bg-[#EEEEFF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
-                      }`}
+                        }`}
                     >
                       +
                     </span>
@@ -630,7 +629,7 @@ export const ForSmallBusinessPage: React.FC = () => {
               without the enterprise setup.
             </h2>
             <p className="font-['Inter'] font-normal text-[16px] sm:text-[17px] leading-[26px] text-white/85 max-w-[520px] mb-8">
-              Simplify attendance, leave and workforce management for your growing team.
+              Simplify attendance, Time-off and workforce management for your growing team.
             </p>
             <div className="flex flex-wrap justify-center items-center gap-3.5">
               <a

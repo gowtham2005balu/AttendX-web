@@ -410,7 +410,7 @@ const SectionDataEncryption: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827]">
-          Attendance records, leave history, personal documents — encrypted in transit and at rest, so data stays protected whether it&apos;s being viewed right now or sitting untouched.
+          Attendance records, Time-off history, personal documents — encrypted in transit and at rest, so data stays protected whether it&apos;s being viewed right now or sitting untouched.
         </p>
 
         <div className="flex flex-col gap-[14px] pt-[13px] w-full">
@@ -458,7 +458,7 @@ const SectionDataEncryption: React.FC = () => (
 /* ─── 6. SECTION 5 — Audit Logs & Activity Tracking ─── */
 const SectionAuditLogs: React.FC = () => {
   const logs = [
-    { time: 'Aug 04, 14:22', user: 'Alex Morgan', action: 'Modified Role Permissions', details: 'Added Leave Approve for Eng Lead' },
+    { time: 'Aug 04, 14:22', user: 'Alex Morgan', action: 'Modified Role Permissions', details: 'Added Time-off Approve for Eng Lead' },
     { time: 'Aug 04, 13:40', user: 'Sarah Anderson', action: 'Document Download', details: 'Downloaded August Payslip' },
     { time: 'Aug 04, 11:15', user: 'Michael Kim', action: 'SSO Authentication', details: 'Logged in via Okta Identity' },
   ];
@@ -471,7 +471,7 @@ const SectionAuditLogs: React.FC = () => {
             Know exactly who did what, and when
           </h2>
           <p className="font-['Inter',sans-serif] font-normal text-[16.5px] leading-[27px] text-[#6B7280] text-center max-w-[522px]">
-            Every meaningful action — an approval, a permission change, a record edit — leaves a trail. Not to police anyone, but so questions have answers when they come up.
+            Every meaningful action — an approval, a permission change, a record edit — Time-offs a trail. Not to police anyone, but so questions have answers when they come up.
           </p>
         </FadeUp>
 
@@ -657,9 +657,8 @@ const SectionITOverview: React.FC = () => (
           {['Authentication', 'Access Monitoring', 'Integrations', 'Audit Log'].map((tab, idx) => (
             <span
               key={idx}
-              className={`font-['Inter',sans-serif] font-semibold text-[13px] px-[16px] py-[8px] rounded-full cursor-pointer transition-colors ${
-                idx === 0 ? 'bg-[#5C5CFF] text-white' : 'bg-white border border-[#E5E7EB] text-[#6B7280]'
-              }`}
+              className={`font-['Inter',sans-serif] font-semibold text-[13px] px-[16px] py-[8px] rounded-full cursor-pointer transition-colors ${idx === 0 ? 'bg-[#5C5CFF] text-white' : 'bg-white border border-[#E5E7EB] text-[#6B7280]'
+                }`}
             >
               {tab}
             </span>
@@ -796,9 +795,8 @@ const SecurityFAQ: React.FC = () => {
                       {faq.question}
                     </span>
                     <div
-                      className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${
-                        isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
-                      }`}
+                      className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
+                        }`}
                     >
                       {isOpen ? <X size={15} strokeWidth={2.5} /> : <Plus size={15} strokeWidth={2.5} />}
                     </div>

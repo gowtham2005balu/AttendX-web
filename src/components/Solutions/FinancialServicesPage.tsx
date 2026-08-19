@@ -77,7 +77,7 @@ const FinancialServicesHero: React.FC = () => (
           {/* p.lead */}
           <div className="w-full lg:w-[480px] max-w-[480px] pt-[2.385px]">
             <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[18px] leading-[28px] sm:leading-[30px] text-[#6B7280] max-w-[450px]">
-              Financial institutions run on multiple branches, structured approval hierarchies, and accurate records. Workzi tracks attendance, leave, and approvals the way a distributed, branch-based workforce actually operates.
+              Financial institutions run on multiple branches, structured approval hierarchies, and accurate records. Workzi tracks attendance, Time-off, and approvals the way a distributed, branch-based workforce actually operates.
             </p>
           </div>
 
@@ -138,7 +138,7 @@ const FinancialServicesProblemValue: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[16.5px] leading-[25px] sm:leading-[27px] text-[#6B7280] text-center max-w-[610px]">
-          Financial institutions with multiple branches need attendance, leave, and approvals to work the same way everywhere, with clear records for every decision. Workzi is built for that structure from the start.
+          Financial institutions with multiple branches need attendance, Time-off, and approvals to work the same way everywhere, with clear records for every decision. Workzi is built for that structure from the start.
         </p>
       </div>
 
@@ -151,7 +151,7 @@ const FinancialServicesProblemValue: React.FC = () => (
               Every branch, one system
             </h3>
             <p className="font-['Inter',sans-serif] font-normal text-[14.5px] leading-[24px] text-[#6B7280] mb-6">
-              Attendance and leave tracked consistently across all branch locations.
+              Attendance and Time-off tracked consistently across all branch locations.
             </p>
           </div>
 
@@ -229,7 +229,7 @@ const FinancialServicesProblemValue: React.FC = () => (
               Reports on demand
             </h3>
             <p className="font-['Inter',sans-serif] font-normal text-[14.5px] leading-[24px] text-[#6B7280] mb-6">
-              Attendance and leave data, exportable whenever leadership needs it.
+              Attendance and Time-off data, exportable whenever leadership needs it.
             </p>
           </div>
 
@@ -368,7 +368,7 @@ const FinancialServicesKnowledgeSections: React.FC = () => {
                     Approval Hierarchies You Control
                   </h2>
                   <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827] flex items-center w-full max-w-[549px] self-stretch">
-                    Set exactly who approves leave, attendance regularization, and requests at each level of the organization.
+                    Set exactly who approves Time-off, attendance regularization, and requests at each level of the organization.
                   </p>
                 </div>
 
@@ -384,7 +384,7 @@ const FinancialServicesKnowledgeSections: React.FC = () => {
 
             <ul className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
               {[
-                "Configure multi-level approval hierarchies for leave and attendance edits",
+                "Configure multi-level approval hierarchies for Time-off and attendance edits",
                 "Ensure requests route to designated branch managers and regional leads",
                 "Maintain complete audit visibility for every management decision",
               ].map((text, idx) => (
@@ -511,7 +511,7 @@ const FinancialServicesKnowledgeSections: React.FC = () => {
                     Reports Ready When You Need Them
                   </h2>
                   <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827] flex items-center w-full max-w-[549px] self-stretch">
-                    Generate attendance and leave reports on demand, without manual compilation across branches.
+                    Generate attendance and Time-off reports on demand, without manual compilation across branches.
                   </p>
                 </div>
 
@@ -527,7 +527,7 @@ const FinancialServicesKnowledgeSections: React.FC = () => {
 
             <ul className="flex flex-col items-start p-0 gap-3 w-full max-w-[549px] self-stretch">
               {[
-                "Generate audit-ready attendance and leave reports instantly on demand",
+                "Generate audit-ready attendance and Time-off reports instantly on demand",
                 "Export clean CSV and PDF data breakdowns per branch or region",
                 "Eliminate manual data compilation across branch offices",
               ].map((text, idx) => (
@@ -572,7 +572,7 @@ const FinancialServicesKnowledgeSections: React.FC = () => {
                   <div className="flex items-center gap-2 min-w-0">
                     <span className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#10B981] text-white font-bold text-[9px] sm:text-[10px] flex items-center justify-center shrink-0">LV</span>
                     <div className="min-w-0">
-                      <span className="font-semibold text-[#111827] block truncate">Leave Audit</span>
+                      <span className="font-semibold text-[#111827] block truncate">Time-off Audit</span>
                       <span className="text-[10px] text-[#6B7280] block sm:hidden truncate font-medium">East Coast Hub</span>
                     </div>
                   </div>
@@ -626,7 +626,7 @@ const FinancialServicesManagerVisibilityDark: React.FC = () => (
         <ul className="flex flex-col gap-2.5 sm:gap-3 pt-1 sm:pt-2">
           {[
             "Attendance status by branch, department, or region",
-            "Approve leave and corrections without cross-checking spreadsheets",
+            "Approve Time-off and corrections without cross-checking spreadsheets",
             "Export reports for review or leadership updates",
           ].map((item, idx) => (
             <li key={idx} className="flex items-center gap-3 text-[14px] sm:text-[15px] text-slate-200">
@@ -675,7 +675,7 @@ const FinancialServicesManagerVisibilityDark: React.FC = () => (
         <div className="bg-slate-800/40 rounded-xl p-3.5 sm:p-4 border border-slate-700/40 flex flex-col gap-2 sm:gap-2.5">
           <div className="text-xs font-bold text-slate-300">Audit-Ready Export Stream</div>
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[11.5px] sm:text-xs bg-emerald-950/40 border border-emerald-800/40 p-2.5 rounded-lg text-emerald-200">
-            <span className="leading-snug">Branch Attendance & Leave Log — On-Demand</span>
+            <span className="leading-snug">Branch Attendance & Time-off Log — On-Demand</span>
             <span className="bg-emerald-800/60 text-emerald-100 px-2 py-0.5 rounded text-[10px] font-bold self-start sm:self-auto shrink-0">Export Ready ✓</span>
           </div>
         </div>
@@ -693,7 +693,7 @@ const FinancialServicesIntegrations: React.FC = () => (
           Fits Alongside the Systems Your Institution Already Uses
         </h2>
         <p className="font-['Inter',sans-serif] text-[16px] text-[#6B7280]">
-          Workzi manages workforce operations — attendance, leave, approvals — while your team keeps using its existing core banking and compliance systems.
+          Workzi manages workforce operations — attendance, Time-off, approvals — while your team keeps using its existing core banking and compliance systems.
         </p>
       </div>
 
@@ -737,11 +737,11 @@ const FinancialServicesFAQ: React.FC = () => {
     },
     {
       q: 'Can approval hierarchies be configured for multiple levels of management?',
-      a: 'Yes. Approval workflows can be set for leave, attendance regularization, and other requests at each level.',
+      a: 'Yes. Approval workflows can be set for Time-off, attendance regularization, and other requests at each level.',
     },
     {
-      q: 'Can I export attendance and leave reports for review?',
-      a: 'Yes. Reports can be generated and exported across attendance, leave, and other workforce data on demand.',
+      q: 'Can I export attendance and Time-off reports for review?',
+      a: 'Yes. Reports can be generated and exported across attendance, Time-off, and other workforce data on demand.',
     },
     {
       q: 'Is employee data encrypted or access-restricted?',
@@ -781,11 +781,10 @@ const FinancialServicesFAQ: React.FC = () => {
                     {faq.q}
                   </span>
                   <span
-                    className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${
-                      isOpen
+                    className={`w-[32px] h-[32px] rounded-[10px] flex items-center justify-center text-[16px] font-bold transition-all shrink-0 ${isOpen
                         ? 'bg-[#5C5CFF] text-white'
                         : 'bg-[#EEF2FF] text-[#5C5CFF] group-hover:bg-[#5C5CFF] group-hover:text-white'
-                    }`}
+                      }`}
                   >
                     {isOpen ? '−' : '+'}
                   </span>

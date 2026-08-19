@@ -89,7 +89,7 @@ const getBaseView = (hash: string): string => {
   if (hash === '#trust-and-security') return 'trust-and-security';
   if (hash === '#features') return 'features';
   if (hash === '#attendance-management' || hash === '#track-attendance' || hash.startsWith('#feat-')) return 'attendance-management';
-  if (hash === '#leave-management' || hash === '#simplify-leave') return 'leave-management';
+  if (hash === '#time-off-management' || hash === '#Time-off-management' || hash === '#leave-management' || hash === '#simplify-time-off' || hash === '#simplify-leave' || hash === '#simplify-Time-off') return 'time-off-management';
   if (hash === '#shift-management') return 'shift-management';
   if (hash === '#task-management') return 'task-management';
   if (hash === '#employee-self-service') return 'employee-self-service';
@@ -201,7 +201,7 @@ function App() {
   const isHealthcareView = currentView === 'healthcare-solutions';
   const isEducationView = currentView === 'education-solutions';
   const isAttendanceManagementView = currentView === 'attendance-management';
-  const isLeaveManagementView = currentView === 'leave-management';
+  const isTimeOffManagementView = currentView === 'time-off-management' || currentView === 'Time-off-management' || currentView === 'leave-management';
   const isShiftManagementView = currentView === 'shift-management';
   const isTaskManagementView = currentView === 'task-management';
   const isEmployeeSelfServiceView = currentView === 'employee-self-service';
@@ -458,7 +458,7 @@ function App() {
             <AttendanceManagementPage />
             <Footer />
           </>
-        ) : isLeaveManagementView ? (
+        ) : isTimeOffManagementView ? (
           <>
             <LeaveManagementPage />
             <Footer />

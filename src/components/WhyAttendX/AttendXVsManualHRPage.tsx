@@ -61,7 +61,7 @@ export const AttendXVsManualHRPage: React.FC = () => {
 
           {/* Transform Graphic Row */}
           <div className="w-full max-w-[1216px] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-2">
-            
+
             {/* Left Column: Tilted Legacy Stack Cards */}
             <div className="lg:col-span-5 flex flex-col gap-3 max-w-[568px] mx-auto w-full">
               {[
@@ -98,7 +98,7 @@ export const AttendXVsManualHRPage: React.FC = () => {
 
                 {[
                   { label: 'Attendance', pill: 'Live' },
-                  { label: 'Leave', pill: 'Connected' },
+                  { label: 'Time-off', pill: 'Connected' },
                   { label: 'Approvals', pill: 'Digital' },
                   { label: 'Reports', pill: 'Instant' },
                 ].map((row, rIdx) => (
@@ -289,7 +289,7 @@ export const AttendXVsManualHRPage: React.FC = () => {
                   'Email threads',
                   'WhatsApp groups',
                   'Manual reports',
-                  'Paper leave forms',
+                  'Paper Time-off forms',
                   'Data typed in more than once',
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-3 font-semibold">
@@ -311,7 +311,7 @@ export const AttendXVsManualHRPage: React.FC = () => {
               <ul className="space-y-4 font-['Inter'] text-[15px] leading-[23px] text-white">
                 {[
                   'Live attendance',
-                  'Connected leave management',
+                  'Connected Time-off management',
                   'Digital approvals',
                   'Employee self-service',
                   'AI assistant',
@@ -348,7 +348,7 @@ export const AttendXVsManualHRPage: React.FC = () => {
             {[
               {
                 eyebrow: 'REPORTS',
-                title: 'Hours spent building attendance and leave summaries by hand',
+                title: 'Hours spent building attendance and Time-off summaries by hand',
               },
               {
                 eyebrow: 'CORRECTIONS',
@@ -364,7 +364,7 @@ export const AttendXVsManualHRPage: React.FC = () => {
               },
               {
                 eyebrow: 'PAYROLL PREP',
-                title: 'Reconciling attendance and leave before every single pay cycle',
+                title: 'Reconciling attendance and Time-off before every single pay cycle',
               },
               {
                 eyebrow: 'EMPLOYEE WAITING',
@@ -549,7 +549,7 @@ export const AttendXVsManualHRPage: React.FC = () => {
               <div className="divide-y divide-slate-100 font-['Inter'] text-[13.5px] leading-[21px]">
                 {[
                   { cat: 'Attendance', val: 'Register or biometric export' },
-                  { cat: 'Leave', val: 'Paper forms or email' },
+                  { cat: 'Time-off', val: 'Paper forms or email' },
                   { cat: 'Approvals', val: 'WhatsApp or verbal' },
                   { cat: 'Tasks', val: 'Untracked, informal' },
                   { cat: 'Reporting', val: 'Manual, built by hand' },
@@ -574,7 +574,7 @@ export const AttendXVsManualHRPage: React.FC = () => {
               <div className="divide-y divide-slate-100 font-['Inter'] text-[13.5px] leading-[21px]">
                 {[
                   { cat: 'Attendance', val: 'Live, connected records' },
-                  { cat: 'Leave', val: 'Digital request & tracking' },
+                  { cat: 'Time-off', val: 'Digital request & tracking' },
                   { cat: 'Approvals', val: 'In-platform, auditable' },
                   { cat: 'Tasks', val: 'Assigned & tracked' },
                   { cat: 'Reporting', val: 'Instant, always current' },
@@ -700,7 +700,7 @@ export const AttendXVsManualHRPage: React.FC = () => {
             {[
               {
                 q: 'Do we lose historical attendance data when we switch?',
-                a: 'No. Existing attendance and leave records can be imported during setup, so your team starts on Workzi with full history intact.',
+                a: 'No. Existing attendance and Time-off records can be imported during setup, so your team starts on Workzi with full history intact.',
               },
               {
                 q: 'How long does migration actually take?',
@@ -716,7 +716,7 @@ export const AttendXVsManualHRPage: React.FC = () => {
               },
               {
                 q: 'Do employees need training to use Workzi?',
-                a: 'Minimal. Checking in, applying for leave and tracking tasks are built to be as simple as the manual version — without the manual part.',
+                a: 'Minimal. Checking in, applying for Time-off and tracking tasks are built to be as simple as the manual version — without the manual part.',
               },
               {
                 q: 'Can HR still export data the way they do today?',
@@ -742,11 +742,10 @@ export const AttendXVsManualHRPage: React.FC = () => {
                       {faq.q}
                     </span>
                     <span
-                      className={`w-7 h-7 rounded-[8px] flex items-center justify-center text-[14px] font-bold shrink-0 transition-all duration-200 ${
-                        isOpen
+                      className={`w-7 h-7 rounded-[8px] flex items-center justify-center text-[14px] font-bold shrink-0 transition-all duration-200 ${isOpen
                           ? 'bg-[#5B5FFF] text-white rotate-45'
                           : 'bg-[#EEEEFF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
-                      }`}
+                        }`}
                     >
                       +
                     </span>
@@ -774,7 +773,7 @@ export const AttendXVsManualHRPage: React.FC = () => {
               intelligently.
             </h2>
             <p className="font-['Inter'] font-normal text-[16px] sm:text-[17px] leading-[26px] text-white/85 max-w-[520px] mb-8">
-              Bring attendance, leave, approvals and everyday HR operations into one connected platform.
+              Bring attendance, Time-off, approvals and everyday HR operations into one connected platform.
             </p>
             <div className="flex flex-wrap justify-center items-center gap-3.5">
               <a

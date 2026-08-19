@@ -62,7 +62,7 @@ export const ForEnterprisePage: React.FC = () => {
           {/* Hero Ecosystem Graphic Banner */}
           <div className="w-full max-w-[1216px] bg-gradient-to-r from-[#9AA0FF] via-[#C5E2FF] to-[#4F7EFF] rounded-[24px] p-6 sm:p-12 lg:p-16 flex items-center justify-center overflow-x-auto no-scrollbar transition-all duration-200 hover:shadow-md">
             <div className="flex flex-row items-center justify-center gap-3 sm:gap-4.5 min-w-[850px] py-4">
-              
+
               {/* Node 1: Your Organization */}
               <div className="bg-[#5C5CFF] border border-[#5C5CFF] rounded-[16px] px-6 py-3.5 flex items-center justify-center font-['Inter'] font-semibold text-[15px] leading-[23px] text-white shadow-xs shrink-0 transition-transform hover:scale-105">
                 Your Organization
@@ -180,7 +180,7 @@ export const ForEnterprisePage: React.FC = () => {
       <section className="py-20 sm:py-28 bg-white border-t border-slate-100">
         <Container className="max-w-[1280px] px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-            
+
             {/* Left Column: Feature Text */}
             <div className="lg:col-span-6 flex flex-col items-start text-left max-w-[573px] mx-auto lg:mx-0">
               <h3 className="font-['Plus_Jakarta_Sans'] font-semibold text-[36px] sm:text-[48px] lg:text-[55px] leading-[1.18] sm:leading-[62px] lg:leading-[66px] tracking-[-1px] text-[#111827] mb-5">
@@ -195,7 +195,7 @@ export const ForEnterprisePage: React.FC = () => {
             <div className="lg:col-span-6 max-w-[573px] mx-auto w-full">
               <div className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-[26px] p-8 sm:p-12 flex flex-col items-center transition-all duration-200 hover:shadow-md">
                 <div className="w-full max-w-[340px] flex flex-col items-center gap-2">
-                  
+
                   {/* Head Office */}
                   <div className="w-full bg-[#5C5CFF] border border-[#5C5CFF] rounded-[16px] py-4 px-5 flex items-center justify-center font-['Inter'] font-semibold text-[14.5px] leading-[22px] text-white text-center shadow-xs transition-transform hover:scale-102">
                     Head Office
@@ -260,7 +260,7 @@ export const ForEnterprisePage: React.FC = () => {
 
           {/* div.eco-tree */}
           <div className="w-full max-w-[1216px] flex flex-row items-center justify-center gap-2 sm:gap-3.5 overflow-x-auto no-scrollbar py-2">
-            
+
             {/* Company */}
             <div className="bg-[#5C5CFF] border border-[#5C5CFF] rounded-[16px] px-5 py-3.5 flex items-center justify-center font-['Inter'] font-semibold text-[15px] leading-[23px] text-white shadow-xs shrink-0 transition-transform hover:scale-105">
               Company
@@ -442,7 +442,7 @@ export const ForEnterprisePage: React.FC = () => {
       <section className="py-20 sm:py-28 bg-white border-t border-slate-100">
         <Container className="max-w-[1280px] px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-            
+
             {/* Left Column: Feature Text */}
             <div className="lg:col-span-6 flex flex-col items-start text-left max-w-[573px] mx-auto lg:mx-0">
               <h3 className="font-['Plus_Jakarta_Sans'] font-semibold text-[36px] sm:text-[48px] lg:text-[55px] leading-[1.12] tracking-[-1px] text-[#111827] mb-5">
@@ -457,7 +457,7 @@ export const ForEnterprisePage: React.FC = () => {
             <div className="lg:col-span-6 max-w-[573px] mx-auto w-full">
               <div className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-[26px] p-8 sm:p-12 flex flex-col items-center transition-all duration-200 hover:shadow-md">
                 <div className="w-full max-w-[340px] flex flex-col items-center gap-2">
-                  
+
                   {/* Employees */}
                   <div className="w-full bg-white border border-[#E5E7EB] rounded-[16px] py-4 px-5 flex items-center justify-center font-['Inter'] font-medium text-[14.5px] leading-[22px] text-[#111827] text-center shadow-xs transition-transform hover:scale-102">
                     Employees
@@ -599,9 +599,9 @@ export const ForEnterprisePage: React.FC = () => {
                 sub: 'Employees currently active',
               },
               {
-                eyebrow: 'UPCOMING LEAVE',
+                eyebrow: 'UPCOMING Time-off',
                 val: '27',
-                sub: 'Employees on leave next week',
+                sub: 'Employees on Time-off next week',
               },
             ].map((card, idx) => (
               <div
@@ -746,11 +746,10 @@ export const ForEnterprisePage: React.FC = () => {
                       {faq.q}
                     </span>
                     <span
-                      className={`w-7 h-7 rounded-[8px] flex items-center justify-center text-[14px] font-bold shrink-0 transition-all duration-200 ${
-                        isOpen
+                      className={`w-7 h-7 rounded-[8px] flex items-center justify-center text-[14px] font-bold shrink-0 transition-all duration-200 ${isOpen
                           ? 'bg-[#5B5FFF] text-white rotate-45'
                           : 'bg-[#EEEEFF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
-                      }`}
+                        }`}
                     >
                       +
                     </span>

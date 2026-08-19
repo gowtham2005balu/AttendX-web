@@ -165,7 +165,7 @@ const ChoosePlan: React.FC = () => {
                 <li className="text-[11px] font-bold text-slate-900 pb-2 border-b border-slate-100 uppercase tracking-wider">Everything in Starter, plus:</li>
                 {[
                   'Up to 150 users',
-                  'Advanced leave management',
+                  'Advanced Time-off management',
                   'Approval workflows',
                   'Payroll integrations',
                   'Priority support'
@@ -264,7 +264,7 @@ const CompareFeatures: React.FC = () => {
     { name: 'Users included', plans: ['Up to 20', 'Up to 150', 'Unlimited', 'Unlimited'] },
     { name: 'Geo-fenced attendance', plans: [true, true, true, true] },
     { name: 'Real-time dashboard', plans: [true, true, true, true] },
-    { name: 'Leave management', plans: [false, true, true, true] },
+    { name: 'Time-off management', plans: [false, true, true, true] },
     { name: 'Approval workflows', plans: [false, true, true, true] },
     { name: 'Shift & roster scheduling', plans: [false, false, true, true] },
     { name: 'Overtime tracking', plans: [false, false, true, true] },
@@ -397,7 +397,7 @@ const SmarterDecisions: React.FC = () => (
             Make Smarter Workforce<br />Decisions
           </h2>
           <p className="text-slate-500 text-sm md:text-[15px] mb-8 leading-relaxed font-medium font-['Plus_Jakarta_Sans',sans-serif]">
-            Turn attendance and leave data into actionable insights. Our real-time analytics dashboard helps HR leaders spot trends, reduce absenteeism, and optimize workforce performance.
+            Turn attendance and Time-off data into actionable insights. Our real-time analytics dashboard helps HR leaders spot trends, reduce absenteeism, and optimize workforce performance.
           </p>
           <ul className="space-y-4 w-full">
             {[
@@ -788,7 +788,7 @@ const PricingCTA: React.FC = () => (
               Start building your modern workforce system today.
             </h2>
             <p className="font-['Plus_Jakarta_Sans',sans-serif] font-normal text-[16px] leading-[24px] text-white/55">
-              Join 50,000+ teams that use Workzi to manage attendance, leave, and HR operations from one powerful platform.
+              Join 50,000+ teams that use Workzi to manage attendance, Time-off, and HR operations from one powerful platform.
             </p>
           </div>
 

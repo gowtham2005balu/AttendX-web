@@ -76,7 +76,7 @@ const OrganizationManagementHeroChart: React.FC = () => {
 
           <div className="space-y-[8px] text-[11.5px] font-['Inter',sans-serif]">
             <div className="p-2 bg-[#F8FAFC] border border-[#E5E7EB] rounded-[8px] flex justify-between items-center">
-              <span className="font-bold text-[#111827]">Approve Leave</span>
+              <span className="font-bold text-[#111827]">Approve Time-off</span>
               <span className="text-[#10B981] font-bold">Enabled ✓</span>
             </div>
             <div className="p-2 bg-[#F8FAFC] border border-[#E5E7EB] rounded-[8px] flex justify-between items-center">
@@ -228,7 +228,7 @@ const SectionHowItWorks: React.FC = () => {
             Structure that stays consistent everywhere
           </h2>
           <p className="font-['Inter',sans-serif] font-normal text-[16.5px] leading-[27px] text-[#6B7280] text-center max-w-[536px]">
-            An org chart that only lives in a slide deck goes stale the day someone changes teams. Workzi keeps the structure live, so attendance, leave, tasks and reports all reflect it automatically.
+            An org chart that only lives in a slide deck goes stale the day someone changes teams. Workzi keeps the structure live, so attendance, Time-off, tasks and reports all reflect it automatically.
           </p>
         </FadeUp>
 
@@ -480,7 +480,7 @@ const SectionRolePermissions: React.FC = () => (
                   <td>All</td>
                 </tr>
                 <tr>
-                  <td className="py-2 font-semibold">Leave Approvals</td>
+                  <td className="py-2 font-semibold">Time-off Approvals</td>
                   <td>Apply</td>
                   <td>Approve</td>
                   <td>All</td>
@@ -614,7 +614,7 @@ const SectionApprovalChains: React.FC = () => (
         </h2>
 
         <p className="font-['Inter',sans-serif] font-medium text-[15.6px] leading-[24px] text-[#111827]">
-          Leave requests, task approvals, document sign-offs — they all need to know who approves what. Workzi routes them based on the reporting hierarchy already defined, so nobody configures the same chain twice.
+          Time-off requests, task approvals, document sign-offs — they all need to know who approves what. Workzi routes them based on the reporting hierarchy already defined, so nobody configures the same chain twice.
         </p>
 
         <div className="flex flex-col gap-[14px] pt-[13px] w-full">
@@ -671,9 +671,8 @@ const SectionHROverview: React.FC = () => (
           {['Departments', 'Roles & Permissions', 'Locations', 'Audit Log'].map((tab, idx) => (
             <span
               key={idx}
-              className={`font-['Inter',sans-serif] font-semibold text-[13px] px-[16px] py-[8px] rounded-full cursor-pointer transition-colors ${
-                idx === 0 ? 'bg-[#5C5CFF] text-white' : 'bg-white border border-[#E5E7EB] text-[#6B7280]'
-              }`}
+              className={`font-['Inter',sans-serif] font-semibold text-[13px] px-[16px] py-[8px] rounded-full cursor-pointer transition-colors ${idx === 0 ? 'bg-[#5C5CFF] text-white' : 'bg-white border border-[#E5E7EB] text-[#6B7280]'
+                }`}
             >
               {tab}
             </span>
@@ -763,7 +762,7 @@ const OrgFAQ: React.FC = () => {
 
   const faqs = [
     {
-      question: 'Does changing the org structure affect existing attendance or leave records?',
+      question: 'Does changing the org structure affect existing attendance or Time-off records?',
       answer: 'No. Historical records stay intact — reorganizing departments or reporting lines only affects how things are routed going forward.',
     },
     {
@@ -810,9 +809,8 @@ const OrgFAQ: React.FC = () => {
                       {faq.question}
                     </span>
                     <div
-                      className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${
-                        isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
-                      }`}
+                      className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-colors ${isOpen ? 'bg-[#5B5FFF] text-white' : 'bg-[#EEF2FF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
+                        }`}
                     >
                       {isOpen ? <X size={15} strokeWidth={2.5} /> : <Plus size={15} strokeWidth={2.5} />}
                     </div>
