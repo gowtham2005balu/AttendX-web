@@ -1,28 +1,8 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/sitemap\\.xml",
-      "dest": "/sitemap.xml",
-      "headers": {
-        "Content-Type": "application/xml",
-        "Cache-Control": "public, max-age=86400, s-maxage=86400"
-      }
-    },
-    {
-      "src": "/robots\\.txt",
-      "dest": "/robots.txt"
-    },
-    {
-      "src": "/favicon\\.svg",
-      "dest": "/favicon.svg"
-    },
-    {
-      "src": "^/(assets/.+)",
-      "dest": "/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
