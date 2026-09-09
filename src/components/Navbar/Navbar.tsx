@@ -764,7 +764,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath: propPath }) => {
                 : 'text-[#0F172A] font-bold hover:text-[#5B5FEF]'
               }`}
           >
-            Login
+            Logins
           </a>
           <button className="bg-[#5B5FEF] hover:bg-[#4F46E5] text-white font-['Plus_Jakarta_Sans',sans-serif] text-[15px] font-bold leading-[18px] px-[26px] py-[11px] rounded-full transition-all duration-200 shadow-sm shadow-[#5B5FEF]/30 cursor-pointer">
             Book Demo
