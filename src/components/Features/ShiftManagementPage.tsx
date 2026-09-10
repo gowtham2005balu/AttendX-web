@@ -130,8 +130,6 @@ const ShiftHero: React.FC = () => (
     <div className="w-full bg-transparent border-b border-[#E5E7F0]">
       <div className="w-full max-w-[1280px] mx-auto px-6 lg:px-0 h-[44px] flex items-center gap-[8px]">
         <div className="flex items-center gap-[8px] font-['Inter',sans-serif] text-[13px] leading-[16px] text-[#6B7280]">
-          <a href="/" className="hover:text-[#111827] transition-colors">Home</a>
-          <span>/</span>
           <a href="/features" className="hover:text-[#111827] transition-colors">Features</a>
           <span>/</span>
           <span className="font-semibold text-[#111827]">Shift Management</span>
