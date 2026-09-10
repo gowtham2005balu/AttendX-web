@@ -699,7 +699,6 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath: propPath }) => {
                   <a
                     href={link.href}
                     onClick={(e) => {
-                      // Solutions is a dropdown-only trigger — never navigate on click
                       if (link.label === 'Solutions' || link.href === '#') {
                         e.preventDefault();
                         return;
