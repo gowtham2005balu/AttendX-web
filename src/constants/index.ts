@@ -234,7 +234,7 @@ export const WHY_ATTENDX_DROPDOWN: NavDropdownItem[] = [
 ];
 
 export const NAV_LINKS: NavLink[] = [
-  { label: 'Solutions', href: '/solutions', dropdown: SOLUTIONS_DROPDOWN },
+  { label: 'Solutions', href: '#', dropdown: SOLUTIONS_DROPDOWN },
   { label: 'Features', href: '/features', dropdown: FEATURES_DROPDOWN },
   { label: 'Academic', href: '/solutions' },
   { label: 'Employee', href: '/employee-app' },
