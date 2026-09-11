@@ -763,7 +763,7 @@ const HealthcareCrossSell: React.FC = () => (
               Manage workforce access, accounts, and permissions in one place.
             </p>
           </div>
-          <a href="/it-solutions" className="text-[#5C5CFF] font-bold text-[14px] hover:underline">Explore IT Solutions →</a>
+          <a href="/solutions/it" className="text-[#5C5CFF] font-bold text-[14px] hover:underline">Explore IT Solutions →</a>
         </div>
       </div>
     </div>

@@ -31,21 +31,21 @@ export const Footer: React.FC = () => {
   ];
 
   const solutionLinks = [
-    { label: 'Education', href: '/education-solutions' },
-    { label: 'Human Resources', href: '/hr-solutions' },
-    { label: 'Customer Service', href: '/customer-service-solutions' },
-    { label: 'Engineering', href: '/engineering-solutions' },
-    { label: 'IT', href: '/it-solutions' },
-    { label: 'Sales', href: '/sales-solutions' },
-    { label: 'Project Management', href: '/project-management-solutions' },
-    { label: 'Marketing', href: '/marketing-solutions' },
-    { label: 'Manufacturing, Auto & Energy', href: '/manufacturing-auto-energy-solutions' },
-    { label: 'Technology', href: '/technology-solutions' },
-    { label: 'Media', href: '/media-solutions' },
-    { label: 'Small Business', href: '/small-business-solutions' },
-    { label: 'Financial Services', href: '/financial-services-solutions' },
-    { label: 'Retail', href: '/retail-solutions' },
-    { label: 'Health & Life Sciences', href: '/healthcare-solutions' },
+    { label: 'Education', href: '/solutions/education' },
+    { label: 'Human Resources', href: '/solutions/hr' },
+    { label: 'Customer Service', href: '/solutions/customer-service' },
+    { label: 'Engineering', href: '/solutions/engineering' },
+    { label: 'IT', href: '/solutions/it' },
+    { label: 'Sales', href: '/solutions/sales' },
+    { label: 'Project Management', href: '/solutions/project-management' },
+    { label: 'Marketing', href: '/solutions/marketing' },
+    { label: 'Manufacturing, Auto & Energy', href: '/solutions/manufacturing-auto-energy' },
+    { label: 'Technology', href: '/solutions/technology' },
+    { label: 'Media', href: '/solutions/media' },
+    { label: 'Small Business', href: '/solutions/small-business' },
+    { label: 'Financial Services', href: '/solutions/financial-services' },
+    { label: 'Retail', href: '/solutions/retail' },
+    { label: 'Health & Life Sciences', href: '/solutions/healthcare' },
   ];
 
   const whyWorkziLinks = [

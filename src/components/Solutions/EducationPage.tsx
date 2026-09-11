@@ -796,7 +796,7 @@ const CrossSellSection: React.FC = () => (
               Manage access, accounts, and permissions across the institution.
             </p>
           </div>
-          <a href="/it-solutions" className="font-bold text-[14.5px] text-[#5C5CFF] flex items-center gap-1.5">
+          <a href="/solutions/it" className="font-bold text-[14.5px] text-[#5C5CFF] flex items-center gap-1.5">
             Explore IT Solutions <ArrowRight size={15} />
           </a>
         </div>

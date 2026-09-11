@@ -137,154 +137,79 @@
 
   <!-- Solutions - Department Pages -->
   <url>
-    <loc>https://www.workzi.app/solutions/hr-solutions</loc>
+    <loc>https://www.workzi.app/solutions/hr</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.workzi.app/hr-solutions</loc>
+    <loc>https://www.workzi.app/solutions/it</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.workzi.app/solutions/it-solutions</loc>
+    <loc>https://www.workzi.app/solutions/engineering</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.workzi.app/it-solutions</loc>
+    <loc>https://www.workzi.app/solutions/sales</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.workzi.app/solutions/engineering-solutions</loc>
+    <loc>https://www.workzi.app/solutions/marketing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.workzi.app/engineering-solutions</loc>
+    <loc>https://www.workzi.app/solutions/customer-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.workzi.app/solutions/sales-solutions</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.workzi.app/sales-solutions</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.workzi.app/solutions/marketing-solutions</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.workzi.app/marketing-solutions</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.workzi.app/solutions/customer-service-solutions</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.workzi.app/customer-service-solutions</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.workzi.app/solutions/project-management-solutions</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.workzi.app/project-management-solutions</loc>
+    <loc>https://www.workzi.app/solutions/project-management</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Solutions - Industry Pages -->
   <url>
-    <loc>https://www.workzi.app/solutions/education-solutions</loc>
+    <loc>https://www.workzi.app/solutions/education</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.workzi.app/education-solutions</loc>
+    <loc>https://www.workzi.app/solutions/healthcare</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.workzi.app/solutions/healthcare-solutions</loc>
+    <loc>https://www.workzi.app/solutions/financial-services</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.workzi.app/healthcare-solutions</loc>
+    <loc>https://www.workzi.app/solutions/manufacturing-auto-energy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.workzi.app/solutions/financial-services-solutions</loc>
+    <loc>https://www.workzi.app/solutions/retail</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.workzi.app/financial-services-solutions</loc>
+    <loc>https://www.workzi.app/solutions/technology</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.workzi.app/solutions/manufacturing-auto-energy-solutions</loc>
+    <loc>https://www.workzi.app/solutions/media</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.workzi.app/manufacturing-auto-energy-solutions</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.workzi.app/solutions/retail-solutions</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.workzi.app/retail-solutions</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.workzi.app/solutions/technology-solutions</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.workzi.app/technology-solutions</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.workzi.app/solutions/media-solutions</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.workzi.app/media-solutions</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.workzi.app/solutions/small-business-solutions</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.workzi.app/small-business-solutions</loc>
+    <loc>https://www.workzi.app/solutions/small-business</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
