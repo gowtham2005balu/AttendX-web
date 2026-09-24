@@ -191,19 +191,19 @@ export const FEATURES_DROPDOWN: NavDropdownItem[] = [
 export const WHY_ATTENDX_DROPDOWN: NavDropdownItem[] = [
   {
     label: 'Why Workzi Overview',
-    href: '/why-workzi',
+    href: '/why-attendx',
     description: 'Learn why modern HR teams choose Workzi to automate attendance & workforce ops',
     icon: 'sparkles',
   },
   {
     label: 'Workzi vs Manual HR',
-    href: '/workzi-vs-manual-hr',
+    href: '/attendx-vs-manual-hr',
     description: 'Save 15+ hours weekly by replacing paper registers and Excel spreadsheets',
     icon: 'clock',
   },
   {
     label: 'Workzi vs Traditional HRMS',
-    href: '/workzi-vs-traditional-hrms',
+    href: '/attendx-vs-traditional-hrms',
     description: 'Fast 5-minute setup vs months of complex legacy software implementation',
     icon: 'zap',
   },
@@ -221,7 +221,7 @@ export const WHY_ATTENDX_DROPDOWN: NavDropdownItem[] = [
   },
   {
     label: 'Scale with Workzi',
-    href: '/scale-with-workzi',
+    href: '/scale-with-attendx',
     description: 'Grow seamlessly from 10 to 10,000+ employees without changing systems',
     icon: 'workforce',
   },
