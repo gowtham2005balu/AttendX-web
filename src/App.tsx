@@ -66,6 +66,7 @@ import ComingSoonPage from './components/ComingSoon/ComingSoonPage';
 import TermsOfServicePage from './components/Legal/TermsOfServicePage';
 import PrivacyPolicyPage from './components/Legal/PrivacyPolicyPage';
 import CookieSettingsPage from './components/Legal/CookieSettingsPage';
+import NotFoundPage from './components/NotFoundPage';
 
 // Features Subpage Components
 import { FeaturesHero } from './components/Features/FeaturesHero';
@@ -147,7 +148,7 @@ const getBaseView = (pathOrHash: string): string => {
     'key-takeaways'
   ].includes(clean)) return 'blog-article';
   if (clean === 'coming-soon') return 'coming-soon';
-  return 'home';
+  return 'not-found';
 };
 
 function App() {
@@ -272,6 +273,7 @@ function App() {
   const isArticleView = currentView === 'blog-article';
   const isComingSoonView = currentView === 'coming-soon';
   const isFAQView = currentView === 'faq';
+  const isNotFoundView = currentView === 'not-found';
 
   const isWhyWorkziView = currentView === 'why-attendx';
   const isWorkziVsManualHRView = currentView === 'attendx-vs-manual-hr';
@@ -568,6 +570,11 @@ function App() {
             <Integrations />
             <FeaturesFAQ />
             <CTA />
+            <Footer />
+          </>
+        ) : isNotFoundView ? (
+          <>
+            <NotFoundPage />
             <Footer />
           </>
         ) : (
