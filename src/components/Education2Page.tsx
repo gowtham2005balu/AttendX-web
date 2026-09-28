@@ -28,7 +28,7 @@ export const Education2Page: React.FC = () => {
   return (
     <div className="min-h-screen bg-white font-['Plus_Jakarta_Sans',sans-serif]">
       {/* 1. HERO SECTION */}
-      <section className="relative flex flex-col items-center justify-between bg-white pt-[120px] sm:pt-[140px] min-h-[780px] lg:min-h-[850px] pb-0 overflow-hidden z-20 isolate">
+      <section className="relative flex flex-col items-center justify-between bg-white pt-[120px] sm:pt-[140px] min-h-[640px] lg:min-h-[680px] pb-0 overflow-hidden z-20 isolate">
         {/* Campus Background Image with dark overlay */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img
@@ -65,9 +65,9 @@ export const Education2Page: React.FC = () => {
         </Container>
 
         {/* Hero Dashboard Card Overlay — Docked at bottom of hero */}
-        <div className="relative w-full max-w-[780px] px-4 z-30 animate-in fade-in slide-in-from-bottom-8 duration-700 mt-auto">
+        <div className="relative w-full max-w-[680px] px-4 z-30 animate-in fade-in slide-in-from-bottom-8 duration-700 mt-auto">
           {/* Floating Left Tag */}
-          <div className="absolute -left-2 sm:-left-8 top-[32px] sm:top-[38px] bg-white rounded-2xl shadow-lg border border-gray-100 p-3 sm:p-3.5 pr-5 sm:pr-6 flex items-center gap-3 z-40">
+          <div className="absolute -left-2 sm:-left-20 top-[-30px] sm:top-[-30px] bg-white rounded-2xl shadow-lg border border-gray-100 p-3 sm:p-3.5 pr-5 sm:pr-6 flex items-center gap-3 z-40">
             <div className="w-8 h-8 rounded-full bg-emerald-50 flex items-center justify-center shrink-0">
               <Check className="w-5 h-5 text-emerald-500" strokeWidth={3} />
             </div>
@@ -78,7 +78,7 @@ export const Education2Page: React.FC = () => {
           </div>
 
           {/* Floating Right Tag */}
-          <div className="absolute -right-2 sm:-right-6 bottom-[20px] sm:bottom-[24px] bg-white rounded-2xl shadow-lg border border-gray-100 p-3 sm:p-3.5 pr-5 sm:pr-6 flex items-center gap-3 z-40">
+          <div className="absolute -right-2 sm:-right-20 bottom-[20px] sm:bottom-[24px] bg-white rounded-2xl shadow-lg border border-gray-100 p-3 sm:p-3.5 pr-5 sm:pr-6 flex items-center gap-3 z-40">
             <div className="w-8 h-8 rounded-full bg-indigo-50 flex items-center justify-center shrink-0">
               <Clock className="w-5 h-5 text-[#5C5CFF]" strokeWidth={2.5} />
             </div>
@@ -127,7 +127,7 @@ export const Education2Page: React.FC = () => {
         </div>
       </section>
 
-      {/* TRUSTED COMPANIES LOGOS BAR */}
+      {/* TRUSTED COMPANIES LOGOS BAR
       <section id="trusted" className="bg-white py-8 sm:py-10 border-b border-gray-100 relative z-10 w-full overflow-hidden">
         <div className="max-w-[1240px] mx-auto px-4">
           <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 md:gap-14 lg:gap-16">
@@ -144,7 +144,7 @@ export const Education2Page: React.FC = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* EVERYTHING YOUR CAMPUS NEEDS */}
       <section id="campus-needs" className="pt-16 sm:pt-20 pb-10 bg-white relative text-center">
@@ -578,8 +578,8 @@ export const Education2Page: React.FC = () => {
                     </span>
                     <span
                       className={`w-7 h-7 rounded-[8px] flex items-center justify-center text-[14px] font-bold shrink-0 transition-all duration-200 ${isOpen
-                          ? 'bg-[#5B5FFF] text-white rotate-45'
-                          : 'bg-[#EEEEFF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
+                        ? 'bg-[#5B5FFF] text-white rotate-45'
+                        : 'bg-[#EEEEFF] text-[#5B5FFF] group-hover:bg-[#5B5FFF] group-hover:text-white'
                         }`}
                     >
                       +

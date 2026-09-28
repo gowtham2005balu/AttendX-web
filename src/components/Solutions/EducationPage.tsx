@@ -338,11 +338,11 @@ const EducationFeatureSections: React.FC = () => {
                 </div>
 
                 <a
-                  href="/features/attendance-management"
+                  href="/contact-support"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>Explore Attendance Management</span>
-                  <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
+                  <span>Learn More</span>
+                  <ArrowRight size={14} />
                 </a>
               </div>
             </div>
@@ -412,11 +412,11 @@ const EducationFeatureSections: React.FC = () => {
                 </div>
 
                 <a
-                  href="/organization-management"
+                  href="/contact-support"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>Explore Department Management</span>
-                  <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
+                  <span>Learn More</span>
+                  <ArrowRight size={14} />
                 </a>
               </div>
             </div>
@@ -480,11 +480,11 @@ const EducationFeatureSections: React.FC = () => {
                 </div>
 
                 <a
-                  href="/features/time-off-management"
+                  href="/contact-support"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>Explore Time-off Management</span>
-                  <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
+                  <span>Learn More</span>
+                  <ArrowRight size={14} />
                 </a>
               </div>
             </div>
@@ -547,11 +547,11 @@ const EducationFeatureSections: React.FC = () => {
                 </div>
 
                 <a
-                  href="/features/task-management"
+                  href="/contact-support"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>Explore Announcements</span>
-                  <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
+                  <span>Learn More</span>
+                  <ArrowRight size={14} />
                 </a>
               </div>
             </div>

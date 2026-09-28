@@ -148,13 +148,13 @@ const TrackAttendance: React.FC = () => (
             ))}
           </div>
 
-          {/* Explore Feature button */}
+          {/* Learn More button */}
           <a
-            href="/features/attendance-management"
+            href="/contact-support"
             className="min-w-[153px] h-[43px] px-[24px] py-[13px] gap-[8px] bg-[#1A1A1A] hover:bg-black text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all duration-300 shadow-md inline-flex items-center justify-center cursor-pointer whitespace-nowrap shrink-0"
           >
-            <span className="whitespace-nowrap">Explore Feature</span>
-            <ArrowRight className="w-[16px] h-[16px] text-white stroke-[2.2] shrink-0" />
+            <span className="whitespace-nowrap">Learn More</span>
+            <ArrowRight size={14} />
           </a>
         </div>
       </FadeUp>
@@ -226,7 +226,7 @@ const TimeOffRequests: React.FC = () => (
             className="min-w-[153px] h-[43px] px-[24px] py-[13px] gap-[8px] bg-[#1A1A1A] hover:bg-black text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all duration-300 shadow-md inline-flex items-center justify-center cursor-pointer whitespace-nowrap shrink-0"
           >
             <span className="whitespace-nowrap">Learn More</span>
-            <ArrowRight className="w-[16px] h-[16px] text-white stroke-[2.2] shrink-0" />
+            <ArrowRight size={14} />
           </a>
         </div>
       </FadeUp>
@@ -310,7 +310,7 @@ const TeamConnected: React.FC = () => {
             className="bg-[#1A1A1A] hover:bg-black text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] px-[26px] py-[13px] rounded-[50px] transition-all duration-300 shadow-md inline-flex items-center gap-[8px] cursor-pointer"
           >
             Learn More
-            <ArrowRight className="w-4 h-4 text-white" />
+            <ArrowRight size={14} />
           </a>
         </FadeUp>
       </Container>
@@ -372,7 +372,7 @@ const SimplifyHR: React.FC = () => {
             className="bg-[#1A1A1A] hover:bg-black text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] px-[26px] py-[13px] rounded-[50px] transition-all duration-300 shadow-md inline-flex items-center gap-[8px] cursor-pointer"
           >
             Learn More
-            <ArrowRight className="w-4 h-4 text-white" />
+            <ArrowRight size={14} />
           </a>
         </FadeUp>
 

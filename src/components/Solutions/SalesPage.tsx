@@ -298,11 +298,11 @@ const SalesKnowledgeSections: React.FC = () => {
                 </div>
 
                 <a
-                  href="/features/attendance-management"
+                  href="/contact-support"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>See Attendance Management</span>
-                  <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
+                  <span>Learn More</span>
+                  <ArrowRight size={14} />
                 </a>
               </div>
             </div>
@@ -372,11 +372,11 @@ const SalesKnowledgeSections: React.FC = () => {
                 </div>
 
                 <a
-                  href="/features/time-off-management"
+                  href="/contact-support"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>See Time-off Management</span>
-                  <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
+                  <span>Learn More</span>
+                  <ArrowRight size={14} />
                 </a>
               </div>
             </div>
@@ -441,11 +441,11 @@ const SalesKnowledgeSections: React.FC = () => {
                 </div>
 
                 <a
-                  href="/features/task-management"
+                  href="/contact-support"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>See Task Management</span>
-                  <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
+                  <span>Learn More</span>
+                  <ArrowRight size={14} />
                 </a>
               </div>
             </div>
@@ -515,11 +515,11 @@ const SalesKnowledgeSections: React.FC = () => {
                 </div>
 
                 <a
-                  href="/employee-directory"
+                  href="/contact-support"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>See Employee Directory</span>
-                  <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
+                  <span>Learn More</span>
+                  <ArrowRight size={14} />
                 </a>
               </div>
             </div>
@@ -643,7 +643,7 @@ const SalesManagerVisibilityDark: React.FC = () => (
             className="inline-flex items-center gap-2 bg-[#5C5CFF] hover:bg-[#4F46E5] text-white font-bold text-[14px] sm:text-[15px] px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl transition-all shadow-md"
           >
             <span>Explore Manager Solutions</span>
-            <span>→</span>
+            <ArrowRight size={14} />
           </a>
         </div>
       </div>
@@ -715,7 +715,7 @@ const SalesIntegrations: React.FC = () => (
         className="inline-flex items-center gap-2 text-[#5C5CFF] font-bold text-[15px] hover:underline"
       >
         <span>Explore Integrations</span>
-        <span>→</span>
+        <ArrowRight size={14} />
       </a>
     </div>
   </section>

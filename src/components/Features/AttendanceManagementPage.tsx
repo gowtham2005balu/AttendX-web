@@ -232,9 +232,9 @@ const SectionCheckingIn: React.FC = () => (
           className="inline-flex items-center justify-center px-[26px] py-[13px] gap-[8px] bg-[#1A1A1A] hover:bg-[#333333] text-white rounded-[50px] transition-all duration-200"
         >
           <span className="font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px]">
-            Employee Experience
+            Learn More
           </span>
-          <ArrowRight size={16} />
+          <ArrowRight size={14} />
         </a>
 
         {/* ul.feature-list */}
@@ -761,9 +761,9 @@ const SectionTeamAttendance: React.FC = () => {
             className="inline-flex items-center justify-center px-[26px] py-[13px] gap-[8px] bg-[#1A1A1A] hover:bg-[#333333] text-white rounded-[50px] transition-all duration-200 mt-2"
           >
             <span className="font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px]">
-              Explore Employee Directory
+              Learn More
             </span>
-            <ArrowRight size={16} />
+            <ArrowRight size={14} />
           </a>
         </FadeUp>
 
@@ -1041,9 +1041,9 @@ const SectionScheduleIntegration: React.FC = () => (
           className="inline-flex items-center justify-center px-[26px] py-[13px] gap-[8px] bg-[#1A1A1A] hover:bg-[#333333] text-white rounded-[50px] transition-all duration-200"
         >
           <span className="font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px]">
-            Explore Shift Management
+            Learn More
           </span>
-          <ArrowRight size={16} />
+          <ArrowRight size={14} />
         </a>
 
         <div className="flex flex-col gap-[14px] pt-[13.1px] w-full">

@@ -297,8 +297,8 @@ const AttendanceTracking: React.FC = () => {
               href="/contact-support"
               className="bg-black hover:bg-[#1A1A1A] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] px-[26px] py-[13px] rounded-[50px] transition-all duration-300 shadow-md inline-flex items-center justify-center gap-2 cursor-pointer"
             >
-              <span>Explore Feature</span>
-              <ArrowRight className="w-4 h-4 text-white" />
+              <span>Learn More</span>
+              <ArrowRight size={14} />
             </a>
           </div>
         </FadeUp>
@@ -381,7 +381,7 @@ const SimplifyTimeOff: React.FC = () => {
               className="bg-black hover:bg-[#1A1A1A] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] px-[26px] py-[13px] rounded-[50px] transition-all duration-300 shadow-md inline-flex items-center justify-center gap-2 cursor-pointer"
             >
               <span>Learn More</span>
-              <ArrowRight className="w-4 h-4 text-white" />
+              <ArrowRight size={14} />
             </a>
           </div>
         </FadeUp>
@@ -446,7 +446,7 @@ const WorkforceConnected: React.FC = () => {
               className="bg-black hover:bg-[#1A1A1A] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] px-[26px] py-[13px] rounded-[50px] transition-all duration-300 shadow-md inline-flex items-center justify-center gap-2 cursor-pointer"
             >
               <span>Learn More</span>
-              <ArrowRight className="w-4 h-4 text-white" />
+              <ArrowRight size={14} />
             </a>
           </div>
         </FadeUp>
@@ -529,7 +529,7 @@ const SmarterDecisions: React.FC = () => {
               className="bg-black hover:bg-[#1A1A1A] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] px-[26px] py-[13px] rounded-[50px] transition-all duration-300 shadow-md inline-flex items-center justify-center gap-2 cursor-pointer"
             >
               <span>Learn More</span>
-              <ArrowRight className="w-4 h-4 text-white" />
+              <ArrowRight size={14} />
             </a>
           </div>
         </FadeUp>

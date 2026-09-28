@@ -350,7 +350,7 @@ const HealthcareWorkforceVisibilityDark: React.FC = () => (
             className="inline-flex items-center gap-2 bg-[#5C5CFF] hover:bg-[#4F46E5] text-white font-bold text-[15px] px-6 py-3 rounded-xl transition-all"
           >
             <span>Explore Attendance Management</span>
-            <span>→</span>
+            <ArrowRight size={14} />
           </a>
         </div>
       </div>
@@ -419,11 +419,11 @@ const HealthcareShiftManagement: React.FC = () => (
           ))}
         </ul>
         <a
-          href="/features/shift-management"
+          href="/contact-support"
           className="inline-flex items-center gap-2 bg-[#1A1A1A] hover:bg-[#333333] text-white font-semibold text-[14px] px-6 py-3 rounded-full transition-all hover:scale-105"
         >
-          <span>Explore Shift Management</span>
-          <span>→</span>
+          <span>Learn More</span>
+          <ArrowRight size={14} />
         </a>
       </div>
 
@@ -477,11 +477,11 @@ const HealthcareTimeOffManagement: React.FC = () => (
           ))}
         </ul>
         <a
-          href="/features/time-off-management"
+          href="/contact-support"
           className="inline-flex items-center gap-2 bg-[#1A1A1A] hover:bg-[#333333] text-white font-semibold text-[14px] px-6 py-3 rounded-full transition-all hover:scale-105"
         >
-          <span>Explore Time-off Management</span>
-          <span>→</span>
+          <span>Learn More</span>
+          <ArrowRight size={14} />
         </a>
       </div>
 
@@ -521,11 +521,11 @@ const HealthcareEmployeeDirectory: React.FC = () => (
           Manage full-time staff, part-time employees, and contract or travel staff in one employee directory, with attendance tracking that fits each.
         </p>
         <a
-          href="/employee-directory"
+          href="/contact-support"
           className="inline-flex items-center gap-2 bg-[#1A1A1A] hover:bg-[#333333] text-white font-semibold text-[14px] px-6 py-3 rounded-full transition-all hover:scale-105"
         >
-          <span>Explore Employee Directory</span>
-          <span>→</span>
+          <span>Learn More</span>
+          <ArrowRight size={14} />
         </a>
       </div>
 
@@ -729,7 +729,7 @@ const HealthcareIntegrations: React.FC = () => (
         className="inline-flex items-center gap-2 text-[#5C5CFF] font-bold text-[15px] hover:underline"
       >
         <span>Explore Integrations</span>
-        <span>→</span>
+        <ArrowRight size={14} />
       </a>
     </div>
   </section>

@@ -58,13 +58,14 @@ const Pill: React.FC<{ children: React.ReactNode; color?: string }> = ({
    SECTION 1 â€” HERO WITH CAMPUS BG & DASHBOARD WIDGET
    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 const SolutionsHero: React.FC = () => (
-  <section className="relative flex flex-col items-center justify-between bg-white pt-[120px] sm:pt-[140px] min-h-[780px] lg:min-h-[850px] pb-0 overflow-hidden z-20 isolate">
+  <section className="relative flex flex-col items-center justify-between bg-white pt-[120px] sm:pt-[140px] min-h-[780px] lg:min-h-[820px] pb-0 overflow-hidden z-20 isolate">
     {/* Campus Background Image with dark overlay */}
     <div className="absolute inset-0 z-0 overflow-hidden">
       <img
         src="/solutions-assets/hero.image.png"
         alt="Campus background"
-        className="w-full h-full object-cover object-center"
+        className="w-full h-full object-cover"
+        style={{ objectPosition: 'center 65%' }}
       />
       <div className="absolute inset-0 bg-black/25 z-10" />
     </div>
@@ -74,14 +75,14 @@ const SolutionsHero: React.FC = () => (
       <FadeUp className="flex flex-col items-center w-full max-w-[1440px]">
 
         {/* h1 */}
-        <h1 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[36px] sm:text-[48px] md:text-[54px] lg:text-[60px] leading-[1.12] text-white text-center max-w-[800px] mb-5 drop-shadow-[0_2px_8px_rgba(0,0,0,0.25)]">
+        <h1 className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[46px] sm:text-[58px] md:text-[66px] lg:text-[76px] leading-[1.1] text-white text-center max-w-[900px] mb-5 drop-shadow-[0_2px_8px_rgba(0,0,0,0.25)]">
           Attendance<br />
           Management Built for<br />
           Modern Campuses
         </h1>
 
         {/* p */}
-        <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[17px] leading-[26px] sm:leading-[28px] text-white/95 text-center max-w-[620px] mb-8 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
+        <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[18px] leading-[28px] sm:leading-[30px] text-white/95 text-center max-w-[700px] mb-8 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
           Manage student attendance, faculty attendance, academic schedules, department operations, and campus activities from one intelligent platform.
         </p>
 
@@ -97,10 +98,10 @@ const SolutionsHero: React.FC = () => (
     </Container>
 
     {/* Dashboard chart — positioned at bottom of hero matching 1st image */}
-    <div className="relative w-full max-w-[780px] px-4 z-30 animate-in fade-in slide-in-from-bottom-8 duration-700 mt-auto">
-      
+    <div className="relative w-full max-w-[700px] px-4 z-30 animate-in fade-in slide-in-from-bottom-8 duration-700 mt-auto">
+
       {/* Floating Left Tag */}
-      <div className="absolute -left-2 sm:-left-8 top-[32px] sm:top-[38px] bg-white rounded-2xl shadow-lg border border-gray-100 p-3 sm:p-3.5 pr-5 sm:pr-6 flex items-center gap-3 z-40">
+      <div className="absolute -left-2 sm:-left-24 top-[-30px] sm:top-[-30px] bg-white rounded-2xl shadow-lg border border-gray-100 p-3 sm:p-3.5 pr-5 sm:pr-6 flex items-center gap-3 z-40">
         <div className="w-8 h-8 rounded-full bg-emerald-50 flex items-center justify-center shrink-0">
           <Check className="w-5 h-5 text-emerald-500" strokeWidth={3} />
         </div>
@@ -111,7 +112,7 @@ const SolutionsHero: React.FC = () => (
       </div>
 
       {/* Floating Right Tag */}
-      <div className="absolute -right-2 sm:-right-6 bottom-[20px] sm:bottom-[24px] bg-white rounded-2xl shadow-lg border border-gray-100 p-3 sm:p-3.5 pr-5 sm:pr-6 flex items-center gap-3 z-40">
+      <div className="absolute -right-2 sm:-right-20 bottom-[20px] sm:bottom-[24px] bg-white rounded-2xl shadow-lg border border-gray-100 p-3 sm:p-3.5 pr-5 sm:pr-6 flex items-center gap-3 z-40">
         <div className="w-8 h-8 rounded-full bg-indigo-50 flex items-center justify-center shrink-0">
           <Clock className="w-5 h-5 text-[#5C5CFF]" strokeWidth={2.5} />
         </div>
@@ -124,8 +125,8 @@ const SolutionsHero: React.FC = () => (
       {/* Main Card */}
       <div className="bg-white/95 backdrop-blur-xl rounded-t-[28px] rounded-b-none shadow-[0_20px_50px_rgba(17,24,39,0.18)] border-t border-x border-white/60 p-5 sm:p-7 relative z-30 w-full overflow-hidden text-left">
         {/* Header */}
-        <div className="flex justify-center items-center gap-2 mb-6 sm:mb-7 border-b border-gray-100 pb-3 sm:pb-4">
-          <span className="font-semibold text-gray-500 text-xs sm:text-sm tracking-wide">
+        <div className="flex justify-start items-center gap-2 mb-6 sm:mb-7 border-b border-gray-100 pb-3 sm:pb-4">
+          <span className="font-semibold text-gray-500 text-xs sm:text-sm tracking-wide ml-2">
             Dashboard — Workzi Education
           </span>
         </div>
@@ -1024,7 +1025,7 @@ const SolutionsCTA: React.FC = () => (
       {/* Button Action */}
       <div className="pt-[12px]">
         <a href="/contact-support" className="bg-[#1A1A1A] hover:bg-black text-[#FFFFFF] font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] px-[26px] py-[13px] rounded-[50px] transition-all duration-300 shadow-lg cursor-pointer transform hover:scale-[1.03] flex items-center justify-center gap-2">
-          Book Demo
+          Learn More
         </a>
       </div>
     </Container>
@@ -1037,7 +1038,7 @@ const SolutionsCTA: React.FC = () => (
 const SolutionsPage: React.FC = () => (
   <div id="solutions-page" className="relative overflow-x-hidden bg-white">
     <SolutionsHero />
-    <TrustedCompaniesLocal />
+    {/* <TrustedCompaniesLocal /> */}
     <EverythingYourCampusNeeds />
 
     {/* Section: Every Student, Accounted For */}

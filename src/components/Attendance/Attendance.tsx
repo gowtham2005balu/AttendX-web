@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from '../Container';
 import { Heading } from '../Heading';
 import { motion } from 'framer-motion';
-import { Check } from 'lucide-react';
+import {  Check , ArrowRight } from 'lucide-react';
 
 export const Attendance: React.FC = () => {
   return (
@@ -52,9 +52,7 @@ export const Attendance: React.FC = () => {
           {/* Learn More button */}
           <a href="/contact-support" className="bg-black text-white text-[14px] font-semibold leading-[17px] px-[26px] py-[13px] min-h-[44px] rounded-[50px] hover:bg-[#1A1A1A] transition-all duration-300 shadow-md inline-flex items-center gap-[8px] cursor-pointer hover:scale-[1.02]">
             Learn More
-            <svg className="w-[16px] h-[16px]" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-            </svg>
+            <ArrowRight size={14} />
           </a>
         </div>
       </Container>

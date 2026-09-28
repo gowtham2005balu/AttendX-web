@@ -407,11 +407,11 @@ const HRKnowledgeSections: React.FC = () => {
 
                 {/* button.knowledge-btn */}
                 <a
-                  href="/attendance-tracking"
+                  href="/contact-support"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>Explore Attendance Management</span>
-                  <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
+                  <span>Learn More</span>
+                  <ArrowRight size={14} />
                 </a>
               </div>
             </div>
@@ -504,11 +504,11 @@ const HRKnowledgeSections: React.FC = () => {
 
                 {/* button.knowledge-btn */}
                 <a
-                  href="/attendance-software"
+                  href="/contact-support"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>Explore Attendance Software</span>
-                  <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
+                  <span>Learn More</span>
+                  <ArrowRight size={14} />
                 </a>
               </div>
             </div>
@@ -604,11 +604,11 @@ const HRKnowledgeSections: React.FC = () => {
 
                 {/* button.knowledge-btn */}
                 <a
-                  href="/features/time-off-management"
+                  href="/contact-support"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>Explore Time-Off Management</span>
-                  <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
+                  <span>Learn More</span>
+                  <ArrowRight size={14} />
                 </a>
               </div>
             </div>
@@ -686,11 +686,11 @@ const HRKnowledgeSections: React.FC = () => {
 
                 {/* button.knowledge-btn */}
                 <a
-                  href="/employee-directory"
+                  href="/contact-support"
                   className="inline-flex flex-row justify-center items-center px-[26px] py-[13px] gap-[8px] h-[43px] bg-[#1A1A1A] hover:bg-[#333333] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] rounded-[50px] transition-all hover:scale-[1.02]"
                 >
-                  <span>Explore Employee Directory</span>
-                  <span className="w-[16px] h-[16px] flex items-center justify-center text-[14px]">→</span>
+                  <span>Learn More</span>
+                  <ArrowRight size={14} />
                 </a>
               </div>
             </div>
@@ -1307,7 +1307,7 @@ const HRIntegrationsSection: React.FC = () => {
           </p>
           <a href="/integrations" className="inline-flex items-center gap-1.5 pt-2 font-['Inter',sans-serif] font-bold text-[15px] text-[#5C5CFF] hover:underline">
             <span>Explore Integrations</span>
-            <span>→</span>
+            <ArrowRight size={14} />
           </a>
         </div>
       </div>

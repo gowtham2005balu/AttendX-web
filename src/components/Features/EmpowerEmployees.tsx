@@ -53,7 +53,7 @@ export const EmpowerEmployees: React.FC = () => {
             className="bg-black hover:bg-[#1A1A1A] text-white font-['Inter',sans-serif] font-semibold text-[14px] leading-[17px] px-[26px] py-[13px] rounded-[50px] transition-all duration-300 shadow-md inline-flex items-center gap-[8px] cursor-pointer min-h-[44px]"
           >
             Learn More
-            <ArrowRight className="w-4 h-4 text-white" />
+            <ArrowRight size={14} />
           </a>
         </div>
 
