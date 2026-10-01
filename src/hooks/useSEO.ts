@@ -5,301 +5,276 @@ interface SEOMeta {
   description: string;
 }
 
-/**
- * Maps a currentView (from getBaseView) + raw currentHash to the correct
- * SEO title & description, then imperatively syncs document.title and the
- * <meta name="description"> tag.
- */
 const SEO_MAP: Record<string, SEOMeta> = {
-  // ── Homepage ──────────────────────────────────────────────────────────────
-  home: {
-    title: 'Workzi | Attendance, Time-off & Workforce Management Platform',
-    description:
-      'Track attendance, manage Time-off, and run HR operations from one platform. Workzi gives employees, managers, and HR teams everything they need in one place. Book a demo today.',
+  // 1. Main website pages
+  '': {
+    title: 'Workzi – AI-Powered Workforce Management Software',
+    description: 'Simplify workforce management with Workzi. Manage employee attendance, shifts, tasks and workforce operations through one intelligent platform.'
+  },
+  'home': {
+    title: 'Workzi – AI-Powered Workforce Management Software',
+    description: 'Simplify workforce management with Workzi. Manage employee attendance, shifts, tasks and workforce operations through one intelligent platform.'
+  },
+  'features': {
+    title: 'Workforce Management Features | Workzi',
+    description: 'Explore Workzi features for attendance tracking, leave management, shift scheduling, task management, employee self-service and workforce visibility.'
+  },
+  'solutions': {
+    title: 'Workforce Management Solutions by Workzi',
+    description: 'Discover workforce management solutions from Workzi for HR teams, IT, sales, healthcare, retail, education and businesses across industries.'
+  },
+  'employee-app': {
+    title: 'Employee Workforce Management App | Workzi',
+    description: 'Give employees convenient access to attendance, schedules, leave requests and workplace updates with the Workzi employee app.'
+  },
+  'hr-manager': {
+    title: 'HR Management Software for HR Teams | Workzi',
+    description: 'Simplify HR operations with Workzi. Manage attendance, employee records, shifts and workforce activities from one centralized platform.'
+  },
+  'pricing': {
+    title: 'Workzi Pricing | Workforce Management Plans',
+    description: 'Explore Workzi pricing and workforce management plans for your business. Find the right solution for employee attendance, scheduling and HR operations.'
   },
 
-  // ── About Us & Legal ──────────────────────────────────────────────────────
-  'about-us': {
-    title: 'About Us | Building the Future of Workforce Management — Workzi',
-    description:
-      'We help modern teams simplify attendance, payroll, and people operations with one connected HRMS platform built from the ground up.',
-  },
-  'cookie-settings': {
-    title: 'Cookie Settings | Workzi',
-    description:
-      'Manage your cookie preferences and control how Workzi uses cookies and similar technologies.',
-  },
-  'terms-of-service': {
-    title: 'Terms of Service | Workzi',
-    description:
-      'The terms and conditions that govern your use of Workzi workforce management services and platform.',
-  },
-  'privacy-policy': {
-    title: 'Privacy Policy | Workzi',
-    description:
-      'How Workzi collects, uses, protects, and manages your information when you use our website and services.',
-  },
-
-  // ── Features ──────────────────────────────────────────────────────────────
-  features: {
-    title: 'Features | Workzi',
-    description:
-      'Explore all Workzi features — attendance tracking, Time-off management, shift scheduling, task management, and more for modern HR teams.',
+  // 2. Feature pages
+  'features/attendance-management': {
+    title: 'Employee Attendance Management Software | Workzi',
+    description: "Track employee attendance, monitor work hours and simplify attendance reporting with Workzi's workforce management software."
   },
   'attendance-management': {
-    title: 'Attendance Management Software | Workzi',
-    description:
-      'Track and manage employee attendance in real time with Workzi. Automated records, absence alerts, and powerful reporting in one platform.',
+    title: 'Attendance Tracking Software for Businesses | Workzi',
+    description: 'Manage employee attendance and work-hour records with Workzi. Improve workforce visibility and simplify everyday attendance tracking.'
   },
-  'Time-off-management': {
-    title: 'Time-off Management Software | Workzi',
-    description:
-      'Automate Time-off requests, approvals, and balances with Workzi Time-off Management. Give employees self-service Time-off tracking and HR full visibility.',
+  'features/time-off-management': {
+    title: 'Employee Leave Management Software | Workzi',
+    description: 'Simplify employee leave requests, approvals and time-off tracking with Workzi. Keep leave records organized and improve workforce planning.'
   },
-  'task-management': {
-    title: 'Task Management Software | Workzi',
-    description:
-      'Assign, track, and manage employee tasks in real time with Workzi Task Management. Keep teams aligned and productivity visible in one dashboard.',
+  'time-off-management': {
+    title: 'Leave Tracking and Approval Software | Workzi',
+    description: "Manage employee leave requests, approval workflows and time-off records with Workzi's streamlined workforce management platform."
   },
-  'employee-management': {
-    title: 'Employee Management Software | Workzi',
-    description:
-      'Centralize employee records, roles, and performance data with Workzi Employee Management. One system for your entire workforce.',
+  'features/shift-management': {
+    title: 'Employee Shift Scheduling Software | Workzi',
+    description: 'Plan employee shifts, organize work schedules and coordinate staffing with Workzi. Simplify shift management for teams and growing businesses.'
   },
   'shift-management': {
-    title: 'Shift Management Software | Workzi',
-    description:
-      'Plan, assign, and adjust employee shifts effortlessly with Workzi Shift Management. Reduce scheduling conflicts and no-shows.',
+    title: 'Workforce Scheduling and Shift Planning | Workzi',
+    description: 'Create and manage employee work schedules with Workzi. Improve staffing visibility and coordinate shifts across teams and departments.'
   },
-  'organization-management': {
-    title: 'Organization Management Software | Workzi',
-    description:
-      'Structure departments, teams, and reporting lines with Workzi Organization Management. Keep your org chart accurate and accessible.',
+  'features/task-management': {
+    title: 'Employee Task Management Software | Workzi',
+    description: 'Assign tasks, organize team responsibilities and track work progress with Workzi. Keep workforce activities visible and teams coordinated.'
+  },
+  'task-management': {
+    title: 'Team Task Tracking and Work Management | Workzi',
+    description: "Organize employee tasks, monitor progress and coordinate daily work with Workzi's workforce management platform."
+  },
+  'features/employee-self-service': {
+    title: 'Employee Self-Service Portal Software | Workzi',
+    description: "Help employees access work schedules, attendance information and leave requests through Workzi's employee self-service experience."
   },
   'employee-self-service': {
-    title: 'Employee Self Service Portal | Workzi',
-    description:
-      'Let employees manage attendance, Time-off, and personal details themselves with the Workzi Employee Self Service portal. Less admin, more autonomy.',
+    title: 'Employee Self-Service Software for HR | Workzi',
+    description: 'Simplify everyday employee requests with Workzi. Give your workforce convenient access to essential attendance and leave management functions.'
+  },
+  'features/organization-management': {
+    title: 'Employee and Organization Management Software | Workzi',
+    description: 'Organize employee information, teams and departments with Workzi. Keep workforce records structured and support efficient HR operations.'
+  },
+  'organization-management': {
+    title: 'Organization Structure and Employee Management | Workzi',
+    description: "Manage employee records, team structures and organizational information in one place with Workzi's workforce management platform."
+  },
+  'features/ai-assistant': {
+    title: 'AI Workforce Management Assistant | Workzi',
+    description: 'Explore AI-assisted workforce management with Workzi. Support everyday workforce operations and help teams access relevant work information.'
   },
   'ai-assistant': {
-    title: 'AI Assistant for HR Teams | Workzi',
-    description:
-      "Workzi's AI Assistant answers HR queries, surfaces attendance insights, and automates routine tasks so your HR team can focus on people.",
+    title: 'AI Assistant for Workforce Operations | Workzi',
+    description: "Discover how Workzi's AI-assisted capabilities can support workforce operations, improve access to information and simplify everyday tasks."
+  },
+  'features/security-access-control': {
+    title: 'Workforce Software Security and Access Control | Workzi',
+    description: 'Manage access to workforce information with Workzi. Explore access-control capabilities designed to support secure employee and HR operations.'
   },
   'security-access-control': {
-    title: 'Security & Access Control | Workzi',
-    description:
-      'Learn how Workzi protects your employee and organization data with enterprise-grade security, encryption, and granular access controls.',
+    title: 'Employee Access Control Software | Workzi',
+    description: "Support controlled access to workforce data and employee management functions with Workzi's workforce management platform."
+  },
+  'features/mobile-experience': {
+    title: 'Mobile Workforce Management Software | Workzi',
+    description: 'Access workforce management features on the go with Workzi. Support mobile access to attendance, schedules and essential employee information.'
   },
   'mobile-experience': {
-    title: 'Mobile Experience | Workzi',
-    description:
-      'Manage attendance, Time-off, and tasks on the go with the Workzi mobile experience — built for managers and employees alike.',
+    title: 'Mobile Employee Attendance and Scheduling | Workzi',
+    description: 'Make workforce information accessible on mobile with Workzi. Help employees and managers stay connected to schedules and attendance information.'
   },
-  integrations: {
-    title: 'Integrations | Workzi',
-    description:
-      'Connect Workzi with your existing HR tools and workflows. Explore available integrations to streamline your attendance management.',
+  'features/integrations': {
+    title: 'Workforce Management Software Integrations | Workzi',
+    description: 'Explore Workzi integrations for connected workforce operations. Simplify information sharing between your workforce platform and supported business tools.'
+  },
+  'integrations': {
+    title: 'Workzi Integrations for Business Workflows',
+    description: 'Discover supported Workzi integrations and ways to connect workforce management with your existing business systems and workflows.'
   },
 
-  // ── Why Workzi ───────────────────────────────────────────────────────────
-  'why-workzi': {
-    title: 'Why Choose Workzi | Smart Attendance Management',
-    description:
-      'See why growing businesses choose Workzi for attendance and HR management — automation, accuracy, and a platform built to scale with your team.',
+  // 3. Industry and department solution pages
+  'solutions/hr': {
+    title: 'Workforce Management Software for HR Teams | Workzi',
+    description: "Help HR teams manage employee attendance, leave, schedules and workforce records with Workzi's centralized workforce management platform."
   },
-  'workzi-vs-manual-hr': {
-    title: 'Workzi vs Manual HR | Compare & Switch',
-    description:
-      'Compare Workzi to manual HR processes. See how automated attendance, Time-off, and shift management save time and cut errors versus spreadsheets.',
+  'solutions/it': {
+    title: 'Workforce Management Solutions for IT Teams | Workzi',
+    description: 'Coordinate employee schedules, attendance and daily responsibilities with Workzi. Support workforce visibility for IT teams and technology businesses.'
   },
-  'workzi-vs-traditional-hrms': {
-    title: 'Workzi vs Traditional HRMS | Compare & Switch',
-    description:
-      'See how Workzi compares to traditional HRMS platforms — faster setup, modern UI, and features built for how growing teams actually work.',
+  'solutions/engineering': {
+    title: 'Workforce Management Software for Engineering Teams | Workzi',
+    description: "Coordinate engineering team schedules, attendance and work responsibilities with Workzi's workforce management tools."
+  },
+  'solutions/sales': {
+    title: 'Workforce Management Software for Sales Teams | Workzi',
+    description: "Organize sales team schedules, employee attendance and daily responsibilities with Workzi's workforce management platform."
+  },
+  'solutions/marketing': {
+    title: 'Workforce Management Software for Marketing Teams | Workzi',
+    description: "Coordinate marketing team schedules, attendance and employee responsibilities with Workzi's workforce management solution."
+  },
+  'solutions/customer-service': {
+    title: 'Workforce Management for Customer Service Teams | Workzi',
+    description: 'Coordinate customer service staffing, employee schedules and attendance with Workzi. Support better workforce visibility across service teams.'
+  },
+  'solutions/project-management': {
+    title: 'Workforce Management for Project Teams | Workzi',
+    description: "Coordinate project team schedules, assign workforce responsibilities and monitor daily activities with Workzi's workforce management platform."
+  },
+  'solutions/education': {
+    title: 'Workforce Management Software for Education | Workzi',
+    description: "Organize staff attendance, work schedules and workforce records for educational institutions with Workzi's workforce management platform."
+  },
+  'solutions/healthcare': {
+    title: 'Workforce Scheduling Software for Healthcare | Workzi',
+    description: 'Coordinate healthcare staff schedules, attendance and workforce availability with Workzi. Support organized staffing and day-to-day operations.'
+  },
+  'solutions/financial-services': {
+    title: 'Workforce Management for Financial Services | Workzi',
+    description: 'Manage employee schedules, attendance and workforce information with Workzi for financial services teams and business operations.'
+  },
+  'solutions/manufacturing-auto-energy': {
+    title: 'Workforce Management for Manufacturing and Energy | Workzi',
+    description: 'Coordinate employee attendance, shifts and workforce operations across manufacturing, automotive and energy businesses with Workzi.'
+  },
+  'solutions/retail': {
+    title: 'Retail Workforce Management and Shift Scheduling | Workzi',
+    description: 'Manage retail employee schedules, attendance and staffing coordination with Workzi. Organize workforce operations across retail teams.'
+  },
+  'solutions/technology': {
+    title: 'Workforce Management Software for Technology Companies | Workzi',
+    description: "Simplify employee scheduling, attendance tracking and workforce coordination for technology companies with Workzi's workforce management platform."
+  },
+  'solutions/media': {
+    title: 'Workforce Management for Media and Creative Teams | Workzi',
+    description: "Coordinate media and creative team schedules, attendance and workforce responsibilities with Workzi's workforce management tools."
+  },
+  'solutions/small-business': {
+    title: 'Workforce Management Software for Small Businesses | Workzi',
+    description: 'Simplify employee attendance, leave tracking and shift scheduling with Workzi. Manage everyday workforce operations as your small business grows.'
+  },
+
+  // 4. Business, comparison and trust pages
+  'why-attendx': {
+    title: 'Why Choose Workzi for Workforce Management?',
+    description: 'Discover how Workzi supports employee attendance, scheduling and workforce coordination through a centralized workforce management platform.'
+  },
+  'attendx-vs-manual-hr': {
+    title: 'Workforce Management Software vs Manual HR | Workzi',
+    description: 'Explore the differences between manual HR processes and workforce management software for attendance tracking, scheduling and employee records.'
+  },
+  'attendx-vs-traditional-hrms': {
+    title: 'Workforce Management Software vs Traditional HRMS | Workzi',
+    description: 'Compare workforce management tools with traditional HRMS platforms across attendance tracking, shift scheduling and everyday workforce operations.'
   },
   'for-enterprise': {
-    title: 'Workzi for Enterprise | Scalable Attendance Management',
-    description:
-      'Workzi scales with large, multi-location teams — advanced permissions, org-wide reporting, and enterprise-grade attendance management.',
+    title: 'Enterprise Workforce Management Software | Workzi',
+    description: 'Support workforce coordination across teams and departments with Workzi. Explore workforce management capabilities for enterprise operations.'
   },
   'for-small-business': {
-    title: 'Workzi for Small Business | Simple Attendance Management',
-    description:
-      'Workzi gives small businesses enterprise-level attendance and HR tools without the complexity — simple to set up, easy to run.',
+    title: 'Workzi for Small Business Workforce Management',
+    description: 'Manage employee attendance, schedules and everyday workforce operations with Workzi. Explore workforce management for growing small businesses.'
   },
-  'scale-with-workzi': {
-    title: 'Scale With Workzi | Attendance Management That Grows With You',
-    description:
-      'Discover how Workzi scales alongside your business — from small teams to enterprise, without changing platforms.',
+  'scale-with-attendx': {
+    title: 'Scalable Workforce Management Software | Workzi',
+    description: 'Support changing workforce needs with Workzi. Organize attendance, scheduling and employee operations as your business grows.'
   },
   'trust-and-security': {
-    title: 'Trust & Security | Workzi',
-    description:
-      'Learn how Workzi protects your employee and organization data with enterprise-grade security, encryption, and access controls.',
+    title: 'Workzi Security and Data Protection',
+    description: "Learn about Workzi's approach to workforce data protection, platform security and access management. Review the security measures available for your organization."
   },
 
-  // ── Solutions ─────────────────────────────────────────────────────────────
-  solutions: {
-    title: 'Solutions | Workzi',
-    description:
-      'Workzi offers tailored attendance management solutions for every industry — from education and healthcare to manufacturing and retail.',
+  // 5. Blog, help centre and support pages
+  'blog': {
+    title: 'Workzi Blog | HR, Attendance and Workforce Management',
+    description: 'Explore Workzi articles on employee attendance, shift scheduling, HR operations and workforce management strategies for modern businesses.'
   },
-  'education-solutions': {
-    title: 'Attendance Management for Education | Workzi',
-    description:
-      'Workzi helps schools and institutions track staff attendance, manage Time-off, and simplify HR operations built for the education sector.',
-  },
-  'hr-solutions': {
-    title: 'Attendance Management for HR Teams | Workzi',
-    description:
-      'Workzi gives HR teams a single platform to manage attendance, Time-off, shifts, and employee records — built to reduce manual HR work.',
-  },
-  'customer-service-solutions': {
-    title: 'Attendance Management for Customer Service Teams | Workzi',
-    description:
-      "Keep customer service shifts covered and staff accountable with Workzi's attendance and shift management built for support teams.",
-  },
-  'engineering-solutions': {
-    title: 'Attendance Management for Engineering Teams | Workzi',
-    description:
-      'Workzi helps engineering teams track attendance, tasks, and shifts across projects, keeping delivery timelines and headcount visible.',
-  },
-  'it-solutions': {
-    title: 'Attendance Management for IT Teams | Workzi',
-    description:
-      'Workzi helps IT teams manage on-call shifts, attendance, and task tracking in one platform built for fast-moving technical teams.',
-  },
-  'sales-solutions': {
-    title: 'Attendance Management for Sales Teams | Workzi',
-    description:
-      'Keep your sales team attendance and shift schedules on track with Workzi — built for field and office-based sales operations.',
-  },
-  'project-management-solutions': {
-    title: 'Attendance Management for Project Teams | Workzi',
-    description:
-      'Track team attendance alongside tasks and deadlines with Workzi — built for project managers who need visibility across people and work.',
-  },
-  'marketing-solutions': {
-    title: 'Attendance Management for Marketing Teams | Workzi',
-    description:
-      'Workzi helps marketing teams manage attendance, Time-off, and task tracking so campaigns stay on schedule and staffing stays visible.',
-  },
-  'manufacturing-auto-energy-solutions': {
-    title: 'Attendance Management for Manufacturing, Auto & Energy | Workzi',
-    description:
-      'Workzi supports shift-heavy industries like manufacturing, automotive, and energy with reliable attendance tracking and shift management.',
-  },
-  'technology-solutions': {
-    title: 'Attendance Management for Technology Companies | Workzi',
-    description:
-      'Workzi gives tech companies a modern attendance and HR platform built for fast-growing, distributed teams.',
-  },
-  'media-solutions': {
-    title: 'Attendance Management for Media Companies | Workzi',
-    description:
-      'Workzi helps media organizations manage attendance, shifts, and freelance staff across productions and newsrooms.',
-  },
-  'small-business-solutions': {
-    title: 'Attendance Management for Small Business | Workzi',
-    description:
-      'Workzi gives small businesses simple, affordable attendance and HR management without the complexity of enterprise HRMS tools.',
-  },
-  'financial-services-solutions': {
-    title: 'Attendance Management for Financial Services | Workzi',
-    description:
-      'Workzi helps financial services firms manage attendance, compliance-ready records, and staff scheduling in one secure platform.',
-  },
-  'retail-solutions': {
-    title: 'Attendance Management for Retail | Workzi',
-    description:
-      'Workzi helps retail businesses manage shift-based attendance, staffing, and Time-off across single or multiple store locations.',
-  },
-  'healthcare-solutions': {
-    title: 'Attendance Management for Health & Life Sciences | Workzi',
-    description:
-      'Workzi supports health and life sciences organizations with reliable attendance tracking for clinical, lab, and administrative staff.',
-  },
-
-  // ── Resources ─────────────────────────────────────────────────────────────
-  faq: {
-    title: 'FAQ | Workzi',
-    description:
-      "Find answers to common questions about Workzi's attendance management features, pricing, setup, and support.",
+  'blog-article': {
+    title: 'Workzi Blog | Workforce Management Insights',
+    description: 'Read practical insights from Workzi on workforce management, employee attendance, scheduling and HR operations.'
   },
   'help-center': {
-    title: 'Help Center | Workzi',
-    description:
-      'Get help using Workzi — guides, setup instructions, and troubleshooting for attendance, Time-off, and HR management features.',
+    title: 'Workzi Help Center | Product Guides and Support',
+    description: 'Find Workzi product guides and support resources to help you navigate workforce management features, attendance tracking and scheduling.'
   },
   'help-article': {
-    title: 'Help Center | Workzi',
-    description:
-      'Get help using Workzi — guides, setup instructions, and troubleshooting for attendance, Time-off, and HR management features.',
+    title: 'Workzi Help Guide | Product Support',
+    description: 'Find guidance on using Workzi features and managing everyday workforce operations with helpful product instructions.'
   },
   'contact-support': {
-    title: 'Contact Us | Workzi',
-    description:
-      'Get in touch with the Workzi team for product questions, demos, or support with your attendance management setup.',
+    title: 'Contact Workzi Support',
+    description: 'Need help with Workzi? Contact our support team for assistance with product questions, workforce management features and account-related issues.'
+  },
+  'faq': {
+    title: 'Workzi FAQs | Workforce Management Questions',
+    description: 'Find answers to frequently asked questions about Workzi, including workforce management features, employee attendance, scheduling and platform usage.'
   },
 
-  // ── Company ───────────────────────────────────────────────────────────────
-  careers: {
-    title: 'Careers at Workzi | Build the Future of HR Tech',
-    description:
-      'Join the team building modern workforce management software. Explore open roles at Workzi — remote-friendly, people-first, growing fast.',
+  // 6. About, careers and recruitment pages
+  'about-us': {
+    title: 'About Workzi | Workforce Management Platform',
+    description: 'Learn about Workzi and its approach to simplifying employee attendance, scheduling and workforce operations for modern businesses.'
+  },
+  'careers': {
+    title: 'Careers at Workzi | Explore Job Opportunities',
+    description: 'Explore career opportunities at Workzi and learn about joining a team focused on workforce management, technology and better workplace operations.'
   },
   'open-roles-page': {
-    title: 'Open Roles | Workzi Careers',
-    description:
-      'Browse all open positions at Workzi. Join a team building the future of attendance and HR management software.',
+    title: 'Open Positions at Workzi | Current Job Vacancies',
+    description: 'Explore current job openings at Workzi, review role requirements and discover opportunities to contribute to workforce management technology.'
   },
   'job-details': {
-    title: 'Job Details | Workzi Careers',
-    description:
-      'View role details and apply for a position at Workzi — building smart attendance management software for modern HR teams.',
+    title: 'Job Details and Requirements | Workzi Careers',
+    description: 'Review job responsibilities, qualifications and application details for opportunities at Workzi. Explore the role that matches your experience.'
   },
   'apply-page': {
-    title: 'Apply | Workzi Careers',
-    description: 'Submit your application to join the Workzi team.',
+    title: 'Apply for a Job at Workzi',
+    description: 'Submit your application for a Workzi career opportunity. Review the application requirements and share your details for consideration.'
   },
   'application-success': {
     title: 'Application Submitted | Workzi Careers',
-    description:
-      "Thank you for applying to Workzi! We'll review your application and be in touch soon.",
-  },
-  blog: {
-    title: 'Blog | Workzi',
-    description:
-      'Insights on attendance management, HR trends, and workforce best practices from the Workzi team.',
-  },
-  'blog-article': {
-    title: 'Blog | Workzi',
-    description:
-      'Insights on attendance management, HR trends, and workforce best practices from the Workzi team.',
+    description: 'Your job application has been submitted. Thank you for your interest in joining Workzi.'
   },
 
-  // ── Other standalone pages ────────────────────────────────────────────────
-  'employee-app': {
-    title: 'Employee App | Attendance, Time-off & Tasks — Workzi',
-    description:
-      "Check in, apply for Time-off, track tasks, and stay updated — all from your phone. See how Workzi's employee app makes your workday easier.",
+  // 7. Legal and privacy pages
+  'privacy-policy': {
+    title: 'Privacy Policy | Workzi',
+    description: 'Read the Workzi Privacy Policy to understand how personal information is collected, used, protected and handled when you use our services.'
   },
-  'hr-manager': {
-    title: 'HR & Manager Tools | Workforce Management Platform — Workzi',
-    description:
-      'Manage attendance, Time-off, employees, and reporting from one platform. Workzi gives HR teams and managers everything they need to run a growing team.',
+  'terms-of-service': {
+    title: 'Terms of Service | Workzi',
+    description: 'Review the Workzi Terms of Service, including the terms and conditions that apply when accessing and using the Workzi platform.'
   },
-  pricing: {
-    title: 'Pricing | Workzi',
-    description:
-      'Simple, transparent pricing for teams of all sizes. Get started with Workzi and scale as you grow.',
-  },
-  'education-2': {
-    title: 'Attendance Management for Education | Workzi',
-    description:
-      'Workzi helps schools and institutions track staff attendance, manage Time-off, and simplify HR operations built for the education sector.',
-  },
+  'cookie-settings': {
+    title: 'Cookie Settings and Policy | Workzi',
+    description: 'Learn about cookie preferences and how cookies are used on Workzi. Review the available settings for managing your cookie choices.'
+  }
 };
 
 function getMetaDescriptionTag(): HTMLMetaElement {
@@ -319,15 +294,18 @@ function getMetaDescriptionTag(): HTMLMetaElement {
  */
 export function useSEO(currentView: string, currentPath: string): void {
   useEffect(() => {
-    // Derive a lookup key: prefer raw path-based keys for pages that don't
-    // go through getBaseView (e.g. blog-article sub-paths).
+    // Derive a lookup key
     const pathKey = currentPath.replace(/^[#/]+/, '');
+    
+    // First try the exact path without leading slash, then fallback to currentView, then home
     const meta =
-      SEO_MAP[currentView] ??
       SEO_MAP[pathKey] ??
-      SEO_MAP['home'];
+      SEO_MAP[currentView] ??
+      SEO_MAP[''];
 
-    document.title = meta.title;
-    getMetaDescriptionTag().content = meta.description;
+    if (meta) {
+      document.title = meta.title;
+      getMetaDescriptionTag().content = meta.description;
+    }
   }, [currentView, currentPath]);
 }
