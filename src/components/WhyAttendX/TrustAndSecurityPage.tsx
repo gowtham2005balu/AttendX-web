@@ -16,7 +16,7 @@ export const TrustAndSecurityPage: React.FC = () => {
           <div className="flex items-center gap-[8px] font-['Inter',sans-serif] text-[13px] leading-[16px] text-[#6B7280]">
             <a href="/" className="hover:text-[#111827] transition-colors">Home</a>
             <span>/</span>
-            <a href="/why-attendx" className="hover:text-[#111827] transition-colors">Why Workzi</a>
+            <a href="/why-workzi" className="hover:text-[#111827] transition-colors">Why Workzi</a>
             <span>/</span>
             <span className="font-semibold text-[#111827]">Trust & Security</span>
           </div>

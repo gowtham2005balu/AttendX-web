@@ -163,6 +163,10 @@ const SEO_MAP: Record<string, SEOMeta> = {
     title: 'Workforce Management for Manufacturing and Energy | Workzi',
     description: 'Coordinate employee attendance, shifts and workforce operations across manufacturing, automotive and energy businesses with Workzi.'
   },
+  'solutions/manufacturing': {
+    title: 'Workforce Management for Manufacturing and Energy | Workzi',
+    description: 'Coordinate employee attendance, shifts and workforce operations across manufacturing, automotive and energy businesses with Workzi.'
+  },
   'solutions/retail': {
     title: 'Retail Workforce Management and Shift Scheduling | Workzi',
     description: 'Manage retail employee schedules, attendance and staffing coordination with Workzi. Organize workforce operations across retail teams.'
@@ -181,13 +185,25 @@ const SEO_MAP: Record<string, SEOMeta> = {
   },
 
   // 4. Business, comparison and trust pages
+  'why-workzi': {
+    title: 'Why Choose Workzi for Workforce Management?',
+    description: 'Discover how Workzi supports employee attendance, scheduling and workforce coordination through a centralized workforce management platform.'
+  },
   'why-attendx': {
     title: 'Why Choose Workzi for Workforce Management?',
     description: 'Discover how Workzi supports employee attendance, scheduling and workforce coordination through a centralized workforce management platform.'
   },
+  'workzi-vs-manual-hr': {
+    title: 'Workforce Management Software vs Manual HR | Workzi',
+    description: 'Explore the differences between manual HR processes and workforce management software for attendance tracking, scheduling and employee records.'
+  },
   'attendx-vs-manual-hr': {
     title: 'Workforce Management Software vs Manual HR | Workzi',
     description: 'Explore the differences between manual HR processes and workforce management software for attendance tracking, scheduling and employee records.'
+  },
+  'workzi-vs-traditional-hrms': {
+    title: 'Workforce Management Software vs Traditional HRMS | Workzi',
+    description: 'Compare workforce management tools with traditional HRMS platforms across attendance tracking, shift scheduling and everyday workforce operations.'
   },
   'attendx-vs-traditional-hrms': {
     title: 'Workforce Management Software vs Traditional HRMS | Workzi',
@@ -200,6 +216,10 @@ const SEO_MAP: Record<string, SEOMeta> = {
   'for-small-business': {
     title: 'Workzi for Small Business Workforce Management',
     description: 'Manage employee attendance, schedules and everyday workforce operations with Workzi. Explore workforce management for growing small businesses.'
+  },
+  'scale-with-workzi': {
+    title: 'Scalable Workforce Management Software | Workzi',
+    description: 'Support changing workforce needs with Workzi. Organize attendance, scheduling and employee operations as your business grows.'
   },
   'scale-with-attendx': {
     title: 'Scalable Workforce Management Software | Workzi',
@@ -277,35 +297,287 @@ const SEO_MAP: Record<string, SEOMeta> = {
   }
 };
 
-function getMetaDescriptionTag(): HTMLMetaElement {
-  let tag = document.querySelector<HTMLMetaElement>('meta[name="description"]');
+const CANONICAL_ALIASES: Record<string, string> = {
+  '': '/',
+  'home': '/',
+  'attendance-management': '/features/attendance-management',
+  'time-off-management': '/features/time-off-management',
+  'shift-management': '/features/shift-management',
+  'task-management': '/features/task-management',
+  'employee-self-service': '/features/employee-self-service',
+  'organization-management': '/features/organization-management',
+  'ai-assistant': '/features/ai-assistant',
+  'security-access-control': '/features/security-access-control',
+  'mobile-experience': '/features/mobile-experience',
+  'integrations': '/features/integrations',
+  'why-attendx': '/why-workzi',
+  'attendx-vs-manual-hr': '/workzi-vs-manual-hr',
+  'attendx-vs-traditional-hrms': '/workzi-vs-traditional-hrms',
+  'scale-with-attendx': '/scale-with-workzi',
+  'solutions/manufacturing': '/solutions/manufacturing-auto-energy',
+};
+
+function setMetaTag(attributeName: 'name' | 'property', key: string, content: string): void {
+  let tag = document.querySelector<HTMLMetaElement>(`meta[${attributeName}="${key}"]`);
   if (!tag) {
     tag = document.createElement('meta');
-    tag.name = 'description';
+    tag.setAttribute(attributeName, key);
     document.head.appendChild(tag);
   }
-  return tag;
+  tag.content = content;
+}
+
+function setCanonicalTag(url: string): void {
+  let link = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+  if (!link) {
+    link = document.createElement('link');
+    link.rel = 'canonical';
+    document.head.appendChild(link);
+  }
+  link.href = url;
+}
+
+function setStructuredDataTag(data: object): void {
+  let script = document.querySelector<HTMLScriptElement>('script#workzi-dynamic-seo');
+  if (!script) {
+    script = document.createElement('script');
+    script.id = 'workzi-dynamic-seo';
+    script.type = 'application/ld+json';
+    document.head.appendChild(script);
+  }
+  script.textContent = JSON.stringify(data);
+}
+
+function getBreadcrumbs(canonicalPath: string, title: string) {
+  const parts = canonicalPath.split('/').filter(Boolean);
+  if (parts.length === 0) return null;
+
+  const breadcrumbs: Array<{ '@type': string; position: number; name: string; item: string }> = [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://www.workzi.app/',
+    },
+  ];
+
+  if (parts[0] === 'features' && parts.length > 1) {
+    breadcrumbs.push({
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Features',
+      item: 'https://www.workzi.app/features',
+    });
+    breadcrumbs.push({
+      '@type': 'ListItem',
+      position: 3,
+      name: title.split('|')[0].replace('–', '-').trim(),
+      item: `https://www.workzi.app${canonicalPath}`,
+    });
+  } else if (parts[0] === 'solutions' && parts.length > 1) {
+    breadcrumbs.push({
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Solutions',
+      item: 'https://www.workzi.app/solutions',
+    });
+    breadcrumbs.push({
+      '@type': 'ListItem',
+      position: 3,
+      name: title.split('|')[0].replace('–', '-').trim(),
+      item: `https://www.workzi.app${canonicalPath}`,
+    });
+  } else if (['why-workzi', 'workzi-vs-manual-hr', 'workzi-vs-traditional-hrms', 'for-enterprise', 'for-small-business', 'scale-with-workzi', 'trust-and-security'].includes(parts[0])) {
+    breadcrumbs.push({
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Why Workzi',
+      item: 'https://www.workzi.app/why-workzi',
+    });
+    if (parts[0] !== 'why-workzi') {
+      breadcrumbs.push({
+        '@type': 'ListItem',
+        position: 3,
+        name: title.split('|')[0].replace('–', '-').trim(),
+        item: `https://www.workzi.app${canonicalPath}`,
+      });
+    }
+  } else if (['open-roles-page', 'job-details', 'apply-page'].includes(parts[0])) {
+    breadcrumbs.push({
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Careers',
+      item: 'https://www.workzi.app/careers',
+    });
+    breadcrumbs.push({
+      '@type': 'ListItem',
+      position: 3,
+      name: title.split('|')[0].replace('–', '-').trim(),
+      item: `https://www.workzi.app${canonicalPath}`,
+    });
+  } else if (parts[0] === 'blog-article') {
+    breadcrumbs.push({
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Blog',
+      item: 'https://www.workzi.app/blog',
+    });
+    breadcrumbs.push({
+      '@type': 'ListItem',
+      position: 3,
+      name: title.split('|')[0].replace('–', '-').trim(),
+      item: `https://www.workzi.app${canonicalPath}`,
+    });
+  } else {
+    breadcrumbs.push({
+      '@type': 'ListItem',
+      position: 2,
+      name: title.split('|')[0].replace('–', '-').trim(),
+      item: `https://www.workzi.app${canonicalPath}`,
+    });
+  }
+
+  return {
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbs,
+  };
 }
 
 /**
- * Call inside App (or any top-level component) with the resolved currentView
- * string and the raw currentPath. Updates document.title + meta description
- * on every navigation.
+ * Call inside App with currentView and raw currentPath.
+ * Synchronizes title, description, canonical link, Open Graph,
+ * Twitter Cards, robots directive, and JSON-LD structured data.
  */
 export function useSEO(currentView: string, currentPath: string): void {
   useEffect(() => {
-    // Derive a lookup key
+    // Derive lookup key
     const pathKey = currentPath.replace(/^[#/]+/, '');
     
-    // First try the exact path without leading slash, then fallback to currentView, then home
+    // First try exact path without leading slash, then fallback to currentView, then home
     const meta =
       SEO_MAP[pathKey] ??
       SEO_MAP[currentView] ??
       SEO_MAP[''];
 
-    if (meta) {
-      document.title = meta.title;
-      getMetaDescriptionTag().content = meta.description;
+    const isNotFound = currentView === 'not-found';
+    const resolvedTitle = isNotFound ? 'Page Not Found | Workzi' : meta.title;
+    const resolvedDesc = isNotFound ? 'The requested page could not be found on Workzi.' : meta.description;
+
+    // Update document title
+    document.title = resolvedTitle;
+
+    // Standard Meta Tags
+    setMetaTag('name', 'description', resolvedDesc);
+    setMetaTag('name', 'robots', isNotFound ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+    setMetaTag('name', 'author', 'Workzi');
+
+    // Canonical URL resolution
+    const canonicalPath = CANONICAL_ALIASES[pathKey] ?? (pathKey ? `/${pathKey}` : '/');
+    const canonicalUrl = `https://www.workzi.app${canonicalPath === '/' ? '/' : canonicalPath}`;
+    setCanonicalTag(canonicalUrl);
+
+    // Open Graph
+    const ogImage = 'https://www.workzi.app/hero.home.png';
+    setMetaTag('property', 'og:title', resolvedTitle);
+    setMetaTag('property', 'og:description', resolvedDesc);
+    setMetaTag('property', 'og:url', canonicalUrl);
+    setMetaTag('property', 'og:type', pathKey === 'blog-article' ? 'article' : 'website');
+    setMetaTag('property', 'og:site_name', 'Workzi');
+    setMetaTag('property', 'og:image', ogImage);
+    setMetaTag('property', 'og:locale', 'en_US');
+
+    // Twitter Card
+    setMetaTag('name', 'twitter:card', 'summary_large_image');
+    setMetaTag('name', 'twitter:site', '@workziapp');
+    setMetaTag('name', 'twitter:creator', '@workziapp');
+    setMetaTag('name', 'twitter:title', resolvedTitle);
+    setMetaTag('name', 'twitter:description', resolvedDesc);
+    setMetaTag('name', 'twitter:image', ogImage);
+
+    // Dynamic JSON-LD Structured Data
+    if (!isNotFound) {
+      const graphItems: object[] = [];
+
+      // WebPage node
+      graphItems.push({
+        '@type': 'WebPage',
+        '@id': `${canonicalUrl}#webpage`,
+        url: canonicalUrl,
+        name: resolvedTitle,
+        description: resolvedDesc,
+        isPartOf: {
+          '@type': 'WebSite',
+          '@id': 'https://www.workzi.app/#website',
+          name: 'Workzi',
+          url: 'https://www.workzi.app'
+        }
+      });
+
+      // Breadcrumbs
+      const breadcrumbData = getBreadcrumbs(canonicalPath, resolvedTitle);
+      if (breadcrumbData) {
+        graphItems.push(breadcrumbData);
+      }
+
+      // Route-specific schemas
+      if (canonicalPath.startsWith('/features')) {
+        graphItems.push({
+          '@type': 'SoftwareApplication',
+          '@id': `${canonicalUrl}#software`,
+          name: resolvedTitle.split('|')[0].trim(),
+          applicationCategory: 'BusinessApplication',
+          operatingSystem: 'Web, iOS, Android',
+          description: resolvedDesc,
+          provider: {
+            '@type': 'Organization',
+            name: 'Workzi',
+            url: 'https://www.workzi.app'
+          }
+        });
+      } else if (canonicalPath === '/faq') {
+        graphItems.push({
+          '@type': 'FAQPage',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'How does geolocation tracking work in Workzi?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Workzi utilizes secure mobile GPS to verify employee locations when clocking in or out. Geofenced boundaries can be configured by HR managers to restrict check-ins to specific office boundaries or remote sites.'
+              }
+            },
+            {
+              '@type': 'Question',
+              name: 'Can Workzi integrate with existing payroll software?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes. Workzi supports automated timesheet exports (CSV/Excel) and offers modern API integration endpoints that connect seamlessly with leading payroll platforms.'
+              }
+            },
+            {
+              '@type': 'Question',
+              name: 'Does the Workzi application work in offline mode?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes. Employees can log attendance or request time off offline. Data is stored locally and syncs automatically once connection is restored.'
+              }
+            },
+            {
+              '@type': 'Question',
+              name: 'Is employee data secure and compliant in Workzi?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Workzi uses AES-256 encryption at rest, TLS 1.3 in transit, and follows SOC 2 Type II and GDPR compliance standards.'
+              }
+            }
+          ]
+        });
+      }
+
+      setStructuredDataTag({
+        '@context': 'https://schema.org',
+        '@graph': graphItems
+      });
     }
   }, [currentView, currentPath]);
 }

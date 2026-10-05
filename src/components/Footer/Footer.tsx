@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
     { label: 'Sales', href: '/solutions/sales' },
     { label: 'Project Management', href: '/solutions/project-management' },
     { label: 'Marketing', href: '/solutions/marketing' },
-    { label: 'Manufacturing, Auto & Energy', href: '/solutions/manufacturing' },
+    { label: 'Manufacturing, Auto & Energy', href: '/solutions/manufacturing-auto-energy' },
     { label: 'Technology', href: '/solutions/technology' },
     { label: 'Media', href: '/solutions/media' },
     { label: 'Small Business', href: '/solutions/small-business' },

@@ -1,4 +1,21 @@
 {
+  "redirects": [
+    { "source": "/attendance-management", "destination": "/features/attendance-management", "permanent": true },
+    { "source": "/time-off-management", "destination": "/features/time-off-management", "permanent": true },
+    { "source": "/shift-management", "destination": "/features/shift-management", "permanent": true },
+    { "source": "/task-management", "destination": "/features/task-management", "permanent": true },
+    { "source": "/employee-self-service", "destination": "/features/employee-self-service", "permanent": true },
+    { "source": "/organization-management", "destination": "/features/organization-management", "permanent": true },
+    { "source": "/ai-assistant", "destination": "/features/ai-assistant", "permanent": true },
+    { "source": "/security-access-control", "destination": "/features/security-access-control", "permanent": true },
+    { "source": "/mobile-experience", "destination": "/features/mobile-experience", "permanent": true },
+    { "source": "/integrations", "destination": "/features/integrations", "permanent": true },
+    { "source": "/why-attendx", "destination": "/why-workzi", "permanent": true },
+    { "source": "/attendx-vs-manual-hr", "destination": "/workzi-vs-manual-hr", "permanent": true },
+    { "source": "/attendx-vs-traditional-hrms", "destination": "/workzi-vs-traditional-hrms", "permanent": true },
+    { "source": "/scale-with-attendx", "destination": "/scale-with-workzi", "permanent": true },
+    { "source": "/solutions/manufacturing", "destination": "/solutions/manufacturing-auto-energy", "permanent": true }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
