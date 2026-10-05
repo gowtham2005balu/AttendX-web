@@ -155,16 +155,38 @@ function App() {
   const [currentPath, setCurrentPath] = useState<string>(getCurrentPath());
 
   useEffect(() => {
-    // Initial cleanup: if loaded with hash (e.g. /#pricing, /#home) or /home, rewrite cleanly
+    // Initial cleanup: if loaded with hash or legacy paths, rewrite cleanly
     const rawHash = window.location.hash;
-    const rawPath = window.location.pathname;
+    const rawPath = window.location.pathname.replace(/\/+$/, '') || '/';
+
+    const LEGACY_PATH_MAP: Record<string, string> = {
+      '/home': '/',
+      '/attendance-management': '/features/attendance-management',
+      '/time-off-management': '/features/time-off-management',
+      '/shift-management': '/features/shift-management',
+      '/task-management': '/features/task-management',
+      '/employee-self-service': '/features/employee-self-service',
+      '/organization-management': '/features/organization-management',
+      '/ai-assistant': '/features/ai-assistant',
+      '/security-access-control': '/features/security-access-control',
+      '/mobile-experience': '/features/mobile-experience',
+      '/integrations': '/features/integrations',
+      '/why-attendx': '/why-workzi',
+      '/attendx-vs-manual-hr': '/workzi-vs-manual-hr',
+      '/attendx-vs-traditional-hrms': '/workzi-vs-traditional-hrms',
+      '/scale-with-attendx': '/scale-with-workzi',
+      '/solutions/manufacturing': '/solutions/manufacturing-auto-energy',
+    };
+
     if (rawHash && rawHash !== '#') {
       const cleanPath = normalizePath(rawHash);
-      window.history.replaceState(null, '', cleanPath);
-      setCurrentPath(cleanPath);
-    } else if (rawPath === '/home') {
-      window.history.replaceState(null, '', '/');
-      setCurrentPath('/');
+      const canonicalClean = LEGACY_PATH_MAP[cleanPath] ?? cleanPath;
+      window.history.replaceState(null, '', canonicalClean);
+      setCurrentPath(canonicalClean);
+    } else if (LEGACY_PATH_MAP[rawPath]) {
+      const canonicalTarget = LEGACY_PATH_MAP[rawPath];
+      window.history.replaceState(null, '', canonicalTarget);
+      setCurrentPath(canonicalTarget);
     }
     window.scrollTo(0, 0);
   }, []);

@@ -14,9 +14,9 @@ export const ForSmallBusinessPage: React.FC = () => {
       <div className="w-full bg-white border-b border-[#F1F1F1] pt-[68px]">
         <div className="w-full max-w-[1280px] mx-auto px-6 lg:px-8 h-[44px] flex items-center gap-[8px]">
           <div className="flex items-center gap-[8px] font-['Inter',sans-serif] text-[13px] leading-[16px] text-[#6B7280]">
-            <a href="/contact-support" className="hover:text-[#111827] transition-colors">Home</a>
+            <a href="/" className="hover:text-[#111827] transition-colors">Home</a>
             <span>/</span>
-            <a href="/why-attendx" className="hover:text-[#111827] transition-colors">Why Workzi</a>
+            <a href="/why-workzi" className="hover:text-[#111827] transition-colors">Why Workzi</a>
             <span>/</span>
             <span className="font-semibold text-[#111827]">For Small Business</span>
           </div>
