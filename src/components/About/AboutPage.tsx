@@ -13,15 +13,14 @@ import {
   Target,
   Play,
   Plus,
-  Minus,
   Globe,
   Award,
   Star,
   Eye,
   Compass,
-  Building,
-  Shield,
-  Smile,
+  Cpu,
+  Palette,
+  Lightbulb,
 } from 'lucide-react';
 
 /* ─── FadeUp Helper ─── */
@@ -42,7 +41,7 @@ const FadeUp: React.FC<{ children: React.ReactNode; delay?: number; className?: 
 );
 
 /* ────────────────────────────────────────────────────────────
-   SECTION 1 — HERO
+   SECTION 1 — HERO ("OUR STORY")
 ──────────────────────────────────────────────────────────── */
 const AboutHero: React.FC = () => {
   return (
@@ -69,26 +68,31 @@ const AboutHero: React.FC = () => {
             </div>
 
             {/* H1 Heading */}
-            <h1 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[36px] sm:text-[46px] lg:text-[55px] leading-[1.15] lg:leading-[66px] tracking-[-1.04px] text-[#111827] mb-6">
-              Building the <span className="text-[#5C5CFF]">future</span> of workforce management.
+            <h1 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[36px] sm:text-[46px] lg:text-[54px] leading-[1.15] lg:leading-[64px] tracking-[-1.04px] text-[#111827] mb-6">
+              Building a <span className="text-[#5C5CFF]">smarter future</span> for workforce management.
             </h1>
 
-            {/* Subtitle */}
-            <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[18px] leading-[28px] sm:leading-[32px] text-[#4C525D] max-w-[520px] mb-8">
-              We help modern teams simplify attendance, payroll, and people operations with one connected HRMS platform — built from the ground up for the way work works today.
-            </p>
+            {/* Subtitle / Paragraphs */}
+            <div className="space-y-4 max-w-[540px] mb-8 font-['Inter',sans-serif] text-[16px] sm:text-[17px] leading-[28px] sm:leading-[30px] text-[#4C525D]">
+              <p>
+                Workzi is an AI-powered workforce management platform built to make the way organisations manage work simpler, smarter, and more connected.
+              </p>
+              <p>
+                We bring workforce operations, intelligent insights, and people-focused experiences together in one platform — helping modern teams reduce complexity and work with greater clarity.
+              </p>
+            </div>
 
             {/* CTAs */}
             <div className="flex flex-wrap items-center gap-4 w-full">
               <a
-                href="/contact-support"
-                className="bg-[#5C5CFF] hover:bg-[#4F46E5] text-white font-['Inter',sans-serif] font-bold text-[16px] leading-[26px] px-[28px] py-[14px] rounded-[12px] transition-all duration-200 cursor-pointer inline-flex items-center justify-center gap-2 hover:scale-[1.02]"
+                href="/pricing"
+                className="bg-[#5C5CFF] hover:bg-[#4F46E5] text-white font-['Inter',sans-serif] font-bold text-[16px] leading-[26px] px-[28px] py-[14px] rounded-[12px] transition-all duration-200 cursor-pointer inline-flex items-center justify-center gap-2 hover:scale-[1.02] shadow-sm"
               >
-                <span>Book Demo</span>
+                <span>Explore Workzi</span>
                 <ArrowRight size={18} />
               </a>
               <a
-                href="/pricing"
+                href="#who-we-are"
                 className="bg-white hover:bg-slate-50 border border-[#E5E7EB] text-[#111827] font-['Inter',sans-serif] font-semibold text-[16px] leading-[26px] px-[28px] py-[14px] rounded-[12px] transition-all duration-200 cursor-pointer inline-flex items-center justify-center hover:scale-[1.02]"
               >
                 Explore Platform
@@ -96,88 +100,19 @@ const AboutHero: React.FC = () => {
             </div>
           </div>
 
-          {/* RIGHT COLUMN — Radar & Floating Cards Graphic */}
+          {/* RIGHT COLUMN — Visual Image */}
           <div className="relative w-full lg:w-[600px] flex justify-center lg:justify-end shrink-0 py-8 lg:py-0">
-            {/* Main Dark Visual Box */}
-            <div className="relative w-full max-w-[520px] h-[380px] sm:h-[420px] rounded-[24px] overflow-hidden flex items-center justify-center isolation-isolate select-none"
-              style={{
-                background: 'linear-gradient(155.74deg, #1A1A3E 0%, #2D2D6B 50%, #3D3A9C 100%)',
-              }}
+            {/* Main Visual Box with Unsplash Image */}
+            <div
+              className="relative w-full max-w-[520px] h-[380px] sm:h-[440px] rounded-[16px] overflow-hidden shadow-2xl border border-slate-200/90 group"
             >
-              {/* Concentric Outer Circle */}
-              <div className="absolute w-[280px] h-[280px] rounded-full border border-white/10 pointer-events-none" />
-              {/* Concentric Inner Circle */}
-              <div className="absolute w-[180px] h-[180px] rounded-full border border-white/15 pointer-events-none" />
-
-              {/* Center Target Mark */}
-              <div className="relative w-[80px] h-[80px] rounded-full bg-white/12 backdrop-blur-md flex items-center justify-center z-10 border border-white/20">
-                <Target size={32} className="text-white/90" />
-              </div>
-
-              {/* Top-Left Team Badges */}
-              <div className="absolute top-[23px] left-[23px] flex flex-col gap-1.5 z-20">
-                <div className="w-[44px] h-[44px] rounded-[12px] bg-white/15 backdrop-blur-md flex items-center justify-center text-white font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[14px]">
-                  AJ
-                </div>
-                <div className="w-[44px] h-[44px] rounded-[12px] bg-[#F59E0B]/30 flex items-center justify-center text-white font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[14px]">
-                  SC
-                </div>
-              </div>
-
-              {/* Bottom-Right Team Badges */}
-              <div className="absolute bottom-[26px] right-[26px] flex items-center gap-1.5 z-20">
-                <div className="w-[44px] h-[44px] rounded-[12px] bg-[#10B981]/25 flex items-center justify-center text-white font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[14px]">
-                  MP
-                </div>
-                <div className="w-[44px] h-[44px] rounded-[12px] bg-white/12 flex items-center justify-center text-white font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[14px]">
-                  RK
-                </div>
-                <div className="w-[44px] h-[44px] rounded-[12px] bg-[#5B5FFF]/30 flex items-center justify-center text-white font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[14px]">
-                  LT
-                </div>
-              </div>
+              {/* Unsplash Image — Modern collaborative workforce */}
+              <img
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
+                alt="Modern team collaborating on workforce management and intelligent operations"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+              />
             </div>
-
-            {/* Floating Stat Card 1 — Bottom Left Overlap */}
-            <motion.div
-              initial={{ opacity: 0, x: -30, y: 20 }}
-              animate={{ opacity: 1, x: 0, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="absolute left-0 sm:left-[10px] bottom-0 sm:-bottom-[20px] bg-white rounded-[20px] p-4 sm:p-[18px_22px] flex items-center gap-[14px] border border-slate-200 z-30 min-w-[210px] sm:min-w-[233px]"
-            >
-              <div className="w-[44px] h-[44px] rounded-[12px] bg-[#DCFCE7] flex items-center justify-center text-[#10B981] shrink-0">
-                <Check size={22} strokeWidth={2.5} />
-              </div>
-              <div className="flex flex-col gap-0.5">
-                <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[20px] leading-[20px] text-[#111827]">
-                  10k+
-                </span>
-                <span className="font-['Inter',sans-serif] font-normal text-[12px] leading-[19px] text-[#6B7280]">
-                  Companies Onboarded
-                </span>
-              </div>
-            </motion.div>
-
-            {/* Floating Stat Card 2 — Top Right Overlap */}
-            <motion.div
-              initial={{ opacity: 0, x: 30, y: -20 }}
-              animate={{ opacity: 1, x: 0, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="absolute right-0 sm:right-[10px] top-0 sm:-top-[20px] bg-white rounded-[20px] p-4 sm:p-[18px_22px] flex items-center gap-[14px] border border-slate-200 z-30 min-w-[180px] sm:min-w-[194px]"
-            >
-              <div className="w-[44px] h-[44px] rounded-[12px] bg-[#EDEDFF] flex items-center justify-center text-[#5B5FFF] shrink-0">
-                <Clock size={22} strokeWidth={2} />
-              </div>
-              <div className="flex flex-col gap-0.5">
-                <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[20px] leading-[20px] text-[#111827]">
-                  99.9%
-                </span>
-                <span className="font-['Inter',sans-serif] font-normal text-[12px] leading-[19px] text-[#6B7280]">
-                  Platform Uptime
-                </span>
-              </div>
-            </motion.div>
-
           </div>
 
         </div>
@@ -220,11 +155,11 @@ const AboutLogos: React.FC = () => {
 };
 
 /* ────────────────────────────────────────────────────────────
-   SECTION 3 — STORY ("Who We Are")
+   SECTION 3 — WHO WE ARE
 ──────────────────────────────────────────────────────────── */
 const AboutStory: React.FC = () => {
   return (
-    <section className="py-[80px] lg:py-[120px] bg-white">
+    <section id="who-we-are" className="py-[80px] lg:py-[120px] bg-white">
       <Container className="max-w-[1280px] mx-auto px-4 sm:px-8 flex flex-col items-center">
 
         {/* Eyebrow */}
@@ -238,29 +173,29 @@ const AboutStory: React.FC = () => {
 
         {/* H2 Title */}
         <FadeUp delay={0.1} className="text-center max-w-[680px] mb-6">
-          <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[34px] sm:text-[46px] lg:text-[55px] leading-[1.15] lg:leading-[66px] tracking-[-1px] text-[#111827]">
-            We started with a simple conviction.
+          <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[34px] sm:text-[46px] lg:text-[52px] leading-[1.15] lg:leading-[62px] tracking-[-1px] text-[#111827]">
+            We believe work should work better.
           </h2>
         </FadeUp>
 
         {/* Lead Subtitle */}
-        <FadeUp delay={0.15} className="text-center max-w-[580px] mb-14">
+        <FadeUp delay={0.15} className="text-center max-w-[640px] mb-12">
           <p className="font-['Inter',sans-serif] font-normal text-[17px] sm:text-[19px] leading-[30px] sm:leading-[33px] text-[#6B7280]">
-            HR operations should feel effortless, human, and intelligent — not a maze of spreadsheets and disconnected tools.
+            Workforce management shouldn’t be complicated by disconnected processes, scattered information, and unnecessary administrative effort.
           </p>
         </FadeUp>
 
         {/* Story Body Paragraphs */}
-        <div className="max-w-[680px] w-full flex flex-col items-start gap-7 text-[#6B7280] font-['Inter',sans-serif] text-[16px] sm:text-[17px] leading-[29px] sm:leading-[31px]">
+        <div className="max-w-[680px] w-full flex flex-col items-start gap-6 text-[#6B7280] font-['Inter',sans-serif] text-[16px] sm:text-[17px] leading-[29px] sm:leading-[31px]">
           <FadeUp delay={0.2}>
             <p>
-              In 2019, our founders were running operations at a fast-growing startup when they realized how much time HR teams were losing to manual attendance reconciliation, fragmented Time-off systems, and payroll errors. The tools available were either too rigid for modern teams or too complex to actually use.
+              Workzi was created in 2026 with a clear vision: to bring AI, workforce operations, and people-focused technology together in one intelligent platform.
             </p>
           </FadeUp>
 
           <FadeUp delay={0.25}>
             <p>
-              They set out to build something different. Something that understood how people actually work — across time zones, in hybrid environments, with distributed teams spanning continents. Workzi was born from that frustration and that ambition.
+              We’re building Workzi to help organisations simplify the way they manage their workforce, gain better visibility into operations, and create a more connected work experience.
             </p>
           </FadeUp>
 
@@ -268,43 +203,19 @@ const AboutStory: React.FC = () => {
           <FadeUp delay={0.3} className="my-2">
             <div className="w-[64px] h-[3px] rounded-full bg-gradient-to-r from-[#5B5FFF] to-[#5B5FFF]/20" />
           </FadeUp>
-
-          <FadeUp delay={0.35}>
-            <p>
-              Today, Workzi powers workforce operations for more than 10,000 companies across 60+ countries. Our platform handles everything from real-time attendance tracking and geo-fenced check-ins to complex payroll processing and AI-powered workforce analytics — all in one connected system.
-            </p>
-          </FadeUp>
-
-          <FadeUp delay={0.4}>
-            <p>
-              We are a team of 240+ builders, designers, and people operations experts who believe that when HR works better, everything works better. We obsess over the details of the employee experience so that HR teams can focus on what they do best: taking care of their people.
-            </p>
-          </FadeUp>
         </div>
 
-        {/* Pull Quote Section */}
-        <FadeUp delay={0.45} className="w-full max-w-[680px] mt-16 pt-12 border-t border-slate-100 flex flex-col items-center text-center gap-6">
-          <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[90px] sm:text-[100px] leading-[60px] text-[#5B5FFF] opacity-20 select-none">
+        {/* Pull Quote / Philosophy Box */}
+        <FadeUp delay={0.35} className="w-full max-w-[720px] mt-12 pt-10 border-t border-slate-100 flex flex-col items-center text-center gap-5">
+          <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[80px] sm:text-[90px] leading-[50px] text-[#5B5FFF] opacity-20 select-none">
             “
           </span>
-          <p className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[26px] sm:text-[34px] lg:text-[38px] leading-[36px] sm:leading-[48px] tracking-[-0.76px] text-[#111827] max-w-[640px]">
-            HR operations should feel effortless, human, and intelligent.
+          <p className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[24px] sm:text-[30px] lg:text-[34px] leading-[34px] sm:leading-[44px] tracking-[-0.76px] text-[#111827] max-w-[640px]">
+            Workforce management should be smarter, simpler, and more human.
           </p>
-
-          {/* Author */}
-          <div className="flex items-center gap-3.5 pt-2">
-            <div className="w-[52px] h-[52px] rounded-[14px] bg-gradient-to-br from-[#5B5FFF] to-[#818CF8] flex items-center justify-center text-white font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[18px] shrink-0">
-              KR
-            </div>
-            <div className="flex flex-col items-start text-left">
-              <span className="font-['Inter',sans-serif] font-semibold text-[15px] leading-[24px] text-[#111827]">
-                Harini Thyagarajan
-              </span>
-              <span className="font-['Inter',sans-serif] font-normal text-[13px] leading-[21px] text-[#6B7280]">
-                Co-Founder &amp; CEO, Workzi
-              </span>
-            </div>
-          </div>
+          <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[16px] leading-[26px] text-[#6B7280] max-w-[580px]">
+            Workzi brings intelligent technology and workforce operations together to help organisations manage work with greater clarity and confidence.
+          </p>
         </FadeUp>
 
       </Container>
@@ -314,111 +225,113 @@ const AboutStory: React.FC = () => {
 
 /* ────────────────────────────────────────────────────────────
    SECTION 4 — FEATURED CUSTOMER STORY (Nexatech)
-──────────────────────────────────────────────────────────── */
-const AboutFeaturedCustomer: React.FC = () => {
-  return (
-    <section className="py-[60px] lg:py-[90px] bg-white">
-      <Container className="max-w-[1280px] mx-auto px-4 sm:px-8">
-        <FadeUp>
-          <div className="w-full rounded-[32px] overflow-hidden grid grid-cols-1 lg:grid-cols-2 border border-slate-200">
+──────────────────────────────────────────────────── */
+// const AboutFeaturedCustomer: React.FC = () => {
+//   return (
+//     <section className="py-[60px] lg:py-[90px] bg-white">
+//       <Container className="max-w-[1280px] mx-auto px-4 sm:px-8">
+//         <FadeUp>
+//           <div className="w-full rounded-[32px] overflow-hidden grid grid-cols-1 lg:grid-cols-2 border border-slate-200">
 
-            {/* LEFT DARK BLOCK */}
-            <div className="p-8 sm:p-12 lg:p-[72px_64px] flex flex-col justify-between items-start gap-10 relative overflow-hidden"
-              style={{
-                background: 'linear-gradient(160.52deg, #1E1B4B 0%, #312E81 50%, #4338CA 100%)',
-              }}
-            >
-              {/* Subtle background radial glow */}
-              <div className="absolute top-[-120px] right-[-120px] w-[400px] h-[400px] rounded-full bg-white/5 pointer-events-none" />
+//             {/* LEFT DARK BLOCK */}
+//             <div
+//               className="p-8 sm:p-12 lg:p-[72px_64px] flex flex-col justify-between items-start gap-10 relative overflow-hidden"
+//               style={{
+//                 background: 'linear-gradient(160.52deg, #1E1B4B 0%, #312E81 50%, #4338CA 100%)',
+//               }}
+//             >
+//               {/* Subtle background radial glow */}
+//               <div className="absolute top-[-120px] right-[-120px] w-[400px] h-[400px] rounded-full bg-white/5 pointer-events-none" />
 
-              <div className="flex flex-col items-start gap-5 max-w-[528px]">
-                <span className="font-['Inter',sans-serif] font-bold text-[12px] leading-[19px] tracking-[0.96px] uppercase text-white/50">
-                  FEATURED CUSTOMER STORY
-                </span>
+//               <div className="flex flex-col items-start gap-5 max-w-[528px]">
+//                 <span className="font-['Inter',sans-serif] font-bold text-[12px] leading-[19px] tracking-[0.96px] uppercase text-white/50">
+//                   FEATURED CUSTOMER STORY
+//                 </span>
 
-                <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[28px] sm:text-[36px] lg:text-[42px] leading-[36px] sm:leading-[44px] lg:leading-[48px] text-white">
-                  How Nexatech transformed HR operations across 12 global offices.
-                </h3>
+//                 <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[28px] sm:text-[36px] lg:text-[42px] leading-[36px] sm:leading-[44px] lg:leading-[48px] text-white">
+//                   How Nexatech transformed HR operations across 12 global offices.
+//                 </h3>
 
-                <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[16px] leading-[26px] sm:leading-[28px] text-white/70">
-                  When Nexatech needed to unify attendance and payroll across three continents, Workzi became their single source of truth for all people operations.
-                </p>
-              </div>
+//                 <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[16px] leading-[26px] sm:leading-[28px] text-white/70">
+//                   When Nexatech needed to unify attendance and payroll across three continents, Workzi became their single source of truth for all people operations.
+//                 </p>
+//               </div>
 
-              {/* Metrics Row */}
-              <div className="grid grid-cols-3 gap-4 sm:gap-8 w-full pt-4 border-t border-white/10">
-                <div className="flex flex-col gap-1">
-                  <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[28px] sm:text-[36px] leading-none text-white">
-                    70%
-                  </span>
-                  <span className="font-['Inter',sans-serif] font-normal text-[12px] sm:text-[13px] leading-[21px] text-white/55">
-                    Faster approvals
-                  </span>
-                </div>
+//               {/* Metrics Row */}
+//               <div className="grid grid-cols-3 gap-4 sm:gap-8 w-full pt-4 border-t border-white/10">
+//                 <div className="flex flex-col gap-1">
+//                   <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[28px] sm:text-[36px] leading-none text-white">
+//                     70%
+//                   </span>
+//                   <span className="font-['Inter',sans-serif] font-normal text-[12px] sm:text-[13px] leading-[21px] text-white/55">
+//                     Faster approvals
+//                   </span>
+//                 </div>
 
-                <div className="flex flex-col gap-1">
-                  <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[28px] sm:text-[36px] leading-none text-white">
-                    3x
-                  </span>
-                  <span className="font-['Inter',sans-serif] font-normal text-[12px] sm:text-[13px] leading-[21px] text-white/55">
-                    Productivity gain
-                  </span>
-                </div>
+//                 <div className="flex flex-col gap-1">
+//                   <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[28px] sm:text-[36px] leading-none text-white">
+//                     3x
+//                   </span>
+//                   <span className="font-['Inter',sans-serif] font-normal text-[12px] sm:text-[13px] leading-[21px] text-white/55">
+//                     Productivity gain
+//                   </span>
+//                 </div>
 
-                <div className="flex flex-col gap-1">
-                  <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[28px] sm:text-[36px] leading-none text-white">
-                    40%
-                  </span>
-                  <span className="font-['Inter',sans-serif] font-normal text-[12px] sm:text-[13px] leading-[21px] text-white/55">
-                    Payroll reduction
-                  </span>
-                </div>
-              </div>
-            </div>
+//                 <div className="flex flex-col gap-1">
+//                   <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[28px] sm:text-[36px] leading-none text-white">
+//                     40%
+//                   </span>
+//                   <span className="font-['Inter',sans-serif] font-normal text-[12px] sm:text-[13px] leading-[21px] text-white/55">
+//                     Admin reduction
+//                   </span>
+//                 </div>
+//               </div>
+//             </div>
 
-            {/* RIGHT LIGHT BLOCK WITH PLAY BUTTON & OVERLAY CARD */}
-            <div className="relative min-h-[360px] lg:min-h-[520px] p-8 flex items-center justify-center overflow-hidden"
-              style={{
-                background: 'linear-gradient(160.52deg, #E0E7FF 0%, #C7D2FE 50%, #DDD6FE 100%)',
-              }}
-            >
-              {/* Play Button */}
-              <div className="w-[72px] h-[72px] rounded-full bg-white/95 border border-white flex items-center justify-center text-[#5B5FFF] cursor-pointer hover:scale-105 transition-transform duration-300 z-10">
-                <Play size={28} className="fill-[#5B5FFF] ml-1" />
-              </div>
+//             {/* RIGHT LIGHT BLOCK WITH PLAY BUTTON & OVERLAY CARD */}
+//             <div
+//               className="relative min-h-[360px] lg:min-h-[520px] p-8 flex items-center justify-center overflow-hidden"
+//               style={{
+//                 background: 'linear-gradient(160.52deg, #E0E7FF 0%, #C7D2FE 50%, #DDD6FE 100%)',
+//               }}
+//             >
+//               {/* Play Button */}
+//               <div className="w-[72px] h-[72px] rounded-full bg-white/95 border border-white flex items-center justify-center text-[#5B5FFF] cursor-pointer hover:scale-105 transition-transform duration-300 z-10 shadow-md">
+//                 <Play size={28} className="fill-[#5B5FFF] ml-1" />
+//               </div>
 
-              {/* Impact Summary Floating Card */}
-              <div className="absolute bottom-6 right-6 bg-white rounded-[18px] p-5 border border-slate-200 flex flex-col gap-2 min-w-[220px] sm:min-w-[234px] z-20">
-                <span className="font-['Inter',sans-serif] font-bold text-[12px] leading-[19px] tracking-[0.48px] text-[#6B7280]">
-                  Impact Summary
-                </span>
+//               {/* Impact Summary Floating Card */}
+//               <div className="absolute bottom-6 right-6 bg-white rounded-[18px] p-5 border border-slate-200 flex flex-col gap-2 min-w-[220px] sm:min-w-[234px] z-20 shadow-md">
+//                 <span className="font-['Inter',sans-serif] font-bold text-[12px] leading-[19px] tracking-[0.48px] text-[#6B7280]">
+//                   Impact Summary
+//                 </span>
 
-                <div className="flex items-center gap-2 text-[13px] font-['Inter',sans-serif] font-semibold text-[#111827]">
-                  <span className="w-2 h-2 rounded-full bg-[#10B981] shrink-0" />
-                  <span>Time-off approvals automated</span>
-                </div>
+//                 <div className="flex items-center gap-2 text-[13px] font-['Inter',sans-serif] font-semibold text-[#111827]">
+//                   <span className="w-2 h-2 rounded-full bg-[#10B981] shrink-0" />
+//                   <span>Approvals automated</span>
+//                 </div>
 
-                <div className="flex items-center gap-2 text-[13px] font-['Inter',sans-serif] font-semibold text-[#111827]">
-                  <span className="w-2 h-2 rounded-full bg-[#F59E0B] shrink-0" />
-                  <span>Payroll errors eliminated</span>
-                </div>
+//                 <div className="flex items-center gap-2 text-[13px] font-['Inter',sans-serif] font-semibold text-[#111827]">
+//                   <span className="w-2 h-2 rounded-full bg-[#F59E0B] shrink-0" />
+//                   <span>Manual friction eliminated</span>
+//                 </div>
 
-                <div className="flex items-center gap-2 text-[13px] font-['Inter',sans-serif] font-semibold text-[#111827]">
-                  <span className="w-2 h-2 rounded-full bg-[#5B5FFF] shrink-0" />
-                  <span>12 offices unified</span>
-                </div>
-              </div>
-            </div>
+//                 <div className="flex items-center gap-2 text-[13px] font-['Inter',sans-serif] font-semibold text-[#111827]">
+//                   <span className="w-2 h-2 rounded-full bg-[#5B5FFF] shrink-0" />
+//                   <span>12 offices unified</span>
+//                 </div>
+//               </div>
+//             </div>
 
-          </div>
-        </FadeUp>
-      </Container>
-    </section>
-  );
-};
+//           </div>
+//         </FadeUp>
+//       </Container>
+//     </section>
+//   );
+// };
 
 /* ────────────────────────────────────────────────────────────
-   SECTION 5 — WHAT WE STAND FOR (Accordion & Visual)
+   SECTION 5 — WHAT WE STAND FOR
 ──────────────────────────────────────────────────────────── */
 const AboutValuesAccordion: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number>(0);
@@ -428,38 +341,50 @@ const AboutValuesAccordion: React.FC = () => {
       id: 0,
       title: 'Innovation',
       icon: <Compass size={18} className="text-[#5B5FFF]" />,
-      desc: "We build for how work evolves, not how it used to be. Our teams ship thoughtfully and quickly — always asking what's possible, not just what's precedented. Innovation is not a department; it's a mindset woven into everything we do.",
+      desc: 'We look beyond traditional approaches to workforce management. We use AI, technology, and thoughtful design to create smarter ways for organisations to manage work and people.',
+      image: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80',
+      tag: 'Thoughtful Design & AI',
     },
     {
       id: 1,
       title: 'Transparency',
       icon: <Eye size={18} className="text-[#6B7280]" />,
-      desc: 'We communicate openly internally and externally. Clear pricing, upfront roadmaps, and honest feedback build long-term trust with our customers and partners.',
+      desc: 'We believe workforce management should be clear and easy to understand. We focus on making information, processes, and insights accessible so teams can make informed decisions with confidence.',
+      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80',
+      tag: 'Open & Accessible Insights',
     },
     {
       id: 2,
       title: 'Ownership',
       icon: <Star size={18} className="text-[#6B7280]" />,
-      desc: 'Every team member has the autonomy and responsibility to take initiatives from idea to execution with pride, craftsmanship, and accountability.',
+      desc: 'We take responsibility for what we build and how it serves the people who use it. We approach every challenge with accountability, initiative, and a commitment to meaningful outcomes.',
+      image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80',
+      tag: 'Accountability & Initiative',
     },
     {
       id: 3,
       title: 'Empathy',
       icon: <Heart size={18} className="text-[#6B7280]" />,
-      desc: 'We design with genuine care for HR managers and employees alike, understanding their daily friction, respecting their time, and celebrating their wins.',
+      desc: 'We design around real workplace needs. By understanding the experiences of employees, managers, and HR teams, we create solutions that are practical, intuitive, and people-focused.',
+      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80',
+      tag: 'People-Centred Solutions',
     },
     {
       id: 4,
       title: 'Excellence',
       icon: <Award size={18} className="text-[#6B7280]" />,
-      desc: 'We hold ourselves to high technical and design standards, crafting robust, polished software that delivers reliability and speed every single day.',
+      desc: 'We care about the details. From product experience to technology and reliability, we continuously strive to build Workzi with quality, purpose, and a high standard of execution.',
+      image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
+      tag: 'Craftsmanship & High Standards',
     },
   ];
+
+  const activeItem = valuesList.find((v) => v.id === openIndex) || valuesList[0];
 
   return (
     <section id="values" className="py-[90px] lg:py-[120px] bg-[#F8FAFC]">
       <Container className="max-w-[1280px] mx-auto px-4 sm:px-8">
-        <div className="flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-[80px]">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-[80px]">
 
           {/* LEFT: Accordion List */}
           <div className="w-full lg:w-[552px] flex flex-col items-start shrink-0">
@@ -471,13 +396,13 @@ const AboutValuesAccordion: React.FC = () => {
             </div>
 
             {/* H2 Title */}
-            <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[32px] sm:text-[44px] lg:text-[50px] leading-[1.1] tracking-[-1px] text-[#111827] mb-4">
-              Our values guide everything we build.
+            <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[32px] sm:text-[44px] lg:text-[48px] leading-[1.15] tracking-[-1px] text-[#111827] mb-4">
+              Our values shape everything we build.
             </h2>
 
             {/* Subtitle */}
-            <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[17px] leading-[30px] text-[#6B7280] mb-8">
-              From product decisions to how we support our customers — these five principles shape every interaction.
+            <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[17px] leading-[28px] sm:leading-[30px] text-[#6B7280] mb-8">
+              From how we design our technology to how we approach workforce challenges, these principles guide the way we build Workzi.
             </p>
 
             {/* Accordion Container */}
@@ -544,28 +469,51 @@ const AboutValuesAccordion: React.FC = () => {
             </div>
           </div>
 
-          {/* RIGHT: Visual Orbit Diagram Card */}
-          <div className="w-full lg:w-[552px] h-[440px] sm:h-[520px] lg:h-[552px] rounded-[28px] p-8 flex items-center justify-center shrink-0 relative overflow-hidden select-none border border-slate-200/50"
-            style={{
-              background: 'linear-gradient(160deg, #F0F0FF 0%, #E8E8FF 100%)',
-            }}
-          >
-            {/* Concentric Dashed Orbit Rings */}
-            <div className="absolute w-[360px] h-[360px] rounded-full border border-dashed border-[#5B5FFF]/20" />
-            <div className="absolute w-[260px] h-[260px] rounded-full border border-dashed border-[#5B5FFF]/30" />
-            <div className="absolute w-[160px] h-[160px] rounded-full border border-dashed border-[#5B5FFF]/40" />
+          {/* RIGHT: Values Visual Image Card */}
+          <div className="w-full lg:w-[552px] h-[440px] sm:h-[500px] lg:h-[540px] rounded-[16px] shrink-0 relative overflow-hidden select-none border border-slate-200/90 shadow-2xl bg-slate-900 group self-center my-auto">
+            {/* Animated Unsplash Image with Crossfade */}
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={activeItem.id}
+                src={activeItem.image}
+                alt={activeItem.title}
+                initial={{ opacity: 0, scale: 1.05 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.98 }}
+                transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+                className="w-full h-full object-cover object-center"
+              />
+            </AnimatePresence>
 
-            {/* Orbit Node Dots */}
-            <div className="absolute top-[80px] left-[50%] -translate-x-1/2 w-4 h-4 rounded-full bg-[#5B5FFF]/60" />
-            <div className="absolute bottom-[80px] left-[50%] -translate-x-1/2 w-4 h-4 rounded-full bg-[#5B5FFF]/50" />
-            <div className="absolute left-[80px] top-[50%] -translate-y-1/2 w-4 h-4 rounded-full bg-[#F59E0B]/60" />
-            <div className="absolute right-[80px] top-[50%] -translate-y-1/2 w-4 h-4 rounded-full bg-[#10B981]/60" />
+            {/* Gradient Overlay for bottom card readability */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0A0D2C]/75 via-[#0A0D2C]/10 to-transparent pointer-events-none" />
 
-            {/* Center Core Hub */}
-            <div className="relative w-[72px] h-[72px] rounded-full bg-[#5B5FFF]/15 border-[1.5px] border-[#5B5FFF]/40 flex items-center justify-center backdrop-blur-md z-10">
-              <span className="font-['Inter',sans-serif] font-bold text-[13px] text-[#5B5FFF]">
-                Workzi
-              </span>
+            {/* Bottom Floating Glass Card */}
+            <div className="absolute bottom-6 left-6 right-6 z-20">
+              <motion.div
+                key={`card-${activeItem.id}`}
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.1 }}
+                className="bg-white/95 backdrop-blur-md rounded-[20px] p-5 border border-white/40 shadow-xl flex items-start gap-4"
+              >
+                <div className="w-12 h-12 rounded-[14px] bg-[#EDEDFF] text-[#5B5FFF] flex items-center justify-center shrink-0">
+                  {activeItem.icon}
+                </div>
+                <div className="flex flex-col">
+                  <div className="flex items-center gap-2">
+                    <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] text-[#111827]">
+                      {activeItem.title}
+                    </span>
+                    <span className="text-[11px] font-bold tracking-wide uppercase px-2 py-0.5 rounded-md bg-[#EDEDFF] text-[#5B5FFF]">
+                      {activeItem.tag}
+                    </span>
+                  </div>
+                  <p className="font-['Inter',sans-serif] text-[13px] leading-[20px] text-[#6B7280] mt-1 line-clamp-2">
+                    {activeItem.desc}
+                  </p>
+                </div>
+              </motion.div>
             </div>
           </div>
 
@@ -576,7 +524,7 @@ const AboutValuesAccordion: React.FC = () => {
 };
 
 /* ────────────────────────────────────────────────────────────
-   SECTION 6 — OUR DISTRIBUTED TEAM & COLLAGE
+   SECTION 6 — OUR TEAM
 ──────────────────────────────────────────────────────────── */
 const AboutTeamCollage: React.FC = () => {
   return (
@@ -584,73 +532,79 @@ const AboutTeamCollage: React.FC = () => {
       <Container className="max-w-[1280px] mx-auto px-4 sm:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-[80px]">
 
-          {/* LEFT: Team Cards Collage Visual */}
-          <div className="w-full lg:w-[552px] h-[520px] sm:h-[560px] rounded-[28px] bg-[#F8FAFC] p-6 sm:p-8 relative overflow-hidden flex items-center justify-center shrink-0 border border-slate-200">
+          {/* LEFT: Abstract / Team Visual Cards (No individual names/titles) */}
+          <div className="w-full lg:w-[552px] min-h-[500px] sm:min-h-[540px] rounded-[28px] bg-[#F8FAFC] p-6 sm:p-8 relative overflow-hidden flex flex-col justify-center gap-4 shrink-0 border border-slate-200">
 
-            {/* Main Center Card (Harini Thyagarajan) */}
+            {/* Card 1: AI & TECHNOLOGY */}
             <motion.div
-              whileHover={{ y: -5 }}
-              className="w-[220px] sm:w-[240px] h-[280px] sm:h-[300px] bg-white rounded-[18px] border border-slate-200 overflow-hidden flex flex-col z-20"
+              whileHover={{ y: -4, scale: 1.01 }}
+              transition={{ duration: 0.2 }}
+              className="w-full bg-white rounded-[20px] border border-slate-200/90 p-5 shadow-sm hover:shadow-md hover:border-[#5B5FFF]/40 transition-all flex items-center gap-4"
             >
-              <div className="w-full h-[215px] bg-gradient-to-br from-[#C7D2FE] via-[#A5B4FC] to-[#818CF8] flex items-center justify-center">
-                <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[28px] text-white">
-                  KR
-                </span>
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#4F46E5] to-[#7C3AED] flex items-center justify-center text-white shrink-0 shadow-sm">
+                <Cpu size={26} />
               </div>
-              <div className="p-3 sm:p-3.5 flex flex-col">
-                <span className="font-['Inter',sans-serif] font-semibold text-[13px] text-[#111827]">
-                  Harini Thyagarajan
+              <div className="flex flex-col">
+                <span className="text-[11px] font-['Plus_Jakarta_Sans',sans-serif] font-bold tracking-[0.8px] text-[#5B5FFF] uppercase">
+                  AI &amp; TECHNOLOGY
                 </span>
-                <span className="font-['Inter',sans-serif] font-normal text-[11px] text-[#6B7280]">
-                  Co-Founder &amp; CEO 🇮🇳
-                </span>
+                <h4 className="text-[17px] font-bold text-[#111827] mt-0.5">
+                  Building intelligent workforce solutions
+                </h4>
+                <p className="text-[13px] text-[#6B7280] mt-0.5">
+                  Automated scheduling, predictive insights, and robust infrastructure.
+                </p>
               </div>
             </motion.div>
 
-            {/* Top Right Card (Lena Park) */}
+            {/* Card 2: PRODUCT & DESIGN */}
             <motion.div
-              whileHover={{ y: -5 }}
-              className="w-[160px] sm:w-[180px] h-[190px] sm:h-[211px] bg-white rounded-[18px] border border-slate-200 overflow-hidden flex flex-col absolute top-6 right-6 sm:right-10 z-10"
+              whileHover={{ y: -4, scale: 1.01 }}
+              transition={{ duration: 0.2 }}
+              className="w-full bg-white rounded-[20px] border border-slate-200/90 p-5 shadow-sm hover:shadow-md hover:border-[#F59E0B]/50 transition-all flex items-center gap-4"
             >
-              <div className="w-full h-[140px] bg-gradient-to-br from-[#A7F3D0] via-[#6EE7B7] to-[#34D399] flex items-center justify-center">
-                <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[26px] text-white">
-                  LP
-                </span>
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#F59E0B] to-[#D97706] flex items-center justify-center text-white shrink-0 shadow-sm">
+                <Palette size={26} />
               </div>
-              <div className="p-3 flex flex-col">
-                <span className="font-['Inter',sans-serif] font-semibold text-[13px] text-[#111827]">
-                  Lena Park
+              <div className="flex flex-col">
+                <span className="text-[11px] font-['Plus_Jakarta_Sans',sans-serif] font-bold tracking-[0.8px] text-[#D97706] uppercase">
+                  PRODUCT &amp; DESIGN
                 </span>
-                <span className="font-['Inter',sans-serif] font-normal text-[11px] text-[#6B7280]">
-                  Head of Design 🇰🇷
-                </span>
+                <h4 className="text-[17px] font-bold text-[#111827] mt-0.5">
+                  Creating simple, intuitive experiences
+                </h4>
+                <p className="text-[13px] text-[#6B7280] mt-0.5">
+                  Human-centered UX, seamless daily workflows, and frictionless interactions.
+                </p>
               </div>
             </motion.div>
 
-            {/* Bottom Left Card (Marcus J.) */}
+            {/* Card 3: WORKFORCE INNOVATION */}
             <motion.div
-              whileHover={{ y: -5 }}
-              className="w-[150px] sm:w-[160px] h-[180px] sm:h-[201px] bg-white rounded-[18px] border border-slate-200 overflow-hidden flex flex-col absolute bottom-6 left-6 sm:left-10 z-10"
+              whileHover={{ y: -4, scale: 1.01 }}
+              transition={{ duration: 0.2 }}
+              className="w-full bg-white rounded-[20px] border border-slate-200/90 p-5 shadow-sm hover:shadow-md hover:border-emerald-500/50 transition-all flex items-center gap-4"
             >
-              <div className="w-full h-[125px] bg-gradient-to-br from-[#FDE68A] via-[#FBBF24] to-[#F59E0B] flex items-center justify-center">
-                <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[26px] text-white">
-                  MJ
-                </span>
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#10B981] to-[#059669] flex items-center justify-center text-white shrink-0 shadow-sm">
+                <Lightbulb size={26} />
               </div>
-              <div className="p-3 flex flex-col">
-                <span className="font-['Inter',sans-serif] font-semibold text-[13px] text-[#111827]">
-                  Marcus J.
+              <div className="flex flex-col">
+                <span className="text-[11px] font-['Plus_Jakarta_Sans',sans-serif] font-bold tracking-[0.8px] text-emerald-600 uppercase">
+                  WORKFORCE INNOVATION
                 </span>
-                <span className="font-['Inter',sans-serif] font-normal text-[11px] text-[#6B7280]">
-                  CTO 🇺🇸
-                </span>
+                <h4 className="text-[17px] font-bold text-[#111827] mt-0.5">
+                  Rethinking how organisations manage work
+                </h4>
+                <p className="text-[13px] text-[#6B7280] mt-0.5">
+                  Modern people operations, transparent attendance, and high team agility.
+                </p>
               </div>
             </motion.div>
 
-            {/* Bottom Right Floating Badge */}
-            <div className="absolute bottom-6 right-6 sm:right-8 bg-white rounded-full px-4 py-2 border border-slate-200 text-[12px] font-['Inter',sans-serif] font-semibold text-[#111827] flex items-center gap-2 z-30">
+            {/* Bottom Floating Badge */}
+            <div className="mt-2 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 border border-slate-200 text-[12px] font-['Inter',sans-serif] font-semibold text-[#111827] flex items-center justify-center gap-2">
               <ShieldCheck size={16} className="text-[#5B5FFF]" />
-              <span>24/7 support coverage</span>
+              <span>Built by modern teams for modern work</span>
             </div>
 
           </div>
@@ -665,80 +619,76 @@ const AboutTeamCollage: React.FC = () => {
             </div>
 
             {/* H2 Title */}
-            <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[32px] sm:text-[44px] lg:text-[50px] leading-[1.1] tracking-[-1px] text-[#111827] mb-4">
-              Our distributed team powers businesses worldwide.
+            <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[32px] sm:text-[44px] lg:text-[48px] leading-[1.15] tracking-[-1px] text-[#111827] mb-4">
+              A team building what’s next for work.
             </h2>
 
-            {/* Subtitle */}
-            <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[17px] leading-[30px] text-[#6B7280] mb-8">
-              We are 240+ builders working from 25+ countries, united by a shared mission: to make HR effortless for every team on the planet.
-            </p>
+            {/* Subtitles */}
+            <div className="space-y-3 font-['Inter',sans-serif] font-normal text-[16px] sm:text-[17px] leading-[28px] sm:leading-[30px] text-[#6B7280] mb-8">
+              <p>
+                Workzi brings together people with a shared focus on AI, technology, product thinking, and workforce innovation.
+              </p>
+              <p>
+                We’re building a platform that helps organisations simplify workforce management, improve visibility, and create better experiences for the people behind every business.
+              </p>
+            </div>
 
-            {/* Stats Bordered Row */}
-            <div className="w-full grid grid-cols-3 border border-[#E5E7EB] rounded-[20px] p-4 sm:p-6 mb-8 bg-white text-center">
-              <div className="flex flex-col items-center gap-1 border-r border-[#E5E7EB] px-2">
-                <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[24px] sm:text-[30px] leading-tight text-[#5B5FFF]">
-                  240+
+            {/* Replaced Statistics Box */}
+            <div className="w-full grid grid-cols-1 sm:grid-cols-3 border border-[#E5E7EB] rounded-[20px] p-4 sm:p-5 mb-8 bg-white text-center gap-4 sm:gap-0 divide-y sm:divide-y-0 sm:divide-x divide-[#E5E7EB] shadow-xs">
+              <div className="flex flex-col items-center gap-1 px-3">
+                <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[13px] sm:text-[14px] tracking-[0.5px] uppercase text-[#5B5FFF]">
+                  AI-POWERED
                 </span>
-                <span className="font-['Inter',sans-serif] font-normal text-[12px] sm:text-[13px] text-[#6B7280]">
-                  Team Members
+                <span className="font-['Inter',sans-serif] font-medium text-[13px] leading-tight text-[#111827]">
+                  Workforce Intelligence
                 </span>
               </div>
 
-              <div className="flex flex-col items-center gap-1 border-r border-[#E5E7EB] px-2">
-                <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[24px] sm:text-[30px] leading-tight text-[#5B5FFF]">
-                  25+
+              <div className="flex flex-col items-center gap-1 px-3 pt-3 sm:pt-0">
+                <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[13px] sm:text-[14px] tracking-[0.5px] uppercase text-[#5B5FFF]">
+                  PEOPLE-FIRST
                 </span>
-                <span className="font-['Inter',sans-serif] font-normal text-[12px] sm:text-[13px] text-[#6B7280]">
-                  Countries
+                <span className="font-['Inter',sans-serif] font-medium text-[13px] leading-tight text-[#111827]">
+                  Human-Centred Approach
                 </span>
               </div>
 
-              <div className="flex flex-col items-center gap-1 px-2">
-                <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[24px] sm:text-[30px] leading-tight text-[#5B5FFF]">
-                  100k+
+              <div className="flex flex-col items-center gap-1 px-3 pt-3 sm:pt-0">
+                <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[13px] sm:text-[14px] tracking-[0.5px] uppercase text-[#5B5FFF]">
+                  FUTURE-READY
                 </span>
-                <span className="font-['Inter',sans-serif] font-normal text-[12px] sm:text-[13px] text-[#6B7280]">
-                  Employees Managed
+                <span className="font-['Inter',sans-serif] font-medium text-[13px] leading-tight text-[#111827]">
+                  Built for Modern Work
                 </span>
               </div>
             </div>
 
-            {/* Culture Bullet Points */}
+            {/* Values / Principles */}
             <div className="flex flex-col gap-3.5 w-full">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-[9px] bg-[#EDEDFF] flex items-center justify-center text-[#5B5FFF] shrink-0">
+                  <Cpu size={16} />
+                </div>
+                <span className="font-['Inter',sans-serif] font-medium text-[15px] text-[#111827]">
+                  AI and automated workforce operations built for scale
+                </span>
+              </div>
+
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-[9px] bg-[#EDEDFF] flex items-center justify-center text-[#5B5FFF] shrink-0">
                   <Globe size={16} />
                 </div>
                 <span className="font-['Inter',sans-serif] font-medium text-[15px] text-[#111827]">
-                  Fully remote-first culture with async collaboration
+                  Distributed collaboration with transparent communication
                 </span>
               </div>
 
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-[9px] bg-[#EDEDFF] flex items-center justify-center text-[#5B5FFF] shrink-0">
-                  <Smile size={16} />
+                  <Heart size={16} />
                 </div>
                 <span className="font-['Inter',sans-serif] font-medium text-[15px] text-[#111827]">
-                  Annual team retreats across 3 continents
-                </span>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-[9px] bg-[#EDEDFF] flex items-center justify-center text-[#5B5FFF] shrink-0">
-                  <Award size={16} />
-                </div>
-                <span className="font-['Inter',sans-serif] font-medium text-[15px] text-[#111827]">
-                  Named a Top 50 SaaS Workplace in 2024 &amp; 2025
-                </span>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-[9px] bg-[#EDEDFF] flex items-center justify-center text-[#5B5FFF] shrink-0">
-                  <Building size={16} />
-                </div>
-                <span className="font-['Inter',sans-serif] font-medium text-[15px] text-[#111827]">
-                  Offices in Bangalore, Singapore, London &amp; Austin
+                  Human-centred design prioritizing everyday employee clarity
                 </span>
               </div>
             </div>
@@ -752,7 +702,7 @@ const AboutTeamCollage: React.FC = () => {
 };
 
 /* ────────────────────────────────────────────────────────────
-   SECTION 7 — EXECUTIVE TESTIMONIAL
+   SECTION 7 — PHILOSOPHY CALLOUT
 ──────────────────────────────────────────────────────────── */
 const AboutExecutiveTestimonial: React.FC = () => {
   return (
@@ -761,28 +711,23 @@ const AboutExecutiveTestimonial: React.FC = () => {
         <FadeUp className="flex flex-col items-center gap-6">
 
           {/* Quote mark */}
-          <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[100px] sm:text-[120px] leading-[60px] text-[#5B5FFF] opacity-15 select-none">
+          <span className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[90px] sm:text-[110px] leading-[60px] text-[#5B5FFF] opacity-15 select-none">
             “
           </span>
 
           {/* Quote text */}
-          <p className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[26px] sm:text-[36px] lg:text-[40px] leading-[36px] sm:leading-[50px] tracking-[-0.8px] text-[#111827] max-w-[840px]">
-            Workzi didn't just improve our HR operations — it fundamentally changed how we think about our people. For the first time, our team could focus on culture instead of spreadsheets.
+          <p className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[26px] sm:text-[34px] lg:text-[38px] leading-[36px] sm:leading-[48px] tracking-[-0.8px] text-[#111827] max-w-[840px]">
+            Workforce management should be intelligent, connected, and built around people.
           </p>
 
-          {/* Author */}
-          <div className="flex items-center gap-4 pt-4">
-            <div className="w-[60px] h-[60px] rounded-[18px] bg-gradient-to-br from-[#5B5FFF] to-[#818CF8] flex items-center justify-center text-white font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[20px] shrink-0">
-              RK
-            </div>
-            <div className="flex flex-col items-start text-left">
-              <span className="font-['Inter',sans-serif] font-bold text-[16px] leading-[26px] text-[#111827]">
-                Rohit Kumar
-              </span>
-              <span className="font-['Inter',sans-serif] font-normal text-[14px] leading-[22px] text-[#6B7280]">
-                VP of People Operations, Nexatech Global
-              </span>
-            </div>
+          <p className="font-['Inter',sans-serif] font-normal text-[16px] sm:text-[17px] leading-[28px] sm:leading-[30px] text-[#6B7280] max-w-[700px]">
+            Workzi brings AI and workforce operations together to help organisations simplify everyday processes, gain clearer insights, and create a better way to manage work.
+          </p>
+
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EDEDFF] border border-[#5B5FFF]/20 text-[#5B5FFF] text-[13px] font-semibold font-['Inter',sans-serif] mt-2">
+            <Sparkles size={14} />
+            <span>Workzi Core Philosophy</span>
           </div>
 
         </FadeUp>
@@ -799,34 +744,35 @@ const AboutCTA: React.FC = () => {
     <section className="py-[70px] lg:py-[100px] bg-white">
       <Container className="max-w-[1216px] mx-auto px-4 sm:px-8">
         <FadeUp>
-          <div className="w-full rounded-[32px] p-8 sm:p-14 lg:p-[72px_128px] text-center text-white relative overflow-hidden flex flex-col items-center gap-6"
+          <div
+            className="w-full rounded-[32px] p-8 sm:p-14 lg:p-[72px_128px] text-center text-white relative overflow-hidden flex flex-col items-center gap-6 shadow-2xl"
             style={{
               background: 'linear-gradient(98.16deg, #9AA0FF 0.73%, #5B5FFF 58.51%, #8A8AFF 105.78%)',
             }}
           >
             {/* Title */}
-            <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[32px] sm:text-[44px] lg:text-[48px] leading-[40px] sm:leading-[56px] lg:leading-[64px] tracking-[-1.12px] text-white max-w-[644px]">
-              Build a smarter workforce experience with us.
+            <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[32px] sm:text-[44px] lg:text-[48px] leading-[40px] sm:leading-[56px] lg:leading-[64px] tracking-[-1.12px] text-white max-w-[680px]">
+              Build a smarter workforce with Workzi.
             </h2>
 
             {/* Subtitle */}
-            <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[16px] leading-[26px] text-white/85 max-w-[520px]">
-              Join 10,000+ companies that trust Workzi to manage their most important asset — their people.
+            <p className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[17px] leading-[26px] sm:leading-[28px] text-white/90 max-w-[580px]">
+              Bring workforce operations, AI-powered insights, and people management together in one intelligent platform designed for modern organisations.
             </p>
 
             {/* Buttons */}
             <div className="flex flex-wrap items-center justify-center gap-3.5 pt-4">
               <a
                 href="/pricing"
-                className="bg-white hover:bg-slate-100 text-[#5C5CFF] font-['DM_Sans',sans-serif] font-semibold text-[15px] leading-[24px] px-7 py-3.5 rounded-full transition-all duration-200 hover:scale-105"
+                className="bg-white hover:bg-slate-100 text-[#5C5CFF] font-['DM_Sans',sans-serif] font-semibold text-[15px] leading-[24px] px-7 py-3.5 rounded-full transition-all duration-200 hover:scale-105 shadow-md cursor-pointer"
               >
-                Schedule Demo
+                Explore Workzi
               </a>
               <a
                 href="/contact-support"
-                className="border border-white/30 hover:bg-white/10 text-white font-['DM_Sans',sans-serif] font-semibold text-[15px] leading-[24px] px-7 py-3.5 rounded-full transition-all duration-200 hover:scale-105"
+                className="border border-white/30 hover:bg-white/10 text-white font-['DM_Sans',sans-serif] font-semibold text-[15px] leading-[24px] px-7 py-3.5 rounded-full transition-all duration-200 hover:scale-105 cursor-pointer"
               >
-                Contact Sales
+                Talk to Our Team
               </a>
             </div>
           </div>
@@ -843,9 +789,9 @@ export const AboutPage: React.FC = () => {
   return (
     <div id="about-page" className="relative overflow-x-hidden bg-white">
       <AboutHero />
-      <AboutLogos />
+      {/* <AboutLogos /> */}
       <AboutStory />
-      <AboutFeaturedCustomer />
+      {/* <AboutFeaturedCustomer /> */}
       <AboutValuesAccordion />
       <AboutTeamCollage />
       <AboutExecutiveTestimonial />
